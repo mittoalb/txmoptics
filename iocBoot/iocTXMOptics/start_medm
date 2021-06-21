@@ -80,7 +80,7 @@ setenv EPICS_DISPLAY_PATH $EPICS_DISPLAY_PATH':'/home/beams/USR32IDC/areaDetecto
 setenv EPICS_DISPLAY_PATH $EPICS_DISPLAY_PATH':'/home/beams/USR32IDC/areaDetector/Photron
 
 #cd $EPICS_APP_C_TXM/32idcTXMApp/op/adl
-medm -attach -x -dg +50+50 -macro "P=32idcTXM:,P2=32idb:, BL=32ID, P3=32idcSOFT:, P4=32ida:, SK=32idcMC:, PG=32ARV1:, R=cam1:, R2=Proc1:, P5=32id:, R5=TXMOptics:, B5=tomoScan_32ID, P6=32id:, P7=32idcEXP:, P8=32idcUC8:, R6=TomoScanStream:, B6=tomoScanStream_32ID, RO=obj, PID1=fb4, TITLE1=Horizontal, PID2=fb3, TITLE2=Vertical, VALVES_PLC=32idcPLC:, CRLRelays=32idbPLC:, Contr2=xps:c1:, Contr5=nf:c0:, Contr6=ens:c1:, Contr7=nf:c0:, Contr8=mxv:c1:, Contr12=mcs:c2:, Contr13=mcs:c3:, Contr14=mmc:c1:, S=uniblitz:" -local ../../txmOpticsApp/op/adl/txm_main.adl &
+medm -attach -x -dg +50+50 -macro "P=32idcTXM:, P1=32id:, R1=TomoScan:, B1=tomoScan_32ID, P2=32idb:, BL=32ID, P3=32idcSOFT:, P4=32ida:, SK=32idcMC:, PG=32ARV1:, R=cam1:, R2=Proc1:, P5=32id:, R5=TXMOptics:, P6=32id:, P7=32idcEXP:, P8=32idcUC8:, R6=TomoScanStream:, B6=tomoScanStream_32ID, RO=obj, PID1=fb4, TITLE1=Horizontal, PID2=fb3, TITLE2=Vertical, VALVES_PLC=32idcPLC:, CRLRelays=32idbPLC:, Contr2=xps:c1:, Contr5=nf:c0:, Contr6=ens:c1:, Contr7=nf:c0:, Contr8=mxv:c1:, Contr12=mcs:c2:, Contr13=mcs:c3:, Contr14=mmc:c1:, S=uniblitz:" -local ../../txmOpticsApp/op/adl/txm_main.adl &
 
 
 

@@ -16153,12 +16153,12 @@ text {
 	display[0] {
 		label="tomoScan"
 		name="tomoScan.adl"
-		args="P=$(P5), R=$(R5), BEAMLINE=$(B5)"
+		args="P=$(P1), R=$(R1), BEAMLINE=$(B1)"
 	}
 	display[1] {
 		label="tomoScan 32-ID"
 		name="tomoScan_32ID.adl"
-		args="P=$(P5), R=$(R5), BEAMLINE=$(B5)"
+		args="P=$(P1), R=$(R1), BEAMLINE=$(B1)"
 	}
 	display[2] {
 		args=" "

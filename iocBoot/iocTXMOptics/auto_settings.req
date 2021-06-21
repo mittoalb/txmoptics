@@ -1,0 +1,2 @@
+file "txmOptics.req", P=$(P), R=$(R)
+file "txmOptics_settings.req", P=$(P), R=$(R)

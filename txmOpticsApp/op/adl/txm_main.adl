@@ -1,12 +1,12 @@
 
 file {
-	name="/local/usertxm/epics/synApps/support/txmoptics/iocBoot/iocTXMOptics/../../txmOpticsApp/op/adl/txm_main.adl"
+	name="/local/usertxm/epics/synApps/support/txmoptics/txmOpticsApp/op/adl/txm_main.adl"
 	version=030111
 }
 display {
 	object {
-		x=769
-		y=77
+		x=650
+		y=70
 		width=1500
 		height=1310
 	}
@@ -14879,9 +14879,9 @@ composite {
 }
 rectangle {
 	object {
-		x=82
-		y=167
-		width=160
+		x=185
+		y=166
+		width=130
 		height=125
 	}
 	"basic attribute" {
@@ -14892,7 +14892,7 @@ rectangle {
 }
 text {
 	object {
-		x=108
+		x=211
 		y=169
 		width=55
 		height=15
@@ -14905,7 +14905,7 @@ text {
 }
 "text entry" {
 	object {
-		x=111
+		x=200
 		y=217
 		width=100
 		height=20
@@ -14920,7 +14920,7 @@ text {
 }
 "text update" {
 	object {
-		x=111
+		x=200
 		y=194
 		width=100
 		height=20
@@ -14935,7 +14935,7 @@ text {
 }
 "text entry" {
 	object {
-		x=111
+		x=200
 		y=170
 		width=100
 		height=20
@@ -14950,9 +14950,9 @@ text {
 }
 "text entry" {
 	object {
-		x=111
-		y=239
-		width=100
+		x=214
+		y=238
+		width=70
 		height=20
 	}
 	control {
@@ -14965,8 +14965,8 @@ text {
 }
 "message button" {
 	object {
-		x=213
-		y=240
+		x=286
+		y=239
 		width=25
 		height=20
 	}
@@ -14980,8 +14980,8 @@ text {
 }
 "message button" {
 	object {
-		x=84
-		y=239
+		x=187
+		y=238
 		width=25
 		height=20
 	}
@@ -14995,9 +14995,9 @@ text {
 }
 "text update" {
 	object {
-		x=135
-		y=265
-		width=100
+		x=238
+		y=264
+		width=70
 		height=20
 	}
 	monitor {
@@ -15010,8 +15010,8 @@ text {
 }
 text {
 	object {
-		x=80
-		y=268
+		x=183
+		y=267
 		width=55
 		height=15
 	}
@@ -15020,22 +15020,6 @@ text {
 	}
 	textix="FLOW"
 	align="horiz. centered"
-}
-"message button" {
-	object {
-		x=87
-		y=302
-		width=150
-		height=45
-	}
-	control {
-		chan="$(P5)$(R5)AllStop"
-		clr=14
-		bclr=20
-	}
-	label="All Stop"
-	press_msg="1"
-	release_msg="0"
 }
 "choice button" {
 	object {
@@ -16106,4 +16090,82 @@ text {
 	}
 	textix="Done"
 	align="horiz. centered"
+}
+text {
+	object {
+		x=8
+		y=168
+		width=150
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="References"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=36
+		y=225
+		width=150
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="TomoScan"
+}
+text {
+	object {
+		x=37
+		y=198
+		width=150
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="32-ID Beamline"
+}
+"shell command" {
+	object {
+		x=8
+		y=198
+		width=20
+		height=20
+	}
+	command[0] {
+		label="32-ID Beamline"
+		name="/home/beams/USERTXM/start_caQtDM_32id"
+	}
+	clr=0
+	bclr=53
+	label="-"
+}
+"related display" {
+	object {
+		x=8
+		y=225
+		width=20
+		height=20
+	}
+	display[0] {
+		label="tomoScan"
+		name="tomoScan.adl"
+		args="P=$(P5), R=$(R5), BEAMLINE=$(B5)"
+	}
+	display[1] {
+		label="tomoScan 32-ID"
+		name="tomoScan_32ID.adl"
+		args="P=$(P5), R=$(R5), BEAMLINE=$(B5)"
+	}
+	display[2] {
+		args=" "
+	}
+	display[4] {
+		args=" "
+	}
+	clr=0
+	bclr=53
 }

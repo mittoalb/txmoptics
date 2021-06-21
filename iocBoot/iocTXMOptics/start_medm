@@ -1,6 +1,6 @@
 #!/bin/csh
 setenv DSERV_DIR       /net/s32dserv/xorApps/epics
-#setenv EPICS_TS        /local/usertxm/epics/synApps/support/tomoscan/
+setenv EPICS_TS        /local/usertxm/epics/synApps/support/tomoscan/
 setenv EPICS_APP       $DSERV_DIR/screens/32idsectorApp
 setenv EPICS_APP_A     $DSERV_DIR/synApps_6_0/ioc/32ida
 setenv EPICS_APP_C_TXM $DSERV_DIR/synApps_6_0/ioc/32idcTXM
@@ -21,7 +21,7 @@ setenv EPICS_DISPLAY_PATH $EPICS_DISPLAY_PATH':'$DSERV_DIR/synApps_6_0/ioc/32idc
 setenv EPICS_DISPLAY_PATH $EPICS_DISPLAY_PATH':'$DSERV_DIR/synApps_6_0/ioc/32idc02/32idc02App/op/adl
 
 #setenv EPICS_DISPLAY_PATH $EPICS_DISPLAY_PATH':'$EPICS_APP_C_TXM/32idcTXMApp/op/adl
-#setenv EPICS_DISPLAY_PATH $EPICS_DISPLAY_PATH':'$EPICS_TS/tomoScanApp/op/adl
+setenv EPICS_DISPLAY_PATH $EPICS_DISPLAY_PATH':'$EPICS_TS/tomoScanApp/op/adl
 
 setenv EPICS_DISPLAY_PATH $EPICS_DISPLAY_PATH':'$DSERV_DIR/synApps_5_8/ioc/32idbPLC/32idbPLCApp/op/adl
 setenv EPICS_DISPLAY_PATH $EPICS_DISPLAY_PATH':'$DSERV_DIR/synApps_5_8/ioc/32idcPLC/32idcPLCApp/op/adl

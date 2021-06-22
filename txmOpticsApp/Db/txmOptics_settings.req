@@ -8,35 +8,6 @@
 # These PVs are not saved in the txmoptics configuration file.
 
 
-####################
-# Energy information
-####################
-$(P)$(R)Energy
-$(P)$(R)EnergyMode
-$(P)$(R)Filters
-
-#########################
-# Beam status information
-#########################
-$(P)$(R)BeamReadyPVName
-$(P)$(R)BeamReadyValue
-$(P)$(R)Testing
-
-#######################################
-# Sample top X and Y translation motors
-#######################################
-$(P)$(R)SampleTopXPVName
-$(P)$(R)SampleTopZPVName
-
-####################
-# Optics information
-####################
-$(P)$(R)ScintillatorType
-$(P)$(R)ScintillatorThickness
-$(P)$(R)ImagePixelSize
-$(P)$(R)DetectorPixelSize
-$(P)$(R)CameraObjective
-$(P)$(R)CameraTubeLength
 
 ##################################################
 # CRL Relays, Valves PLC, Shaker and BPM PV Prefix
@@ -87,48 +58,6 @@ $(P)$(R)PhaseRingOutX
 $(P)$(R)PhaseRingInY
 $(P)$(R)PhaseRingOutY
 
-####################
-# Sample information
-####################
-$(P)$(R)SampleName
-$(P)$(R)SampleDescription1
-$(P)$(R)SampleDescription2
-$(P)$(R)SampleDescription3
-
-##################
-# User information
-##################
-$(P)$(R)UserName
-$(P)$(R)UserInstitution
-$(P)$(R)UserBadge
-$(P)$(R)UserEmail
-$(P)$(R)ProposalNumber
-$(P)$(R)ProposalTitle
-$(P)$(R)ESAFNumber
-$(P)$(R)UserInfoUpdate
-
-#################
-# Data management
-#################
-$(P)$(R)DetectorTopDir
-$(P)$(R)UserLastName
-$(P)$(R)ExperimentYearMonth
-$(P)$(R)RemoteAnalysisDir
-$(P)$(R)CopyToAnalysisDir
-
-######################
-# Fast shutter control
-######################
-$(P)$(R)CloseFastShutterPVName
-$(P)$(R)CloseFastShutterValue
-$(P)$(R)OpenFastShutterPVName
-$(P)$(R)OpenFastShutterValue
-
-################
-# Shutter status
-################
-$(P)$(R)ShutterStatusPVName
-
 #################################
 # Optics control via Channel Access
 #################################
@@ -148,13 +77,6 @@ $(P)$(R)ShutterStatusPVName
 #controlPV $(P)$(R)MoveZonePlateOut
 #controlPV $(P)$(R)MoveAllIn
 #controlPV $(P)$(R)MoveAllOut
-
-#################
-# Interlaced scan
-#################
-$(P)$(R)InterlacedScan
-$(P)$(R)InterlacedFileName
-$(P)$(R)InterlacedRetakeFlat
 
 #################
 # Optics In/Out

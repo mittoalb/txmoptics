@@ -5,8 +5,8 @@ file {
 }
 display {
 	object {
-		x=650
-		y=70
+		x=620
+		y=64
 		width=1500
 		height=1310
 	}
@@ -16106,8 +16106,8 @@ text {
 }
 text {
 	object {
-		x=36
-		y=225
+		x=40
+		y=259
 		width=150
 		height=20
 	}
@@ -16118,7 +16118,7 @@ text {
 }
 text {
 	object {
-		x=37
+		x=39
 		y=198
 		width=150
 		height=20
@@ -16132,8 +16132,8 @@ text {
 	object {
 		x=8
 		y=198
-		width=20
-		height=20
+		width=25
+		height=25
 	}
 	command[0] {
 		label="32-ID Beamline"
@@ -16146,9 +16146,9 @@ text {
 "related display" {
 	object {
 		x=8
-		y=225
-		width=20
-		height=20
+		y=255
+		width=25
+		height=25
 	}
 	display[0] {
 		label="tomoScan"
@@ -16168,4 +16168,48 @@ text {
 	}
 	clr=0
 	bclr=53
+	label="- 2"
+}
+"shell command" {
+	object {
+		x=8
+		y=226
+		width=25
+		height=25
+	}
+	command[0] {
+		label="TXM optics"
+		name="firefox 164.54.102.97 &"
+	}
+	command[1] {
+		label="Robot"
+		name="firefox 164.54.102.88 &"
+	}
+	command[2] {
+		label="Control room"
+		name="firefox 164.54.102.90 &"
+	}
+	command[3] {
+		label="Flag"
+		name="firefox 164.54.102.81 &"
+	}
+	command[4] {
+		label="Hutch C"
+		name="firefox 164.54.102.91 &"
+	}
+	clr=0
+	bclr=53
+	label="- 5"
+}
+text {
+	object {
+		x=41
+		y=230
+		width=150
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Web cameras"
 }

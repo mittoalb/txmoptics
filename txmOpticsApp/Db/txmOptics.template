@@ -1,6 +1,15 @@
 # Database for EPICS PVS for txm optics control
 # This database contains all of the PVs used by the txmoptics base class.
 
+####################################
+# Camera and File Plugin PV Prefixes
+####################################
+
+record(stringout, "$(P)$(R)CameraPVPrefix")
+{
+   field(VAL,  "$(CAMERA)")
+}
+
 ##################################################
 # CRL Relays, Valves PLC, Shaker and BPM PV Prefix
 ##################################################
@@ -305,6 +314,16 @@ record(ao, "$(P)$(R)PhaseRingOutY")
    field(PREC,  "3")
 }
 
+record(ao, "$(P)$(R)ExposureTimeIn")
+{
+   field(PREC,  "3")
+}
+
+record(ao, "$(P)$(R)ExposureTimeOut")
+{
+   field(PREC,  "3")
+}
+
 #################
 # Optics In/Out
 #################
@@ -391,6 +410,15 @@ record(bo, "$(P)$(R)PhaseRingInOutUse")
    field(ZNAM, "No")
    field(ONAM, "Yes")
 }
+
+record(bo, "$(P)$(R)ExposureTimeInOutUse")
+{
+   field(ZNAM, "No")
+   field(ONAM, "Yes")
+}
+
+
+
 
 
 

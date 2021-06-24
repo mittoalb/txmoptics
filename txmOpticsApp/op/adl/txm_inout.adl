@@ -5,10 +5,10 @@ file {
 }
 display {
 	object {
-		x=1027
-		y=408
+		x=4647
+		y=565
 		width=754
-		height=266
+		height=328
 	}
 	clr=14
 	bclr=4
@@ -601,7 +601,7 @@ text {
 	"basic attribute" {
 		clr=14
 	}
-	textix="Move"
+	textix="Use"
 	align="horiz. centered"
 }
 text {
@@ -718,6 +718,102 @@ text {
 	"basic attribute" {
 		clr=14
 	}
-	textix="Move"
+	textix="Use"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=107
+		y=281
+		width=160
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Exposure time"
+	align="horiz. right"
+}
+"text entry" {
+	object {
+		x=284
+		y=281
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)ExposureTimeIn"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=408
+		y=281
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)ExposureTimeOut"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+"choice button" {
+	object {
+		x=522
+		y=281
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)ExposureTimeInOutUse"
+		clr=14
+		bclr=51
+	}
+	stacking="column"
+}
+text {
+	object {
+		x=539
+		y=257
+		width=60
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Use"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=396
+		y=257
+		width=130
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Out (s)"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=272
+		y=257
+		width=130
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="In (s)"
 	align="horiz. centered"
 }

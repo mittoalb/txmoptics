@@ -8,6 +8,10 @@
 # These PVs are not saved in the txmoptics configuration file.
 
 
+####################################
+# Camera and File Plugin PV Prefixes
+####################################
+$(P)$(R)CameraPVPrefix
 
 ##################################################
 # CRL Relays, Valves PLC, Shaker and BPM PV Prefix
@@ -57,6 +61,9 @@ $(P)$(R)PhaseRingInX
 $(P)$(R)PhaseRingOutX
 $(P)$(R)PhaseRingInY
 $(P)$(R)PhaseRingOutY
+$(P)$(R)ExposureTimeIn
+$(P)$(R)ExposureTimeOut
+
 
 #################################
 # Optics control via Channel Access
@@ -78,9 +85,9 @@ $(P)$(R)PhaseRingOutY
 #controlPV $(P)$(R)MoveAllIn
 #controlPV $(P)$(R)MoveAllOut
 
-#################
-# Optics In/Out
-#################
+###################
+# Optics In/Out Use
+###################
 $(P)$(R)CRLRelaysY0InOutUse
 $(P)$(R)CRLRelaysY1InOutUse
 $(P)$(R)CRLRelaysY2InOutUse
@@ -95,3 +102,4 @@ $(P)$(R)PinholeInOutUse
 $(P)$(R)CondenserInOutUse
 $(P)$(R)ZonePlateInOutUse
 $(P)$(R)PhaseRingInOutUse
+$(P)$(R)ExposureTimeInOutUse

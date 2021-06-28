@@ -84,6 +84,7 @@ $(P)$(R)ExposureTimeOut
 #controlPV $(P)$(R)MoveZonePlateOut
 #controlPV $(P)$(R)MoveAllIn
 #controlPV $(P)$(R)MoveAllOut
+#controlPV $(P)$(R)AllStop
 
 ###################
 # Optics In/Out Use
@@ -103,3 +104,13 @@ $(P)$(R)CondenserInOutUse
 $(P)$(R)ZonePlateInOutUse
 $(P)$(R)PhaseRingInOutUse
 $(P)$(R)ExposureTimeInOutUse
+
+####################################
+# TXM SUPPORTING IOC PV Prefixes
+####################################
+$(P)$(R)IOC0PVPrefix
+$(P)$(R)IOC1PVPrefix
+$(P)$(R)IOC2PVPrefix
+$(P)$(R)IOC3PVPrefix
+$(P)$(R)IOC4PVPrefix
+$(P)$(R)IOC5PVPrefix

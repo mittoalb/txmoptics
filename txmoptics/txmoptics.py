@@ -69,7 +69,7 @@ class TXMOptics():
 
         prefix = self.pv_prefixes['BPM']
         self.control_pvs['BPMHSetPoint'] = PV(prefix + 'fb4.VAL')
-        self.control_pvs['BPMHReadBack'] = PV(prefix + 'fb4.CVAL')
+        self.control_pvs['BPMHReadback'] = PV(prefix + 'fb4.CVAL')
         self.control_pvs['BPMHFeedback'] = PV(prefix + 'fb4.FBON')
         self.control_pvs['BPMHUpdateRate'] = PV(prefix + 'fb4.SCAN')
         self.control_pvs['BPMHKP'] = PV(prefix + 'fb4.KP')
@@ -79,7 +79,7 @@ class TXMOptics():
         self.control_pvs['BPMHLowLimit'] = PV(prefix + 'fb4.DRVL')
         self.control_pvs['BPMHHighLimit'] = PV(prefix + 'fb4.DRVH')
         self.control_pvs['BPMVSetPoint'] = PV(prefix + 'fb3.VAL')
-        self.control_pvs['BPMVReadBack'] = PV(prefix + 'fb3.CVAL')
+        self.control_pvs['BPMVReadback'] = PV(prefix + 'fb3.CVAL')
         self.control_pvs['BPMVFeedback'] = PV(prefix + 'fb3.FBON')
         self.control_pvs['BPMVUpdateRate'] = PV(prefix + 'fb3.SCAN')
         self.control_pvs['BPMVKP'] = PV(prefix + 'fb3.KP')
@@ -90,15 +90,19 @@ class TXMOptics():
         self.control_pvs['BPMVHighLimit'] = PV(prefix + 'fb3.DRVH')
 
         prefix = self.pv_prefixes['Camera']
-        camera_prefix = prefix + 'cam1:'
-        self.control_pvs['CamAcquireTime'] = PV(camera_prefix + 'AcquireTime')
-
+        self.control_pvs['CamAcquireTime'] = PV(prefix + 'cam1:AcquireTime')
+        self.control_pvs['CamTrans1Type'] = PV(prefix + 'Trans1:Type')
+        
+        # All Stop ioc PVs (--> add to the gui)
+        iocs = ['32idcTXM:','32idcPLC:', '32idcEXP:', '32idb:', '32idcUC8:', '32idcMC:']
+        self.allstop_pvs = [PV(ioc+'allstop') for ioc in iocs]
+                
         self.epics_pvs = {**self.config_pvs, **self.control_pvs}
 
         for epics_pv in ('MoveCRLIn', 'MoveCRLOut', 'MovePhaseRingIn', 'MovePhaseRingOut', 'MoveDiffuserIn',
                          'MoveDiffuserOut', 'MoveBeamstopIn', 'MoveBeamstopOut', 'MovePinholeIn', 'MovePinholeOut',
                          'MoveCondenserIn', 'MoveCondenserOut', 'MoveZonePlateIn', 'MoveZonePlateOut',
-                         'MoveAllIn', 'MoveAllOut'):
+                         'MoveAllIn', 'MoveAllOut', 'AllStop'):
             self.epics_pvs[epics_pv].add_callback(self.pv_callback)
 
         log.setup_custom_logger("./txmoptics.log")
@@ -241,6 +245,9 @@ class TXMOptics():
         elif (pvname.find('MoveAllOut') != -1) and (value == 1):
             thread = threading.Thread(target=self.move_all_out, args=())
             thread.start()
+        elif (pvname.find('AllStop') != -1) and (value == 1):
+            thread = threading.Thread(target=self.all_stop, args=())
+            thread.start()
 
     def move_crl_in(self):
         """Moves the crl in.
@@ -381,36 +388,86 @@ class TXMOptics():
             exposure_time = self.epics_pvs['ExposureTimeOut'].value
         self.epics_pvs['CamAcquireTime'].put(exposure_time, wait=True, timeout=10.0)
 
+    def set_bpm_in(self):
+        """
+        Set BPM readback value in
+        """
+        if(self.epics_pvs['BPMSetPointInOutUse'].value):
+            positionv = self.epics_pvs['BPMVSetPointIn'].value
+            positionh = self.epics_pvs['BPMHSetPointIn'].value
+            print(self.epics_pvs['BPMVSetPoint'].get(), positionv)
+            self.epics_pvs['BPMVSetPoint'].put(positionv, wait=True)
+            self.epics_pvs['BPMHSetPoint'].put(positionh, wait=True)            
+    
+    def set_bpm_out(self):
+        """
+        Set BPM readback value out
+        """
+        if(self.epics_pvs['BPMSetPointInOutUse'].value):
+            positionv = self.epics_pvs['BPMVSetPointOut'].value
+            positionh = self.epics_pvs['BPMHSetPointOut'].value
+            self.epics_pvs['BPMVSetPoint'].put(positionv, wait=True)
+            self.epics_pvs['BPMHSetPoint'].put(positionh, wait=True)            
+    
+    def transform_image_in(self):
+        """
+        Transform image in 
+        """
+        self.epics_pvs['CamTrans1Type'].put(6, wait=True) # Rot180Mirror
+        
+    
+    def transform_image_out(self):
+        """
+        Transform image out 
+        """
+        self.epics_pvs['CamTrans1Type'].put(4, wait=True) # Mirror
+                
     def move_all_in(self):
         """Moves all in
         """
         funcs = [self.move_crl_in,
+                 self.set_bpm_in,
                  self.move_phasering_in,
                  self.move_diffuser_in,
                  self.move_beamstop_in,
                  self.move_pinhole_in,
                  self.move_condenser_in,
                  self.move_zoneplate_in,
-                 self.set_exposure_time_in]
+                 self.set_exposure_time_in,
+                 self.transform_image_in,
+                 ]
         threads = [threading.Thread(target=f, args=()) for f in funcs]
         [t.start() for t in threads]
         [t.join() for t in threads]
 
         self.epics_pvs['MoveAllIn'].put('Done')
 
+    
+
     def move_all_out(self):
         """Moves all out
         """
         funcs = [self.move_crl_out,
+                 self.set_bpm_out,
                  self.move_phasering_out,
                  self.move_diffuser_out,
                  self.move_beamstop_out,
                  self.move_pinhole_out,
                  self.move_condenser_out,
                  self.move_zoneplate_out,
-                 self.set_exposure_time_out]
+                 self.set_exposure_time_out,
+                 self.transform_image_out,
+                 ]
         threads = [threading.Thread(target=f, args=()) for f in funcs]
         [t.start() for t in threads]
         [t.join() for t in threads]
 
         self.epics_pvs['MoveAllOut'].put('Done')
+
+    def all_stop(self):
+        """Stop all iocs motors
+        """     
+        [pv.put(1,wait=True) for pv in self.allstop_pvs]
+        self.epics_pvs['AllStop'].put(0,wait=True)
+        
+        

@@ -417,9 +417,43 @@ record(bo, "$(P)$(R)ExposureTimeInOutUse")
    field(ONAM, "Yes")
 }
 
+record(busy, "$(P)$(R)AllStop")
+{
+   field(ZNAM, "Release")
+   field(ONAM, "Stop")
+}
 
+####################################
+# TXM SUPPORTING IOC PV Prefixes
+####################################
 
+record(stringout, "$(P)$(R)IOC0PVPrefix")
+{
+   field(VAL,  "$(IOC0)")
+}
 
+record(stringout, "$(P)$(R)IOC1PVPrefix")
+{
+   field(VAL,  "$(IOC1)")
+}
 
+record(stringout, "$(P)$(R)IOC2PVPrefix")
+{
+   field(VAL,  "$(IOC2)")
+}
 
+record(stringout, "$(P)$(R)IOC3PVPrefix")
+{
+   field(VAL,  "$(IOC3)")
+}
+
+record(stringout, "$(P)$(R)IOC4PVPrefix")
+{
+   field(VAL,  "$(IOC4)")
+}
+
+record(stringout, "$(P)$(R)IOC5PVPrefix")
+{
+   field(VAL,  "$(IOC5)")
+}
 

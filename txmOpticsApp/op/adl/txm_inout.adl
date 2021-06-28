@@ -5,10 +5,10 @@ file {
 }
 display {
 	object {
-		x=4647
-		y=565
+		x=1949
+		y=1125
 		width=754
-		height=328
+		height=439
 	}
 	clr=14
 	bclr=4
@@ -815,5 +815,183 @@ text {
 		clr=14
 	}
 	textix="In (s)"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=-19
+		y=355
+		width=160
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="BPM readback"
+	align="horiz. right"
+}
+"text entry" {
+	object {
+		x=158
+		y=377
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)BPMVSetPointIn"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=269
+		y=377
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)BPMHSetPointIn"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+"choice button" {
+	object {
+		x=647
+		y=375
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)BPMSetPointInOutUse"
+		clr=14
+		bclr=51
+	}
+	stacking="column"
+}
+text {
+	object {
+		x=658
+		y=340
+		width=60
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Use"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=202
+		y=329
+		width=130
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="In"
+	align="horiz. centered"
+}
+"text entry" {
+	object {
+		x=414
+		y=377
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)BPMVSetPointOut"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=526
+		y=377
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)BPMHSetPointOut"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+text {
+	object {
+		x=146
+		y=352
+		width=130
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Vertical"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=255
+		y=352
+		width=130
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Horizontal"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=400
+		y=352
+		width=130
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Vertical"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=456
+		y=329
+		width=130
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Out"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=509
+		y=352
+		width=130
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Horizontal"
 	align="horiz. centered"
 }

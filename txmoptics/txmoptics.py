@@ -413,14 +413,14 @@ class TXMOptics():
         """
         Transform image in 
         """
-        self.epics_pvs['CamTrans1Type'].put(6, wait=True) # Rot180Mirror
+        self.epics_pvs['CamTrans1Type'].put(2, wait=True) # Rot180
         
     
     def transform_image_out(self):
         """
         Transform image out 
         """
-        self.epics_pvs['CamTrans1Type'].put(4, wait=True) # Mirror
+        self.epics_pvs['CamTrans1Type'].put(0, wait=True) # None
                 
     def move_all_in(self):
         """Moves all in

@@ -240,6 +240,7 @@ record(bo, "$(P)$(R)AllStop")
    field(ONAM, "stop")
 }
 
+
 ################
 # Optics control
 ################
@@ -324,9 +325,9 @@ record(ao, "$(P)$(R)ExposureTimeOut")
    field(PREC,  "3")
 }
 
-#################
-# Optics In/Out
-#################
+###################
+# Optics In/Out Use
+###################
 record(bo, "$(P)$(R)CRLRelaysY0InOutUse")
 {
    field(ZNAM, "No")
@@ -417,15 +418,9 @@ record(bo, "$(P)$(R)ExposureTimeInOutUse")
    field(ONAM, "Yes")
 }
 
-record(busy, "$(P)$(R)AllStop")
-{
-   field(ZNAM, "Release")
-   field(ONAM, "Stop")
-}
-
-####################################
+################################
 # TXM SUPPORTING IOC PV Prefixes
-####################################
+################################
 
 record(stringout, "$(P)$(R)IOC0PVPrefix")
 {

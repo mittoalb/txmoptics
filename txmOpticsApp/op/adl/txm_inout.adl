@@ -1016,7 +1016,7 @@ text {
 		height=20
 	}
 	control {
-		chan="$(P)$(R)DiffuserSetUserCoordinateToZero"
+		chan="$(P)$(R)DiffuserSetUserCoordinateToZeroUse"
 		clr=14
 		bclr=51
 	}
@@ -1030,7 +1030,7 @@ text {
 		height=20
 	}
 	control {
-		chan="$(P)$(R)BeamstopSetUserCoordinateToZero"
+		chan="$(P)$(R)BeamstopSetUserCoordinateToZeroUse"
 		clr=14
 		bclr=51
 	}
@@ -1044,7 +1044,7 @@ text {
 		height=20
 	}
 	control {
-		chan="$(P)$(R)PinholeSetUserCoordinateToZero"
+		chan="$(P)$(R)PinholeSetUserCoordinateToZeroUse"
 		clr=14
 		bclr=51
 	}
@@ -1058,7 +1058,7 @@ text {
 		height=20
 	}
 	control {
-		chan="$(P)$(R)CondenserSetUserCoordinateToZero"
+		chan="$(P)$(R)CondenserSetUserCoordinateToZeroUse"
 		clr=14
 		bclr=51
 	}
@@ -1072,7 +1072,7 @@ text {
 		height=20
 	}
 	control {
-		chan="$(P)$(R)ZonePlateSetUserCoordinateToZero"
+		chan="$(P)$(R)ZonePlateSetUserCoordinateToZeroUse"
 		clr=14
 		bclr=51
 	}
@@ -1086,7 +1086,7 @@ text {
 		height=20
 	}
 	control {
-		chan="$(P)$(R)PhaseRingSetUserCoordinateToZero"
+		chan="$(P)$(R)PhaseRingSetUserCoordinateToZeroUse"
 		clr=14
 		bclr=51
 	}

@@ -240,6 +240,11 @@ record(bo, "$(P)$(R)AllStop")
    field(ONAM, "stop")
 }
 
+record(busy, "$(P)$(R)SetAllToZero")
+{
+   field(ZNAM, "Done")
+   field(ONAM, "Set")
+}
 
 ################
 # Optics control
@@ -413,6 +418,51 @@ record(bo, "$(P)$(R)PhaseRingInOutUse")
 }
 
 record(bo, "$(P)$(R)ExposureTimeInOutUse")
+{
+   field(ZNAM, "No")
+   field(ONAM, "Yes")
+}
+
+####################################
+# Optics Set User Coordinate to zero
+####################################
+record(bo, "$(P)$(R)DiffuserSetUserCoordinateToZero")
+{
+   field(ZNAM, "No")
+   field(ONAM, "Yes")
+}
+
+record(bo, "$(P)$(R)BeamstopSetUserCoordinateToZero")
+{
+   field(ZNAM, "No")
+   field(ONAM, "Yes")
+}
+
+record(bo, "$(P)$(R)PinholeSetUserCoordinateToZero")
+{
+   field(ZNAM, "No")
+   field(ONAM, "Yes")
+}
+
+record(bo, "$(P)$(R)CondenserSetUserCoordinateToZero")
+{
+   field(ZNAM, "No")
+   field(ONAM, "Yes")
+}
+
+record(bo, "$(P)$(R)ZonePlateSetUserCoordinateToZero")
+{
+   field(ZNAM, "No")
+   field(ONAM, "Yes")
+}
+
+record(bo, "$(P)$(R)PhaseRingSetUserCoordinateToZero")
+{
+   field(ZNAM, "No")
+   field(ONAM, "Yes")
+}
+
+record(bo, "$(P)$(R)ExposureTimeSetUserCoordinateToZero")
 {
    field(ZNAM, "No")
    field(ONAM, "Yes")

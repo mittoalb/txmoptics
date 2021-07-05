@@ -1,6 +1,6 @@
 
 file {
-	name="/local/usertxm/epics/synApps/support/txmoptics/txmOpticsApp/op/adl/txm_main.adl"
+	name="/local/usertxm/epics/synApps/support/txmoptics-tmp/txmOpticsApp/op/adl/txm_main.adl"
 	version=030111
 }
 display {
@@ -1839,7 +1839,7 @@ text {
 }
 "message button" {
 	object {
-		x=588
+		x=548
 		y=300
 		width=130
 		height=30
@@ -1854,7 +1854,7 @@ text {
 }
 "message button" {
 	object {
-		x=723
+		x=683
 		y=300
 		width=130
 		height=30
@@ -16757,4 +16757,19 @@ rectangle {
 	clr=14
 	bclr=31
 	label="-BPM css"
+}
+"message button" {
+	object {
+		x=819
+		y=300
+		width=155
+		height=30
+	}
+	control {
+		chan="$(P5)$(R5)MoveAllOut"
+		clr=14
+		bclr=51
+	}
+	label="Set All To Zero"
+	press_msg="1"
 }

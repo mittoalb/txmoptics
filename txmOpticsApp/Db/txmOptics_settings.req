@@ -64,6 +64,7 @@ $(P)$(R)PhaseRingYPVName
 #controlPV $(P)$(R)MovePhaseRingIn
 #controlPV $(P)$(R)MovePhaseRingOut
 #controlPV $(P)$(R)AllStop
+#controlPV $(P)$(R)SetAllToZero
 
 ################
 # Optics control
@@ -103,6 +104,17 @@ $(P)$(R)CondenserInOutUse
 $(P)$(R)ZonePlateInOutUse
 $(P)$(R)PhaseRingInOutUse
 $(P)$(R)ExposureTimeInOutUse
+
+####################################
+# Optics Set User Coordinate to zero
+####################################
+$(P)$(R)DiffuserSetUserCoordinateToZero
+$(P)$(R)BeamstopSetUserCoordinateToZero
+$(P)$(R)PinholeSetUserCoordinateToZero
+$(P)$(R)CondenserSetUserCoordinateToZero
+$(P)$(R)ZonePlateSetUserCoordinateToZero
+$(P)$(R)PhaseRingSetUserCoordinateToZero
+$(P)$(R)ExposureTimeSetUserCoordinateToZero
 
 ################################
 # TXM SUPPORTING IOC PV Prefixes

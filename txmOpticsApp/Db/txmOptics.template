@@ -330,6 +330,42 @@ record(ao, "$(P)$(R)ExposureTimeOut")
    field(PREC,  "3")
 }
 
+record(busy, "$(P)$(R)SetPhaseRingToZero")
+{
+   field(ZNAM, "Done")
+   field(ONAM, "Set")
+}
+
+record(busy, "$(P)$(R)SetDiffuserToZero")
+{
+   field(ZNAM, "Done")
+   field(ONAM, "Set")
+}
+
+record(busy, "$(P)$(R)SetBeamstopToZero")
+{
+   field(ZNAM, "Done")
+   field(ONAM, "Set")
+}
+
+record(busy, "$(P)$(R)SetPinholeToZero")
+{
+   field(ZNAM, "Done")
+   field(ONAM, "Set")
+}
+
+record(busy, "$(P)$(R)SetCondenserToZero")
+{
+   field(ZNAM, "Done")
+   field(ONAM, "Set")
+}
+
+record(busy, "$(P)$(R)SetZonePlateToZero")
+{
+   field(ZNAM, "Done")
+   field(ONAM, "Set")
+}
+
 ###################
 # Optics In/Out Use
 ###################

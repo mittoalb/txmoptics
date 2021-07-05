@@ -114,7 +114,6 @@ $(P)$(R)PinholeSetUserCoordinateToZero
 $(P)$(R)CondenserSetUserCoordinateToZero
 $(P)$(R)ZonePlateSetUserCoordinateToZero
 $(P)$(R)PhaseRingSetUserCoordinateToZero
-$(P)$(R)ExposureTimeSetUserCoordinateToZero
 
 ################################
 # TXM SUPPORTING IOC PV Prefixes

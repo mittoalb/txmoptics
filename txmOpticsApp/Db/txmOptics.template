@@ -462,11 +462,6 @@ record(bo, "$(P)$(R)PhaseRingSetUserCoordinateToZero")
    field(ONAM, "Yes")
 }
 
-record(bo, "$(P)$(R)ExposureTimeSetUserCoordinateToZero")
-{
-   field(ZNAM, "No")
-   field(ONAM, "Yes")
-}
 
 ################################
 # TXM SUPPORTING IOC PV Prefixes

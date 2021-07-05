@@ -1,6 +1,6 @@
 
 file {
-	name="/local/usertxm/epics/synApps/support/txmoptics-tmp/txmOpticsApp/op/adl/txm_inout.adl"
+	name="/local/usertxm/epics/synApps/support/txmoptics/txmOpticsApp/op/adl/txm_inout.adl"
 	version=030111
 }
 display {
@@ -482,7 +482,7 @@ text {
 "choice button" {
 	object {
 		x=626
-		y=70
+		y=73
 		width=100
 		height=20
 	}
@@ -496,7 +496,7 @@ text {
 "choice button" {
 	object {
 		x=626
-		y=91
+		y=94
 		width=100
 		height=20
 	}
@@ -510,7 +510,7 @@ text {
 "choice button" {
 	object {
 		x=626
-		y=111
+		y=115
 		width=100
 		height=20
 	}
@@ -524,7 +524,7 @@ text {
 "choice button" {
 	object {
 		x=626
-		y=131
+		y=136
 		width=100
 		height=20
 	}
@@ -538,7 +538,7 @@ text {
 "choice button" {
 	object {
 		x=626
-		y=151
+		y=157
 		width=100
 		height=20
 	}
@@ -552,7 +552,7 @@ text {
 "choice button" {
 	object {
 		x=626
-		y=176
+		y=178
 		width=100
 		height=20
 	}
@@ -566,7 +566,7 @@ text {
 "choice button" {
 	object {
 		x=626
-		y=198
+		y=199
 		width=100
 		height=20
 	}
@@ -580,7 +580,7 @@ text {
 "choice button" {
 	object {
 		x=626
-		y=221
+		y=220
 		width=100
 		height=20
 	}
@@ -607,7 +607,7 @@ text {
 text {
 	object {
 		x=555
-		y=91
+		y=94
 		width=50
 		height=20
 	}
@@ -620,7 +620,7 @@ text {
 text {
 	object {
 		x=555
-		y=69
+		y=73
 		width=50
 		height=20
 	}
@@ -633,7 +633,7 @@ text {
 text {
 	object {
 		x=555
-		y=113
+		y=115
 		width=50
 		height=20
 	}
@@ -646,7 +646,7 @@ text {
 text {
 	object {
 		x=555
-		y=135
+		y=136
 		width=50
 		height=20
 	}
@@ -672,7 +672,7 @@ text {
 text {
 	object {
 		x=555
-		y=179
+		y=178
 		width=50
 		height=20
 	}
@@ -685,7 +685,7 @@ text {
 text {
 	object {
 		x=555
-		y=201
+		y=199
 		width=50
 		height=20
 	}
@@ -698,7 +698,7 @@ text {
 text {
 	object {
 		x=555
-		y=223
+		y=220
 		width=50
 		height=20
 	}

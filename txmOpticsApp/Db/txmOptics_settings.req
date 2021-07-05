@@ -108,12 +108,12 @@ $(P)$(R)ExposureTimeInOutUse
 ####################################
 # Optics Set User Coordinate to zero
 ####################################
-$(P)$(R)DiffuserSetUserCoordinateToZero
-$(P)$(R)BeamstopSetUserCoordinateToZero
-$(P)$(R)PinholeSetUserCoordinateToZero
-$(P)$(R)CondenserSetUserCoordinateToZero
-$(P)$(R)ZonePlateSetUserCoordinateToZero
-$(P)$(R)PhaseRingSetUserCoordinateToZero
+$(P)$(R)DiffuserSetUserCoordinateToZeroUse
+$(P)$(R)BeamstopSetUserCoordinateToZeroUse
+$(P)$(R)PinholeSetUserCoordinateToZeroUse
+$(P)$(R)CondenserSetUserCoordinateToZeroUse
+$(P)$(R)ZonePlateSetUserCoordinateToZeroUse
+$(P)$(R)PhaseRingSetUserCoordinateToZeroUse
 
 ################################
 # TXM SUPPORTING IOC PV Prefixes

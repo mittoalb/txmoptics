@@ -426,37 +426,37 @@ record(bo, "$(P)$(R)ExposureTimeInOutUse")
 ####################################
 # Optics Set User Coordinate to zero
 ####################################
-record(bo, "$(P)$(R)DiffuserSetUserCoordinateToZero")
+record(bo, "$(P)$(R)DiffuserSetUserCoordinateToZeroUse")
 {
    field(ZNAM, "No")
    field(ONAM, "Yes")
 }
 
-record(bo, "$(P)$(R)BeamstopSetUserCoordinateToZero")
+record(bo, "$(P)$(R)BeamstopSetUserCoordinateToZeroUse")
 {
    field(ZNAM, "No")
    field(ONAM, "Yes")
 }
 
-record(bo, "$(P)$(R)PinholeSetUserCoordinateToZero")
+record(bo, "$(P)$(R)PinholeSetUserCoordinateToZeroUse")
 {
    field(ZNAM, "No")
    field(ONAM, "Yes")
 }
 
-record(bo, "$(P)$(R)CondenserSetUserCoordinateToZero")
+record(bo, "$(P)$(R)CondenserSetUserCoordinateToZeroUse")
 {
    field(ZNAM, "No")
    field(ONAM, "Yes")
 }
 
-record(bo, "$(P)$(R)ZonePlateSetUserCoordinateToZero")
+record(bo, "$(P)$(R)ZonePlateSetUserCoordinateToZeroUse")
 {
    field(ZNAM, "No")
    field(ONAM, "Yes")
 }
 
-record(bo, "$(P)$(R)PhaseRingSetUserCoordinateToZero")
+record(bo, "$(P)$(R)PhaseRingSetUserCoordinateToZeroUse")
 {
    field(ZNAM, "No")
    field(ONAM, "Yes")

@@ -498,7 +498,6 @@ record(bo, "$(P)$(R)PhaseRingSetUserCoordinateToZeroUse")
    field(ONAM, "Yes")
 }
 
-
 ################################
 # TXM SUPPORTING IOC PV Prefixes
 ################################
@@ -533,3 +532,31 @@ record(stringout, "$(P)$(R)IOC5PVPrefix")
    field(VAL,  "$(IOC5)")
 }
 
+########################
+# Beam Position Monitors
+########################
+record(ao, "$(P)$(R)BPMVSetPointIn")
+{
+    field(PREC, "3")
+}
+
+record(ao, "$(P)$(R)BPMHSetPointIn")
+{
+    field(PREC, "3")
+}
+
+record(ao, "$(P)$(R)BPMVSetPointOut")
+{
+    field(PREC, "3")
+}
+
+record(ao, "$(P)$(R)BPMHSetPointOut")
+{
+    field(PREC, "3")
+}
+
+record(bo, "$(P)$(R)BPMSetPointInOutUse")
+{
+   field(ZNAM, "No")
+   field(ONAM, "Yes")
+}

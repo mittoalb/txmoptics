@@ -130,3 +130,12 @@ $(P)$(R)IOC2PVPrefix
 $(P)$(R)IOC3PVPrefix
 $(P)$(R)IOC4PVPrefix
 $(P)$(R)IOC5PVPrefix
+
+########################
+# Beam Position Monitors
+########################
+$(P)$(R)BPMVSetPointIn
+$(P)$(R)BPMHSetPointIn
+$(P)$(R)BPMVSetPointOut
+$(P)$(R)BPMHSetPointOut
+$(P)$(R)BPMSetPointInOutUse

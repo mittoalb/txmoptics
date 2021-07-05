@@ -92,7 +92,21 @@ class TXMOptics():
         prefix = self.pv_prefixes['Camera']
         self.control_pvs['CamAcquireTime'] = PV(prefix + 'cam1:AcquireTime')
         self.control_pvs['CamTrans1Type'] = PV(prefix + 'Trans1:Type')
-        
+
+        #Define PVs we will need for setting the user coordinates to zero
+        phase_ring_pv_name = self.control_pvs['PhaseRingY'].pvname
+        self.control_pvs['PhaseRingYSet']        = PV(phase_ring_pv_name + '.SET')
+        diffuser_pv_name = self.control_pvs['DiffuserX'].pvname
+        self.control_pvs['DiffuserXSet']        = PV(diffuser_pv_name + '.SET')
+        beamstop_pv_name = self.control_pvs['BeamstopY'].pvname
+        self.control_pvs['BeamstopYSet']        = PV(beamstop_pv_name + '.SET')
+        pinhole_pv_name = self.control_pvs['PinholeY'].pvname
+        self.control_pvs['PinholeYSet']        = PV(pinhole_pv_name + '.SET')
+        condenser_pv_name = self.control_pvs['CondenserY'].pvname
+        self.control_pvs['CondenserYSet']        = PV(condenser_pv_name + '.SET')
+        zone_plate_pv_name = self.control_pvs['ZonePlateY'].pvname
+        self.control_pvs['ZonePlateYSet']        = PV(zone_plate_pv_name + '.SET')
+
         # All Stop ioc PVs (--> add to the gui)
         iocs = ['32idcTXM:','32idcPLC:', '32idcEXP:', '32idb:', '32idcUC8:', '32idcMC:']
         self.allstop_pvs = [PV(ioc+'allstop') for ioc in iocs]
@@ -102,7 +116,7 @@ class TXMOptics():
         for epics_pv in ('MoveCRLIn', 'MoveCRLOut', 'MovePhaseRingIn', 'MovePhaseRingOut', 'MoveDiffuserIn',
                          'MoveDiffuserOut', 'MoveBeamstopIn', 'MoveBeamstopOut', 'MovePinholeIn', 'MovePinholeOut',
                          'MoveCondenserIn', 'MoveCondenserOut', 'MoveZonePlateIn', 'MoveZonePlateOut',
-                         'MoveAllIn', 'MoveAllOut', 'AllStop'):
+                         'MoveAllIn', 'MoveAllOut', 'AllStop', 'SetAllToZero'):
             self.epics_pvs[epics_pv].add_callback(self.pv_callback)
 
         log.setup_custom_logger("./txmoptics.log")
@@ -247,6 +261,27 @@ class TXMOptics():
             thread.start()
         elif (pvname.find('AllStop') != -1) and (value == 1):
             thread = threading.Thread(target=self.all_stop, args=())
+            thread.start()
+        elif (pvname.find('SetPhaseRingToZero') != -1) and (value == 1):
+            thread = threading.Thread(target=self.set_phasering_to_zero, args=())
+            thread.start()
+        elif (pvname.find('SetDiffuserToZero') != -1) and (value == 1):
+            thread = threading.Thread(target=self.set_diffuser_to_zero, args=())
+            thread.start()
+        elif (pvname.find('SetBeamstopToZero') != -1) and (value == 1):
+            thread = threading.Thread(target=self.set_beamstop_to_zero, args=())
+            thread.start()
+        elif (pvname.find('SetPinholeToZero') != -1) and (value == 1):
+            thread = threading.Thread(target=self.set_pinhole_to_zero, args=())
+            thread.start()
+        elif (pvname.find('SetCondenserToZero') != -1) and (value == 1):
+            thread = threading.Thread(target=self.set_condenser_to_zero, args=())
+            thread.start()
+        elif (pvname.find('SetZonePlateToZero') != -1) and (value == 1):
+            thread = threading.Thread(target=self.set_zone_plate_to_zero, args=())
+            thread.start()
+        elif (pvname.find('SetAllToZero') != -1) and (value == 1):
+            thread = threading.Thread(target=self.set_all_to_zero, args=())
             thread.start()
 
     def move_crl_in(self):
@@ -442,8 +477,6 @@ class TXMOptics():
 
         self.epics_pvs['MoveAllIn'].put('Done')
 
-    
-
     def move_all_out(self):
         """Moves all out
         """
@@ -470,4 +503,72 @@ class TXMOptics():
         [pv.put(1,wait=True) for pv in self.allstop_pvs]
         self.epics_pvs['AllStop'].put(0,wait=True)
         
-        
+    def set_all_to_zero(self):
+        """Set all user coordinates to zero
+        """
+        funcs = [self.set_phasering_to_zero,
+                 self.set_diffuser_to_zero,
+                 self.set_beamstop_to_zero,
+                 self.set_pinhole_to_zero,
+                 self.set_condenser_to_zero,
+                 self.set_zone_plate_to_zero,
+                 ]
+        threads = [threading.Thread(target=f, args=()) for f in funcs]
+        [t.start() for t in threads]
+        [t.join() for t in threads]
+
+        self.epics_pvs['SetAllToZero'].put('Done')
+
+    def set_phasering_to_zero(self):
+        """Set the phase ring user coordinate to zero.
+        """
+        if(self.epics_pvs['PhaseRingSetUserCoordinateToZeroUse'].value):
+            self.epics_pvs['PhaseRingYSet'].put('Set', wait=True)
+            self.epics_pvs['PhaseRingY'].put(0, wait=True)
+            self.epics_pvs['PhaseRingYSet'].put('Use', wait=True)
+        self.epics_pvs['SetPhaseRingToZero'].put('Done')
+
+    def set_diffuser_to_zero(self):
+        """Set the diffuser user coordinate to zero.
+        """
+        if(self.epics_pvs['DiffuserSetUserCoordinateToZeroUse'].value):
+            self.epics_pvs['DiffuserXSet'].put('Set', wait=True)
+            self.epics_pvs['DiffuserX'].put(0, wait=True)
+            self.epics_pvs['DiffuserXSet'].put('Use', wait=True)
+        self.epics_pvs['SetDiffuserToZero'].put('Done')
+
+    def set_beamstop_to_zero(self):
+        """Set the beamstop user coordinate to zero.
+        """
+        if(self.epics_pvs['BeamstopSetUserCoordinateToZeroUse'].value):
+            self.epics_pvs['BeamstopYSet'].put('Set', wait=True)
+            self.epics_pvs['BeamstopY'].put(0, wait=True)
+            self.epics_pvs['BeamstopYSet'].put('Use', wait=True)
+        self.epics_pvs['SetBeamstopToZero'].put('Done')
+
+    def set_pinhole_to_zero(self):
+        """Set the pinhole user coordinate to zero.
+        """
+        if(self.epics_pvs['PinholeSetUserCoordinateToZeroUse'].value):
+            self.epics_pvs['PinholeYSet'].put('Set', wait=True)
+            self.epics_pvs['PinholeY'].put(0, wait=True)
+            self.epics_pvs['PinholeYSet'].put('Use', wait=True)
+        self.epics_pvs['SetPinholeToZero'].put('Done')
+
+    def set_condenser_to_zero(self):
+        """Set the condenser user coordinate to zero.
+        """
+        if(self.epics_pvs['CondenserSetUserCoordinateToZeroUse'].value):
+            self.epics_pvs['CondenserYSet'].put('Set', wait=True)
+            self.epics_pvs['CondenserY'].put(0, wait=True)
+            self.epics_pvs['CondenserYSet'].put('Use', wait=True)
+        self.epics_pvs['SetCondenserToZero'].put('Done')
+
+    def set_zone_plate_to_zero(self):
+        """Set the zone plate user coordinate to zero.
+        """
+        if(self.epics_pvs['ZonePlateSetUserCoordinateToZeroUse'].value):
+            self.epics_pvs['ZonePlateYSet'].put('Set', wait=True)
+            self.epics_pvs['ZonePlateY'].put(0, wait=True)
+            self.epics_pvs['ZonePlateYSet'].put('Use', wait=True)
+        self.epics_pvs['SetZonePlateToZero'].put('Done')

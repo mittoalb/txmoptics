@@ -240,6 +240,12 @@ record(bo, "$(P)$(R)AllStop")
    field(ONAM, "stop")
 }
 
+record(busy, "$(P)$(R)SetAllToZero")
+{
+   field(ZNAM, "Done")
+   field(ONAM, "Set")
+}
+
 ################
 # Optics control
 ################
@@ -324,9 +330,45 @@ record(ao, "$(P)$(R)ExposureTimeOut")
    field(PREC,  "3")
 }
 
-#################
-# Optics In/Out
-#################
+record(busy, "$(P)$(R)SetPhaseRingToZero")
+{
+   field(ZNAM, "Done")
+   field(ONAM, "Set")
+}
+
+record(busy, "$(P)$(R)SetDiffuserToZero")
+{
+   field(ZNAM, "Done")
+   field(ONAM, "Set")
+}
+
+record(busy, "$(P)$(R)SetBeamstopToZero")
+{
+   field(ZNAM, "Done")
+   field(ONAM, "Set")
+}
+
+record(busy, "$(P)$(R)SetPinholeToZero")
+{
+   field(ZNAM, "Done")
+   field(ONAM, "Set")
+}
+
+record(busy, "$(P)$(R)SetCondenserToZero")
+{
+   field(ZNAM, "Done")
+   field(ONAM, "Set")
+}
+
+record(busy, "$(P)$(R)SetZonePlateToZero")
+{
+   field(ZNAM, "Done")
+   field(ONAM, "Set")
+}
+
+###################
+# Optics In/Out Use
+###################
 record(bo, "$(P)$(R)CRLRelaysY0InOutUse")
 {
    field(ZNAM, "No")
@@ -417,15 +459,49 @@ record(bo, "$(P)$(R)ExposureTimeInOutUse")
    field(ONAM, "Yes")
 }
 
-record(busy, "$(P)$(R)AllStop")
+####################################
+# Optics Set User Coordinate to zero
+####################################
+record(bo, "$(P)$(R)DiffuserSetUserCoordinateToZeroUse")
 {
-   field(ZNAM, "Release")
-   field(ONAM, "Stop")
+   field(ZNAM, "No")
+   field(ONAM, "Yes")
 }
 
-####################################
+record(bo, "$(P)$(R)BeamstopSetUserCoordinateToZeroUse")
+{
+   field(ZNAM, "No")
+   field(ONAM, "Yes")
+}
+
+record(bo, "$(P)$(R)PinholeSetUserCoordinateToZeroUse")
+{
+   field(ZNAM, "No")
+   field(ONAM, "Yes")
+}
+
+record(bo, "$(P)$(R)CondenserSetUserCoordinateToZeroUse")
+{
+   field(ZNAM, "No")
+   field(ONAM, "Yes")
+}
+
+record(bo, "$(P)$(R)ZonePlateSetUserCoordinateToZeroUse")
+{
+   field(ZNAM, "No")
+   field(ONAM, "Yes")
+}
+
+record(bo, "$(P)$(R)PhaseRingSetUserCoordinateToZeroUse")
+{
+   field(ZNAM, "No")
+   field(ONAM, "Yes")
+}
+
+
+################################
 # TXM SUPPORTING IOC PV Prefixes
-####################################
+################################
 
 record(stringout, "$(P)$(R)IOC0PVPrefix")
 {

@@ -44,6 +44,28 @@ $(P)$(R)ZonePlateZPVName
 $(P)$(R)PhaseRingXPVName
 $(P)$(R)PhaseRingYPVName
 
+###################################
+# Optics control via Channel Access
+###################################
+#controlPV $(P)$(R)MoveAllIn
+#controlPV $(P)$(R)MoveAllOut
+#controlPV $(P)$(R)MoveCRLIn
+#controlPV $(P)$(R)MoveCRLOut
+#controlPV $(P)$(R)MoveDiffuserIn
+#controlPV $(P)$(R)MoveDiffuserOut
+#controlPV $(P)$(R)MoveBeamstopIn
+#controlPV $(P)$(R)MoveBeamstopOut
+#controlPV $(P)$(R)MovePinholeIn
+#controlPV $(P)$(R)MovePinholeOut
+#controlPV $(P)$(R)MoveCondenserIn
+#controlPV $(P)$(R)MoveCondenserOut
+#controlPV $(P)$(R)MoveZonePlateIn
+#controlPV $(P)$(R)MoveZonePlateOut
+#controlPV $(P)$(R)MovePhaseRingIn
+#controlPV $(P)$(R)MovePhaseRingOut
+#controlPV $(P)$(R)AllStop
+#controlPV $(P)$(R)SetAllToZero
+
 ################
 # Optics control
 ################
@@ -63,28 +85,12 @@ $(P)$(R)PhaseRingInY
 $(P)$(R)PhaseRingOutY
 $(P)$(R)ExposureTimeIn
 $(P)$(R)ExposureTimeOut
-
-
-#################################
-# Optics control via Channel Access
-#################################
-#controlPV $(P)$(R)MoveCRLIn
-#controlPV $(P)$(R)MoveCRLOut
-#controlPV $(P)$(R)MovePhaseRingIn
-#controlPV $(P)$(R)MovePhaseRingOut
-#controlPV $(P)$(R)MoveDiffuserIn
-#controlPV $(P)$(R)MoveDiffuserOut
-#controlPV $(P)$(R)MoveBeamstopIn
-#controlPV $(P)$(R)MoveBeamstopOut
-#controlPV $(P)$(R)MovePinholeIn
-#controlPV $(P)$(R)MovePinholeOut
-#controlPV $(P)$(R)MoveCondenserIn
-#controlPV $(P)$(R)MoveCondenserOut
-#controlPV $(P)$(R)MoveZonePlateIn
-#controlPV $(P)$(R)MoveZonePlateOut
-#controlPV $(P)$(R)MoveAllIn
-#controlPV $(P)$(R)MoveAllOut
-#controlPV $(P)$(R)AllStop
+$(P)$(R)SetPhaseRingToZero
+$(P)$(R)SetDiffuserToZero
+$(P)$(R)SetBeamstopToZero
+$(P)$(R)SetPinholeToZero
+$(P)$(R)SetCondenserToZero
+$(P)$(R)SetZonePlateToZero
 
 ###################
 # Optics In/Out Use
@@ -106,8 +112,18 @@ $(P)$(R)PhaseRingInOutUse
 $(P)$(R)ExposureTimeInOutUse
 
 ####################################
-# TXM SUPPORTING IOC PV Prefixes
+# Optics Set User Coordinate to zero
 ####################################
+$(P)$(R)DiffuserSetUserCoordinateToZeroUse
+$(P)$(R)BeamstopSetUserCoordinateToZeroUse
+$(P)$(R)PinholeSetUserCoordinateToZeroUse
+$(P)$(R)CondenserSetUserCoordinateToZeroUse
+$(P)$(R)ZonePlateSetUserCoordinateToZeroUse
+$(P)$(R)PhaseRingSetUserCoordinateToZeroUse
+
+################################
+# TXM SUPPORTING IOC PV Prefixes
+################################
 $(P)$(R)IOC0PVPrefix
 $(P)$(R)IOC1PVPrefix
 $(P)$(R)IOC2PVPrefix

@@ -1,12 +1,12 @@
 
 file {
-	name="/local/usertxm/epics/synApps/support/txmoptics-tmp/txmOpticsApp/op/adl/txm_main.adl"
+	name="/local/usertxm/epics/synApps/support/txmoptics/txmOpticsApp/op/adl/txm_main.adl"
 	version=030111
 }
 display {
 	object {
-		x=1659
-		y=338
+		x=856
+		y=319
 		width=1500
 		height=1310
 	}
@@ -13821,9 +13821,9 @@ text {
 }
 "related display" {
 	object {
-		x=677
+		x=683
 		y=332
-		width=100
+		width=130
 		height=20
 	}
 	display[0] {
@@ -13833,7 +13833,7 @@ text {
 	}
 	clr=0
 	bclr=17
-	label="-Edit In/Out"
+	label="-Edit In/Out/Set"
 	visual="a row of buttons"
 }
 text {
@@ -16766,7 +16766,7 @@ rectangle {
 		height=30
 	}
 	control {
-		chan="$(P5)$(R5)MoveAllOut"
+		chan="$(P5)$(R5)SetAllToZero"
 		clr=14
 		bclr=51
 	}

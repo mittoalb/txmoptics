@@ -5,8 +5,8 @@ file {
 }
 display {
 	object {
-		x=1939
-		y=1117
+		x=1938
+		y=150
 		width=900
 		height=439
 	}
@@ -995,6 +995,19 @@ text {
 	textix="Horizontal"
 	align="horiz. centered"
 }
+text {
+	object {
+		x=776
+		y=41
+		width=60
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Set to Zero"
+	align="horiz. centered"
+}
 "choice button" {
 	object {
 		x=756
@@ -1003,7 +1016,7 @@ text {
 		height=20
 	}
 	control {
-		chan="$(P)$(R)DiffuserInOutUse"
+		chan="$(P)$(R)DiffuserSetUserCoordinateToZero"
 		clr=14
 		bclr=51
 	}
@@ -1017,7 +1030,7 @@ text {
 		height=20
 	}
 	control {
-		chan="$(P)$(R)BeamstopInOutUse"
+		chan="$(P)$(R)BeamstopSetUserCoordinateToZero"
 		clr=14
 		bclr=51
 	}
@@ -1031,7 +1044,7 @@ text {
 		height=20
 	}
 	control {
-		chan="$(P)$(R)PinholeInOutUse"
+		chan="$(P)$(R)PinholeSetUserCoordinateToZero"
 		clr=14
 		bclr=51
 	}
@@ -1045,7 +1058,7 @@ text {
 		height=20
 	}
 	control {
-		chan="$(P)$(R)CondenserInOutUse"
+		chan="$(P)$(R)CondenserSetUserCoordinateToZero"
 		clr=14
 		bclr=51
 	}
@@ -1059,7 +1072,7 @@ text {
 		height=20
 	}
 	control {
-		chan="$(P)$(R)ZonePlateInOutUse"
+		chan="$(P)$(R)ZonePlateSetUserCoordinateToZero"
 		clr=14
 		bclr=51
 	}
@@ -1073,22 +1086,9 @@ text {
 		height=20
 	}
 	control {
-		chan="$(P)$(R)PhaseRingInOutUse"
+		chan="$(P)$(R)PhaseRingSetUserCoordinateToZero"
 		clr=14
 		bclr=51
 	}
 	stacking="column"
-}
-text {
-	object {
-		x=776
-		y=41
-		width=60
-		height=20
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="Set to Zero"
-	align="horiz. centered"
 }

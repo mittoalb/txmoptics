@@ -5,8 +5,8 @@ file {
 }
 display {
 	object {
-		x=1938
-		y=150
+		x=1116
+		y=229
 		width=900
 		height=439
 	}
@@ -161,19 +161,6 @@ text {
 		clr=14
 	}
 	textix="Zone plate Y"
-	align="horiz. right"
-}
-text {
-	object {
-		x=5
-		y=221
-		width=160
-		height=20
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="Phase ring Y"
 	align="horiz. right"
 }
 text {
@@ -337,36 +324,6 @@ text {
 }
 "text entry" {
 	object {
-		x=182
-		y=221
-		width=100
-		height=20
-	}
-	control {
-		chan="$(P)$(R)PhaseRingInY"
-		clr=14
-		bclr=51
-	}
-	limits {
-	}
-}
-"text entry" {
-	object {
-		x=306
-		y=221
-		width=100
-		height=20
-	}
-	control {
-		chan="$(P)$(R)PhaseRingOutY"
-		clr=14
-		bclr=51
-	}
-	limits {
-	}
-}
-"text entry" {
-	object {
 		x=183
 		y=191
 		width=100
@@ -465,132 +422,6 @@ text {
 	}
 	stacking="column"
 }
-"choice button" {
-	object {
-		x=420
-		y=221
-		width=100
-		height=20
-	}
-	control {
-		chan="$(P)$(R)PhaseRingInOutUse"
-		clr=14
-		bclr=51
-	}
-	stacking="column"
-}
-"choice button" {
-	object {
-		x=626
-		y=73
-		width=100
-		height=20
-	}
-	control {
-		chan="$(P)$(R)CRLRelaysY0InOutUse"
-		clr=14
-		bclr=51
-	}
-	stacking="column"
-}
-"choice button" {
-	object {
-		x=626
-		y=94
-		width=100
-		height=20
-	}
-	control {
-		chan="$(P)$(R)CRLRelaysY1InOutUse"
-		clr=14
-		bclr=51
-	}
-	stacking="column"
-}
-"choice button" {
-	object {
-		x=626
-		y=115
-		width=100
-		height=20
-	}
-	control {
-		chan="$(P)$(R)CRLRelaysY2InOutUse"
-		clr=14
-		bclr=51
-	}
-	stacking="column"
-}
-"choice button" {
-	object {
-		x=626
-		y=136
-		width=100
-		height=20
-	}
-	control {
-		chan="$(P)$(R)CRLRelaysY3InOutUse"
-		clr=14
-		bclr=51
-	}
-	stacking="column"
-}
-"choice button" {
-	object {
-		x=626
-		y=157
-		width=100
-		height=20
-	}
-	control {
-		chan="$(P)$(R)CRLRelaysY4InOutUse"
-		clr=14
-		bclr=51
-	}
-	stacking="column"
-}
-"choice button" {
-	object {
-		x=626
-		y=178
-		width=100
-		height=20
-	}
-	control {
-		chan="$(P)$(R)CRLRelaysY5InOutUse"
-		clr=14
-		bclr=51
-	}
-	stacking="column"
-}
-"choice button" {
-	object {
-		x=626
-		y=199
-		width=100
-		height=20
-	}
-	control {
-		chan="$(P)$(R)CRLRelaysY6InOutUse"
-		clr=14
-		bclr=51
-	}
-	stacking="column"
-}
-"choice button" {
-	object {
-		x=626
-		y=220
-		width=100
-		height=20
-	}
-	control {
-		chan="$(P)$(R)CRLRelaysY7InOutUse"
-		clr=14
-		bclr=51
-	}
-	stacking="column"
-}
 text {
 	object {
 		x=433
@@ -606,125 +437,8 @@ text {
 }
 text {
 	object {
-		x=555
-		y=94
-		width=50
-		height=20
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="CRL1"
-	align="horiz. right"
-}
-text {
-	object {
-		x=555
-		y=73
-		width=50
-		height=20
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="CRL0"
-	align="horiz. right"
-}
-text {
-	object {
-		x=555
-		y=115
-		width=50
-		height=20
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="CRL2"
-	align="horiz. right"
-}
-text {
-	object {
-		x=555
-		y=136
-		width=50
-		height=20
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="CRL3"
-	align="horiz. right"
-}
-text {
-	object {
-		x=555
-		y=157
-		width=50
-		height=20
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="CRL4"
-	align="horiz. right"
-}
-text {
-	object {
-		x=555
-		y=178
-		width=50
-		height=20
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="CRL5"
-	align="horiz. right"
-}
-text {
-	object {
-		x=555
-		y=199
-		width=50
-		height=20
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="CRL6"
-	align="horiz. right"
-}
-text {
-	object {
-		x=555
-		y=220
-		width=50
-		height=20
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="CRL7"
-	align="horiz. right"
-}
-text {
-	object {
-		x=645
-		y=41
-		width=60
-		height=20
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="Use"
-	align="horiz. centered"
-}
-text {
-	object {
-		x=107
-		y=281
+		x=137
+		y=319
 		width=160
 		height=20
 	}
@@ -736,8 +450,8 @@ text {
 }
 "text entry" {
 	object {
-		x=284
-		y=281
+		x=314
+		y=319
 		width=100
 		height=20
 	}
@@ -751,8 +465,8 @@ text {
 }
 "text entry" {
 	object {
-		x=408
-		y=281
+		x=438
+		y=319
 		width=100
 		height=20
 	}
@@ -766,8 +480,8 @@ text {
 }
 "choice button" {
 	object {
-		x=522
-		y=281
+		x=552
+		y=319
 		width=100
 		height=20
 	}
@@ -780,8 +494,8 @@ text {
 }
 text {
 	object {
-		x=539
-		y=257
+		x=569
+		y=295
 		width=60
 		height=20
 	}
@@ -793,8 +507,8 @@ text {
 }
 text {
 	object {
-		x=396
-		y=257
+		x=426
+		y=295
 		width=130
 		height=20
 	}
@@ -806,8 +520,8 @@ text {
 }
 text {
 	object {
-		x=272
-		y=257
+		x=302
+		y=295
 		width=130
 		height=20
 	}
@@ -819,8 +533,8 @@ text {
 }
 text {
 	object {
-		x=-19
-		y=355
+		x=11
+		y=375
 		width=160
 		height=20
 	}
@@ -832,8 +546,8 @@ text {
 }
 "text entry" {
 	object {
-		x=158
-		y=377
+		x=188
+		y=397
 		width=100
 		height=20
 	}
@@ -847,8 +561,8 @@ text {
 }
 "text entry" {
 	object {
-		x=269
-		y=377
+		x=299
+		y=397
 		width=100
 		height=20
 	}
@@ -862,8 +576,8 @@ text {
 }
 "choice button" {
 	object {
-		x=647
-		y=375
+		x=677
+		y=395
 		width=100
 		height=20
 	}
@@ -876,8 +590,8 @@ text {
 }
 text {
 	object {
-		x=658
-		y=340
+		x=688
+		y=360
 		width=60
 		height=20
 	}
@@ -889,8 +603,8 @@ text {
 }
 text {
 	object {
-		x=202
-		y=329
+		x=232
+		y=349
 		width=130
 		height=20
 	}
@@ -902,8 +616,8 @@ text {
 }
 "text entry" {
 	object {
-		x=414
-		y=377
+		x=444
+		y=397
 		width=100
 		height=20
 	}
@@ -917,8 +631,8 @@ text {
 }
 "text entry" {
 	object {
-		x=526
-		y=377
+		x=556
+		y=397
 		width=100
 		height=20
 	}
@@ -932,8 +646,8 @@ text {
 }
 text {
 	object {
-		x=146
-		y=352
+		x=176
+		y=372
 		width=130
 		height=20
 	}
@@ -945,8 +659,8 @@ text {
 }
 text {
 	object {
-		x=255
-		y=352
+		x=285
+		y=372
 		width=130
 		height=20
 	}
@@ -958,8 +672,8 @@ text {
 }
 text {
 	object {
-		x=400
-		y=352
+		x=430
+		y=372
 		width=130
 		height=20
 	}
@@ -971,8 +685,8 @@ text {
 }
 text {
 	object {
-		x=456
-		y=329
+		x=486
+		y=349
 		width=130
 		height=20
 	}
@@ -984,8 +698,8 @@ text {
 }
 text {
 	object {
-		x=509
-		y=352
+		x=539
+		y=372
 		width=130
 		height=20
 	}
@@ -995,9 +709,249 @@ text {
 	textix="Horizontal"
 	align="horiz. centered"
 }
+composite {
+	object {
+		x=707
+		y=41
+		width=171
+		height=199
+	}
+	"composite name"=""
+	children {
+		"choice button" {
+			object {
+				x=778
+				y=73
+				width=100
+				height=20
+			}
+			control {
+				chan="$(P)$(R)CRLRelaysY0InOutUse"
+				clr=14
+				bclr=51
+			}
+			stacking="column"
+		}
+		"choice button" {
+			object {
+				x=778
+				y=94
+				width=100
+				height=20
+			}
+			control {
+				chan="$(P)$(R)CRLRelaysY1InOutUse"
+				clr=14
+				bclr=51
+			}
+			stacking="column"
+		}
+		"choice button" {
+			object {
+				x=778
+				y=115
+				width=100
+				height=20
+			}
+			control {
+				chan="$(P)$(R)CRLRelaysY2InOutUse"
+				clr=14
+				bclr=51
+			}
+			stacking="column"
+		}
+		"choice button" {
+			object {
+				x=778
+				y=136
+				width=100
+				height=20
+			}
+			control {
+				chan="$(P)$(R)CRLRelaysY3InOutUse"
+				clr=14
+				bclr=51
+			}
+			stacking="column"
+		}
+		"choice button" {
+			object {
+				x=778
+				y=157
+				width=100
+				height=20
+			}
+			control {
+				chan="$(P)$(R)CRLRelaysY4InOutUse"
+				clr=14
+				bclr=51
+			}
+			stacking="column"
+		}
+		"choice button" {
+			object {
+				x=778
+				y=178
+				width=100
+				height=20
+			}
+			control {
+				chan="$(P)$(R)CRLRelaysY5InOutUse"
+				clr=14
+				bclr=51
+			}
+			stacking="column"
+		}
+		"choice button" {
+			object {
+				x=778
+				y=199
+				width=100
+				height=20
+			}
+			control {
+				chan="$(P)$(R)CRLRelaysY6InOutUse"
+				clr=14
+				bclr=51
+			}
+			stacking="column"
+		}
+		"choice button" {
+			object {
+				x=778
+				y=220
+				width=100
+				height=20
+			}
+			control {
+				chan="$(P)$(R)CRLRelaysY7InOutUse"
+				clr=14
+				bclr=51
+			}
+			stacking="column"
+		}
+		text {
+			object {
+				x=707
+				y=94
+				width=50
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="CRL1"
+			align="horiz. right"
+		}
+		text {
+			object {
+				x=707
+				y=73
+				width=50
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="CRL0"
+			align="horiz. right"
+		}
+		text {
+			object {
+				x=707
+				y=115
+				width=50
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="CRL2"
+			align="horiz. right"
+		}
+		text {
+			object {
+				x=707
+				y=136
+				width=50
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="CRL3"
+			align="horiz. right"
+		}
+		text {
+			object {
+				x=707
+				y=157
+				width=50
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="CRL4"
+			align="horiz. right"
+		}
+		text {
+			object {
+				x=707
+				y=178
+				width=50
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="CRL5"
+			align="horiz. right"
+		}
+		text {
+			object {
+				x=707
+				y=199
+				width=50
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="CRL6"
+			align="horiz. right"
+		}
+		text {
+			object {
+				x=707
+				y=220
+				width=50
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="CRL7"
+			align="horiz. right"
+		}
+		text {
+			object {
+				x=797
+				y=41
+				width=60
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="Use"
+			align="horiz. centered"
+		}
+	}
+}
 text {
 	object {
-		x=776
+		x=575
 		y=41
 		width=60
 		height=20
@@ -1010,7 +964,7 @@ text {
 }
 "choice button" {
 	object {
-		x=756
+		x=555
 		y=71
 		width=100
 		height=20
@@ -1024,7 +978,7 @@ text {
 }
 "choice button" {
 	object {
-		x=756
+		x=555
 		y=101
 		width=100
 		height=20
@@ -1038,7 +992,7 @@ text {
 }
 "choice button" {
 	object {
-		x=756
+		x=555
 		y=131
 		width=100
 		height=20
@@ -1052,7 +1006,7 @@ text {
 }
 "choice button" {
 	object {
-		x=756
+		x=555
 		y=161
 		width=100
 		height=20
@@ -1066,7 +1020,7 @@ text {
 }
 "choice button" {
 	object {
-		x=756
+		x=555
 		y=191
 		width=100
 		height=20
@@ -1078,15 +1032,154 @@ text {
 	}
 	stacking="column"
 }
-"choice button" {
+composite {
 	object {
-		x=756
+		x=5
 		y=221
+		width=650
+		height=20
+	}
+	"composite name"=""
+	children {
+		text {
+			object {
+				x=5
+				y=221
+				width=160
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="Phase ring Y"
+			align="horiz. right"
+		}
+		"text entry" {
+			object {
+				x=182
+				y=221
+				width=100
+				height=20
+			}
+			control {
+				chan="$(P)$(R)PhaseRingInY"
+				clr=14
+				bclr=51
+			}
+			limits {
+			}
+		}
+		"text entry" {
+			object {
+				x=306
+				y=221
+				width=100
+				height=20
+			}
+			control {
+				chan="$(P)$(R)PhaseRingOutY"
+				clr=14
+				bclr=51
+			}
+			limits {
+			}
+		}
+		"choice button" {
+			object {
+				x=420
+				y=221
+				width=100
+				height=20
+			}
+			control {
+				chan="$(P)$(R)PhaseRingInOutUse"
+				clr=14
+				bclr=51
+			}
+			stacking="column"
+		}
+		"choice button" {
+			object {
+				x=555
+				y=221
+				width=100
+				height=20
+			}
+			control {
+				chan="$(P)$(R)PhaseRingSetUserCoordinateToZeroUse"
+				clr=14
+				bclr=51
+			}
+			stacking="column"
+		}
+	}
+}
+text {
+	object {
+		x=5
+		y=251
+		width=160
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Sample Top X"
+	align="horiz. right"
+}
+"text entry" {
+	object {
+		x=182
+		y=251
 		width=100
 		height=20
 	}
 	control {
-		chan="$(P)$(R)PhaseRingSetUserCoordinateToZeroUse"
+		chan="$(P)$(R)SampleTopInX"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=306
+		y=251
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)SampleTopOutX"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+"choice button" {
+	object {
+		x=420
+		y=251
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)SampleTopInOutUse"
+		clr=14
+		bclr=51
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=555
+		y=251
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)SampleTopSetUserCoordinateToZeroUse"
 		clr=14
 		bclr=51
 	}

@@ -43,6 +43,8 @@ $(P)$(R)ZonePlateYPVName
 $(P)$(R)ZonePlateZPVName
 $(P)$(R)PhaseRingXPVName
 $(P)$(R)PhaseRingYPVName
+$(P)$(R)SampleTopXPVName
+$(P)$(R)SampleTopZPVName
 
 ###################################
 # Optics control via Channel Access
@@ -91,6 +93,13 @@ $(P)$(R)SetBeamstopToZero
 $(P)$(R)SetPinholeToZero
 $(P)$(R)SetCondenserToZero
 $(P)$(R)SetZonePlateToZero
+$(P)$(R)SetSampleTopToZero
+
+######################
+# Sample stack control
+######################
+$(P)$(R)SampleTopInX
+$(P)$(R)SampleTopOutX
 
 ###################
 # Optics In/Out Use
@@ -109,6 +118,7 @@ $(P)$(R)PinholeInOutUse
 $(P)$(R)CondenserInOutUse
 $(P)$(R)ZonePlateInOutUse
 $(P)$(R)PhaseRingInOutUse
+$(P)$(R)SampleTopInOutUse
 $(P)$(R)ExposureTimeInOutUse
 
 ####################################
@@ -120,6 +130,7 @@ $(P)$(R)PinholeSetUserCoordinateToZeroUse
 $(P)$(R)CondenserSetUserCoordinateToZeroUse
 $(P)$(R)ZonePlateSetUserCoordinateToZeroUse
 $(P)$(R)PhaseRingSetUserCoordinateToZeroUse
+$(P)$(R)SampleTopSetUserCoordinateToZeroUse
 
 ################################
 # TXM SUPPORTING IOC PV Prefixes

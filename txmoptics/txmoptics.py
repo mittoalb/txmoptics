@@ -106,6 +106,8 @@ class TXMOptics():
         self.control_pvs['CondenserYSet']        = PV(condenser_pv_name + '.SET')
         zone_plate_pv_name = self.control_pvs['ZonePlateY'].pvname
         self.control_pvs['ZonePlateYSet']        = PV(zone_plate_pv_name + '.SET')
+        sample_top_pv_name = self.control_pvs['SampleTopX'].pvname
+        self.control_pvs['SampleTopXSet']        = PV(sample_top_pv_name + '.SET')
 
         # All Stop ioc PVs (--> add to the gui)
         iocs = ['32idcTXM:','32idcPLC:', '32idcEXP:', '32idb:', '32idcUC8:', '32idcMC:']
@@ -253,6 +255,12 @@ class TXMOptics():
         elif (pvname.find('MoveZonePlateOut') != -1) and (value == 1):
             thread = threading.Thread(target=self.move_zoneplate_out, args=())
             thread.start()
+        elif (pvname.find('MoveSampleTopIn') != -1) and (value == 1):
+            thread = threading.Thread(target=self.move_sampletop_in, args=())
+            thread.start()
+        elif (pvname.find('MoveSampleTopOut') != -1) and (value == 1):
+            thread = threading.Thread(target=self.move_sampletop_out, args=())
+            thread.start()
         elif (pvname.find('MoveAllIn') != -1) and (value == 1):
             thread = threading.Thread(target=self.move_all_in, args=())
             thread.start()
@@ -279,6 +287,9 @@ class TXMOptics():
             thread.start()
         elif (pvname.find('SetZonePlateToZero') != -1) and (value == 1):
             thread = threading.Thread(target=self.set_zone_plate_to_zero, args=())
+            thread.start()
+        elif (pvname.find('SetSampleTopToZero') != -1) and (value == 1):
+            thread = threading.Thread(target=self.set_sample_top_to_zero, args=())
             thread.start()
         elif (pvname.find('SetAllToZero') != -1) and (value == 1):
             thread = threading.Thread(target=self.set_all_to_zero, args=())
@@ -408,6 +419,25 @@ class TXMOptics():
             self.epics_pvs['PhaseRingY'].put(position, wait=True)
 
         self.epics_pvs['MovePhaseRingOut'].put('Done')
+
+    def move_sampletop_in(self):
+        """Moves sample top in.
+        """
+        if(self.epics_pvs['SampleTopInOutUse'].value):
+            position = self.epics_pvs['SampleTopInX'].value
+            self.epics_pvs['SampleTopX'].put(position, wait=True)
+
+        self.epics_pvs['MoveSampleTopIn'].put('Done')
+
+    def move_sampletop_out(self):
+        """Moves sample top out.
+        """
+        if(self.epics_pvs['SampleTopInOutUse'].value):
+            position = self.epics_pvs['SampleTopOutX'].value
+            self.epics_pvs['SampleTopX'].put(position, wait=True)
+
+        self.epics_pvs['MoveSampleTopOut'].put('Done')
+
 
     def set_exposure_time_in(self):
         """Set exposure time in.
@@ -572,3 +602,12 @@ class TXMOptics():
             self.epics_pvs['ZonePlateY'].put(0, wait=True)
             self.epics_pvs['ZonePlateYSet'].put('Use', wait=True)
         self.epics_pvs['SetZonePlateToZero'].put('Done')
+
+    def set_sample_top_to_zero(self):
+        """Set the zone plate user coordinate to zero.
+        """
+        if(self.epics_pvs['SampleTopSetUserCoordinateToZeroUse'].value):
+            self.epics_pvs['SampleTopXSet'].put('Set', wait=True)
+            self.epics_pvs['SampletopX'].put(0, wait=True)
+            self.epics_pvs['SampleTopXSet'].put('Use', wait=True)
+        self.epics_pvs['SetSampleTopToZero'].put('Done')

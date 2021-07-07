@@ -118,7 +118,7 @@ class TXMOptics():
         for epics_pv in ('MoveCRLIn', 'MoveCRLOut', 'MovePhaseRingIn', 'MovePhaseRingOut', 'MoveDiffuserIn',
                          'MoveDiffuserOut', 'MoveBeamstopIn', 'MoveBeamstopOut', 'MovePinholeIn', 'MovePinholeOut',
                          'MoveCondenserIn', 'MoveCondenserOut', 'MoveZonePlateIn', 'MoveZonePlateOut',
-                         'MoveAllIn', 'MoveAllOut', 'AllStop', 'SetAllToZero'):
+                         'MoveAllIn', 'MoveAllOut', 'SetAllToZero', 'AllStop'):
             self.epics_pvs[epics_pv].add_callback(self.pv_callback)
 
         log.setup_custom_logger("./txmoptics.log")
@@ -267,33 +267,12 @@ class TXMOptics():
         elif (pvname.find('MoveAllOut') != -1) and (value == 1):
             thread = threading.Thread(target=self.move_all_out, args=())
             thread.start()
-        elif (pvname.find('AllStop') != -1) and (value == 1):
-            thread = threading.Thread(target=self.all_stop, args=())
-            thread.start()
-        elif (pvname.find('SetPhaseRingToZero') != -1) and (value == 1):
-            thread = threading.Thread(target=self.set_phasering_to_zero, args=())
-            thread.start()
-        elif (pvname.find('SetDiffuserToZero') != -1) and (value == 1):
-            thread = threading.Thread(target=self.set_diffuser_to_zero, args=())
-            thread.start()
-        elif (pvname.find('SetBeamstopToZero') != -1) and (value == 1):
-            thread = threading.Thread(target=self.set_beamstop_to_zero, args=())
-            thread.start()
-        elif (pvname.find('SetPinholeToZero') != -1) and (value == 1):
-            thread = threading.Thread(target=self.set_pinhole_to_zero, args=())
-            thread.start()
-        elif (pvname.find('SetCondenserToZero') != -1) and (value == 1):
-            thread = threading.Thread(target=self.set_condenser_to_zero, args=())
-            thread.start()
-        elif (pvname.find('SetZonePlateToZero') != -1) and (value == 1):
-            thread = threading.Thread(target=self.set_zone_plate_to_zero, args=())
-            thread.start()
-        elif (pvname.find('SetSampleTopToZero') != -1) and (value == 1):
-            thread = threading.Thread(target=self.set_sample_top_to_zero, args=())
-            thread.start()
         elif (pvname.find('SetAllToZero') != -1) and (value == 1):
             thread = threading.Thread(target=self.set_all_to_zero, args=())
             thread.start()
+        elif (pvname.find('AllStop') != -1) and (value == 1):
+            thread = threading.Thread(target=self.all_stop, args=())
+            thread.start()       
 
     def move_crl_in(self):
         """Moves the crl in.
@@ -438,7 +417,6 @@ class TXMOptics():
 
         self.epics_pvs['MoveSampleTopOut'].put('Done')
 
-
     def set_exposure_time_in(self):
         """Set exposure time in.
         """
@@ -473,82 +451,6 @@ class TXMOptics():
             positionh = self.epics_pvs['BPMHSetPointOut'].value
             self.epics_pvs['BPMVSetPoint'].put(positionv, wait=True)
             self.epics_pvs['BPMHSetPoint'].put(positionh, wait=True)            
-    
-    def transform_image_in(self):
-        """
-        Transform image in 
-        """
-        self.epics_pvs['CamTrans1Type'].put(2, wait=True) # Rot180
-        
-    
-    def transform_image_out(self):
-        """
-        Transform image out 
-        """
-        self.epics_pvs['CamTrans1Type'].put(0, wait=True) # None
-                
-    def move_all_in(self):
-        """Moves all in
-        """
-        funcs = [self.move_crl_in,
-                 self.set_bpm_in,
-                 self.move_phasering_in,
-                 self.move_diffuser_in,
-                 self.move_beamstop_in,
-                 self.move_pinhole_in,
-                 self.move_condenser_in,
-                 self.move_zoneplate_in,
-                 self.set_exposure_time_in,
-                 self.transform_image_in,
-                 ]
-        threads = [threading.Thread(target=f, args=()) for f in funcs]
-        [t.start() for t in threads]
-        [t.join() for t in threads]
-
-        self.epics_pvs['MoveAllIn'].put('Done')
-
-    def move_all_out(self):
-        """Moves all out
-        """
-        funcs = [self.move_crl_out,
-                 self.set_bpm_out,
-                 self.move_phasering_out,
-                 self.move_diffuser_out,
-                 self.move_beamstop_out,
-                 self.move_pinhole_out,
-                 self.move_condenser_out,
-                 self.move_zoneplate_out,
-                 self.set_exposure_time_out,
-                 self.transform_image_out,
-                 ]
-        threads = [threading.Thread(target=f, args=()) for f in funcs]
-        [t.start() for t in threads]
-        [t.join() for t in threads]
-
-        self.epics_pvs['MoveAllOut'].put('Done')
-
-    def all_stop(self):
-        """Stop all iocs motors
-        """     
-        [pv.put(1,wait=True) for pv in self.allstop_pvs]
-        self.epics_pvs['AllStop'].put(0,wait=True)
-        
-    def set_all_to_zero(self):
-        """Set all user coordinates to zero
-        """
-        funcs = [self.set_phasering_to_zero,
-                 self.set_diffuser_to_zero,
-                 self.set_beamstop_to_zero,
-                 self.set_pinhole_to_zero,
-                 self.set_condenser_to_zero,
-                 self.set_zone_plate_to_zero,
-                 self.set_sample_top_to_zero
-                 ]
-        threads = [threading.Thread(target=f, args=()) for f in funcs]
-        [t.start() for t in threads]
-        [t.join() for t in threads]
-
-        self.epics_pvs['SetAllToZero'].put('Done')
 
     def set_phasering_to_zero(self):
         """Set the phase ring user coordinate to zero.
@@ -612,3 +514,79 @@ class TXMOptics():
             self.epics_pvs['SampleTopX'].put(0, wait=True)
             self.epics_pvs['SampleTopXSet'].put('Use', wait=True)
         self.epics_pvs['SetSampleTopToZero'].put('Done')
+
+    def transform_image_in(self):
+        """
+        Transform image in 
+        """
+        self.epics_pvs['CamTrans1Type'].put(2, wait=True) # Rot180
+        
+    def transform_image_out(self):
+        """
+        Transform image out 
+        """
+        self.epics_pvs['CamTrans1Type'].put(0, wait=True) # None
+                
+    def move_all_in(self):
+        """Moves all in
+        """
+        funcs = [self.move_crl_in,
+                 self.set_bpm_in,
+                 self.move_phasering_in,
+                 self.move_diffuser_in,
+                 self.move_beamstop_in,
+                 self.move_pinhole_in,
+                 self.move_condenser_in,
+                 self.move_zoneplate_in,
+                 self.set_exposure_time_in,
+                 self.transform_image_in,
+                 ]
+        threads = [threading.Thread(target=f, args=()) for f in funcs]
+        [t.start() for t in threads]
+        [t.join() for t in threads]
+
+        self.epics_pvs['MoveAllIn'].put('Done')
+
+    def move_all_out(self):
+        """Moves all out
+        """
+        funcs = [self.move_crl_out,
+                 self.set_bpm_out,
+                 self.move_phasering_out,
+                 self.move_diffuser_out,
+                 self.move_beamstop_out,
+                 self.move_pinhole_out,
+                 self.move_condenser_out,
+                 self.move_zoneplate_out,
+                 self.set_exposure_time_out,
+                 self.transform_image_out,
+                 ]
+        threads = [threading.Thread(target=f, args=()) for f in funcs]
+        [t.start() for t in threads]
+        [t.join() for t in threads]
+
+        self.epics_pvs['MoveAllOut'].put('Done')
+
+    def set_all_to_zero(self):
+        """Set all user coordinates to zero
+        """
+        funcs = [self.set_phasering_to_zero,
+                 self.set_diffuser_to_zero,
+                 self.set_beamstop_to_zero,
+                 self.set_pinhole_to_zero,
+                 self.set_condenser_to_zero,
+                 self.set_zone_plate_to_zero,
+                 self.set_sample_top_to_zero
+                 ]
+        threads = [threading.Thread(target=f, args=()) for f in funcs]
+        [t.start() for t in threads]
+        [t.join() for t in threads]
+
+        self.epics_pvs['SetAllToZero'].put('Done')
+        
+    def all_stop(self):
+        """Stop all iocs motors
+        """     
+        [pv.put(1,wait=True) for pv in self.allstop_pvs]
+        self.epics_pvs['AllStop'].put(0,wait=True)
+    

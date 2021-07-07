@@ -49,8 +49,6 @@ $(P)$(R)SampleTopZPVName
 ###################################
 # Optics control via Channel Access
 ###################################
-#controlPV $(P)$(R)MoveAllIn
-#controlPV $(P)$(R)MoveAllOut
 #controlPV $(P)$(R)MoveCRLIn
 #controlPV $(P)$(R)MoveCRLOut
 #controlPV $(P)$(R)MoveDiffuserIn
@@ -65,8 +63,10 @@ $(P)$(R)SampleTopZPVName
 #controlPV $(P)$(R)MoveZonePlateOut
 #controlPV $(P)$(R)MovePhaseRingIn
 #controlPV $(P)$(R)MovePhaseRingOut
-#controlPV $(P)$(R)AllStop
+#controlPV $(P)$(R)MoveAllIn
+#controlPV $(P)$(R)MoveAllOut
 #controlPV $(P)$(R)SetAllToZero
+#controlPV $(P)$(R)AllStop
 
 ################
 # Optics control
@@ -87,13 +87,6 @@ $(P)$(R)PhaseRingInY
 $(P)$(R)PhaseRingOutY
 $(P)$(R)ExposureTimeIn
 $(P)$(R)ExposureTimeOut
-$(P)$(R)SetPhaseRingToZero
-$(P)$(R)SetDiffuserToZero
-$(P)$(R)SetBeamstopToZero
-$(P)$(R)SetPinholeToZero
-$(P)$(R)SetCondenserToZero
-$(P)$(R)SetZonePlateToZero
-$(P)$(R)SetSampleTopToZero
 
 ######################
 # Sample stack control

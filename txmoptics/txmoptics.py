@@ -542,6 +542,7 @@ class TXMOptics():
                  self.set_pinhole_to_zero,
                  self.set_condenser_to_zero,
                  self.set_zone_plate_to_zero,
+                 self.set_sample_top_to_zero
                  ]
         threads = [threading.Thread(target=f, args=()) for f in funcs]
         [t.start() for t in threads]
@@ -608,6 +609,6 @@ class TXMOptics():
         """
         if(self.epics_pvs['SampleTopSetUserCoordinateToZeroUse'].value):
             self.epics_pvs['SampleTopXSet'].put('Set', wait=True)
-            self.epics_pvs['SampletopX'].put(0, wait=True)
+            self.epics_pvs['SampleTopX'].put(0, wait=True)
             self.epics_pvs['SampleTopXSet'].put('Use', wait=True)
         self.epics_pvs['SetSampleTopToZero'].put('Done')

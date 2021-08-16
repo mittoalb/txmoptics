@@ -133,14 +133,19 @@ record(stringout, "$(P)$(R)PhaseRingYPVName")
    field(VAL,  "$(PHASERING_Y)")
 }
 
-record(stringout, "$(P)$(R)SampleTopXPVName")
+record(stringout, "$(P)$(R)FurnaceXPVName")
 {
-   field(VAL,  "$(SAMPLE_TOP_X)")
+   field(VAL,  "$(FURNACE_X)")
 }
 
-record(stringout, "$(P)$(R)SampleTopZPVName")
+record(stringout, "$(P)$(R)FurnaceYPVName")
 {
-   field(VAL,  "$(SAMPLE_TOP_Z)")
+   field(VAL,  "$(FURNACE_Y)")
+}
+
+record(stringout, "$(P)$(R)FurnaceZPVName")
+{
+   field(VAL,  "$(FURNACE_Z)")
 }
 
 ###################################
@@ -243,16 +248,22 @@ record(busy, "$(P)$(R)MovePhaseRingOut")
    field(ONAM, "Move")
 }
 
+record(busy, "$(P)$(R)MoveFurnaceIn")
+{
+   field(ZNAM, "Done")
+   field(ONAM, "Move")
+}
+
+record(busy, "$(P)$(R)MoveFurnaceOut")
+{
+   field(ZNAM, "Done")
+   field(ONAM, "Move")
+}
+
 record(bo, "$(P)$(R)AllStop")
 {
    field(ZNAM, "release")
    field(ONAM, "stop")
-}
-
-record(busy, "$(P)$(R)SetAllToZero")
-{
-   field(ZNAM, "Done")
-   field(ONAM, "Set")
 }
 
 ################
@@ -329,25 +340,22 @@ record(ao, "$(P)$(R)PhaseRingOutY")
    field(PREC,  "3")
 }
 
+record(ao, "$(P)$(R)FurnaceInY")
+{
+   field(PREC,  "3")
+}
+
+record(ao, "$(P)$(R)FurnaceOutY")
+{
+   field(PREC,  "3")
+}
+
 record(ao, "$(P)$(R)ExposureTimeIn")
 {
    field(PREC,  "3")
 }
 
 record(ao, "$(P)$(R)ExposureTimeOut")
-{
-   field(PREC,  "3")
-}
-
-######################
-# Sample stack control
-######################
-record(ao, "$(P)$(R)SampleTopInX")
-{
-   field(PREC,  "3")
-}
-
-record(ao, "$(P)$(R)SampleTopOutX")
 {
    field(PREC,  "3")
 }
@@ -439,65 +447,19 @@ record(bo, "$(P)$(R)PhaseRingInOutUse")
    field(ONAM, "Yes")
 }
 
+record(bo, "$(P)$(R)FurnaceInOutUse")
+{
+   field(ZNAM, "No")
+   field(ONAM, "Yes")
+}
+
+
 record(bo, "$(P)$(R)ExposureTimeInOutUse")
 {
    field(ZNAM, "No")
    field(ONAM, "Yes")
 }
 
-###################
-# Sample In/Out Use
-###################
-record(bo, "$(P)$(R)SampleTopInOutUse")
-{
-   field(ZNAM, "No")
-   field(ONAM, "Yes")
-}
-
-####################################
-# Optics Set User Coordinate to zero
-####################################
-record(bo, "$(P)$(R)DiffuserSetUserCoordinateToZeroUse")
-{
-   field(ZNAM, "No")
-   field(ONAM, "Yes")
-}
-
-record(bo, "$(P)$(R)BeamstopSetUserCoordinateToZeroUse")
-{
-   field(ZNAM, "No")
-   field(ONAM, "Yes")
-}
-
-record(bo, "$(P)$(R)PinholeSetUserCoordinateToZeroUse")
-{
-   field(ZNAM, "No")
-   field(ONAM, "Yes")
-}
-
-record(bo, "$(P)$(R)CondenserSetUserCoordinateToZeroUse")
-{
-   field(ZNAM, "No")
-   field(ONAM, "Yes")
-}
-
-record(bo, "$(P)$(R)ZonePlateSetUserCoordinateToZeroUse")
-{
-   field(ZNAM, "No")
-   field(ONAM, "Yes")
-}
-
-record(bo, "$(P)$(R)PhaseRingSetUserCoordinateToZeroUse")
-{
-   field(ZNAM, "No")
-   field(ONAM, "Yes")
-}
-
-record(bo, "$(P)$(R)SampleTopSetUserCoordinateToZeroUse")
-{
-   field(ZNAM, "No")
-   field(ONAM, "Yes")
-}
 
 ################################
 # TXM SUPPORTING IOC PV Prefixes
@@ -560,4 +522,21 @@ record(bo, "$(P)$(R)BPMSetPointInOutUse")
 {
    field(ZNAM, "No")
    field(ONAM, "Yes")
+}
+
+record(busy, "$(P)$(R)SaveAllPVs")
+{
+   field(ZNAM, "Done")
+   field(ONAM, "Save")
+}
+
+record(busy, "$(P)$(R)LoadAllPVs")
+{
+   field(ZNAM, "Done")
+   field(ONAM, "Load")
+}
+
+record(stringout, "$(P)$(R)FileAllPVs")
+{
+   field(VAL,  "$(FILE_ALL_PVS)")
 }

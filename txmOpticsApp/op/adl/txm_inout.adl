@@ -5,8 +5,8 @@ file {
 }
 display {
 	object {
-		x=1116
-		y=229
+		x=841
+		y=221
 		width=900
 		height=439
 	}
@@ -438,7 +438,7 @@ text {
 text {
 	object {
 		x=137
-		y=319
+		y=330
 		width=160
 		height=20
 	}
@@ -451,7 +451,7 @@ text {
 "text entry" {
 	object {
 		x=314
-		y=319
+		y=330
 		width=100
 		height=20
 	}
@@ -466,7 +466,7 @@ text {
 "text entry" {
 	object {
 		x=438
-		y=319
+		y=330
 		width=100
 		height=20
 	}
@@ -481,7 +481,7 @@ text {
 "choice button" {
 	object {
 		x=552
-		y=319
+		y=330
 		width=100
 		height=20
 	}
@@ -495,7 +495,7 @@ text {
 text {
 	object {
 		x=569
-		y=295
+		y=306
 		width=60
 		height=20
 	}
@@ -508,7 +508,7 @@ text {
 text {
 	object {
 		x=426
-		y=295
+		y=306
 		width=130
 		height=20
 	}
@@ -521,7 +521,7 @@ text {
 text {
 	object {
 		x=302
-		y=295
+		y=306
 		width=130
 		height=20
 	}
@@ -534,7 +534,7 @@ text {
 text {
 	object {
 		x=11
-		y=375
+		y=381
 		width=160
 		height=20
 	}
@@ -547,7 +547,7 @@ text {
 "text entry" {
 	object {
 		x=188
-		y=397
+		y=403
 		width=100
 		height=20
 	}
@@ -562,7 +562,7 @@ text {
 "text entry" {
 	object {
 		x=299
-		y=397
+		y=403
 		width=100
 		height=20
 	}
@@ -577,7 +577,7 @@ text {
 "choice button" {
 	object {
 		x=677
-		y=395
+		y=401
 		width=100
 		height=20
 	}
@@ -591,7 +591,7 @@ text {
 text {
 	object {
 		x=688
-		y=360
+		y=366
 		width=60
 		height=20
 	}
@@ -604,7 +604,7 @@ text {
 text {
 	object {
 		x=232
-		y=349
+		y=355
 		width=130
 		height=20
 	}
@@ -617,7 +617,7 @@ text {
 "text entry" {
 	object {
 		x=444
-		y=397
+		y=403
 		width=100
 		height=20
 	}
@@ -632,7 +632,7 @@ text {
 "text entry" {
 	object {
 		x=556
-		y=397
+		y=403
 		width=100
 		height=20
 	}
@@ -647,7 +647,7 @@ text {
 text {
 	object {
 		x=176
-		y=372
+		y=378
 		width=130
 		height=20
 	}
@@ -660,7 +660,7 @@ text {
 text {
 	object {
 		x=285
-		y=372
+		y=378
 		width=130
 		height=20
 	}
@@ -673,7 +673,7 @@ text {
 text {
 	object {
 		x=430
-		y=372
+		y=378
 		width=130
 		height=20
 	}
@@ -686,7 +686,7 @@ text {
 text {
 	object {
 		x=486
-		y=349
+		y=355
 		width=130
 		height=20
 	}
@@ -699,7 +699,7 @@ text {
 text {
 	object {
 		x=539
-		y=372
+		y=378
 		width=130
 		height=20
 	}
@@ -711,8 +711,8 @@ text {
 }
 composite {
 	object {
-		x=707
-		y=41
+		x=581
+		y=67
 		width=171
 		height=199
 	}
@@ -720,8 +720,8 @@ composite {
 	children {
 		"choice button" {
 			object {
-				x=778
-				y=73
+				x=652
+				y=99
 				width=100
 				height=20
 			}
@@ -734,8 +734,8 @@ composite {
 		}
 		"choice button" {
 			object {
-				x=778
-				y=94
+				x=652
+				y=120
 				width=100
 				height=20
 			}
@@ -748,8 +748,8 @@ composite {
 		}
 		"choice button" {
 			object {
-				x=778
-				y=115
+				x=652
+				y=141
 				width=100
 				height=20
 			}
@@ -762,8 +762,8 @@ composite {
 		}
 		"choice button" {
 			object {
-				x=778
-				y=136
+				x=652
+				y=162
 				width=100
 				height=20
 			}
@@ -776,8 +776,8 @@ composite {
 		}
 		"choice button" {
 			object {
-				x=778
-				y=157
+				x=652
+				y=183
 				width=100
 				height=20
 			}
@@ -790,8 +790,8 @@ composite {
 		}
 		"choice button" {
 			object {
-				x=778
-				y=178
+				x=652
+				y=204
 				width=100
 				height=20
 			}
@@ -804,8 +804,8 @@ composite {
 		}
 		"choice button" {
 			object {
-				x=778
-				y=199
+				x=652
+				y=225
 				width=100
 				height=20
 			}
@@ -818,8 +818,8 @@ composite {
 		}
 		"choice button" {
 			object {
-				x=778
-				y=220
+				x=652
+				y=246
 				width=100
 				height=20
 			}
@@ -832,8 +832,8 @@ composite {
 		}
 		text {
 			object {
-				x=707
-				y=94
+				x=581
+				y=120
 				width=50
 				height=20
 			}
@@ -845,8 +845,8 @@ composite {
 		}
 		text {
 			object {
-				x=707
-				y=73
+				x=581
+				y=99
 				width=50
 				height=20
 			}
@@ -858,8 +858,8 @@ composite {
 		}
 		text {
 			object {
-				x=707
-				y=115
+				x=581
+				y=141
 				width=50
 				height=20
 			}
@@ -871,8 +871,8 @@ composite {
 		}
 		text {
 			object {
-				x=707
-				y=136
+				x=581
+				y=162
 				width=50
 				height=20
 			}
@@ -884,8 +884,8 @@ composite {
 		}
 		text {
 			object {
-				x=707
-				y=157
+				x=581
+				y=183
 				width=50
 				height=20
 			}
@@ -897,8 +897,8 @@ composite {
 		}
 		text {
 			object {
-				x=707
-				y=178
+				x=581
+				y=204
 				width=50
 				height=20
 			}
@@ -910,8 +910,8 @@ composite {
 		}
 		text {
 			object {
-				x=707
-				y=199
+				x=581
+				y=225
 				width=50
 				height=20
 			}
@@ -923,8 +923,8 @@ composite {
 		}
 		text {
 			object {
-				x=707
-				y=220
+				x=581
+				y=246
 				width=50
 				height=20
 			}
@@ -936,8 +936,8 @@ composite {
 		}
 		text {
 			object {
-				x=797
-				y=41
+				x=671
+				y=67
 				width=60
 				height=20
 			}
@@ -951,168 +951,60 @@ composite {
 }
 text {
 	object {
-		x=575
-		y=41
-		width=60
+		x=5
+		y=221
+		width=160
 		height=20
 	}
 	"basic attribute" {
 		clr=14
 	}
-	textix="Set to Zero"
-	align="horiz. centered"
+	textix="Phase ring Y"
+	align="horiz. right"
 }
-"choice button" {
+"text entry" {
 	object {
-		x=555
-		y=71
-		width=100
-		height=20
-	}
-	control {
-		chan="$(P)$(R)DiffuserSetUserCoordinateToZeroUse"
-		clr=14
-		bclr=51
-	}
-	stacking="column"
-}
-"choice button" {
-	object {
-		x=555
-		y=101
-		width=100
-		height=20
-	}
-	control {
-		chan="$(P)$(R)BeamstopSetUserCoordinateToZeroUse"
-		clr=14
-		bclr=51
-	}
-	stacking="column"
-}
-"choice button" {
-	object {
-		x=555
-		y=131
-		width=100
-		height=20
-	}
-	control {
-		chan="$(P)$(R)PinholeSetUserCoordinateToZeroUse"
-		clr=14
-		bclr=51
-	}
-	stacking="column"
-}
-"choice button" {
-	object {
-		x=555
-		y=161
-		width=100
-		height=20
-	}
-	control {
-		chan="$(P)$(R)CondenserSetUserCoordinateToZeroUse"
-		clr=14
-		bclr=51
-	}
-	stacking="column"
-}
-"choice button" {
-	object {
-		x=555
-		y=191
-		width=100
-		height=20
-	}
-	control {
-		chan="$(P)$(R)ZonePlateSetUserCoordinateToZeroUse"
-		clr=14
-		bclr=51
-	}
-	stacking="column"
-}
-composite {
-	object {
-		x=5
+		x=182
 		y=221
-		width=650
+		width=100
 		height=20
 	}
-	"composite name"=""
-	children {
-		text {
-			object {
-				x=5
-				y=221
-				width=160
-				height=20
-			}
-			"basic attribute" {
-				clr=14
-			}
-			textix="Phase ring Y"
-			align="horiz. right"
-		}
-		"text entry" {
-			object {
-				x=182
-				y=221
-				width=100
-				height=20
-			}
-			control {
-				chan="$(P)$(R)PhaseRingInY"
-				clr=14
-				bclr=51
-			}
-			limits {
-			}
-		}
-		"text entry" {
-			object {
-				x=306
-				y=221
-				width=100
-				height=20
-			}
-			control {
-				chan="$(P)$(R)PhaseRingOutY"
-				clr=14
-				bclr=51
-			}
-			limits {
-			}
-		}
-		"choice button" {
-			object {
-				x=420
-				y=221
-				width=100
-				height=20
-			}
-			control {
-				chan="$(P)$(R)PhaseRingInOutUse"
-				clr=14
-				bclr=51
-			}
-			stacking="column"
-		}
-		"choice button" {
-			object {
-				x=555
-				y=221
-				width=100
-				height=20
-			}
-			control {
-				chan="$(P)$(R)PhaseRingSetUserCoordinateToZeroUse"
-				clr=14
-				bclr=51
-			}
-			stacking="column"
-		}
+	control {
+		chan="$(P)$(R)PhaseRingInY"
+		clr=14
+		bclr=51
 	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=306
+		y=221
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)PhaseRingOutY"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+"choice button" {
+	object {
+		x=420
+		y=221
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)PhaseRingInOutUse"
+		clr=14
+		bclr=51
+	}
+	stacking="column"
 }
 text {
 	object {
@@ -1124,7 +1016,7 @@ text {
 	"basic attribute" {
 		clr=14
 	}
-	textix="Sample Top X"
+	textix="Furnace Y"
 	align="horiz. right"
 }
 "text entry" {
@@ -1135,7 +1027,7 @@ text {
 		height=20
 	}
 	control {
-		chan="$(P)$(R)SampleTopInX"
+		chan="$(P)$(R)FurnaceInY"
 		clr=14
 		bclr=51
 	}
@@ -1150,7 +1042,7 @@ text {
 		height=20
 	}
 	control {
-		chan="$(P)$(R)SampleTopOutX"
+		chan="$(P)$(R)FurnaceOutY"
 		clr=14
 		bclr=51
 	}
@@ -1165,21 +1057,7 @@ text {
 		height=20
 	}
 	control {
-		chan="$(P)$(R)SampleTopInOutUse"
-		clr=14
-		bclr=51
-	}
-	stacking="column"
-}
-"choice button" {
-	object {
-		x=555
-		y=251
-		width=100
-		height=20
-	}
-	control {
-		chan="$(P)$(R)SampleTopSetUserCoordinateToZeroUse"
+		chan="$(P)$(R)FurnaceInOutUse"
 		clr=14
 		bclr=51
 	}

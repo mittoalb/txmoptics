@@ -43,8 +43,9 @@ $(P)$(R)ZonePlateYPVName
 $(P)$(R)ZonePlateZPVName
 $(P)$(R)PhaseRingXPVName
 $(P)$(R)PhaseRingYPVName
-$(P)$(R)SampleTopXPVName
-$(P)$(R)SampleTopZPVName
+$(P)$(R)FurnaceXPVName
+$(P)$(R)FurnaceYPVName
+$(P)$(R)FurnaceZPVName
 
 ###################################
 # Optics control via Channel Access
@@ -63,9 +64,10 @@ $(P)$(R)SampleTopZPVName
 #controlPV $(P)$(R)MoveZonePlateOut
 #controlPV $(P)$(R)MovePhaseRingIn
 #controlPV $(P)$(R)MovePhaseRingOut
+#controlPV $(P)$(R)MoveFurnaceIn
+#controlPV $(P)$(R)MoveFurnaceOut
 #controlPV $(P)$(R)MoveAllIn
 #controlPV $(P)$(R)MoveAllOut
-#controlPV $(P)$(R)SetAllToZero
 #controlPV $(P)$(R)AllStop
 
 ################
@@ -85,14 +87,11 @@ $(P)$(R)PhaseRingInX
 $(P)$(R)PhaseRingOutX
 $(P)$(R)PhaseRingInY
 $(P)$(R)PhaseRingOutY
+$(P)$(R)FurnaceInY
+$(P)$(R)FurnaceOutY
+
 $(P)$(R)ExposureTimeIn
 $(P)$(R)ExposureTimeOut
-
-######################
-# Sample stack control
-######################
-$(P)$(R)SampleTopInX
-$(P)$(R)SampleTopOutX
 
 ###################
 # Optics In/Out Use
@@ -111,19 +110,9 @@ $(P)$(R)PinholeInOutUse
 $(P)$(R)CondenserInOutUse
 $(P)$(R)ZonePlateInOutUse
 $(P)$(R)PhaseRingInOutUse
-$(P)$(R)SampleTopInOutUse
+$(P)$(R)FurnaceInOutUse
 $(P)$(R)ExposureTimeInOutUse
 
-####################################
-# Optics Set User Coordinate to zero
-####################################
-$(P)$(R)DiffuserSetUserCoordinateToZeroUse
-$(P)$(R)BeamstopSetUserCoordinateToZeroUse
-$(P)$(R)PinholeSetUserCoordinateToZeroUse
-$(P)$(R)CondenserSetUserCoordinateToZeroUse
-$(P)$(R)ZonePlateSetUserCoordinateToZeroUse
-$(P)$(R)PhaseRingSetUserCoordinateToZeroUse
-$(P)$(R)SampleTopSetUserCoordinateToZeroUse
 
 ################################
 # TXM SUPPORTING IOC PV Prefixes
@@ -143,3 +132,14 @@ $(P)$(R)BPMHSetPointIn
 $(P)$(R)BPMVSetPointOut
 $(P)$(R)BPMHSetPointOut
 $(P)$(R)BPMSetPointInOutUse
+
+
+###########################
+# Save/Load all pvs in medm
+###########################
+$(P)$(R)SaveAllPVs
+$(P)$(R)LoadAllPVs
+$(P)$(R)FileAllPVs
+
+
+

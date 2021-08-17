@@ -11,6 +11,14 @@ from txmoptics import log
 from epics import PV
 import re
 
+def isfloat(x):
+    try:
+        a = float(x)
+    except (TypeError, ValueError):
+        return False
+    else:
+        return x.find('.')!=-1
+    
 class TXMOptics():
     """ Class for controlling TXM optics via EPICS
 
@@ -92,6 +100,8 @@ class TXMOptics():
         prefix = self.pv_prefixes['Camera']
         self.control_pvs['CamAcquireTime'] = PV(prefix + 'cam1:AcquireTime')
         self.control_pvs['CamTrans1Type'] = PV(prefix + 'Trans1:Type')
+        
+        self.control_pvs['EnergyMonochromator'] = PV('32ida:BraggEAO.VAL')
         
         # All Stop ioc PVs (--> add to the gui)
         iocs = ['32idcTXM:','32idcPLC:', '32idcEXP:', '32idb:', '32idcUC8:', '32idcMC:', '32idcTEMP', '32idc02', '32idcSOFT']
@@ -523,17 +533,20 @@ class TXMOptics():
         # take pvs
         pvs = []
         pvs = re.findall(r"chan=\"(.*?)\"", s)
-        # print(pvs)
+        
         # save values to a txt file 
         try:
             with open(file_name,'w') as fid:
+                energy = self.epics_pvs['EnergyMonochromator'].get()
+                fid.write('energy '+ str(energy) +'\n')                
                 for k in pvs:
-                    p = PV(k)
-                    time.sleep(0.02)
-                    val = p.get(timeout=0.02,as_string=True)
-                    if(val!=None and k.find('.DESC')==-1 and k.find('AllPVs') == -1 and k.find('Move') == -1 
-                    and k.find('Acquire') == -1 and k.find('.SET')==-1):
-                        fid.write(k+' '+val+'\n')
+                    if k.find('.VAL')!=-1:
+                        p = PV(k)
+                        #time.sleep(0.1)
+                        val = p.get(as_string=True)
+                        if(val is not None and isfloat(val)):
+                            print(k,val)                        
+                            fid.write(k+' '+val+'\n')
         except:
             log.error('File %s cannot be created', file_name)
         self.epics_pvs['SaveAllPVs'].put(0,wait=True)        

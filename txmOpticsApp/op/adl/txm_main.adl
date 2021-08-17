@@ -5,10 +5,10 @@ file {
 }
 display {
 	object {
-		x=10
-		y=79
+		x=124
+		y=304
 		width=1499
-		height=1213
+		height=1216
 	}
 	clr=14
 	bclr=4
@@ -16787,7 +16787,7 @@ text {
 		height=25
 	}
 	control {
-		chan="$(SK)shaker:frequency"
+		chan="$(SK)shaker:frequency.VAL"
 		clr=14
 		bclr=51
 	}
@@ -16841,7 +16841,7 @@ text {
 		height=25
 	}
 	control {
-		chan="$(SK)shaker:timePerPoint"
+		chan="$(SK)shaker:timePerPoint.VAL"
 		clr=14
 		bclr=51
 	}
@@ -16856,7 +16856,7 @@ text {
 		height=25
 	}
 	control {
-		chan="$(SK)shaker:numPoints"
+		chan="$(SK)shaker:numPoints.VAL"
 		clr=14
 		bclr=51
 	}
@@ -16871,7 +16871,7 @@ text {
 		height=25
 	}
 	control {
-		chan="$(SK)shaker:A:ampMult"
+		chan="$(SK)shaker:A:ampMult.VAL"
 		clr=14
 		bclr=51
 	}
@@ -16925,7 +16925,7 @@ text {
 		height=25
 	}
 	control {
-		chan="$(SK)shaker:A:ampOffset"
+		chan="$(SK)shaker:A:ampOffset.VAL"
 		clr=14
 		bclr=51
 	}
@@ -16940,7 +16940,7 @@ text {
 		height=25
 	}
 	control {
-		chan="$(SK)shaker:A:phaseShift"
+		chan="$(SK)shaker:A:phaseShift.VAL"
 		clr=14
 		bclr=51
 	}
@@ -17009,7 +17009,7 @@ text {
 		height=25
 	}
 	control {
-		chan="$(SK)shaker:B:ampOffset"
+		chan="$(SK)shaker:B:ampOffset.VAL"
 		clr=14
 		bclr=51
 	}
@@ -17024,7 +17024,7 @@ text {
 		height=25
 	}
 	control {
-		chan="$(SK)shaker:B:freqMult"
+		chan="$(SK)shaker:B:freqMult.VAL"
 		clr=14
 		bclr=51
 	}

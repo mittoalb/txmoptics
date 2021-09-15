@@ -5,10 +5,10 @@ file {
 }
 display {
 	object {
-		x=124
-		y=304
-		width=1499
-		height=1216
+		x=419
+		y=244
+		width=1501
+		height=1210
 	}
 	clr=14
 	bclr=4
@@ -5872,7 +5872,7 @@ text {
 	}
 	command[0] {
 		label="Point Grey camera"
-		name="/xorApps/epics/synApps_6_2/support/areaDetector-R3-11/ADAravis-R2-2-1/iocs/aravisIOC/iocBoot/ioc32ARV1/softioc/32ARV1.sh medm"
+		name="/xorApps/epics/synApps_6_2_1/ioc/32idARV2/iocBoot/ioc32idARV2/softioc/32idARV2.sh medm"
 	}
 	clr=14
 	bclr=31
@@ -7422,9 +7422,9 @@ rectangle {
 		height=12
 	}
 	display[1] {
-		label="$(Contr2)m2) (Small)"
+		label="Focus 5x (Small)"
 		name="1_motors.adl"
-		args="P=$(P),m2=$(Contr2)m2"
+		args="P=$(P8),M1=m1"
 	}
 	clr=14
 	bclr=51
@@ -17865,4 +17865,17 @@ text {
 	}
 	textix="Busy"
 	align="horiz. centered"
+}
+menu {
+	object {
+		x=234
+		y=39
+		width=90
+		height=16
+	}
+	control {
+		chan="$(P)$(S)status.SCAN"
+		clr=14
+		bclr=51
+	}
 }

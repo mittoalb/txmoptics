@@ -1189,7 +1189,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="$(P)$(Contr5)m1.SET"
+				chan="$(P11)$(Contr5)m4.SET"
 			}
 			textix="Calib:"
 		}
@@ -1201,7 +1201,7 @@ composite {
 				height=20
 			}
 			monitor {
-				chan="$(P)$(Contr5)m1.DESC"
+				chan="$(P11)$(Contr5)m4.DESC"
 				clr=54
 				bclr=0
 			}
@@ -1222,7 +1222,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if zero"
-				chan="$(P)$(Contr5)m1.DMOV"
+				chan="$(P11)$(Contr5)m4.DMOV"
 			}
 		}
 		rectangle {
@@ -1238,7 +1238,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="$(P)$(Contr5)m1.LVIO"
+				chan="$(P11)$(Contr5)m4.LVIO"
 			}
 		}
 		rectangle {
@@ -1254,7 +1254,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="$(P)$(Contr5)m1_able.VAL"
+				chan="$(P11)$(Contr5)m4_able.VAL"
 			}
 		}
 		rectangle {
@@ -1282,7 +1282,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if zero"
-				chan="$(P)$(Contr5)m1.DMOV"
+				chan="$(P11)$(Contr5)m4.DMOV"
 			}
 			textix="Moving"
 			align="horiz. centered"
@@ -1300,7 +1300,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="$(P)$(Contr5)m1.SET"
+				chan="$(P11)$(Contr5)m4.SET"
 			}
 			textix="Calibrate"
 			align="horiz. centered"
@@ -1313,7 +1313,7 @@ composite {
 				height=36
 			}
 			control {
-				chan="$(P)$(Contr5)m1.TWR"
+				chan="$(P11)$(Contr5)m4.TWR"
 				clr=14
 				bclr=51
 			}
@@ -1328,7 +1328,7 @@ composite {
 				height=20
 			}
 			control {
-				chan="$(P)$(Contr5)m1.TWV"
+				chan="$(P11)$(Contr5)m4.TWV"
 				clr=14
 				bclr=51
 			}
@@ -1343,7 +1343,7 @@ composite {
 				height=36
 			}
 			control {
-				chan="$(P)$(Contr5)m1.TWF"
+				chan="$(P11)$(Contr5)m4.TWF"
 				clr=14
 				bclr=51
 			}
@@ -1358,7 +1358,7 @@ composite {
 				height=25
 			}
 			control {
-				chan="$(P)$(Contr5)m1.VAL"
+				chan="$(P11)$(Contr5)m4.VAL"
 				clr=14
 				bclr=51
 			}
@@ -1377,7 +1377,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="$(P)$(Contr5)m1.LLS"
+				chan="$(P11)$(Contr5)m4.LLS"
 			}
 		}
 		rectangle {
@@ -1392,7 +1392,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="$(P)$(Contr5)m1.HLS"
+				chan="$(P11)$(Contr5)m4.HLS"
 			}
 		}
 		"text update" {
@@ -1403,7 +1403,7 @@ composite {
 				height=12
 			}
 			monitor {
-				chan="$(P)$(Contr5)m1.EGU"
+				chan="$(P11)$(Contr5)m4.EGU"
 				clr=54
 				bclr=3
 			}
@@ -1425,7 +1425,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="$(P)$(Contr5)m1.SET"
+				chan="$(P11)$(Contr5)m4.SET"
 			}
 		}
 		rectangle {
@@ -1442,7 +1442,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="$(P)$(Contr5)m1.SET"
+				chan="$(P11)$(Contr5)m4.SET"
 			}
 		}
 		"text update" {
@@ -1453,7 +1453,7 @@ composite {
 				height=17
 			}
 			monitor {
-				chan="$(P)$(Contr5)m1.RBV"
+				chan="$(P11)$(Contr5)m4.RBV"
 				clr=54
 				bclr=3
 			}
@@ -1474,7 +1474,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="$(P)$(Contr5)m1.LVIO"
+				chan="$(P11)$(Contr5)m4.LVIO"
 			}
 			textix="Soft limit"
 			align="horiz. centered"
@@ -1494,7 +1494,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="$(P)$(Contr5)m1_able.VAL"
+				chan="$(P11)$(Contr5)m4_able.VAL"
 			}
 		}
 		"choice button" {
@@ -1505,7 +1505,7 @@ composite {
 				height=20
 			}
 			control {
-				chan="$(P)$(Contr5)m1.SET"
+				chan="$(P11)$(Contr5)m4.SET"
 				clr=14
 				bclr=51
 			}
@@ -1519,7 +1519,7 @@ composite {
 				height=35
 			}
 			control {
-				chan="$(P)$(Contr5)m1_able.VAL"
+				chan="$(P11)$(Contr5)m4_able.VAL"
 				clr=14
 				bclr=51
 			}
@@ -10898,7 +10898,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="$(P3)$(Contr14)m2.SET"
+				chan="$(P)$(Contr14)m2.SET"
 			}
 			textix="Calib:"
 		}
@@ -10910,7 +10910,7 @@ composite {
 				height=20
 			}
 			monitor {
-				chan="$(P3)$(Contr14)m2.DESC"
+				chan="$(P)$(Contr14)m2.DESC"
 				clr=54
 				bclr=0
 			}
@@ -10931,7 +10931,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if zero"
-				chan="$(P3)$(Contr14)m2.DMOV"
+				chan="$(P)$(Contr14)m2.DMOV"
 			}
 		}
 		rectangle {
@@ -10947,7 +10947,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="$(P3)$(Contr14)m2.LVIO"
+				chan="$(P)$(Contr14)m2.LVIO"
 			}
 		}
 		rectangle {
@@ -10963,7 +10963,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="$(P3)$(Contr14)m2_able.VAL"
+				chan="$(P)$(Contr14)m2_able.VAL"
 			}
 		}
 		rectangle {
@@ -10991,7 +10991,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if zero"
-				chan="$(P3)$(Contr14)m2.DMOV"
+				chan="$(P)$(Contr14)m2.DMOV"
 			}
 			textix="Moving"
 			align="horiz. centered"
@@ -11009,7 +11009,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="$(P3)$(Contr14)m2.SET"
+				chan="$(P)$(Contr14)m2.SET"
 			}
 			textix="Calibrate"
 			align="horiz. centered"
@@ -11022,7 +11022,7 @@ composite {
 				height=36
 			}
 			control {
-				chan="$(P3)$(Contr14)m2.TWR"
+				chan="$(P)$(Contr14)m2.TWR"
 				clr=14
 				bclr=51
 			}
@@ -11037,7 +11037,7 @@ composite {
 				height=20
 			}
 			control {
-				chan="$(P3)$(Contr14)m2.TWV"
+				chan="$(P)$(Contr14)m2.TWV"
 				clr=14
 				bclr=51
 			}
@@ -11052,7 +11052,7 @@ composite {
 				height=36
 			}
 			control {
-				chan="$(P3)$(Contr14)m2.TWF"
+				chan="$(P)$(Contr14)m2.TWF"
 				clr=14
 				bclr=51
 			}
@@ -11067,7 +11067,7 @@ composite {
 				height=25
 			}
 			control {
-				chan="$(P3)$(Contr14)m2.VAL"
+				chan="$(P)$(Contr14)m2.VAL"
 				clr=14
 				bclr=51
 			}
@@ -11086,7 +11086,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="$(P3)$(Contr14)m2.LLS"
+				chan="$(P)$(Contr14)m2.LLS"
 			}
 		}
 		rectangle {
@@ -11101,7 +11101,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="$(P3)$(Contr14)m2.HLS"
+				chan="$(P)$(Contr14)m2.HLS"
 			}
 		}
 		"text update" {
@@ -11112,7 +11112,7 @@ composite {
 				height=12
 			}
 			monitor {
-				chan="$(P3)$(Contr14)m2.EGU"
+				chan="$(P)$(Contr14)m2.EGU"
 				clr=54
 				bclr=3
 			}
@@ -11134,7 +11134,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="$(P3)$(Contr14)m2.SET"
+				chan="$(P)$(Contr14)m2.SET"
 			}
 		}
 		rectangle {
@@ -11151,7 +11151,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="$(P3)$(Contr14)m2.SET"
+				chan="$(P)$(Contr14)m2.SET"
 			}
 		}
 		"text update" {
@@ -11162,7 +11162,7 @@ composite {
 				height=17
 			}
 			monitor {
-				chan="$(P3)$(Contr14)m2.RBV"
+				chan="$(P)$(Contr14)m2.RBV"
 				clr=54
 				bclr=3
 			}
@@ -11183,7 +11183,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="$(P3)$(Contr14)m2.LVIO"
+				chan="$(P)$(Contr14)m2.LVIO"
 			}
 			textix="Soft limit"
 			align="horiz. centered"
@@ -11203,7 +11203,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="$(P3)$(Contr14)m2_able.VAL"
+				chan="$(P)$(Contr14)m2_able.VAL"
 			}
 		}
 		"choice button" {
@@ -11214,7 +11214,7 @@ composite {
 				height=20
 			}
 			control {
-				chan="$(P3)$(Contr14)m2.SET"
+				chan="$(P)$(Contr14)m2.SET"
 				clr=14
 				bclr=51
 			}
@@ -11228,7 +11228,7 @@ composite {
 				height=35
 			}
 			control {
-				chan="$(P3)$(Contr14)m2_able.VAL"
+				chan="$(P)$(Contr14)m2_able.VAL"
 				clr=14
 				bclr=51
 			}
@@ -11270,7 +11270,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="$(P3)$(Contr14)m1.SET"
+				chan="$(P)$(Contr14)m1.SET"
 			}
 			textix="Calib:"
 		}
@@ -11282,7 +11282,7 @@ composite {
 				height=20
 			}
 			monitor {
-				chan="$(P3)$(Contr14)m1.DESC"
+				chan="$(P)$(Contr14)m1.DESC"
 				clr=54
 				bclr=0
 			}
@@ -11303,7 +11303,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if zero"
-				chan="$(P3)$(Contr14)m1.DMOV"
+				chan="$(P)$(Contr14)m1.DMOV"
 			}
 		}
 		rectangle {
@@ -11319,7 +11319,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="$(P3)$(Contr14)m1.LVIO"
+				chan="$(P)$(Contr14)m1.LVIO"
 			}
 		}
 		rectangle {
@@ -11335,7 +11335,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="$(P3)$(Contr14)m1_able.VAL"
+				chan="$(P)$(Contr14)m1_able.VAL"
 			}
 		}
 		rectangle {
@@ -11363,7 +11363,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if zero"
-				chan="$(P3)$(Contr14)m1.DMOV"
+				chan="$(P)$(Contr14)m1.DMOV"
 			}
 			textix="Moving"
 			align="horiz. centered"
@@ -11381,7 +11381,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="$(P3)$(Contr14)m1.SET"
+				chan="$(P)$(Contr14)m1.SET"
 			}
 			textix="Calibrate"
 			align="horiz. centered"
@@ -11394,7 +11394,7 @@ composite {
 				height=36
 			}
 			control {
-				chan="$(P3)$(Contr14)m1.TWR"
+				chan="$(P)$(Contr14)m1.TWR"
 				clr=14
 				bclr=51
 			}
@@ -11409,7 +11409,7 @@ composite {
 				height=20
 			}
 			control {
-				chan="$(P3)$(Contr14)m1.TWV"
+				chan="$(P)$(Contr14)m1.TWV"
 				clr=14
 				bclr=51
 			}
@@ -11424,7 +11424,7 @@ composite {
 				height=36
 			}
 			control {
-				chan="$(P3)$(Contr14)m1.TWF"
+				chan="$(P)$(Contr14)m1.TWF"
 				clr=14
 				bclr=51
 			}
@@ -11439,7 +11439,7 @@ composite {
 				height=25
 			}
 			control {
-				chan="$(P3)$(Contr14)m1.VAL"
+				chan="$(P)$(Contr14)m1.VAL"
 				clr=14
 				bclr=51
 			}
@@ -11458,7 +11458,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="$(P3)$(Contr14)m1.LLS"
+				chan="$(P)$(Contr14)m1.LLS"
 			}
 		}
 		rectangle {
@@ -11473,7 +11473,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="$(P3)$(Contr14)m1.HLS"
+				chan="$(P)$(Contr14)m1.HLS"
 			}
 		}
 		"text update" {
@@ -11484,7 +11484,7 @@ composite {
 				height=12
 			}
 			monitor {
-				chan="$(P3)$(Contr14)m1.EGU"
+				chan="$(P)$(Contr14)m1.EGU"
 				clr=54
 				bclr=3
 			}
@@ -11506,7 +11506,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="$(P3)$(Contr14)m1.SET"
+				chan="$(P)$(Contr14)m1.SET"
 			}
 		}
 		rectangle {
@@ -11523,7 +11523,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="$(P3)$(Contr14)m1.SET"
+				chan="$(P)$(Contr14)m1.SET"
 			}
 		}
 		"text update" {
@@ -11534,7 +11534,7 @@ composite {
 				height=17
 			}
 			monitor {
-				chan="$(P3)$(Contr14)m1.RBV"
+				chan="$(P)$(Contr14)m1.RBV"
 				clr=54
 				bclr=3
 			}
@@ -11555,7 +11555,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="$(P3)$(Contr14)m1.LVIO"
+				chan="$(P)$(Contr14)m1.LVIO"
 			}
 			textix="Soft limit"
 			align="horiz. centered"
@@ -11575,7 +11575,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="$(P3)$(Contr14)m1_able.VAL"
+				chan="$(P)$(Contr14)m1_able.VAL"
 			}
 		}
 		"choice button" {
@@ -11586,7 +11586,7 @@ composite {
 				height=20
 			}
 			control {
-				chan="$(P3)$(Contr14)m1.SET"
+				chan="$(P)$(Contr14)m1.SET"
 				clr=14
 				bclr=51
 			}
@@ -11600,7 +11600,7 @@ composite {
 				height=35
 			}
 			control {
-				chan="$(P3)$(Contr14)m1_able.VAL"
+				chan="$(P)$(Contr14)m1_able.VAL"
 				clr=14
 				bclr=51
 			}
@@ -11617,7 +11617,7 @@ composite {
 	display[1] {
 		label="$(Contr14)m13) (Small)"
 		name="2_motors.adl"
-		args="P=$(P3),M1=$(Contr14)m2,M2=$(Contr14)m1"
+		args="P=$(P),M1=$(Contr14)m2,M2=$(Contr14)m1"
 	}
 	clr=14
 	bclr=51
@@ -14426,7 +14426,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="$(P)$(Contr5)m3.SET"
+				chan="$(P11)$(Contr15)m1.SET"
 			}
 			textix="Calib:"
 		}
@@ -14438,7 +14438,7 @@ composite {
 				height=20
 			}
 			monitor {
-				chan="$(P)$(Contr5)m3.DESC"
+				chan="$(P11)$(Contr15)m1.DESC"
 				clr=54
 				bclr=0
 			}
@@ -14459,7 +14459,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if zero"
-				chan="$(P)$(Contr5)m3.DMOV"
+				chan="$(P11)$(Contr15)m1.DMOV"
 			}
 		}
 		rectangle {
@@ -14475,7 +14475,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="$(P)$(Contr5)m3.LVIO"
+				chan="$(P11)$(Contr15)m1.LVIO"
 			}
 		}
 		rectangle {
@@ -14491,7 +14491,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="$(P)$(Contr5)m3_able.VAL"
+				chan="$(P11)$(Contr15)m1_able.VAL"
 			}
 		}
 		rectangle {
@@ -14519,7 +14519,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if zero"
-				chan="$(P)$(Contr5)m3.DMOV"
+				chan="$(P11)$(Contr15)m1.DMOV"
 			}
 			textix="Moving"
 			align="horiz. centered"
@@ -14537,7 +14537,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="$(P)$(Contr5)m3.SET"
+				chan="$(P11)$(Contr15)m1.SET"
 			}
 			textix="Calibrate"
 			align="horiz. centered"
@@ -14550,7 +14550,7 @@ composite {
 				height=36
 			}
 			control {
-				chan="$(P)$(Contr5)m3.TWR"
+				chan="$(P11)$(Contr15)m1.TWR"
 				clr=14
 				bclr=51
 			}
@@ -14565,7 +14565,7 @@ composite {
 				height=20
 			}
 			control {
-				chan="$(P)$(Contr5)m3.TWV"
+				chan="$(P11)$(Contr15)m1.TWV"
 				clr=14
 				bclr=51
 			}
@@ -14580,7 +14580,7 @@ composite {
 				height=36
 			}
 			control {
-				chan="$(P)$(Contr5)m3.TWF"
+				chan="$(P11)$(Contr15)m1.TWF"
 				clr=14
 				bclr=51
 			}
@@ -14595,7 +14595,7 @@ composite {
 				height=25
 			}
 			control {
-				chan="$(P)$(Contr5)m3.VAL"
+				chan="$(P11)$(Contr15)m1.VAL"
 				clr=14
 				bclr=51
 			}
@@ -14614,7 +14614,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="$(P)$(Contr5)m3.LLS"
+				chan="$(P11)$(Contr15)m1.LLS"
 			}
 		}
 		rectangle {
@@ -14629,7 +14629,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="$(P)$(Contr5)m3.HLS"
+				chan="$(P11)$(Contr15)m1.HLS"
 			}
 		}
 		"text update" {
@@ -14640,7 +14640,7 @@ composite {
 				height=12
 			}
 			monitor {
-				chan="$(P)$(Contr5)m3.EGU"
+				chan="$(P11)$(Contr15)m1.EGU"
 				clr=54
 				bclr=3
 			}
@@ -14662,7 +14662,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="$(P)$(Contr5)m3.SET"
+				chan="$(P11)$(Contr15)m1.SET"
 			}
 		}
 		rectangle {
@@ -14679,7 +14679,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="$(P)$(Contr5)m3.SET"
+				chan="$(P11)$(Contr15)m1.SET"
 			}
 		}
 		"text update" {
@@ -14690,7 +14690,7 @@ composite {
 				height=17
 			}
 			monitor {
-				chan="$(P)$(Contr5)m3.RBV"
+				chan="$(P11)$(Contr15)m1.RBV"
 				clr=54
 				bclr=3
 			}
@@ -14711,7 +14711,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="$(P)$(Contr5)m3.LVIO"
+				chan="$(P11)$(Contr15)m1.LVIO"
 			}
 			textix="Soft limit"
 			align="horiz. centered"
@@ -14731,7 +14731,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="$(P)$(Contr5)m3_able.VAL"
+				chan="$(P11)$(Contr15)m1_able.VAL"
 			}
 		}
 		"choice button" {
@@ -14742,7 +14742,7 @@ composite {
 				height=20
 			}
 			control {
-				chan="$(P)$(Contr5)m3.SET"
+				chan="$(P11)$(Contr15)m1.SET"
 				clr=14
 				bclr=51
 			}
@@ -14756,7 +14756,7 @@ composite {
 				height=35
 			}
 			control {
-				chan="$(P)$(Contr5)m3_able.VAL"
+				chan="$(P11)$(Contr15)m1_able.VAL"
 				clr=14
 				bclr=51
 			}

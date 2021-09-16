@@ -103,10 +103,6 @@ class TXMOptics():
         
         self.control_pvs['EnergyMonochromator'] = PV('32ida:BraggEAO.VAL')
         
-        # All Stop ioc PVs (--> add to the gui)
-        iocs = ['32idcTXM:','32idcPLC:', '32idcEXP:', '32idb:', '32idcUC8:', '32idcMC:', '32idcTEMP', '32idc02', '32idcSOFT']
-        self.allstop_pvs = [PV(ioc+'allstop') for ioc in iocs]
-                
         self.epics_pvs = {**self.config_pvs, **self.control_pvs}
 
         for epics_pv in ('MoveCRLIn', 'MoveCRLOut', 'MovePhaseRingIn', 'MovePhaseRingOut', 'MoveDiffuserIn',
@@ -507,7 +503,10 @@ class TXMOptics():
     def all_stop(self):
         """Stop all iocs motors
         """     
-        [pv.put(1,wait=True) for pv in self.allstop_pvs]
+        iocs = [self.pv_prefixes['IOC'+str(k)] for k in range(5)]
+        print(iocs)
+        allstop_pvs = [PV(ioc+'allstop') for ioc in iocs]                        
+        [pv.put(1,wait=True) for pv in allstop_pvs]
         self.epics_pvs['AllStop'].put(0,wait=True)
     
     def save_all_pvs(self):

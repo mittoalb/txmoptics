@@ -5,10 +5,10 @@ file {
 }
 display {
 	object {
-		x=419
-		y=244
+		x=409
+		y=64
 		width=1501
-		height=1210
+		height=1213
 	}
 	clr=14
 	bclr=4
@@ -10898,7 +10898,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="$(P)$(Contr14)m2.SET"
+				chan="$(P11)$(Contr5)m3.SET"
 			}
 			textix="Calib:"
 		}
@@ -10910,7 +10910,7 @@ composite {
 				height=20
 			}
 			monitor {
-				chan="$(P)$(Contr14)m2.DESC"
+				chan="$(P11)$(Contr5)m3.DESC"
 				clr=54
 				bclr=0
 			}
@@ -10931,7 +10931,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if zero"
-				chan="$(P)$(Contr14)m2.DMOV"
+				chan="$(P11)$(Contr5)m3.DMOV"
 			}
 		}
 		rectangle {
@@ -10947,7 +10947,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="$(P)$(Contr14)m2.LVIO"
+				chan="$(P11)$(Contr5)m3.LVIO"
 			}
 		}
 		rectangle {
@@ -10963,7 +10963,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="$(P)$(Contr14)m2_able.VAL"
+				chan="$(P11)$(Contr5)m3_able.VAL"
 			}
 		}
 		rectangle {
@@ -10991,7 +10991,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if zero"
-				chan="$(P)$(Contr14)m2.DMOV"
+				chan="$(P11)$(Contr5)m3.DMOV"
 			}
 			textix="Moving"
 			align="horiz. centered"
@@ -11009,7 +11009,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="$(P)$(Contr14)m2.SET"
+				chan="$(P11)$(Contr5)m3.SET"
 			}
 			textix="Calibrate"
 			align="horiz. centered"
@@ -11022,7 +11022,7 @@ composite {
 				height=36
 			}
 			control {
-				chan="$(P)$(Contr14)m2.TWR"
+				chan="$(P11)$(Contr5)m3.TWR"
 				clr=14
 				bclr=51
 			}
@@ -11037,7 +11037,7 @@ composite {
 				height=20
 			}
 			control {
-				chan="$(P)$(Contr14)m2.TWV"
+				chan="$(P11)$(Contr5)m3.TWV"
 				clr=14
 				bclr=51
 			}
@@ -11052,7 +11052,7 @@ composite {
 				height=36
 			}
 			control {
-				chan="$(P)$(Contr14)m2.TWF"
+				chan="$(P11)$(Contr5)m3.TWF"
 				clr=14
 				bclr=51
 			}
@@ -11067,7 +11067,7 @@ composite {
 				height=25
 			}
 			control {
-				chan="$(P)$(Contr14)m2.VAL"
+				chan="$(P11)$(Contr5)m3.VAL"
 				clr=14
 				bclr=51
 			}
@@ -11086,7 +11086,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="$(P)$(Contr14)m2.LLS"
+				chan="$(P11)$(Contr5)m3.LLS"
 			}
 		}
 		rectangle {
@@ -11101,7 +11101,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="$(P)$(Contr14)m2.HLS"
+				chan="$(P11)$(Contr5)m3.HLS"
 			}
 		}
 		"text update" {
@@ -11112,7 +11112,7 @@ composite {
 				height=12
 			}
 			monitor {
-				chan="$(P)$(Contr14)m2.EGU"
+				chan="$(P11)$(Contr5)m3.EGU"
 				clr=54
 				bclr=3
 			}
@@ -11134,7 +11134,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="$(P)$(Contr14)m2.SET"
+				chan="$(P11)$(Contr5)m3.SET"
 			}
 		}
 		rectangle {
@@ -11151,7 +11151,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="$(P)$(Contr14)m2.SET"
+				chan="$(P11)$(Contr5)m3.SET"
 			}
 		}
 		"text update" {
@@ -11162,7 +11162,7 @@ composite {
 				height=17
 			}
 			monitor {
-				chan="$(P)$(Contr14)m2.RBV"
+				chan="$(P11)$(Contr5)m3.RBV"
 				clr=54
 				bclr=3
 			}
@@ -11183,7 +11183,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="$(P)$(Contr14)m2.LVIO"
+				chan="$(P11)$(Contr5)m3.LVIO"
 			}
 			textix="Soft limit"
 			align="horiz. centered"
@@ -11203,7 +11203,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="$(P)$(Contr14)m2_able.VAL"
+				chan="$(P11)$(Contr5)m3_able.VAL"
 			}
 		}
 		"choice button" {
@@ -11214,7 +11214,7 @@ composite {
 				height=20
 			}
 			control {
-				chan="$(P)$(Contr14)m2.SET"
+				chan="$(P11)$(Contr5)m3.SET"
 				clr=14
 				bclr=51
 			}
@@ -11228,7 +11228,7 @@ composite {
 				height=35
 			}
 			control {
-				chan="$(P)$(Contr14)m2_able.VAL"
+				chan="$(P11)$(Contr5)m3_able.VAL"
 				clr=14
 				bclr=51
 			}
@@ -17486,7 +17486,7 @@ text {
 	}
 	command[0] {
 		label="Furnace"
-		name="/net/s32dserv/xorApps/epics/synApps_5_8/ioc/32idcTEMP/iocBoot/ioc32idcTEMP/32idcTEMP.sh medm"
+		name="/net/s32dserv/xorApps/epics/synApps_6_2_1/ioc/32idcTEMP/iocBoot/ioc32idcTEMP/softioc/32idcTEMP.sh medm"
 	}
 	clr=0
 	bclr=17

@@ -6,5 +6,5 @@ CRL_X,     CRL_Y,    CRL_PITCH,   CRL_YAW,      DIFFUSER_X,          BEAMSTOP_X,
 ZONEPLATE_Y,        ZONEPLATE_Z,        PHASERING_X,         PHASERING_Y, FURNACE_X, FURNACE_Y, FURNACE_Z,      IOC0,      IOC1,     IOC2,     IOC3,     IOC4,     IOC5,    FILE_ALL_PVS}
 {32id:, TXMOptics:, 32idARV2:, ACIS:ShutterPermit,    1,     32idcTXM:uniblitz:control,          0,          32idcTXM:uniblitz:control,         1,        PA:02BM:STA_A_FES_OPEN_PL,  32ida:,  32idcMC:,       32idcPLC:,       32idbPLC:,
 32idb:m32, 32idb:m28, 32idb:m26,  32idb:m27,  32idcTXM:xps:c1:m2   32idcTXM:mcs:c3:m3, 32idcTXM:mcs:c3:m6, 32idcTXM:xps:c1:m3, 32idcTXM:xps:c1:m5, 32idcTXM:mcs:c3:m1, 32idcTXM:mcs:c3:m5, 32idcTXM:mxv:c1:m5,  32idcTXM:mcs:c3:m4, 32idcTXM:mcs:c3:m2, 32idcTXM:mcs:c2:m1,
-32idcTXM:mcs:c2:m2, 32idcTXM:mcs:c2:m3, 32idcSOFT:mmc:c1:m2, 32idcTXM:mcs:c0:m1, 32idc02:m35, 32idc02:m33, 32idc02:m34, 32idcTXM:, 32idcPLC:, 32idcEXP:, 32idb:, 32idcUC8:, 32idcMC:, all_pvs.txt}
+32idcTXM:mcs:c2:m2, 32idcTXM:mcs:c2:m3, 32idcSOFT:mmc:c1:m2, 32idcTXM:mcs:c0:m1, 32idc02:m35, 32idc02:m33, 32idc02:m34, 32idcTXM:, 32idPLC:, 32idcMCS2:, 32idb:, 32idcSOFT:, 32idcMC:, all_pvs.txt}
 }

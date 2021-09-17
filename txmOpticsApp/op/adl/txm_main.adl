@@ -1,6 +1,6 @@
 
 file {
-	name="/local/usertxm/epics/synApps/support/txmoptics/txmOpticsApp/op/adl/txm_main.adl"
+	name="/home/beams/USERTXM/epics/synApps/support/txmoptics/txmOpticsApp/op/adl/txm_main.adl"
 	version=030111
 }
 display {

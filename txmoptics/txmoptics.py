@@ -517,14 +517,14 @@ class TXMOptics():
             return
         file_name = self.epics_pvs['FileAllPVs'].get()
         # read prefixes
-        with open('/local/usertxm/epics/synApps/support/txmoptics/iocBoot/iocTXMOptics/start_medm','r') as fid:    
+        with open('/home/beams/USERTXM/epics/synApps/support/txmoptics/iocBoot/iocTXMOptics/start_medm','r') as fid:    
             prefixes = re.findall(r"-macro \"(.*)\"", fid.read())[0].split(', ')
         # take all replacements
         repl = []
         for k in prefixes:
             repl.append(k.split('='))
         # read adl file
-        with open('/local/usertxm/epics/synApps/support/txmoptics/txmOpticsApp/op/adl/txm_main.adl','r') as fid:    
+        with open('/home/beams/USERTXM/epics/synApps/support/txmoptics/txmOpticsApp/op/adl/txm_main.adl','r') as fid:    
             s = fid.read()
         # replace in adl file
         for k in repl:

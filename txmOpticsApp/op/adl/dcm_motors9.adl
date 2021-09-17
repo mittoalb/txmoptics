@@ -1,6 +1,6 @@
 
 file {
-	name="/local/usertxm/epics/synApps/support/txmoptics/txmOpticsApp/op/adl/dcm_motors9.adl"
+	name="/home/beams/USERTXM/epics/synApps/support/txmoptics/txmOpticsApp/op/adl/dcm_motors9.adl"
 	version=030111
 }
 display {

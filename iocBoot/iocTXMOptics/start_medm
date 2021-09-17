@@ -1,7 +1,7 @@
 #!/bin/csh
 setenv DSERV_DIR       /net/s32dserv/xorApps/epics
-setenv EPICS_TS        /local/usertxm/epics/synApps/support/tomoscan/
-setenv EPICS_TXMO      /local/usertxm/epics/synApps/support/txmoptics/
+setenv EPICS_TS        /home/beams/USERTXM/epics/synApps/support/tomoscan/
+setenv EPICS_TXMO      /home/beams/USERTXM/epics/synApps/support/txmoptics/
 setenv EPICS_APP       $DSERV_DIR/screens/32idsectorApp
 setenv EPICS_APP_A     $DSERV_DIR/synApps_6_0/ioc/32ida
 setenv EPICS_APP_C_TXM $DSERV_DIR/synApps_6_0/ioc/32idcTXM

@@ -1,6 +1,6 @@
 
 file {
-	name="/home/beams/USERTXM/epics/synApps/support/txmoptics/txmOpticsApp/op/adl/txm_main.adl"
+	name="/home/beams19/USERTXM/epics/synApps/support/txmoptics/txmOpticsApp/op/adl/txm_main.adl"
 	version=030111
 }
 display {
@@ -3561,7 +3561,7 @@ composite {
 "shell command" {
 	object {
 		x=359
-		y=19
+		y=10
 		width=90
 		height=25
 	}
@@ -5866,7 +5866,7 @@ text {
 "shell command" {
 	object {
 		x=466
-		y=19
+		y=10
 		width=90
 		height=25
 	}
@@ -17878,4 +17878,31 @@ menu {
 		clr=14
 		bclr=51
 	}
+}
+text {
+	object {
+		x=448
+		y=36
+		width=65
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Cross"
+	align="horiz. centered"
+}
+"choice button" {
+	object {
+		x=358
+		y=34
+		width=90
+		height=25
+	}
+	control {
+		chan="$(P)$(R)CrossSelect.VAL"
+		clr=14
+		bclr=51
+	}
+	stacking="column"
 }

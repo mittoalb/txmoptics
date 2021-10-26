@@ -12,6 +12,7 @@
 # Camera and File Plugin PV Prefixes
 ####################################
 $(P)$(R)CameraPVPrefix
+$(P)$(R)OverlayPluginPVPrefix
 
 ##################################################
 # CRL Relays, Valves PLC, Shaker and BPM PV Prefix

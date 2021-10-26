@@ -102,13 +102,13 @@ class TXMOptics():
         self.control_pvs['CamTrans1Type'] = PV(prefix + 'Trans1:Type')
         
         self.control_pvs['EnergyMonochromator'] = PV('32ida:BraggEAO.VAL')
-        
+                
         self.epics_pvs = {**self.config_pvs, **self.control_pvs}
 
         for epics_pv in ('MoveCRLIn', 'MoveCRLOut', 'MovePhaseRingIn', 'MovePhaseRingOut', 'MoveDiffuserIn',
                          'MoveDiffuserOut', 'MoveBeamstopIn', 'MoveBeamstopOut', 'MovePinholeIn', 'MovePinholeOut',
                          'MoveCondenserIn', 'MoveCondenserOut', 'MoveZonePlateIn', 'MoveZonePlateOut', 'MoveFurnaceIn', 'MoveFurnaceOut',
-                         'MoveAllIn', 'MoveAllOut', 'AllStop', 'SaveAllPVs', 'LoadAllPVs'):
+                         'MoveAllIn', 'MoveAllOut', 'AllStop', 'SaveAllPVs', 'LoadAllPVs', 'CrossSelect'):
             self.epics_pvs[epics_pv].put(0)
             self.epics_pvs[epics_pv].add_callback(self.pv_callback)
             
@@ -267,6 +267,9 @@ class TXMOptics():
         elif (pvname.find('LoadAllPVs') != -1) and (value == 1):
             thread = threading.Thread(target=self.load_all_pvs, args=())
             thread.start()       
+        elif (pvname.find('CrossSelect') != -1) and ((value == 0) or (value == 1)):
+            thread = threading.Thread(target=self.cross_select, args=())
+            thread.start()
 
     def move_crl_in(self):
         """Moves the crl in.
@@ -450,13 +453,13 @@ class TXMOptics():
         """
         Transform image in 
         """
-        self.epics_pvs['CamTrans1Type'].put(2, wait=True) # Rot180
+        self.epics_pvs['CamTrans1Type'].put(0, wait=True) # None
         
     def transform_image_out(self):
         """
         Transform image out 
         """
-        self.epics_pvs['CamTrans1Type'].put(0, wait=True) # None
+        self.epics_pvs['CamTrans1Type'].put(2, wait=True) # Rotate180
                 
     def move_all_in(self):
         """Moves all in
@@ -568,4 +571,20 @@ class TXMOptics():
                         pass
         except:
             log.error('File %s does not exist or corrupted', file_name)
-        self.epics_pvs['LoadAllPVs'].put(0,wait=True)        
+        self.epics_pvs['LoadAllPVs'].put(0,wait=True)
+
+    def cross_select(self):
+        """Plot the cross in imageJ.
+        """
+    
+
+        if (self.epics_pvs['CrossSelect'].get() == 0):
+            sizex = int(self.epics_pvs['CamArraySizeXRBV'].get())
+            sizey = int(self.epics_pvs['CamArraySizeYRBV'].get())
+            self.epics_pvs['OP1CenterX'].put(sizex//2)
+            self.epics_pvs['OP1CenterY'].put(sizey//2)
+            self.control_pvs['OP1Use'].put(1)
+            log.info('Cross at %d %d is enable' % (sizex//2,sizey//2))
+        else:
+            self.control_pvs['OP1Use'].put(0)
+            log.info('Cross is disabled')

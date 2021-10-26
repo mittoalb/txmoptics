@@ -10,6 +10,11 @@ record(stringout, "$(P)$(R)CameraPVPrefix")
    field(VAL,  "$(CAMERA)")
 }
 
+record(stringout, "$(P)$(R)OverlayPluginPVPrefix")
+{
+   field(VAL,  "$(OVERLAY)")
+}
+
 ##################################################
 # CRL Relays, Valves PLC, Shaker and BPM PV Prefix
 ##################################################

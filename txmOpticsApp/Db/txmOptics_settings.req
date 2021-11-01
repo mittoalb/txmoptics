@@ -142,5 +142,9 @@ $(P)$(R)SaveAllPVs
 $(P)$(R)LoadAllPVs
 $(P)$(R)FileAllPVs
 
+######################
+# Detector image cross
+######################
+$(P)$(R)CrossSelect
 
 

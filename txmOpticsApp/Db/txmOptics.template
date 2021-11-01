@@ -545,3 +545,16 @@ record(stringout, "$(P)$(R)FileAllPVs")
 {
    field(VAL,  "$(FILE_ALL_PVS)")
 }
+
+######################
+# Detector image cross
+######################
+
+record(mbbo, "$(P)$(R)CrossSelect") {
+  field(DTYP, "Raw Soft Channel")
+  field(NOBT, "3")
+  field(ZRVL, "0x0")
+  field(ONVL, "0x1")
+  field(ZRST, "Yes")
+  field(ONST, "No")
+}

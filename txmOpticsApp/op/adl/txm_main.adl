@@ -1,6 +1,6 @@
 
 file {
-	name="/home/beams19/USERTXM/epics/synApps/support/txmoptics/txmOpticsApp/op/adl/txm_main.adl"
+	name="/home/beams19/USERTXM/epics/synApps/support/txmoptics/iocBoot/iocTXMOptics/../../txmOpticsApp/op/adl/txm_main.adl"
 	version=030111
 }
 display {
@@ -8,7 +8,7 @@ display {
 		x=409
 		y=64
 		width=1501
-		height=1213
+		height=1103
 	}
 	clr=14
 	bclr=4
@@ -17900,7 +17900,7 @@ text {
 		height=25
 	}
 	control {
-		chan="$(P)$(R)CrossSelect.VAL"
+		chan="$(P5)$(R5)CrossSelect.VAL"
 		clr=14
 		bclr=51
 	}

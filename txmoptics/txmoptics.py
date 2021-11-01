@@ -99,8 +99,16 @@ class TXMOptics():
 
         prefix = self.pv_prefixes['Camera']
         self.control_pvs['CamAcquireTime'] = PV(prefix + 'cam1:AcquireTime')
-        self.control_pvs['CamTrans1Type'] = PV(prefix + 'Trans1:Type')
-        
+        self.control_pvs['CamTrans1Type'] = PV(prefix + 'Trans1:Type')        
+        self.control_pvs['CamArraySizeXRBV']        = PV(prefix + 'cam1:ArraySizeX_RBV')
+        self.control_pvs['CamArraySizeYRBV']        = PV(prefix + 'cam1:ArraySizeY_RBV')
+
+        self.control_pvs['OPEnableCallbacks'] = PV(prefix + 'Over1:EnableCallbacks')
+        self.control_pvs['OP1Use']            = PV(prefix + 'Over1:1:Use')        
+        self.control_pvs['OP1CenterX']        = PV(prefix + 'Over1:1:CenterX')        
+        self.control_pvs['OP1CenterY']        = PV(prefix + 'Over1:1:CenterY')        
+
+
         self.control_pvs['EnergyMonochromator'] = PV('32ida:BraggEAO.VAL')
                 
         self.epics_pvs = {**self.config_pvs, **self.control_pvs}

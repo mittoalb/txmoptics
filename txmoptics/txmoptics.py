@@ -119,6 +119,9 @@ class TXMOptics():
                          'MoveAllIn', 'MoveAllOut', 'AllStop', 'SaveAllPVs', 'LoadAllPVs', 'CrossSelect'):
             self.epics_pvs[epics_pv].put(0)
             self.epics_pvs[epics_pv].add_callback(self.pv_callback)
+        
+        for epics_pv in ('ShutterBClose', 'ShutterBStatus'):
+            self.epics_pvs[epics_pv].add_callback(self.pv_callback)            
             
         log.setup_custom_logger("./txmoptics.log")
 
@@ -278,6 +281,12 @@ class TXMOptics():
         elif (pvname.find('CrossSelect') != -1) and ((value == 0) or (value == 1)):
             thread = threading.Thread(target=self.cross_select, args=())
             thread.start()
+        elif (pvname.find('B:Close') != -1) and (value == 1):
+            thread = threading.Thread(target=self.shutter_b_close, args=())
+            thread.start()            
+        elif (pvname.find('STA_B') != -1) and (value == 1):
+            thread = threading.Thread(target=self.shutter_b_status, args=())
+            thread.start()            
 
     def move_crl_in(self):
         """Moves the crl in.
@@ -596,3 +605,18 @@ class TXMOptics():
         else:
             self.control_pvs['OP1Use'].put(0)
             log.info('Cross is disabled')
+
+ 
+    def shutter_b_close(self):        
+        print(self.epics_pvs['ShutterCallback'].get())
+        if (self.epics_pvs['ShutterCallback'].get() == 0):
+            log.info('Stop BPM')
+            self.epics_pvs['BPMVFeedback'].put(0)
+            self.epics_pvs['BPMHFeedback'].put(0)  
+        
+    def shutter_b_status(self):
+        if (self.epics_pvs['ShutterCallback'].get() == 0):
+            log.info('Start BPM')
+            self.epics_pvs['BPMVFeedback'].put(1)
+            self.epics_pvs['BPMHFeedback'].put(1)  
+        

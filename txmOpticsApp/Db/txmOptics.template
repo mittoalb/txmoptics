@@ -558,3 +558,26 @@ record(mbbo, "$(P)$(R)CrossSelect") {
   field(ZRST, "Yes")
   field(ONST, "No")
 }
+
+##########################
+# Shutter callback for BPM
+##########################
+
+record(mbbo, "$(P)$(R)ShutterCallback") {
+  field(DTYP, "Raw Soft Channel")
+  field(NOBT, "3")
+  field(ZRVL, "0x0")
+  field(ONVL, "0x1")
+  field(ZRST, "Yes")
+  field(ONST, "No")
+}
+
+record(stringout, "$(P)$(R)ShutterBClosePVName")
+{
+   field(VAL,  "$(SHUTTER_B_CLOSE)")
+}
+
+record(stringout, "$(P)$(R)ShutterBStatusPVName")
+{
+   field(VAL,  "$(SHUTTER_B_STATUS)")
+}

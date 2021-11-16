@@ -147,4 +147,9 @@ $(P)$(R)FileAllPVs
 ######################
 $(P)$(R)CrossSelect
 
-
+##########################
+# Shutter callback for BPM
+##########################
+$(P)$(R)ShutterCallback
+$(P)$(R)ShutterBClosePVName
+$(P)$(R)ShutterBStatusPVName

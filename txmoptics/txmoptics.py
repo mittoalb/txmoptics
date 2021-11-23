@@ -284,7 +284,7 @@ class TXMOptics():
         elif (pvname.find('B:Close') != -1) and (value == 1):
             thread = threading.Thread(target=self.shutter_b_close, args=())
             thread.start()            
-        elif (pvname.find('STA_B') != -1) and (value == 1):
+        elif (pvname.find('STA_B') != -1) and (value == 0):
             thread = threading.Thread(target=self.shutter_b_status, args=())
             thread.start()            
 
@@ -470,13 +470,13 @@ class TXMOptics():
         """
         Transform image in 
         """
-        self.epics_pvs['CamTrans1Type'].put(0, wait=True) # None
+        self.epics_pvs['CamTrans1Type'].put(2, wait=True) # None
         
     def transform_image_out(self):
         """
         Transform image out 
         """
-        self.epics_pvs['CamTrans1Type'].put(2, wait=True) # Rotate180
+        self.epics_pvs['CamTrans1Type'].put(0, wait=True) # Rotate180
                 
     def move_all_in(self):
         """Moves all in

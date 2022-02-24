@@ -153,3 +153,10 @@ $(P)$(R)CrossSelect
 $(P)$(R)ShutterCallback
 $(P)$(R)ShutterBClosePVName
 $(P)$(R)ShutterBStatusPVName
+
+############
+# Status PVs
+############
+$(P)$(R)Watchdog
+$(P)$(R)ServerRunning
+$(P)$(R)TXMOpticsStatus

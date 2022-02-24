@@ -123,6 +123,10 @@ class TXMOptics():
         for epics_pv in ('ShutterBClose', 'ShutterBStatus'):
             self.epics_pvs[epics_pv].add_callback(self.pv_callback)            
             
+        # Start the watchdog timer thread
+        thread = threading.Thread(target=self.reset_watchdog, args=(), daemon=True)
+        thread.start()
+        
         log.setup_custom_logger("./txmoptics.log")
 
     def read_pv_file(self, pv_file_name, macros):
@@ -608,7 +612,6 @@ class TXMOptics():
 
  
     def shutter_b_close(self):        
-        print(self.epics_pvs['ShutterCallback'].get())
         if (self.epics_pvs['ShutterCallback'].get() == 0):
             log.info('Stop BPM')
             self.epics_pvs['BPMVFeedback'].put(0)
@@ -619,4 +622,10 @@ class TXMOptics():
             log.info('Start BPM')
             self.epics_pvs['BPMVFeedback'].put(1)
             self.epics_pvs['BPMHFeedback'].put(1)  
-        
+            
+
+    def reset_watchdog(self):
+        """Sets the watchdog timer to 5 every 3 seconds"""
+        while True:
+            self.epics_pvs['Watchdog'].put(5)
+            time.sleep(3)  

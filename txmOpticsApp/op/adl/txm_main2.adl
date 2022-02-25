@@ -16862,23 +16862,7 @@ menu {
 }
 "related display" {
 	object {
-		x=1286
-		y=1175
-		width=20
-		height=20
-	}
-	display[0] {
-		label="inout"
-		name="txm_inout.adl"
-		args="P=$(P5), R=$(R5), BEAMLINE=$(B5)"
-	}
-	clr=14
-	bclr=51
-	visual="a row of buttons"
-}
-"related display" {
-	object {
-		x=1198
+		x=1231
 		y=1175
 		width=20
 		height=20
@@ -16893,7 +16877,7 @@ menu {
 }
 text {
 	object {
-		x=1104
+		x=1137
 		y=1175
 		width=140
 		height=20
@@ -16902,18 +16886,6 @@ text {
 		clr=14
 	}
 	textix="TXMOptics"
-}
-text {
-	object {
-		x=1222
-		y=1175
-		width=100
-		height=20
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="In/Out"
 }
 composite {
 	object {

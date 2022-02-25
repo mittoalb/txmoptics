@@ -16931,7 +16931,7 @@ menu {
 	}
 	display[0] {
 		label="IOC setup"
-		name="txm_EPICS_PVs.adl"
+		name="txmOpticsEPICS_PVs.adl"
 		args="P=$(P5),R=$(R5)"
 	}
 	clr=14

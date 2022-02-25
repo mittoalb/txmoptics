@@ -16878,14 +16878,14 @@ menu {
 }
 "related display" {
 	object {
-		x=1187
+		x=1198
 		y=1175
 		width=20
 		height=20
 	}
 	display[0] {
 		label="IOC setup"
-		name="txm_EPICS_PVs.adl"
+		name="txmOptics.adl"
 		args="P=$(P5),R=$(R5)"
 	}
 	clr=14
@@ -16893,7 +16893,7 @@ menu {
 }
 text {
 	object {
-		x=1105
+		x=1104
 		y=1175
 		width=140
 		height=20
@@ -16901,11 +16901,11 @@ text {
 	"basic attribute" {
 		clr=14
 	}
-	textix="PV names"
+	textix="TXMOptics"
 }
 text {
 	object {
-		x=1219
+		x=1222
 		y=1175
 		width=100
 		height=20

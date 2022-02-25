@@ -1,14 +1,14 @@
 
 file {
-	name="/home/beams19/USERTXM/epics/synApps/support/txmoptics/txmOpticsApp/op/adl/txmOpticsEPICS_PVs.adl"
+	name="/home/beams/USERTXM/epics/synApps/support/txmoptics/txmOpticsApp/op/adl/txm_EPICS_PVs.adl"
 	version=030111
 }
 display {
 	object {
-		x=68
-		y=373
+		x=805
+		y=156
 		width=455
-		height=760
+		height=781
 	}
 	clr=14
 	bclr=4
@@ -116,7 +116,7 @@ rectangle {
 		x=5
 		y=40
 		width=445
-		height=710
+		height=728
 	}
 	"basic attribute" {
 		clr=14
@@ -311,7 +311,7 @@ composite {
 text {
 	object {
 		x=60
-		y=225
+		y=200
 		width=150
 		height=20
 	}
@@ -324,7 +324,7 @@ text {
 "text entry" {
 	object {
 		x=220
-		y=225
+		y=200
 		width=225
 		height=20
 	}
@@ -340,7 +340,7 @@ text {
 text {
 	object {
 		x=60
-		y=250
+		y=225
 		width=150
 		height=20
 	}
@@ -353,7 +353,7 @@ text {
 "text entry" {
 	object {
 		x=220
-		y=250
+		y=225
 		width=225
 		height=20
 	}
@@ -369,7 +369,7 @@ text {
 text {
 	object {
 		x=60
-		y=350
+		y=325
 		width=150
 		height=20
 	}
@@ -382,7 +382,7 @@ text {
 "text entry" {
 	object {
 		x=220
-		y=350
+		y=325
 		width=225
 		height=20
 	}
@@ -398,7 +398,7 @@ text {
 "text entry" {
 	object {
 		x=220
-		y=275
+		y=250
 		width=225
 		height=20
 	}
@@ -414,7 +414,7 @@ text {
 text {
 	object {
 		x=60
-		y=275
+		y=250
 		width=150
 		height=20
 	}
@@ -427,7 +427,7 @@ text {
 text {
 	object {
 		x=60
-		y=300
+		y=275
 		width=150
 		height=20
 	}
@@ -440,7 +440,7 @@ text {
 "text entry" {
 	object {
 		x=220
-		y=300
+		y=275
 		width=225
 		height=20
 	}
@@ -456,7 +456,7 @@ text {
 "text entry" {
 	object {
 		x=220
-		y=325
+		y=300
 		width=225
 		height=20
 	}
@@ -472,7 +472,7 @@ text {
 text {
 	object {
 		x=60
-		y=325
+		y=300
 		width=150
 		height=20
 	}
@@ -485,7 +485,7 @@ text {
 text {
 	object {
 		x=60
-		y=375
+		y=350
 		width=150
 		height=20
 	}
@@ -498,7 +498,7 @@ text {
 "text entry" {
 	object {
 		x=220
-		y=375
+		y=350
 		width=225
 		height=20
 	}
@@ -514,7 +514,7 @@ text {
 text {
 	object {
 		x=60
-		y=400
+		y=375
 		width=150
 		height=20
 	}
@@ -527,7 +527,7 @@ text {
 "text entry" {
 	object {
 		x=220
-		y=400
+		y=375
 		width=225
 		height=20
 	}
@@ -543,7 +543,7 @@ text {
 text {
 	object {
 		x=60
-		y=500
+		y=475
 		width=150
 		height=20
 	}
@@ -556,7 +556,7 @@ text {
 "text entry" {
 	object {
 		x=220
-		y=500
+		y=475
 		width=225
 		height=20
 	}
@@ -572,7 +572,7 @@ text {
 "text entry" {
 	object {
 		x=220
-		y=425
+		y=400
 		width=225
 		height=20
 	}
@@ -588,7 +588,7 @@ text {
 text {
 	object {
 		x=60
-		y=425
+		y=400
 		width=150
 		height=20
 	}
@@ -601,7 +601,7 @@ text {
 text {
 	object {
 		x=60
-		y=450
+		y=425
 		width=150
 		height=20
 	}
@@ -614,7 +614,7 @@ text {
 "text entry" {
 	object {
 		x=220
-		y=450
+		y=425
 		width=225
 		height=20
 	}
@@ -630,7 +630,7 @@ text {
 "text entry" {
 	object {
 		x=220
-		y=475
+		y=450
 		width=225
 		height=20
 	}
@@ -646,7 +646,7 @@ text {
 text {
 	object {
 		x=60
-		y=475
+		y=450
 		width=150
 		height=20
 	}
@@ -659,7 +659,7 @@ text {
 text {
 	object {
 		x=60
-		y=525
+		y=500
 		width=150
 		height=20
 	}
@@ -672,7 +672,7 @@ text {
 "text entry" {
 	object {
 		x=220
-		y=525
+		y=500
 		width=225
 		height=20
 	}
@@ -688,7 +688,7 @@ text {
 text {
 	object {
 		x=60
-		y=550
+		y=525
 		width=150
 		height=20
 	}
@@ -701,7 +701,7 @@ text {
 "text entry" {
 	object {
 		x=220
-		y=550
+		y=525
 		width=225
 		height=20
 	}
@@ -717,7 +717,7 @@ text {
 text {
 	object {
 		x=60
-		y=650
+		y=625
 		width=150
 		height=20
 	}
@@ -730,7 +730,7 @@ text {
 "text entry" {
 	object {
 		x=220
-		y=650
+		y=625
 		width=225
 		height=20
 	}
@@ -746,7 +746,7 @@ text {
 "text entry" {
 	object {
 		x=220
-		y=575
+		y=550
 		width=225
 		height=20
 	}
@@ -762,7 +762,7 @@ text {
 text {
 	object {
 		x=60
-		y=575
+		y=550
 		width=150
 		height=20
 	}
@@ -775,7 +775,7 @@ text {
 text {
 	object {
 		x=60
-		y=600
+		y=575
 		width=150
 		height=20
 	}
@@ -788,7 +788,7 @@ text {
 "text entry" {
 	object {
 		x=220
-		y=600
+		y=575
 		width=225
 		height=20
 	}
@@ -804,7 +804,7 @@ text {
 "text entry" {
 	object {
 		x=220
-		y=625
+		y=600
 		width=225
 		height=20
 	}
@@ -820,7 +820,7 @@ text {
 text {
 	object {
 		x=60
-		y=625
+		y=600
 		width=150
 		height=20
 	}
@@ -833,7 +833,7 @@ text {
 text {
 	object {
 		x=60
-		y=675
+		y=650
 		width=150
 		height=20
 	}
@@ -846,7 +846,7 @@ text {
 "text entry" {
 	object {
 		x=220
-		y=675
+		y=650
 		width=225
 		height=20
 	}
@@ -862,25 +862,25 @@ text {
 text {
 	object {
 		x=60
-		y=700
+		y=680
 		width=150
 		height=20
 	}
 	"basic attribute" {
 		clr=14
 	}
-	textix="Sample Top X PV"
+	textix="Furnace X PV"
 	align="horiz. right"
 }
 "text entry" {
 	object {
 		x=220
-		y=700
+		y=680
 		width=225
 		height=20
 	}
 	control {
-		chan="$(P)$(R)SampleTopXPVName"
+		chan="$(P)$(R)FurnaceXPVName"
 		clr=14
 		bclr=51
 	}
@@ -891,12 +891,12 @@ text {
 "text entry" {
 	object {
 		x=220
-		y=725
+		y=705
 		width=225
 		height=20
 	}
 	control {
-		chan="$(P)$(R)SampleTopZPVName"
+		chan="$(P)$(R)FurnaceYPVName"
 		clr=14
 		bclr=51
 	}
@@ -907,38 +907,38 @@ text {
 text {
 	object {
 		x=60
-		y=725
+		y=705
 		width=150
 		height=20
 	}
 	"basic attribute" {
 		clr=14
 	}
-	textix="Sample Top Z PV"
+	textix="Furnace Y PV"
 	align="horiz. right"
 }
 text {
 	object {
-		x=60
-		y=200
+		x=61
+		y=733
 		width=150
 		height=20
 	}
 	"basic attribute" {
 		clr=14
 	}
-	textix="Overlay prefix"
+	textix="Furnace Z PV"
 	align="horiz. right"
 }
 "text entry" {
 	object {
-		x=220
-		y=200
+		x=221
+		y=733
 		width=225
 		height=20
 	}
 	control {
-		chan="$(P)$(R)OverlayPluginPVPrefix"
+		chan="$(P)$(R)FurnaceZPVName"
 		clr=14
 		bclr=51
 	}

@@ -160,3 +160,13 @@ $(P)$(R)ShutterBStatusPVName
 $(P)$(R)Watchdog
 $(P)$(R)ServerRunning
 $(P)$(R)TXMOpticsStatus
+
+####################
+# Optics information
+####################
+$(P)$(R)ScintillatorType
+$(P)$(R)ScintillatorThickness
+$(P)$(R)ImagePixelSize
+$(P)$(R)DetectorPixelSize
+$(P)$(R)CameraObjective
+$(P)$(R)CameraTubeLength

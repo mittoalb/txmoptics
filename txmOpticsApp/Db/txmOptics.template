@@ -113,6 +113,21 @@ record(stringout, "$(P)$(R)CondenserYawPVName")
    field(VAL,  "$(CONDENSER_YAW)")
 }
 
+record(stringout, "$(P)$(R)DetectorXPVName")
+{
+   field(VAL,  "$(DETECTOR_X)")
+}
+
+record(stringout, "$(P)$(R)DetectorYPVName")
+{
+   field(VAL,  "$(DETECTOR_Y)")
+}
+
+record(stringout, "$(P)$(R)DetectorZPVName")
+{
+   field(VAL,  "$(DETECTOR_Z)")
+}
+
 record(stringout, "$(P)$(R)ZonePlateXPVName")
 {
    field(VAL,  "$(ZONEPLATE_X)")
@@ -544,6 +559,73 @@ record(busy, "$(P)$(R)LoadAllPVs")
 record(stringout, "$(P)$(R)FileAllPVs")
 {
    field(VAL,  "$(FILE_ALL_PVS)")
+}
+
+###############
+# Energy change
+###############
+record(stringout, "$(P)$(R)DCMmvtPVName")
+{
+   field(VAL,  "$(KOHZUMODE)")
+}
+
+record(stringout, "$(P)$(R)GAPputEnergyPVName")
+{
+   field(VAL,  "$(USENERGY)")
+}
+
+record(stringout, "$(P)$(R)GAPputEnergyRBVPVName")
+{
+   field(VAL,  "$(USENERGYRBV)")
+}
+
+record(stringout, "$(P)$(R)DCMputEnergyPVName")
+{
+   field(VAL,  "$(BRAGG)")
+}
+record(stringout, "$(P)$(R)DCMputEnergyRBVPVName")
+{
+   field(VAL,  "$(BRAGGRBV)")
+}
+record(stringout, "$(P)$(R)DCMmoveEnergyPVName")
+{
+   field(VAL,  "$(BRAGGMOVE)")
+}
+record(busy,"$(P)$(R)EnergySet")
+{
+   field(ZNAM,"Done")
+   field(ZSV, "NO_ALARM")
+   field(ONAM,"Set")
+   field(OSV, "MINOR")
+   field(VAL, "0")
+}
+record(ao, "$(P)$(R)Energy")
+{
+   field(PREC,  "4")
+   field(VAL,  "8")
+   field(HOPR, "14")
+   field(LOPR, "6")
+}
+record(busy, "$(P)$(R)EnergyBusy")
+{
+   field(ZNAM, "Done")
+   field(ONAM, "Busy")
+}
+record(mbbo, "$(P)$(R)EnergyUseCalibration") {
+  field(DTYP, "Raw Soft Channel")
+  field(NOBT, "3")
+  field(ZRVL, "0x0")
+  field(ONVL, "0x1")
+  field(ZRST, "Yes")
+  field(ONST, "No")
+}
+record(stringout, "$(P)$(R)EnergyCalibrationFileOne")
+{
+   field(VAL,  "$(EN_FILE1)")
+}
+record(stringout, "$(P)$(R)EnergyCalibrationFileTwo")
+{
+   field(VAL,  "$(EN_FILE2)")
 }
 
 ######################

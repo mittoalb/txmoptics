@@ -39,6 +39,9 @@ $(P)$(R)CondenserPitchPVName
 $(P)$(R)CondenserYawPVName
 $(P)$(R)PinholeXPVName
 $(P)$(R)PinholeYPVName
+$(P)$(R)DetectorXPVName
+$(P)$(R)DetectorYPVName
+$(P)$(R)DetectorZPVName
 $(P)$(R)ZonePlateXPVName
 $(P)$(R)ZonePlateYPVName
 $(P)$(R)ZonePlateZPVName
@@ -146,6 +149,23 @@ $(P)$(R)FileAllPVs
 # Detector image cross
 ######################
 $(P)$(R)CrossSelect
+
+###############
+# Energy change
+###############
+$(P)$(R)EnergySet
+$(P)$(R)Energy
+$(P)$(R)EnergyBusy
+$(P)$(R)EnergyUseCalibration
+$(P)$(R)EnergyCalibrationFileOne
+$(P)$(R)EnergyCalibrationFileTwo
+$(P)$(R)DCMmvtPVName
+$(P)$(R)GAPputEnergyPVName
+$(P)$(R)GAPputEnergyRBVPVName
+$(P)$(R)DCMputEnergyPVName
+$(P)$(R)DCMputEnergyRBVPVName
+$(P)$(R)DCMmoveEnergyPVName
+
 
 ##########################
 # Shutter callback for BPM

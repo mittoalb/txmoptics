@@ -190,3 +190,5 @@ $(P)$(R)ImagePixelSize
 $(P)$(R)DetectorPixelSize
 $(P)$(R)CameraObjective
 $(P)$(R)CameraTubeLength
+$(P)$(R)ZPDescription
+$(P)$(R)ZPOutermostZoneWidth

@@ -729,3 +729,14 @@ record(ao, "$(P)$(R)CameraTubeLength")
    field(PREC, "0")
    field(EGU,  "mm")
 }
+
+record(stringout, "$(P)$(R)ZPDescription")
+{
+   field(VAL,  "Unknown")
+}
+
+record(ao, "$(P)$(R)ZPOutermostZoneWidth")
+{
+   field(PREC, "0")
+   field(EGU,  "nm")
+}

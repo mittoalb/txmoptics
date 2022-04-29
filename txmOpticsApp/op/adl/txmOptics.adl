@@ -1,14 +1,14 @@
 
 file {
-	name="/home/beams19/USERTXM/epics/synApps/support/txmoptics/txmOpticsApp/op/adl/txmOptics.adl"
+	name="/home/beams19/USERTXM/epics/synApps/support/txmoptics/iocBoot/iocTXMOptics/../../txmOpticsApp/op/adl/txmOptics.adl"
 	version=030111
 }
 display {
 	object {
-		x=659
-		y=380
+		x=1298
+		y=143
 		width=800
-		height=720
+		height=770
 	}
 	clr=14
 	bclr=4
@@ -200,111 +200,100 @@ text {
 	textix="Camera objective"
 	align="horiz. right"
 }
-composite {
+"text entry" {
+	object {
+		x=428
+		y=585
+		width=230
+		height=20
+	}
+	control {
+		chan="$(P)$(R)ScintillatorThickness"
+		clr=14
+		bclr=51
+	}
+	format="string"
+	limits {
+	}
+}
+"text entry" {
 	object {
 		x=428
 		y=560
 		width=230
-		height=145
+		height=20
 	}
-	"composite name"=""
-	children {
-		"text entry" {
-			object {
-				x=428
-				y=585
-				width=230
-				height=20
-			}
-			control {
-				chan="$(P)$(R)ScintillatorThickness"
-				clr=14
-				bclr=51
-			}
-			format="string"
-			limits {
-			}
-		}
-		"text entry" {
-			object {
-				x=428
-				y=560
-				width=230
-				height=20
-			}
-			control {
-				chan="$(P)$(R)ScintillatorType"
-				clr=14
-				bclr=51
-			}
-			format="string"
-			limits {
-			}
-		}
-		"text entry" {
-			object {
-				x=428
-				y=635
-				width=230
-				height=20
-			}
-			control {
-				chan="$(P)$(R)DetectorPixelSize"
-				clr=14
-				bclr=51
-			}
-			format="string"
-			limits {
-			}
-		}
-		"text entry" {
-			object {
-				x=428
-				y=660
-				width=230
-				height=20
-			}
-			control {
-				chan="$(P)$(R)CameraObjective"
-				clr=14
-				bclr=51
-			}
-			format="string"
-			limits {
-			}
-		}
-		"text entry" {
-			object {
-				x=428
-				y=685
-				width=230
-				height=20
-			}
-			control {
-				chan="$(P)$(R)CameraTubeLength"
-				clr=14
-				bclr=51
-			}
-			format="string"
-			limits {
-			}
-		}
-		"text entry" {
-			object {
-				x=428
-				y=610
-				width=230
-				height=20
-			}
-			control {
-				chan="$(P)$(R)ImagePixelSize"
-				clr=14
-				bclr=51
-			}
-			format="string"
-			limits {
-			}
-		}
+	control {
+		chan="$(P)$(R)ScintillatorType"
+		clr=14
+		bclr=51
+	}
+	format="string"
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=428
+		y=635
+		width=230
+		height=20
+	}
+	control {
+		chan="$(P)$(R)DetectorPixelSize"
+		clr=14
+		bclr=51
+	}
+	format="string"
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=428
+		y=660
+		width=230
+		height=20
+	}
+	control {
+		chan="$(P)$(R)CameraObjective"
+		clr=14
+		bclr=51
+	}
+	format="string"
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=428
+		y=685
+		width=230
+		height=20
+	}
+	control {
+		chan="$(P)$(R)CameraTubeLength"
+		clr=14
+		bclr=51
+	}
+	format="string"
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=428
+		y=610
+		width=230
+		height=20
+	}
+	control {
+		chan="$(P)$(R)ImagePixelSize"
+		clr=14
+		bclr=51
+	}
+	format="string"
+	limits {
 	}
 }
 "related display" {
@@ -1298,4 +1287,62 @@ text {
 		bclr=51
 	}
 	stacking="column"
+}
+"text entry" {
+	object {
+		x=428
+		y=735
+		width=230
+		height=20
+	}
+	control {
+		chan="$(P)$(R)ZPOutermostZoneWidth"
+		clr=14
+		bclr=51
+	}
+	format="string"
+	limits {
+	}
+}
+text {
+	object {
+		x=263
+		y=735
+		width=160
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="ZP outermost zone width (nm)"
+	align="horiz. right"
+}
+text {
+	object {
+		x=263
+		y=710
+		width=160
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="ZP description"
+	align="horiz. right"
+}
+"text entry" {
+	object {
+		x=428
+		y=710
+		width=230
+		height=20
+	}
+	control {
+		chan="$(P)$(R)ZPDescription"
+		clr=14
+		bclr=51
+	}
+	format="string"
+	limits {
+	}
 }

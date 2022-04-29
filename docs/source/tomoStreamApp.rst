@@ -131,6 +131,38 @@ Stream status via Channel Access
       It is controlled by a watchdog timer, and will change from ``Running`` to ``Stopped``
       within 5 seconds if the Python server exits.
 
+Optics information
+------------------
+
+.. cssclass:: table-bordered table-striped table-hover
+.. list-table::
+  :header-rows: 1
+  :widths: 5 5 90
+
+  * - Record name
+    - Record type
+    - Description
+  * - $(P)$(R)ScintillatorType
+    - stringout
+    - Scintillator type.
+  * - $(P)$(R)ScintillatorThickness
+    - ao
+    - Scintillator thickness.
+  * - $(P)$(R)ImagePixelSize
+    - ao
+    - Image pixel size.
+  * - $(P)$(R)DetectorPixelSize
+    - ao
+    - Detector pixel size.
+  * - $(P)$(R)CameraObjective
+    - stringout
+    - Camera objective magnification.
+  * - $(P)$(R)ZPDescription
+    - stringout
+    - Zone plate description.
+  * - $(P)$(R)ZPOutermostZoneWidth
+    - ao
+    - Zone plate outermost zone width.
 
 tomoStream_settings.req
 ~~~~~~~~~~~~~~~~~~~~~~~

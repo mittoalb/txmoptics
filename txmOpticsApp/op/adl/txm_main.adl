@@ -5,10 +5,10 @@ file {
 }
 display {
 	object {
-		x=123
-		y=895
-		width=1501
-		height=1235
+		x=105
+		y=764
+		width=1646
+		height=1215
 	}
 	clr=14
 	bclr=4
@@ -3494,7 +3494,7 @@ composite {
 "related display" {
 	object {
 		x=687
-		y=231
+		y=232
 		width=15
 		height=15
 	}
@@ -3523,7 +3523,7 @@ composite {
 }
 text {
 	object {
-		x=1212
+		x=1348
 		y=91
 		width=1
 		height=10
@@ -3588,7 +3588,7 @@ rectangle {
 	object {
 		x=322
 		y=0
-		width=1175
+		width=1300
 		height=255
 	}
 	"basic attribute" {
@@ -3599,7 +3599,7 @@ rectangle {
 }
 text {
 	object {
-		x=1292
+		x=1386
 		y=442
 		width=45
 		height=16
@@ -3612,7 +3612,7 @@ text {
 }
 text {
 	object {
-		x=1291
+		x=1385
 		y=441
 		width=45
 		height=16
@@ -3629,7 +3629,7 @@ text {
 }
 "text update" {
 	object {
-		x=1291
+		x=1385
 		y=313
 		width=116
 		height=20
@@ -3645,7 +3645,7 @@ text {
 }
 rectangle {
 	object {
-		x=1297
+		x=1391
 		y=369
 		width=104
 		height=31
@@ -3661,7 +3661,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=1297
+		x=1391
 		y=369
 		width=104
 		height=31
@@ -3677,7 +3677,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=1297
+		x=1391
 		y=369
 		width=104
 		height=31
@@ -3693,7 +3693,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=1291
+		x=1385
 		y=400
 		width=116
 		height=40
@@ -3705,7 +3705,7 @@ rectangle {
 }
 text {
 	object {
-		x=1319
+		x=1413
 		y=424
 		width=60
 		height=15
@@ -3723,7 +3723,7 @@ text {
 }
 text {
 	object {
-		x=1319
+		x=1413
 		y=430
 		width=60
 		height=10
@@ -3741,7 +3741,7 @@ text {
 }
 "message button" {
 	object {
-		x=1293
+		x=1387
 		y=402
 		width=25
 		height=36
@@ -3756,7 +3756,7 @@ text {
 }
 "text entry" {
 	object {
-		x=1319
+		x=1413
 		y=402
 		width=60
 		height=20
@@ -3771,7 +3771,7 @@ text {
 }
 "message button" {
 	object {
-		x=1380
+		x=1474
 		y=402
 		width=25
 		height=36
@@ -3786,7 +3786,7 @@ text {
 }
 "text entry" {
 	object {
-		x=1302
+		x=1396
 		y=372
 		width=98
 		height=25
@@ -3801,7 +3801,7 @@ text {
 }
 rectangle {
 	object {
-		x=1291
+		x=1385
 		y=348
 		width=6
 		height=50
@@ -3816,7 +3816,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=1291
+		x=1385
 		y=335
 		width=116
 		height=12
@@ -3832,7 +3832,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=1298
+		x=1392
 		y=344
 		width=102
 		height=26
@@ -3849,7 +3849,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=1300
+		x=1394
 		y=346
 		width=98
 		height=21
@@ -3866,7 +3866,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=1302
+		x=1396
 		y=348
 		width=94
 		height=17
@@ -3882,7 +3882,7 @@ rectangle {
 }
 text {
 	object {
-		x=1319
+		x=1413
 		y=422
 		width=60
 		height=10
@@ -3900,7 +3900,7 @@ text {
 }
 rectangle {
 	object {
-		x=1297
+		x=1391
 		y=369
 		width=104
 		height=31
@@ -3918,7 +3918,7 @@ rectangle {
 }
 "choice button" {
 	object {
-		x=1336
+		x=1430
 		y=440
 		width=71
 		height=20
@@ -3932,7 +3932,7 @@ rectangle {
 }
 "choice button" {
 	object {
-		x=1290
+		x=1384
 		y=461
 		width=115
 		height=35
@@ -3947,7 +3947,7 @@ rectangle {
 	object {
 		x=715
 		y=300
-		width=780
+		width=908
 		height=205
 	}
 	"basic attribute" {
@@ -3958,7 +3958,7 @@ rectangle {
 }
 composite {
 	object {
-		x=930
+		x=1024
 		y=313
 		width=117
 		height=183
@@ -3967,7 +3967,7 @@ composite {
 	children {
 		text {
 			object {
-				x=932
+				x=1026
 				y=442
 				width=45
 				height=16
@@ -3980,7 +3980,7 @@ composite {
 		}
 		text {
 			object {
-				x=931
+				x=1025
 				y=441
 				width=45
 				height=16
@@ -3997,7 +3997,7 @@ composite {
 		}
 		"text update" {
 			object {
-				x=931
+				x=1025
 				y=313
 				width=116
 				height=20
@@ -4013,7 +4013,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=937
+				x=1031
 				y=369
 				width=104
 				height=31
@@ -4029,7 +4029,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=937
+				x=1031
 				y=369
 				width=104
 				height=31
@@ -4045,7 +4045,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=937
+				x=1031
 				y=369
 				width=104
 				height=31
@@ -4061,7 +4061,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=931
+				x=1025
 				y=400
 				width=116
 				height=40
@@ -4073,7 +4073,7 @@ composite {
 		}
 		text {
 			object {
-				x=959
+				x=1053
 				y=424
 				width=60
 				height=15
@@ -4091,7 +4091,7 @@ composite {
 		}
 		text {
 			object {
-				x=959
+				x=1053
 				y=430
 				width=60
 				height=10
@@ -4109,7 +4109,7 @@ composite {
 		}
 		"message button" {
 			object {
-				x=933
+				x=1027
 				y=402
 				width=25
 				height=36
@@ -4124,7 +4124,7 @@ composite {
 		}
 		"text entry" {
 			object {
-				x=959
+				x=1053
 				y=402
 				width=60
 				height=20
@@ -4139,7 +4139,7 @@ composite {
 		}
 		"message button" {
 			object {
-				x=1020
+				x=1114
 				y=402
 				width=25
 				height=36
@@ -4154,7 +4154,7 @@ composite {
 		}
 		"text entry" {
 			object {
-				x=940
+				x=1034
 				y=372
 				width=98
 				height=25
@@ -4169,7 +4169,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=931
+				x=1025
 				y=348
 				width=6
 				height=50
@@ -4184,7 +4184,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1041
+				x=1135
 				y=348
 				width=6
 				height=50
@@ -4199,7 +4199,7 @@ composite {
 		}
 		"text update" {
 			object {
-				x=931
+				x=1025
 				y=335
 				width=116
 				height=12
@@ -4215,7 +4215,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=938
+				x=1032
 				y=344
 				width=102
 				height=26
@@ -4232,7 +4232,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=940
+				x=1034
 				y=346
 				width=98
 				height=21
@@ -4249,7 +4249,7 @@ composite {
 		}
 		"text update" {
 			object {
-				x=942
+				x=1036
 				y=348
 				width=94
 				height=17
@@ -4265,7 +4265,7 @@ composite {
 		}
 		text {
 			object {
-				x=959
+				x=1053
 				y=422
 				width=60
 				height=10
@@ -4283,7 +4283,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=937
+				x=1031
 				y=369
 				width=104
 				height=31
@@ -4301,7 +4301,7 @@ composite {
 		}
 		"choice button" {
 			object {
-				x=976
+				x=1070
 				y=440
 				width=71
 				height=20
@@ -4315,7 +4315,7 @@ composite {
 		}
 		"choice button" {
 			object {
-				x=930
+				x=1024
 				y=461
 				width=115
 				height=35
@@ -4330,7 +4330,7 @@ composite {
 }
 composite {
 	object {
-		x=1050
+		x=1144
 		y=313
 		width=117
 		height=183
@@ -4339,7 +4339,7 @@ composite {
 	children {
 		text {
 			object {
-				x=1052
+				x=1146
 				y=442
 				width=45
 				height=16
@@ -4352,7 +4352,7 @@ composite {
 		}
 		text {
 			object {
-				x=1051
+				x=1145
 				y=441
 				width=45
 				height=16
@@ -4369,7 +4369,7 @@ composite {
 		}
 		"text update" {
 			object {
-				x=1051
+				x=1145
 				y=313
 				width=116
 				height=20
@@ -4385,7 +4385,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1057
+				x=1151
 				y=369
 				width=104
 				height=31
@@ -4401,7 +4401,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1057
+				x=1151
 				y=369
 				width=104
 				height=31
@@ -4417,7 +4417,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1057
+				x=1151
 				y=369
 				width=104
 				height=31
@@ -4433,7 +4433,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1051
+				x=1145
 				y=400
 				width=116
 				height=40
@@ -4445,7 +4445,7 @@ composite {
 		}
 		text {
 			object {
-				x=1079
+				x=1173
 				y=424
 				width=60
 				height=15
@@ -4463,7 +4463,7 @@ composite {
 		}
 		text {
 			object {
-				x=1079
+				x=1173
 				y=430
 				width=60
 				height=10
@@ -4481,7 +4481,7 @@ composite {
 		}
 		"message button" {
 			object {
-				x=1053
+				x=1147
 				y=402
 				width=25
 				height=36
@@ -4496,7 +4496,7 @@ composite {
 		}
 		"text entry" {
 			object {
-				x=1079
+				x=1173
 				y=402
 				width=60
 				height=20
@@ -4511,7 +4511,7 @@ composite {
 		}
 		"message button" {
 			object {
-				x=1140
+				x=1234
 				y=402
 				width=25
 				height=36
@@ -4526,7 +4526,7 @@ composite {
 		}
 		"text entry" {
 			object {
-				x=1060
+				x=1154
 				y=372
 				width=98
 				height=25
@@ -4541,7 +4541,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1051
+				x=1145
 				y=348
 				width=6
 				height=50
@@ -4556,7 +4556,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1161
+				x=1255
 				y=348
 				width=6
 				height=50
@@ -4571,7 +4571,7 @@ composite {
 		}
 		"text update" {
 			object {
-				x=1051
+				x=1145
 				y=335
 				width=116
 				height=12
@@ -4587,7 +4587,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1058
+				x=1152
 				y=344
 				width=102
 				height=26
@@ -4604,7 +4604,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1060
+				x=1154
 				y=346
 				width=98
 				height=21
@@ -4621,7 +4621,7 @@ composite {
 		}
 		"text update" {
 			object {
-				x=1062
+				x=1156
 				y=348
 				width=94
 				height=17
@@ -4637,7 +4637,7 @@ composite {
 		}
 		text {
 			object {
-				x=1079
+				x=1173
 				y=422
 				width=60
 				height=10
@@ -4655,7 +4655,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1057
+				x=1151
 				y=369
 				width=104
 				height=31
@@ -4673,7 +4673,7 @@ composite {
 		}
 		"choice button" {
 			object {
-				x=1096
+				x=1190
 				y=440
 				width=71
 				height=20
@@ -4687,7 +4687,7 @@ composite {
 		}
 		"choice button" {
 			object {
-				x=1050
+				x=1144
 				y=461
 				width=115
 				height=35
@@ -4702,7 +4702,7 @@ composite {
 }
 composite {
 	object {
-		x=1170
+		x=1264
 		y=313
 		width=117
 		height=183
@@ -4711,7 +4711,7 @@ composite {
 	children {
 		text {
 			object {
-				x=1172
+				x=1266
 				y=442
 				width=45
 				height=16
@@ -4724,7 +4724,7 @@ composite {
 		}
 		text {
 			object {
-				x=1171
+				x=1265
 				y=441
 				width=45
 				height=16
@@ -4741,7 +4741,7 @@ composite {
 		}
 		"text update" {
 			object {
-				x=1171
+				x=1265
 				y=313
 				width=116
 				height=20
@@ -4757,7 +4757,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1177
+				x=1271
 				y=369
 				width=104
 				height=31
@@ -4773,7 +4773,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1177
+				x=1271
 				y=369
 				width=104
 				height=31
@@ -4789,7 +4789,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1177
+				x=1271
 				y=369
 				width=104
 				height=31
@@ -4805,7 +4805,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1171
+				x=1265
 				y=400
 				width=116
 				height=40
@@ -4817,7 +4817,7 @@ composite {
 		}
 		text {
 			object {
-				x=1199
+				x=1293
 				y=424
 				width=60
 				height=15
@@ -4835,7 +4835,7 @@ composite {
 		}
 		text {
 			object {
-				x=1199
+				x=1293
 				y=430
 				width=60
 				height=10
@@ -4853,7 +4853,7 @@ composite {
 		}
 		"message button" {
 			object {
-				x=1173
+				x=1267
 				y=402
 				width=25
 				height=36
@@ -4868,7 +4868,7 @@ composite {
 		}
 		"text entry" {
 			object {
-				x=1199
+				x=1293
 				y=402
 				width=60
 				height=20
@@ -4883,7 +4883,7 @@ composite {
 		}
 		"message button" {
 			object {
-				x=1260
+				x=1354
 				y=402
 				width=25
 				height=36
@@ -4898,7 +4898,7 @@ composite {
 		}
 		"text entry" {
 			object {
-				x=1180
+				x=1274
 				y=372
 				width=98
 				height=25
@@ -4913,7 +4913,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1171
+				x=1265
 				y=348
 				width=6
 				height=50
@@ -4928,7 +4928,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1281
+				x=1375
 				y=348
 				width=6
 				height=50
@@ -4943,7 +4943,7 @@ composite {
 		}
 		"text update" {
 			object {
-				x=1171
+				x=1265
 				y=335
 				width=116
 				height=12
@@ -4959,7 +4959,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1178
+				x=1272
 				y=344
 				width=102
 				height=26
@@ -4976,7 +4976,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1180
+				x=1274
 				y=346
 				width=98
 				height=21
@@ -4993,7 +4993,7 @@ composite {
 		}
 		"text update" {
 			object {
-				x=1182
+				x=1276
 				y=348
 				width=94
 				height=17
@@ -5009,7 +5009,7 @@ composite {
 		}
 		text {
 			object {
-				x=1199
+				x=1293
 				y=422
 				width=60
 				height=10
@@ -5027,7 +5027,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1177
+				x=1271
 				y=369
 				width=104
 				height=31
@@ -5045,7 +5045,7 @@ composite {
 		}
 		"choice button" {
 			object {
-				x=1216
+				x=1310
 				y=440
 				width=71
 				height=20
@@ -5059,7 +5059,7 @@ composite {
 		}
 		"choice button" {
 			object {
-				x=1170
+				x=1264
 				y=461
 				width=115
 				height=35
@@ -5074,7 +5074,7 @@ composite {
 }
 "related display" {
 	object {
-		x=1405
+		x=1499
 		y=479
 		width=15
 		height=15
@@ -5176,7 +5176,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=832
+		x=878
 		y=347
 		width=18
 		height=22
@@ -5187,7 +5187,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=832
+		x=878
 		y=324
 		width=18
 		height=22
@@ -5198,7 +5198,7 @@ rectangle {
 }
 "choice button" {
 	object {
-		x=858
+		x=904
 		y=328
 		width=65
 		height=15
@@ -5212,7 +5212,7 @@ rectangle {
 }
 text {
 	object {
-		x=817
+		x=865
 		y=306
 		width=53
 		height=19
@@ -5225,7 +5225,7 @@ text {
 }
 text {
 	object {
-		x=861
+		x=909
 		y=306
 		width=63
 		height=19
@@ -5238,7 +5238,7 @@ text {
 }
 text {
 	object {
-		x=829
+		x=875
 		y=326
 		width=25
 		height=20
@@ -5255,7 +5255,7 @@ text {
 }
 text {
 	object {
-		x=829
+		x=875
 		y=326
 		width=25
 		height=20
@@ -5272,7 +5272,7 @@ text {
 }
 "choice button" {
 	object {
-		x=858
+		x=904
 		y=351
 		width=65
 		height=15
@@ -5286,7 +5286,7 @@ text {
 }
 text {
 	object {
-		x=829
+		x=875
 		y=349
 		width=25
 		height=20
@@ -5303,7 +5303,7 @@ text {
 }
 text {
 	object {
-		x=829
+		x=875
 		y=349
 		width=25
 		height=20
@@ -5320,7 +5320,7 @@ text {
 }
 rectangle {
 	object {
-		x=832
+		x=878
 		y=391
 		width=18
 		height=22
@@ -5331,7 +5331,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=832
+		x=878
 		y=368
 		width=18
 		height=22
@@ -5342,7 +5342,7 @@ rectangle {
 }
 "choice button" {
 	object {
-		x=858
+		x=904
 		y=372
 		width=65
 		height=15
@@ -5356,7 +5356,7 @@ rectangle {
 }
 text {
 	object {
-		x=829
+		x=875
 		y=370
 		width=25
 		height=20
@@ -5373,7 +5373,7 @@ text {
 }
 text {
 	object {
-		x=829
+		x=875
 		y=370
 		width=25
 		height=20
@@ -5390,7 +5390,7 @@ text {
 }
 "choice button" {
 	object {
-		x=858
+		x=904
 		y=395
 		width=65
 		height=15
@@ -5404,7 +5404,7 @@ text {
 }
 text {
 	object {
-		x=829
+		x=875
 		y=393
 		width=25
 		height=20
@@ -5421,7 +5421,7 @@ text {
 }
 text {
 	object {
-		x=829
+		x=875
 		y=393
 		width=25
 		height=20
@@ -5438,7 +5438,7 @@ text {
 }
 rectangle {
 	object {
-		x=832
+		x=878
 		y=435
 		width=18
 		height=22
@@ -5449,7 +5449,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=832
+		x=878
 		y=412
 		width=18
 		height=22
@@ -5460,7 +5460,7 @@ rectangle {
 }
 "choice button" {
 	object {
-		x=858
+		x=904
 		y=416
 		width=65
 		height=15
@@ -5474,7 +5474,7 @@ rectangle {
 }
 text {
 	object {
-		x=829
+		x=875
 		y=414
 		width=25
 		height=20
@@ -5491,7 +5491,7 @@ text {
 }
 text {
 	object {
-		x=829
+		x=875
 		y=414
 		width=25
 		height=20
@@ -5508,7 +5508,7 @@ text {
 }
 "choice button" {
 	object {
-		x=858
+		x=904
 		y=439
 		width=65
 		height=15
@@ -5522,7 +5522,7 @@ text {
 }
 text {
 	object {
-		x=829
+		x=875
 		y=437
 		width=25
 		height=20
@@ -5539,7 +5539,7 @@ text {
 }
 text {
 	object {
-		x=829
+		x=875
 		y=437
 		width=25
 		height=20
@@ -5556,7 +5556,7 @@ text {
 }
 rectangle {
 	object {
-		x=832
+		x=878
 		y=477
 		width=18
 		height=22
@@ -5567,7 +5567,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=832
+		x=878
 		y=456
 		width=18
 		height=22
@@ -5578,7 +5578,7 @@ rectangle {
 }
 "choice button" {
 	object {
-		x=858
+		x=904
 		y=460
 		width=65
 		height=15
@@ -5592,7 +5592,7 @@ rectangle {
 }
 text {
 	object {
-		x=829
+		x=875
 		y=458
 		width=25
 		height=20
@@ -5609,7 +5609,7 @@ text {
 }
 text {
 	object {
-		x=829
+		x=875
 		y=458
 		width=25
 		height=20
@@ -5626,7 +5626,7 @@ text {
 }
 "choice button" {
 	object {
-		x=858
+		x=904
 		y=482
 		width=65
 		height=15
@@ -5640,7 +5640,7 @@ text {
 }
 text {
 	object {
-		x=829
+		x=876
 		y=478
 		width=25
 		height=20
@@ -5657,7 +5657,7 @@ text {
 }
 text {
 	object {
-		x=829
+		x=876
 		y=478
 		width=25
 		height=20
@@ -5998,7 +5998,7 @@ text {
 }
 composite {
 	object {
-		x=705
+		x=841
 		y=65
 		width=117
 		height=183
@@ -6007,7 +6007,7 @@ composite {
 	children {
 		text {
 			object {
-				x=707
+				x=843
 				y=194
 				width=45
 				height=16
@@ -6020,7 +6020,7 @@ composite {
 		}
 		text {
 			object {
-				x=706
+				x=842
 				y=193
 				width=45
 				height=16
@@ -6037,7 +6037,7 @@ composite {
 		}
 		"text update" {
 			object {
-				x=706
+				x=842
 				y=65
 				width=116
 				height=20
@@ -6053,7 +6053,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=712
+				x=848
 				y=121
 				width=104
 				height=31
@@ -6069,7 +6069,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=712
+				x=848
 				y=121
 				width=104
 				height=31
@@ -6085,7 +6085,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=712
+				x=848
 				y=121
 				width=104
 				height=31
@@ -6101,7 +6101,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=706
+				x=842
 				y=152
 				width=116
 				height=40
@@ -6113,7 +6113,7 @@ composite {
 		}
 		text {
 			object {
-				x=734
+				x=870
 				y=176
 				width=60
 				height=15
@@ -6131,7 +6131,7 @@ composite {
 		}
 		text {
 			object {
-				x=734
+				x=870
 				y=182
 				width=60
 				height=10
@@ -6149,7 +6149,7 @@ composite {
 		}
 		"message button" {
 			object {
-				x=708
+				x=844
 				y=154
 				width=25
 				height=36
@@ -6164,7 +6164,7 @@ composite {
 		}
 		"text entry" {
 			object {
-				x=734
+				x=870
 				y=154
 				width=60
 				height=20
@@ -6179,7 +6179,7 @@ composite {
 		}
 		"message button" {
 			object {
-				x=795
+				x=931
 				y=154
 				width=25
 				height=36
@@ -6194,7 +6194,7 @@ composite {
 		}
 		"text entry" {
 			object {
-				x=715
+				x=851
 				y=124
 				width=98
 				height=25
@@ -6209,7 +6209,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=706
+				x=842
 				y=100
 				width=6
 				height=50
@@ -6224,7 +6224,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=816
+				x=952
 				y=100
 				width=6
 				height=50
@@ -6239,7 +6239,7 @@ composite {
 		}
 		"text update" {
 			object {
-				x=706
+				x=842
 				y=87
 				width=116
 				height=12
@@ -6255,7 +6255,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=713
+				x=849
 				y=96
 				width=102
 				height=26
@@ -6272,7 +6272,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=715
+				x=851
 				y=98
 				width=98
 				height=21
@@ -6289,7 +6289,7 @@ composite {
 		}
 		"text update" {
 			object {
-				x=717
+				x=853
 				y=100
 				width=94
 				height=17
@@ -6305,7 +6305,7 @@ composite {
 		}
 		text {
 			object {
-				x=734
+				x=870
 				y=174
 				width=60
 				height=10
@@ -6323,7 +6323,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=712
+				x=848
 				y=121
 				width=104
 				height=31
@@ -6341,7 +6341,7 @@ composite {
 		}
 		"choice button" {
 			object {
-				x=751
+				x=887
 				y=192
 				width=71
 				height=20
@@ -6355,7 +6355,7 @@ composite {
 		}
 		"choice button" {
 			object {
-				x=705
+				x=841
 				y=213
 				width=115
 				height=35
@@ -6370,7 +6370,7 @@ composite {
 }
 composite {
 	object {
-		x=825
+		x=961
 		y=65
 		width=117
 		height=183
@@ -6379,7 +6379,7 @@ composite {
 	children {
 		text {
 			object {
-				x=827
+				x=963
 				y=194
 				width=45
 				height=16
@@ -6392,7 +6392,7 @@ composite {
 		}
 		text {
 			object {
-				x=826
+				x=962
 				y=193
 				width=45
 				height=16
@@ -6409,7 +6409,7 @@ composite {
 		}
 		"text update" {
 			object {
-				x=826
+				x=962
 				y=65
 				width=116
 				height=20
@@ -6425,7 +6425,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=832
+				x=968
 				y=121
 				width=104
 				height=31
@@ -6441,7 +6441,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=832
+				x=968
 				y=121
 				width=104
 				height=31
@@ -6457,7 +6457,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=832
+				x=968
 				y=121
 				width=104
 				height=31
@@ -6473,7 +6473,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=826
+				x=962
 				y=152
 				width=116
 				height=40
@@ -6485,7 +6485,7 @@ composite {
 		}
 		text {
 			object {
-				x=854
+				x=990
 				y=176
 				width=60
 				height=15
@@ -6503,7 +6503,7 @@ composite {
 		}
 		text {
 			object {
-				x=854
+				x=990
 				y=182
 				width=60
 				height=10
@@ -6521,7 +6521,7 @@ composite {
 		}
 		"message button" {
 			object {
-				x=828
+				x=964
 				y=154
 				width=25
 				height=36
@@ -6536,7 +6536,7 @@ composite {
 		}
 		"text entry" {
 			object {
-				x=854
+				x=990
 				y=154
 				width=60
 				height=20
@@ -6551,7 +6551,7 @@ composite {
 		}
 		"message button" {
 			object {
-				x=915
+				x=1051
 				y=154
 				width=25
 				height=36
@@ -6566,7 +6566,7 @@ composite {
 		}
 		"text entry" {
 			object {
-				x=835
+				x=971
 				y=124
 				width=98
 				height=25
@@ -6581,7 +6581,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=826
+				x=962
 				y=100
 				width=6
 				height=50
@@ -6596,7 +6596,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=936
+				x=1072
 				y=100
 				width=6
 				height=50
@@ -6611,7 +6611,7 @@ composite {
 		}
 		"text update" {
 			object {
-				x=826
+				x=962
 				y=87
 				width=116
 				height=12
@@ -6627,7 +6627,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=833
+				x=969
 				y=96
 				width=102
 				height=26
@@ -6644,7 +6644,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=835
+				x=971
 				y=98
 				width=98
 				height=21
@@ -6661,7 +6661,7 @@ composite {
 		}
 		"text update" {
 			object {
-				x=837
+				x=973
 				y=100
 				width=94
 				height=17
@@ -6677,7 +6677,7 @@ composite {
 		}
 		text {
 			object {
-				x=854
+				x=990
 				y=174
 				width=60
 				height=10
@@ -6695,7 +6695,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=832
+				x=968
 				y=121
 				width=104
 				height=31
@@ -6713,7 +6713,7 @@ composite {
 		}
 		"choice button" {
 			object {
-				x=871
+				x=1007
 				y=192
 				width=71
 				height=20
@@ -6727,7 +6727,7 @@ composite {
 		}
 		"choice button" {
 			object {
-				x=825
+				x=961
 				y=213
 				width=115
 				height=35
@@ -6742,7 +6742,7 @@ composite {
 }
 text {
 	object {
-		x=962
+		x=1098
 		y=194
 		width=45
 		height=16
@@ -6755,7 +6755,7 @@ text {
 }
 text {
 	object {
-		x=961
+		x=1097
 		y=193
 		width=45
 		height=16
@@ -6772,7 +6772,7 @@ text {
 }
 "text update" {
 	object {
-		x=961
+		x=1097
 		y=65
 		width=116
 		height=20
@@ -6788,7 +6788,7 @@ text {
 }
 rectangle {
 	object {
-		x=967
+		x=1103
 		y=121
 		width=104
 		height=31
@@ -6804,7 +6804,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=967
+		x=1103
 		y=121
 		width=104
 		height=31
@@ -6820,7 +6820,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=967
+		x=1103
 		y=121
 		width=104
 		height=31
@@ -6836,7 +6836,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=961
+		x=1097
 		y=152
 		width=116
 		height=40
@@ -6848,7 +6848,7 @@ rectangle {
 }
 text {
 	object {
-		x=989
+		x=1125
 		y=176
 		width=60
 		height=15
@@ -6866,7 +6866,7 @@ text {
 }
 text {
 	object {
-		x=989
+		x=1125
 		y=182
 		width=60
 		height=10
@@ -6884,7 +6884,7 @@ text {
 }
 "message button" {
 	object {
-		x=963
+		x=1099
 		y=154
 		width=25
 		height=36
@@ -6899,7 +6899,7 @@ text {
 }
 "text entry" {
 	object {
-		x=989
+		x=1125
 		y=154
 		width=60
 		height=20
@@ -6914,7 +6914,7 @@ text {
 }
 "message button" {
 	object {
-		x=1050
+		x=1186
 		y=154
 		width=25
 		height=36
@@ -6929,7 +6929,7 @@ text {
 }
 "text entry" {
 	object {
-		x=970
+		x=1106
 		y=124
 		width=98
 		height=25
@@ -6944,7 +6944,7 @@ text {
 }
 rectangle {
 	object {
-		x=961
+		x=1097
 		y=100
 		width=6
 		height=50
@@ -6959,7 +6959,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=1071
+		x=1207
 		y=100
 		width=6
 		height=50
@@ -6974,7 +6974,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=961
+		x=1097
 		y=87
 		width=116
 		height=12
@@ -6990,7 +6990,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=968
+		x=1104
 		y=96
 		width=102
 		height=26
@@ -7007,7 +7007,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=970
+		x=1106
 		y=98
 		width=98
 		height=21
@@ -7024,7 +7024,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=972
+		x=1108
 		y=100
 		width=94
 		height=17
@@ -7040,7 +7040,7 @@ rectangle {
 }
 text {
 	object {
-		x=989
+		x=1125
 		y=174
 		width=60
 		height=10
@@ -7058,7 +7058,7 @@ text {
 }
 rectangle {
 	object {
-		x=967
+		x=1103
 		y=121
 		width=104
 		height=31
@@ -7076,7 +7076,7 @@ rectangle {
 }
 "choice button" {
 	object {
-		x=1006
+		x=1142
 		y=192
 		width=71
 		height=20
@@ -7090,7 +7090,7 @@ rectangle {
 }
 "choice button" {
 	object {
-		x=960
+		x=1096
 		y=213
 		width=115
 		height=35
@@ -7103,10 +7103,10 @@ rectangle {
 }
 "related display" {
 	object {
-		x=1073
-		y=234
+		x=1211
+		y=232
 		width=15
-		height=12
+		height=15
 	}
 	display[1] {
 		label="Focus 5x (Small)"
@@ -7262,7 +7262,7 @@ text {
 }
 "message button" {
 	object {
-		x=1320
+		x=1395
 		y=1162
 		width=170
 		height=44
@@ -9324,7 +9324,7 @@ text {
 }
 text {
 	object {
-		x=1097
+		x=1157
 		y=510
 		width=298
 		height=25
@@ -9337,7 +9337,7 @@ text {
 }
 composite {
 	object {
-		x=1102
+		x=1160
 		y=545
 		width=117
 		height=183
@@ -9346,7 +9346,7 @@ composite {
 	children {
 		text {
 			object {
-				x=1104
+				x=1162
 				y=674
 				width=45
 				height=16
@@ -9359,7 +9359,7 @@ composite {
 		}
 		text {
 			object {
-				x=1103
+				x=1161
 				y=673
 				width=45
 				height=16
@@ -9376,7 +9376,7 @@ composite {
 		}
 		"text update" {
 			object {
-				x=1103
+				x=1161
 				y=545
 				width=116
 				height=20
@@ -9392,7 +9392,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1109
+				x=1167
 				y=601
 				width=104
 				height=31
@@ -9408,7 +9408,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1109
+				x=1167
 				y=601
 				width=104
 				height=31
@@ -9424,7 +9424,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1109
+				x=1167
 				y=601
 				width=104
 				height=31
@@ -9440,7 +9440,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1103
+				x=1161
 				y=632
 				width=116
 				height=40
@@ -9452,7 +9452,7 @@ composite {
 		}
 		text {
 			object {
-				x=1131
+				x=1189
 				y=656
 				width=60
 				height=15
@@ -9470,7 +9470,7 @@ composite {
 		}
 		text {
 			object {
-				x=1131
+				x=1189
 				y=662
 				width=60
 				height=10
@@ -9488,7 +9488,7 @@ composite {
 		}
 		"message button" {
 			object {
-				x=1105
+				x=1163
 				y=634
 				width=25
 				height=36
@@ -9503,7 +9503,7 @@ composite {
 		}
 		"text entry" {
 			object {
-				x=1131
+				x=1189
 				y=634
 				width=60
 				height=20
@@ -9518,7 +9518,7 @@ composite {
 		}
 		"message button" {
 			object {
-				x=1192
+				x=1250
 				y=634
 				width=25
 				height=36
@@ -9533,7 +9533,7 @@ composite {
 		}
 		"text entry" {
 			object {
-				x=1112
+				x=1170
 				y=604
 				width=98
 				height=25
@@ -9548,7 +9548,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1103
+				x=1161
 				y=580
 				width=6
 				height=50
@@ -9563,7 +9563,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1213
+				x=1271
 				y=580
 				width=6
 				height=50
@@ -9578,7 +9578,7 @@ composite {
 		}
 		"text update" {
 			object {
-				x=1103
+				x=1161
 				y=567
 				width=116
 				height=12
@@ -9594,7 +9594,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1110
+				x=1168
 				y=576
 				width=102
 				height=26
@@ -9611,7 +9611,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1112
+				x=1170
 				y=578
 				width=98
 				height=21
@@ -9628,7 +9628,7 @@ composite {
 		}
 		"text update" {
 			object {
-				x=1114
+				x=1172
 				y=580
 				width=94
 				height=17
@@ -9644,7 +9644,7 @@ composite {
 		}
 		text {
 			object {
-				x=1131
+				x=1189
 				y=654
 				width=60
 				height=10
@@ -9662,7 +9662,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1109
+				x=1167
 				y=601
 				width=104
 				height=31
@@ -9680,7 +9680,7 @@ composite {
 		}
 		"choice button" {
 			object {
-				x=1148
+				x=1206
 				y=672
 				width=71
 				height=20
@@ -9694,7 +9694,7 @@ composite {
 		}
 		"choice button" {
 			object {
-				x=1102
+				x=1160
 				y=693
 				width=115
 				height=35
@@ -9709,7 +9709,7 @@ composite {
 }
 composite {
 	object {
-		x=1222
+		x=1280
 		y=545
 		width=117
 		height=183
@@ -9718,7 +9718,7 @@ composite {
 	children {
 		text {
 			object {
-				x=1224
+				x=1282
 				y=674
 				width=45
 				height=16
@@ -9731,7 +9731,7 @@ composite {
 		}
 		text {
 			object {
-				x=1223
+				x=1281
 				y=673
 				width=45
 				height=16
@@ -9748,7 +9748,7 @@ composite {
 		}
 		"text update" {
 			object {
-				x=1223
+				x=1281
 				y=545
 				width=116
 				height=20
@@ -9764,7 +9764,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1229
+				x=1287
 				y=601
 				width=104
 				height=31
@@ -9780,7 +9780,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1229
+				x=1287
 				y=601
 				width=104
 				height=31
@@ -9796,7 +9796,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1229
+				x=1287
 				y=601
 				width=104
 				height=31
@@ -9812,7 +9812,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1223
+				x=1281
 				y=632
 				width=116
 				height=40
@@ -9824,7 +9824,7 @@ composite {
 		}
 		text {
 			object {
-				x=1251
+				x=1309
 				y=656
 				width=60
 				height=15
@@ -9842,7 +9842,7 @@ composite {
 		}
 		text {
 			object {
-				x=1251
+				x=1309
 				y=662
 				width=60
 				height=10
@@ -9860,7 +9860,7 @@ composite {
 		}
 		"message button" {
 			object {
-				x=1225
+				x=1283
 				y=634
 				width=25
 				height=36
@@ -9875,7 +9875,7 @@ composite {
 		}
 		"text entry" {
 			object {
-				x=1251
+				x=1309
 				y=634
 				width=60
 				height=20
@@ -9890,7 +9890,7 @@ composite {
 		}
 		"message button" {
 			object {
-				x=1312
+				x=1370
 				y=634
 				width=25
 				height=36
@@ -9905,7 +9905,7 @@ composite {
 		}
 		"text entry" {
 			object {
-				x=1232
+				x=1290
 				y=604
 				width=98
 				height=25
@@ -9920,7 +9920,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1223
+				x=1281
 				y=580
 				width=6
 				height=50
@@ -9935,7 +9935,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1333
+				x=1391
 				y=580
 				width=6
 				height=50
@@ -9950,7 +9950,7 @@ composite {
 		}
 		"text update" {
 			object {
-				x=1223
+				x=1281
 				y=567
 				width=116
 				height=12
@@ -9966,7 +9966,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1230
+				x=1288
 				y=576
 				width=102
 				height=26
@@ -9983,7 +9983,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1232
+				x=1290
 				y=578
 				width=98
 				height=21
@@ -10000,7 +10000,7 @@ composite {
 		}
 		"text update" {
 			object {
-				x=1234
+				x=1292
 				y=580
 				width=94
 				height=17
@@ -10016,7 +10016,7 @@ composite {
 		}
 		text {
 			object {
-				x=1251
+				x=1309
 				y=654
 				width=60
 				height=10
@@ -10034,7 +10034,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1229
+				x=1287
 				y=601
 				width=104
 				height=31
@@ -10052,7 +10052,7 @@ composite {
 		}
 		"choice button" {
 			object {
-				x=1268
+				x=1326
 				y=672
 				width=71
 				height=20
@@ -10066,7 +10066,7 @@ composite {
 		}
 		"choice button" {
 			object {
-				x=1222
+				x=1280
 				y=693
 				width=115
 				height=35
@@ -10081,7 +10081,7 @@ composite {
 }
 "related display" {
 	object {
-		x=1339
+		x=1397
 		y=712
 		width=15
 		height=15
@@ -10098,7 +10098,7 @@ rectangle {
 	object {
 		x=715
 		y=535
-		width=780
+		width=908
 		height=200
 	}
 	"basic attribute" {
@@ -10139,7 +10139,7 @@ rectangle {
 }
 "message button" {
 	object {
-		x=1316
+		x=1376
 		y=510
 		width=35
 		height=20
@@ -10154,7 +10154,7 @@ rectangle {
 }
 "message button" {
 	object {
-		x=1356
+		x=1416
 		y=510
 		width=35
 		height=20
@@ -10169,7 +10169,7 @@ rectangle {
 }
 composite {
 	object {
-		x=1357
+		x=1415
 		y=545
 		width=117
 		height=183
@@ -10178,7 +10178,7 @@ composite {
 	children {
 		text {
 			object {
-				x=1359
+				x=1417
 				y=674
 				width=45
 				height=16
@@ -10191,7 +10191,7 @@ composite {
 		}
 		text {
 			object {
-				x=1358
+				x=1416
 				y=673
 				width=45
 				height=16
@@ -10208,7 +10208,7 @@ composite {
 		}
 		"text update" {
 			object {
-				x=1358
+				x=1416
 				y=545
 				width=116
 				height=20
@@ -10224,7 +10224,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1364
+				x=1422
 				y=601
 				width=104
 				height=31
@@ -10240,7 +10240,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1364
+				x=1422
 				y=601
 				width=104
 				height=31
@@ -10256,7 +10256,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1364
+				x=1422
 				y=601
 				width=104
 				height=31
@@ -10272,7 +10272,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1358
+				x=1416
 				y=632
 				width=116
 				height=40
@@ -10284,7 +10284,7 @@ composite {
 		}
 		text {
 			object {
-				x=1386
+				x=1444
 				y=656
 				width=60
 				height=15
@@ -10302,7 +10302,7 @@ composite {
 		}
 		text {
 			object {
-				x=1386
+				x=1444
 				y=662
 				width=60
 				height=10
@@ -10320,7 +10320,7 @@ composite {
 		}
 		"message button" {
 			object {
-				x=1360
+				x=1418
 				y=634
 				width=25
 				height=36
@@ -10335,7 +10335,7 @@ composite {
 		}
 		"text entry" {
 			object {
-				x=1386
+				x=1444
 				y=634
 				width=60
 				height=20
@@ -10350,7 +10350,7 @@ composite {
 		}
 		"message button" {
 			object {
-				x=1447
+				x=1505
 				y=634
 				width=25
 				height=36
@@ -10365,7 +10365,7 @@ composite {
 		}
 		"text entry" {
 			object {
-				x=1367
+				x=1425
 				y=604
 				width=98
 				height=25
@@ -10380,7 +10380,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1358
+				x=1416
 				y=580
 				width=6
 				height=50
@@ -10395,7 +10395,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1468
+				x=1526
 				y=580
 				width=6
 				height=50
@@ -10410,7 +10410,7 @@ composite {
 		}
 		"text update" {
 			object {
-				x=1358
+				x=1416
 				y=567
 				width=116
 				height=12
@@ -10426,7 +10426,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1365
+				x=1423
 				y=576
 				width=102
 				height=26
@@ -10443,7 +10443,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1367
+				x=1425
 				y=578
 				width=98
 				height=21
@@ -10460,7 +10460,7 @@ composite {
 		}
 		"text update" {
 			object {
-				x=1369
+				x=1427
 				y=580
 				width=94
 				height=17
@@ -10476,7 +10476,7 @@ composite {
 		}
 		text {
 			object {
-				x=1386
+				x=1444
 				y=654
 				width=60
 				height=10
@@ -10494,7 +10494,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1364
+				x=1422
 				y=601
 				width=104
 				height=31
@@ -10512,7 +10512,7 @@ composite {
 		}
 		"choice button" {
 			object {
-				x=1403
+				x=1461
 				y=672
 				width=71
 				height=20
@@ -10526,7 +10526,7 @@ composite {
 		}
 		"choice button" {
 			object {
-				x=1357
+				x=1415
 				y=693
 				width=115
 				height=35
@@ -10541,7 +10541,7 @@ composite {
 }
 "related display" {
 	object {
-		x=1474
+		x=1532
 		y=712
 		width=15
 		height=15
@@ -13013,7 +13013,7 @@ rectangle {
 	object {
 		x=715
 		y=765
-		width=780
+		width=908
 		height=200
 	}
 	"basic attribute" {
@@ -13067,7 +13067,7 @@ text {
 }
 text {
 	object {
-		x=1347
+		x=1414
 		y=771
 		width=20
 		height=20
@@ -13079,7 +13079,7 @@ text {
 }
 "text update" {
 	object {
-		x=1262
+		x=1330
 		y=771
 		width=80
 		height=20
@@ -13094,7 +13094,7 @@ text {
 }
 "text update" {
 	object {
-		x=1262
+		x=1330
 		y=829
 		width=85
 		height=20
@@ -13109,7 +13109,7 @@ text {
 }
 "text update" {
 	object {
-		x=1372
+		x=1440
 		y=854
 		width=80
 		height=20
@@ -13124,7 +13124,7 @@ text {
 }
 "text entry" {
 	object {
-		x=1262
+		x=1330
 		y=854
 		width=100
 		height=20
@@ -13139,7 +13139,7 @@ text {
 }
 "text update" {
 	object {
-		x=1372
+		x=1440
 		y=883
 		width=80
 		height=20
@@ -13154,7 +13154,7 @@ text {
 }
 "text entry" {
 	object {
-		x=1262
+		x=1330
 		y=883
 		width=100
 		height=20
@@ -13169,7 +13169,7 @@ text {
 }
 "message button" {
 	object {
-		x=1262
+		x=1330
 		y=804
 		width=50
 		height=20
@@ -13184,7 +13184,7 @@ text {
 }
 "message button" {
 	object {
-		x=1315
+		x=1383
 		y=804
 		width=50
 		height=20
@@ -13199,7 +13199,7 @@ text {
 }
 "text update" {
 	object {
-		x=1372
+		x=1440
 		y=805
 		width=60
 		height=20
@@ -13215,7 +13215,7 @@ text {
 }
 text {
 	object {
-		x=1453
+		x=1521
 		y=883
 		width=20
 		height=20
@@ -13227,7 +13227,7 @@ text {
 }
 text {
 	object {
-		x=1455
+		x=1523
 		y=854
 		width=20
 		height=20
@@ -13239,7 +13239,7 @@ text {
 }
 text {
 	object {
-		x=1354
+		x=1422
 		y=829
 		width=20
 		height=20
@@ -13251,7 +13251,7 @@ text {
 }
 text {
 	object {
-		x=1146
+		x=1214
 		y=938
 		width=160
 		height=20
@@ -13263,7 +13263,7 @@ text {
 }
 text {
 	object {
-		x=1146
+		x=1213
 		y=771
 		width=100
 		height=20
@@ -13275,7 +13275,7 @@ text {
 }
 text {
 	object {
-		x=1147
+		x=1215
 		y=804
 		width=160
 		height=20
@@ -13287,7 +13287,7 @@ text {
 }
 text {
 	object {
-		x=1147
+		x=1215
 		y=829
 		width=160
 		height=20
@@ -13299,7 +13299,7 @@ text {
 }
 text {
 	object {
-		x=1147
+		x=1215
 		y=854
 		width=160
 		height=20
@@ -13311,7 +13311,7 @@ text {
 }
 text {
 	object {
-		x=1147
+		x=1215
 		y=883
 		width=160
 		height=20
@@ -13323,7 +13323,7 @@ text {
 }
 "text update" {
 	object {
-		x=1283
+		x=1351
 		y=938
 		width=80
 		height=20
@@ -13338,7 +13338,7 @@ text {
 }
 "shell command" {
 	object {
-		x=1411
+		x=1479
 		y=937
 		width=60
 		height=20
@@ -13497,7 +13497,7 @@ oval {
 }
 text {
 	object {
-		x=1118
+		x=1186
 		y=913
 		width=60
 		height=18
@@ -13509,7 +13509,7 @@ text {
 }
 "text entry" {
 	object {
-		x=1130
+		x=1198
 		y=913
 		width=52
 		height=20
@@ -13524,7 +13524,7 @@ text {
 }
 "text update" {
 	object {
-		x=1185
+		x=1253
 		y=913
 		width=52
 		height=18
@@ -13539,7 +13539,7 @@ text {
 }
 text {
 	object {
-		x=1243
+		x=1311
 		y=913
 		width=60
 		height=18
@@ -13551,7 +13551,7 @@ text {
 }
 "text entry" {
 	object {
-		x=1258
+		x=1326
 		y=913
 		width=52
 		height=20
@@ -13566,7 +13566,7 @@ text {
 }
 "text update" {
 	object {
-		x=1313
+		x=1381
 		y=913
 		width=55
 		height=18
@@ -13581,7 +13581,7 @@ text {
 }
 text {
 	object {
-		x=1371
+		x=1439
 		y=913
 		width=60
 		height=18
@@ -13593,7 +13593,7 @@ text {
 }
 "text entry" {
 	object {
-		x=1383
+		x=1451
 		y=913
 		width=52
 		height=20
@@ -13608,7 +13608,7 @@ text {
 }
 "text update" {
 	object {
-		x=1438
+		x=1506
 		y=913
 		width=52
 		height=18
@@ -13815,7 +13815,7 @@ rectangle {
 }
 "related display" {
 	object {
-		x=940
+		x=1076
 		y=232
 		width=15
 		height=15
@@ -13830,7 +13830,7 @@ rectangle {
 }
 composite {
 	object {
-		x=1094
+		x=1230
 		y=65
 		width=117
 		height=183
@@ -13839,7 +13839,7 @@ composite {
 	children {
 		text {
 			object {
-				x=1096
+				x=1232
 				y=194
 				width=45
 				height=16
@@ -13852,7 +13852,7 @@ composite {
 		}
 		text {
 			object {
-				x=1095
+				x=1231
 				y=193
 				width=45
 				height=16
@@ -13869,7 +13869,7 @@ composite {
 		}
 		"text update" {
 			object {
-				x=1095
+				x=1231
 				y=65
 				width=116
 				height=20
@@ -13885,7 +13885,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1101
+				x=1237
 				y=121
 				width=104
 				height=31
@@ -13901,7 +13901,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1101
+				x=1237
 				y=121
 				width=104
 				height=31
@@ -13917,7 +13917,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1101
+				x=1237
 				y=121
 				width=104
 				height=31
@@ -13933,7 +13933,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1095
+				x=1231
 				y=152
 				width=116
 				height=40
@@ -13945,7 +13945,7 @@ composite {
 		}
 		text {
 			object {
-				x=1123
+				x=1259
 				y=176
 				width=60
 				height=15
@@ -13963,7 +13963,7 @@ composite {
 		}
 		text {
 			object {
-				x=1123
+				x=1259
 				y=182
 				width=60
 				height=10
@@ -13981,7 +13981,7 @@ composite {
 		}
 		"message button" {
 			object {
-				x=1097
+				x=1233
 				y=154
 				width=25
 				height=36
@@ -13996,7 +13996,7 @@ composite {
 		}
 		"text entry" {
 			object {
-				x=1123
+				x=1259
 				y=154
 				width=60
 				height=20
@@ -14011,7 +14011,7 @@ composite {
 		}
 		"message button" {
 			object {
-				x=1184
+				x=1320
 				y=154
 				width=25
 				height=36
@@ -14026,7 +14026,7 @@ composite {
 		}
 		"text entry" {
 			object {
-				x=1104
+				x=1240
 				y=124
 				width=98
 				height=25
@@ -14041,7 +14041,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1095
+				x=1231
 				y=100
 				width=6
 				height=50
@@ -14056,7 +14056,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1205
+				x=1341
 				y=100
 				width=6
 				height=50
@@ -14071,7 +14071,7 @@ composite {
 		}
 		"text update" {
 			object {
-				x=1095
+				x=1231
 				y=87
 				width=116
 				height=12
@@ -14087,7 +14087,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1102
+				x=1238
 				y=96
 				width=102
 				height=26
@@ -14104,7 +14104,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1104
+				x=1240
 				y=98
 				width=98
 				height=21
@@ -14121,7 +14121,7 @@ composite {
 		}
 		"text update" {
 			object {
-				x=1106
+				x=1242
 				y=100
 				width=94
 				height=17
@@ -14137,7 +14137,7 @@ composite {
 		}
 		text {
 			object {
-				x=1123
+				x=1259
 				y=174
 				width=60
 				height=10
@@ -14155,7 +14155,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1101
+				x=1237
 				y=121
 				width=104
 				height=31
@@ -14173,7 +14173,7 @@ composite {
 		}
 		"choice button" {
 			object {
-				x=1140
+				x=1276
 				y=192
 				width=71
 				height=20
@@ -14187,7 +14187,7 @@ composite {
 		}
 		"choice button" {
 			object {
-				x=1094
+				x=1230
 				y=213
 				width=115
 				height=35
@@ -14202,7 +14202,7 @@ composite {
 }
 composite {
 	object {
-		x=1214
+		x=1350
 		y=65
 		width=117
 		height=183
@@ -14211,7 +14211,7 @@ composite {
 	children {
 		text {
 			object {
-				x=1216
+				x=1352
 				y=194
 				width=45
 				height=16
@@ -14224,7 +14224,7 @@ composite {
 		}
 		text {
 			object {
-				x=1215
+				x=1351
 				y=193
 				width=45
 				height=16
@@ -14241,7 +14241,7 @@ composite {
 		}
 		"text update" {
 			object {
-				x=1215
+				x=1351
 				y=65
 				width=116
 				height=20
@@ -14257,7 +14257,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1221
+				x=1357
 				y=121
 				width=104
 				height=31
@@ -14273,7 +14273,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1221
+				x=1357
 				y=121
 				width=104
 				height=31
@@ -14289,7 +14289,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1221
+				x=1357
 				y=121
 				width=104
 				height=31
@@ -14305,7 +14305,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1215
+				x=1351
 				y=152
 				width=116
 				height=40
@@ -14317,7 +14317,7 @@ composite {
 		}
 		text {
 			object {
-				x=1243
+				x=1379
 				y=176
 				width=60
 				height=15
@@ -14335,7 +14335,7 @@ composite {
 		}
 		text {
 			object {
-				x=1243
+				x=1379
 				y=182
 				width=60
 				height=10
@@ -14353,7 +14353,7 @@ composite {
 		}
 		"message button" {
 			object {
-				x=1217
+				x=1353
 				y=154
 				width=25
 				height=36
@@ -14368,7 +14368,7 @@ composite {
 		}
 		"text entry" {
 			object {
-				x=1243
+				x=1379
 				y=154
 				width=60
 				height=20
@@ -14383,7 +14383,7 @@ composite {
 		}
 		"message button" {
 			object {
-				x=1304
+				x=1440
 				y=154
 				width=25
 				height=36
@@ -14398,7 +14398,7 @@ composite {
 		}
 		"text entry" {
 			object {
-				x=1224
+				x=1360
 				y=124
 				width=98
 				height=25
@@ -14413,7 +14413,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1215
+				x=1351
 				y=100
 				width=6
 				height=50
@@ -14428,7 +14428,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1325
+				x=1461
 				y=100
 				width=6
 				height=50
@@ -14443,7 +14443,7 @@ composite {
 		}
 		"text update" {
 			object {
-				x=1215
+				x=1351
 				y=87
 				width=116
 				height=12
@@ -14459,7 +14459,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1222
+				x=1358
 				y=96
 				width=102
 				height=26
@@ -14476,7 +14476,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1224
+				x=1360
 				y=98
 				width=98
 				height=21
@@ -14493,7 +14493,7 @@ composite {
 		}
 		"text update" {
 			object {
-				x=1226
+				x=1362
 				y=100
 				width=94
 				height=17
@@ -14509,7 +14509,7 @@ composite {
 		}
 		text {
 			object {
-				x=1243
+				x=1379
 				y=174
 				width=60
 				height=10
@@ -14527,7 +14527,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=1221
+				x=1357
 				y=121
 				width=104
 				height=31
@@ -14545,7 +14545,7 @@ composite {
 		}
 		"choice button" {
 			object {
-				x=1260
+				x=1396
 				y=192
 				width=71
 				height=20
@@ -14559,7 +14559,7 @@ composite {
 		}
 		"choice button" {
 			object {
-				x=1214
+				x=1350
 				y=213
 				width=115
 				height=35
@@ -14574,7 +14574,7 @@ composite {
 }
 text {
 	object {
-		x=1351
+		x=1487
 		y=194
 		width=45
 		height=16
@@ -14587,7 +14587,7 @@ text {
 }
 text {
 	object {
-		x=1350
+		x=1486
 		y=193
 		width=45
 		height=16
@@ -14604,7 +14604,7 @@ text {
 }
 "text update" {
 	object {
-		x=1350
+		x=1486
 		y=65
 		width=116
 		height=20
@@ -14620,7 +14620,7 @@ text {
 }
 rectangle {
 	object {
-		x=1356
+		x=1492
 		y=121
 		width=104
 		height=31
@@ -14636,7 +14636,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=1356
+		x=1492
 		y=121
 		width=104
 		height=31
@@ -14652,7 +14652,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=1356
+		x=1492
 		y=121
 		width=104
 		height=31
@@ -14668,7 +14668,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=1350
+		x=1486
 		y=152
 		width=116
 		height=40
@@ -14680,7 +14680,7 @@ rectangle {
 }
 text {
 	object {
-		x=1378
+		x=1514
 		y=176
 		width=60
 		height=15
@@ -14698,7 +14698,7 @@ text {
 }
 text {
 	object {
-		x=1378
+		x=1514
 		y=182
 		width=60
 		height=10
@@ -14716,7 +14716,7 @@ text {
 }
 "message button" {
 	object {
-		x=1352
+		x=1488
 		y=154
 		width=25
 		height=36
@@ -14731,7 +14731,7 @@ text {
 }
 "text entry" {
 	object {
-		x=1378
+		x=1514
 		y=154
 		width=60
 		height=20
@@ -14746,7 +14746,7 @@ text {
 }
 "message button" {
 	object {
-		x=1439
+		x=1575
 		y=154
 		width=25
 		height=36
@@ -14761,7 +14761,7 @@ text {
 }
 "text entry" {
 	object {
-		x=1359
+		x=1495
 		y=124
 		width=98
 		height=25
@@ -14776,7 +14776,7 @@ text {
 }
 rectangle {
 	object {
-		x=1350
+		x=1486
 		y=100
 		width=6
 		height=50
@@ -14791,7 +14791,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=1460
+		x=1596
 		y=100
 		width=6
 		height=50
@@ -14806,7 +14806,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=1350
+		x=1486
 		y=87
 		width=116
 		height=12
@@ -14822,7 +14822,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=1357
+		x=1493
 		y=96
 		width=102
 		height=26
@@ -14839,7 +14839,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=1359
+		x=1495
 		y=98
 		width=98
 		height=21
@@ -14856,7 +14856,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=1361
+		x=1497
 		y=100
 		width=94
 		height=17
@@ -14872,7 +14872,7 @@ rectangle {
 }
 text {
 	object {
-		x=1378
+		x=1514
 		y=174
 		width=60
 		height=10
@@ -14890,7 +14890,7 @@ text {
 }
 rectangle {
 	object {
-		x=1356
+		x=1492
 		y=121
 		width=104
 		height=31
@@ -14908,7 +14908,7 @@ rectangle {
 }
 "choice button" {
 	object {
-		x=1395
+		x=1531
 		y=192
 		width=71
 		height=20
@@ -14922,7 +14922,7 @@ rectangle {
 }
 "choice button" {
 	object {
-		x=1349
+		x=1485
 		y=213
 		width=115
 		height=35
@@ -14935,10 +14935,10 @@ rectangle {
 }
 "related display" {
 	object {
-		x=1462
-		y=235
+		x=1600
+		y=232
 		width=15
-		height=12
+		height=15
 	}
 	display[1] {
 		label="Focus 5x (Small)"
@@ -14950,7 +14950,7 @@ rectangle {
 }
 "related display" {
 	object {
-		x=1329
+		x=1465
 		y=232
 		width=15
 		height=15
@@ -18534,7 +18534,7 @@ composite {
 }
 rectangle {
 	object {
-		x=727
+		x=773
 		y=324
 		width=100
 		height=22
@@ -18545,7 +18545,7 @@ rectangle {
 }
 text {
 	object {
-		x=740
+		x=786
 		y=325
 		width=75
 		height=20
@@ -18557,7 +18557,7 @@ text {
 }
 rectangle {
 	object {
-		x=727
+		x=773
 		y=347
 		width=100
 		height=22
@@ -18568,7 +18568,7 @@ rectangle {
 }
 text {
 	object {
-		x=740
+		x=786
 		y=348
 		width=75
 		height=20
@@ -18580,7 +18580,7 @@ text {
 }
 rectangle {
 	object {
-		x=727
+		x=773
 		y=368
 		width=100
 		height=22
@@ -18591,7 +18591,7 @@ rectangle {
 }
 text {
 	object {
-		x=740
+		x=786
 		y=369
 		width=75
 		height=20
@@ -18603,7 +18603,7 @@ text {
 }
 rectangle {
 	object {
-		x=727
+		x=773
 		y=391
 		width=100
 		height=22
@@ -18614,7 +18614,7 @@ rectangle {
 }
 text {
 	object {
-		x=740
+		x=786
 		y=392
 		width=75
 		height=20
@@ -18626,7 +18626,7 @@ text {
 }
 rectangle {
 	object {
-		x=727
+		x=773
 		y=456
 		width=100
 		height=22
@@ -18637,7 +18637,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=727
+		x=773
 		y=477
 		width=100
 		height=22
@@ -18648,7 +18648,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=727
+		x=773
 		y=412
 		width=100
 		height=22
@@ -18659,7 +18659,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=727
+		x=773
 		y=435
 		width=100
 		height=22
@@ -18670,7 +18670,7 @@ rectangle {
 }
 text {
 	object {
-		x=740
+		x=786
 		y=413
 		width=75
 		height=20
@@ -18682,7 +18682,7 @@ text {
 }
 text {
 	object {
-		x=740
+		x=786
 		y=436
 		width=75
 		height=20
@@ -18694,7 +18694,7 @@ text {
 }
 text {
 	object {
-		x=740
+		x=786
 		y=478
 		width=75
 		height=20
@@ -18706,7 +18706,7 @@ text {
 }
 text {
 	object {
-		x=740
+		x=786
 		y=457
 		width=75
 		height=20
@@ -18766,7 +18766,7 @@ text {
 }
 "text entry" {
 	object {
-		x=1354
+		x=1421
 		y=1037
 		width=80
 		height=25
@@ -18781,7 +18781,7 @@ text {
 }
 text {
 	object {
-		x=1265
+		x=1332
 		y=1013
 		width=120
 		height=20
@@ -18794,7 +18794,7 @@ text {
 }
 "message button" {
 	object {
-		x=1443
+		x=1510
 		y=1037
 		width=40
 		height=23
@@ -18810,7 +18810,7 @@ text {
 }
 "text update" {
 	object {
-		x=1266
+		x=1333
 		y=1040
 		width=80
 		height=20
@@ -18825,7 +18825,7 @@ text {
 }
 text {
 	object {
-		x=1406
+		x=1473
 		y=1012
 		width=60
 		height=20
@@ -19100,7 +19100,7 @@ composite {
 }
 text {
 	object {
-		x=1319
+		x=1371
 		y=974
 		width=120
 		height=25
@@ -19115,7 +19115,7 @@ composite {
 	object {
 		x=1249
 		y=1000
-		width=247
+		width=375
 		height=160
 	}
 	"composite name"=""
@@ -19124,7 +19124,7 @@ composite {
 			object {
 				x=1249
 				y=1000
-				width=247
+				width=375
 				height=160
 			}
 			"basic attribute" {
@@ -19137,7 +19137,7 @@ composite {
 }
 "text entry" {
 	object {
-		x=1265
+		x=1332
 		y=1099
 		width=220
 		height=25
@@ -19152,7 +19152,7 @@ composite {
 }
 "text entry" {
 	object {
-		x=1265
+		x=1332
 		y=1128
 		width=220
 		height=25
@@ -19167,7 +19167,7 @@ composite {
 }
 "choice button" {
 	object {
-		x=1393
+		x=1460
 		y=1068
 		width=90
 		height=25
@@ -19181,7 +19181,7 @@ composite {
 }
 text {
 	object {
-		x=1268
+		x=1335
 		y=1076
 		width=120
 		height=16
@@ -19191,4 +19191,380 @@ text {
 	}
 	textix="Use calibration"
 	align="horiz. right"
+}
+text {
+	object {
+		x=706
+		y=193
+		width=45
+		height=16
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	textix="Calib:"
+}
+text {
+	object {
+		x=705
+		y=192
+		width=45
+		height=16
+	}
+	"basic attribute" {
+		clr=30
+		fill="outline"
+	}
+	"dynamic attribute" {
+		vis="if not zero"
+		chan="32idc02:m11.SET"
+	}
+	textix="Calib:"
+}
+"text update" {
+	object {
+		x=705
+		y=64
+		width=116
+		height=20
+	}
+	monitor {
+		chan="32idc02:m11.DESC"
+		clr=54
+		bclr=0
+	}
+	align="horiz. centered"
+	limits {
+	}
+}
+rectangle {
+	object {
+		x=711
+		y=120
+		width=104
+		height=31
+	}
+	"basic attribute" {
+		clr=60
+		width=2
+	}
+	"dynamic attribute" {
+		vis="if zero"
+		chan="32idc02:m11.DMOV"
+	}
+}
+rectangle {
+	object {
+		x=711
+		y=120
+		width=104
+		height=31
+	}
+	"basic attribute" {
+		clr=30
+		width=2
+	}
+	"dynamic attribute" {
+		vis="if not zero"
+		chan="32idc02:m11.LVIO"
+	}
+}
+rectangle {
+	object {
+		x=711
+		y=120
+		width=104
+		height=31
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	"dynamic attribute" {
+		vis="if not zero"
+		chan="32idc02:m11_able.VAL"
+	}
+}
+rectangle {
+	object {
+		x=705
+		y=151
+		width=116
+		height=40
+	}
+	"basic attribute" {
+		clr=14
+		width=3
+	}
+}
+text {
+	object {
+		x=733
+		y=175
+		width=60
+		height=15
+	}
+	"basic attribute" {
+		clr=60
+		fill="outline"
+	}
+	"dynamic attribute" {
+		vis="if zero"
+		chan="32idc02:m11.DMOV"
+	}
+	textix="Moving"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=733
+		y=181
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=30
+		fill="outline"
+	}
+	"dynamic attribute" {
+		vis="if not zero"
+		chan="32idc02:m11.SET"
+	}
+	textix="Calibrate"
+	align="horiz. centered"
+}
+"message button" {
+	object {
+		x=707
+		y=153
+		width=25
+		height=36
+	}
+	control {
+		chan="32idc02:m11.TWR"
+		clr=14
+		bclr=51
+	}
+	label="<"
+	press_msg="1"
+}
+"text entry" {
+	object {
+		x=733
+		y=153
+		width=60
+		height=20
+	}
+	control {
+		chan="32idc02:m11.TWV"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+"message button" {
+	object {
+		x=794
+		y=153
+		width=25
+		height=36
+	}
+	control {
+		chan="32idc02:m11.TWF"
+		clr=14
+		bclr=51
+	}
+	label=">"
+	press_msg="1"
+}
+"text entry" {
+	object {
+		x=714
+		y=123
+		width=98
+		height=25
+	}
+	control {
+		chan="32idc02:m11.VAL"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+rectangle {
+	object {
+		x=705
+		y=99
+		width=6
+		height=50
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="if not zero"
+		chan="32idc02:m11.LLS"
+	}
+}
+rectangle {
+	object {
+		x=815
+		y=99
+		width=6
+		height=50
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="if not zero"
+		chan="32idc02:m11.HLS"
+	}
+}
+"text update" {
+	object {
+		x=705
+		y=86
+		width=116
+		height=12
+	}
+	monitor {
+		chan="32idc02:m11.EGU"
+		clr=54
+		bclr=3
+	}
+	align="horiz. centered"
+	limits {
+	}
+}
+rectangle {
+	object {
+		x=712
+		y=95
+		width=102
+		height=26
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+		width=2
+	}
+	"dynamic attribute" {
+		vis="if not zero"
+		chan="32idc02:m11.SET"
+	}
+}
+rectangle {
+	object {
+		x=714
+		y=97
+		width=98
+		height=21
+	}
+	"basic attribute" {
+		clr=30
+		fill="outline"
+		width=2
+	}
+	"dynamic attribute" {
+		vis="if not zero"
+		chan="32idc02:m11.SET"
+	}
+}
+"text update" {
+	object {
+		x=716
+		y=99
+		width=94
+		height=17
+	}
+	monitor {
+		chan="32idc02:m11.RBV"
+		clr=54
+		bclr=3
+	}
+	align="horiz. centered"
+	limits {
+	}
+}
+text {
+	object {
+		x=733
+		y=173
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=30
+		fill="outline"
+	}
+	"dynamic attribute" {
+		vis="if not zero"
+		chan="32idc02:m11.LVIO"
+	}
+	textix="Soft limit"
+	align="horiz. centered"
+}
+rectangle {
+	object {
+		x=711
+		y=120
+		width=104
+		height=31
+	}
+	"basic attribute" {
+		clr=20
+		style="dash"
+		fill="outline"
+		width=2
+	}
+	"dynamic attribute" {
+		vis="if not zero"
+		chan="32idc02:m11_able.VAL"
+	}
+}
+"choice button" {
+	object {
+		x=750
+		y=191
+		width=71
+		height=20
+	}
+	control {
+		chan="32idc02:m11.SET"
+		clr=14
+		bclr=51
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=704
+		y=212
+		width=115
+		height=35
+	}
+	control {
+		chan="32idc02:m11_able.VAL"
+		clr=14
+		bclr=51
+	}
+}
+"related display" {
+	object {
+		x=820
+		y=231
+		width=15
+		height=15
+	}
+	display[1] {
+		label="Focus 5x (Small)"
+		name="1_motors.adl"
+		args="P=32idc02:,M1=m11"
+	}
+	clr=14
+	bclr=51
 }

@@ -1,14 +1,14 @@
 
 file {
-	name="/home/beams/USERTXM/epics/synApps/support/txmoptics/txmOpticsApp/op/adl/txm_main2.adl"
+	name="/home/beams19/USERTXM/epics/synApps/support/txmoptics/txmOpticsApp/op/adl/txm_main2.adl"
 	version=030111
 }
 display {
 	object {
-		x=218
-		y=822
+		x=179
+		y=842
 		width=1501
-		height=1210
+		height=1225
 	}
 	clr=14
 	bclr=4
@@ -10542,9 +10542,9 @@ composite {
 		height=15
 	}
 	display[1] {
-		label="$(Contr2)m2) (Small)"
+		label="$(Contr8)m1 (Small)"
 		name="1_motors.adl"
-		args="P=$(P),m2=$(Contr2)m2"
+		args="P=$(P),M1=$(Contr8)m8"
 	}
 	clr=14
 	bclr=51
@@ -14931,7 +14931,7 @@ rectangle {
 "related display" {
 	object {
 		x=1462
-		y=234
+		y=235
 		width=15
 		height=12
 	}

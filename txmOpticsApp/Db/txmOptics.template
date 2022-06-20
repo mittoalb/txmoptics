@@ -740,3 +740,25 @@ record(ao, "$(P)$(R)ZPOutermostZoneWidth")
    field(PREC, "0")
    field(EGU,  "nm")
 }
+
+record(longout, "$(P)$(R)CropLeft")
+{
+}
+
+record(longout, "$(P)$(R)CropRight")
+{
+}
+
+record(longout, "$(P)$(R)CropTop")
+{
+}
+
+record(longout, "$(P)$(R)CropBottom")
+{
+}
+
+record(busy, "$(P)$(R)Crop")
+{
+   field(ZNAM, "Done")
+   field(ONAM, "Crop")
+}

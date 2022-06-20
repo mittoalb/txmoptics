@@ -101,14 +101,28 @@ class TXMOptics():
 
         prefix = self.pv_prefixes['Camera']
         self.control_pvs['CamAcquireTime'] = PV(prefix + 'cam1:AcquireTime')
+        self.control_pvs['CamAcquire'] = PV(prefix + 'cam1:Acquire')
         self.control_pvs['CamTrans1Type'] = PV(prefix + 'Trans1:Type')        
         self.control_pvs['CamArraySizeXRBV']        = PV(prefix + 'cam1:ArraySizeX_RBV')
         self.control_pvs['CamArraySizeYRBV']        = PV(prefix + 'cam1:ArraySizeY_RBV')
-
+        self.control_pvs['CamMinX']        = PV(prefix + 'cam1:MinX')
+        self.control_pvs['CamMinY']        = PV(prefix + 'cam1:MinY')
+        self.control_pvs['CamMinXRBV']        = PV(prefix + 'cam1:MinX_RBV')
+        self.control_pvs['CamMinYRBV']        = PV(prefix + 'cam1:MinY_RBV')
+        self.control_pvs['CamSizeX']        = PV(prefix + 'cam1:SizeX')
+        self.control_pvs['CamSizeY']        = PV(prefix + 'cam1:SizeY')
+        self.control_pvs['CamSizeXRBV']        = PV(prefix + 'cam1:SizeX_RBV')
+        self.control_pvs['CamSizeYRBV']        = PV(prefix + 'cam1:SizeY_RBV')
+        self.control_pvs['CamMaxSizeXRBV']        = PV(prefix + 'cam1:MaxSizeX_RBV')
+        self.control_pvs['CamMaxSizeYRBV']        = PV(prefix + 'cam1:MaxSizeY_RBV')
+        
         self.control_pvs['OPEnableCallbacks'] = PV(prefix + 'Over1:EnableCallbacks')
         self.control_pvs['OP1Use']            = PV(prefix + 'Over1:1:Use')        
         self.control_pvs['OP1CenterX']        = PV(prefix + 'Over1:1:CenterX')        
         self.control_pvs['OP1CenterY']        = PV(prefix + 'Over1:1:CenterY')        
+        self.control_pvs['OP2Use']            = PV(prefix + 'Over1:2:Use')        
+        self.control_pvs['OP2CenterX']        = PV(prefix + 'Over1:2:CenterX')        
+        self.control_pvs['OP2CenterY']        = PV(prefix + 'Over1:2:CenterY')    
 
 
         self.control_pvs['EnergyMonochromator'] = PV('32ida:BraggEAO.VAL')
@@ -118,12 +132,13 @@ class TXMOptics():
         for epics_pv in ('MoveCRLIn', 'MoveCRLOut', 'MovePhaseRingIn', 'MovePhaseRingOut', 'MoveDiffuserIn',
                          'MoveDiffuserOut', 'MoveBeamstopIn', 'MoveBeamstopOut', 'MovePinholeIn', 'MovePinholeOut',
                          'MoveCondenserIn', 'MoveCondenserOut', 'MoveZonePlateIn', 'MoveZonePlateOut', 'MoveFurnaceIn', 'MoveFurnaceOut',
-                         'MoveAllIn', 'MoveAllOut', 'AllStop', 'SaveAllPVs', 'LoadAllPVs', 'CrossSelect', 'EnergySet'):
+                         'MoveAllIn', 'MoveAllOut', 'AllStop', 'SaveAllPVs', 'LoadAllPVs', 'CrossSelect', 'EnergySet', 'Crop'):
             self.epics_pvs[epics_pv].put(0)
             self.epics_pvs[epics_pv].add_callback(self.pv_callback)
         for epics_pv in ('ShutterBClose', 'ShutterBStatus'):
             self.epics_pvs[epics_pv].add_callback(self.pv_callback)            
         self.epics_pvs['EnergyBusy'].put(0,wait=True)
+        
         # Start the watchdog timer thread
         thread = threading.Thread(target=self.reset_watchdog, args=(), daemon=True)
         thread.start()
@@ -295,6 +310,10 @@ class TXMOptics():
         elif (pvname.find('EnergySet') != -1) and (value == 1):
             thread = threading.Thread(target=self.energy_change, args=())
             thread.start()            
+        elif (pvname.find('Crop') != -1) and (value ==1):
+            thread = threading.Thread(target=self.crop_detector, args=())
+            thread.start()            
+        
 
     def move_crl_in(self):
         """Moves the crl in.
@@ -604,14 +623,18 @@ class TXMOptics():
     
 
         if (self.epics_pvs['CrossSelect'].get() == 0):
-            sizex = int(self.epics_pvs['CamArraySizeXRBV'].get())
-            sizey = int(self.epics_pvs['CamArraySizeYRBV'].get())
+            sizex = int(self.epics_pvs['CamSizeXRBV'].get())
+            sizey = int(self.epics_pvs['CamSizeYRBV'].get())
             self.epics_pvs['OP1CenterX'].put(sizex//2)
             self.epics_pvs['OP1CenterY'].put(sizey//2)
             self.control_pvs['OP1Use'].put(1)
+            self.epics_pvs['OP2CenterX'].put(sizex//2)
+            self.epics_pvs['OP2CenterY'].put(sizey//2)
+            self.control_pvs['OP2Use'].put(1)
             log.info('Cross at %d %d is enable' % (sizex//2,sizey//2))
         else:
             self.control_pvs['OP1Use'].put(0)
+            self.control_pvs['OP2Use'].put(0)
             log.info('Cross is disabled')
 
  
@@ -690,6 +713,44 @@ class TXMOptics():
             self.epics_pvs['EnergyBusy'].put(0)   
             self.epics_pvs['EnergySet'].put(0)      
             
+    def crop_detector(self):
+        """crop detector sizes"""
+        state = self.epics_pvs['CamAcquire'].get()
+        self.epics_pvs['CamAcquire'].put(0,wait=True)
+
+        maxsizex = self.epics_pvs['CamMaxSizeXRBV'].get()
+        self.epics_pvs['CamMinX'].put(0,wait=True)        
+        
+        maxsizey = self.epics_pvs['CamMaxSizeYRBV'].get()
+        self.epics_pvs['CamMinY'].put(0,wait=True)        
+        
+        left = self.epics_pvs['CropLeft'].get()
+        top = self.epics_pvs['CropTop'].get()
+        
+        right = self.epics_pvs['CropRight'].get()        
+        self.epics_pvs['CamSizeX'].put(maxsizex-left-right,wait=True)
+        sizex = self.epics_pvs['CamSizeXRBV'].get()
+        right = maxsizex - left - sizex
+        self.epics_pvs['CropRight'].put(right,wait=True)
+
+        bottom = self.epics_pvs['CropBottom'].get()
+        self.epics_pvs['CamSizeY'].put(maxsizey-top-bottom,wait=True)
+        sizey = self.epics_pvs['CamSizeYRBV'].get()
+        bottom = maxsizey - top - sizey
+        self.epics_pvs['CropBottom'].put(bottom,wait=True)
+
+        self.epics_pvs['CamMinX'].put(left,wait=True)        
+        left = self.epics_pvs['CamMinXRBV'].get()
+        self.epics_pvs['CropLeft'].put(left,wait=True)
+
+        self.epics_pvs['CamMinY'].put(top,wait=True)        
+        top = self.epics_pvs['CamMinYRBV'].get()
+        self.epics_pvs['CropTop'].put(top,wait=True)                
+    
+
+        self.epics_pvs['CamAcquire'].put(state)  
+        self.cross_select()      
+        self.epics_pvs['Crop'].put(0,wait=True)  
 
     def reset_watchdog(self):
         """Sets the watchdog timer to 5 every 3 seconds"""

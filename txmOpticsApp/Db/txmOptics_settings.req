@@ -192,3 +192,12 @@ $(P)$(R)CameraObjective
 $(P)$(R)CameraTubeLength
 $(P)$(R)ZPDescription
 $(P)$(R)ZPOutermostZoneWidth
+
+####################
+# Detector cropping
+####################
+$(P)$(R)CropLeft
+$(P)$(R)CropRight
+$(P)$(R)CropTop
+$(P)$(R)CropBottom
+$(P)$(R)Crop

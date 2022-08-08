@@ -1,0 +1,1 @@
+medm -x -macro "P=32id:,R=TXMOptics:" ../../txmOpticsApp/op/adl/txmOptics.adl &

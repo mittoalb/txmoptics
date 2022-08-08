@@ -1,14 +1,14 @@
 
 file {
-	name="/home/beams/USERTXM/epics/synApps/support/txmoptics/txmOpticsApp/op/adl/txm_EPICS_PVs.adl"
+	name="/home/beams19/USERTXM/epics/synApps/support/txmoptics/txmOpticsApp/op/adl/txmOpticsEPICS_PVs.adl"
 	version=030111
 }
 display {
 	object {
-		x=805
-		y=156
+		x=795
+		y=148
 		width=455
-		height=781
+		height=830
 	}
 	clr=14
 	bclr=4
@@ -116,7 +116,7 @@ rectangle {
 		x=5
 		y=40
 		width=445
-		height=728
+		height=785
 	}
 	"basic attribute" {
 		clr=14
@@ -862,7 +862,7 @@ text {
 text {
 	object {
 		x=60
-		y=680
+		y=675
 		width=150
 		height=20
 	}
@@ -875,7 +875,7 @@ text {
 "text entry" {
 	object {
 		x=220
-		y=680
+		y=675
 		width=225
 		height=20
 	}
@@ -891,7 +891,7 @@ text {
 "text entry" {
 	object {
 		x=220
-		y=705
+		y=700
 		width=225
 		height=20
 	}
@@ -907,7 +907,7 @@ text {
 text {
 	object {
 		x=60
-		y=705
+		y=700
 		width=150
 		height=20
 	}
@@ -919,8 +919,8 @@ text {
 }
 text {
 	object {
-		x=61
-		y=733
+		x=60
+		y=725
 		width=150
 		height=20
 	}
@@ -932,13 +932,100 @@ text {
 }
 "text entry" {
 	object {
-		x=221
-		y=733
+		x=220
+		y=725
 		width=225
 		height=20
 	}
 	control {
 		chan="$(P)$(R)FurnaceZPVName"
+		clr=14
+		bclr=51
+	}
+	format="string"
+	limits {
+	}
+}
+text {
+	object {
+		x=60
+		y=750
+		width=150
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Detector X PV"
+	align="horiz. right"
+}
+"text entry" {
+	object {
+		x=220
+		y=750
+		width=225
+		height=20
+	}
+	control {
+		chan="$(P)$(R)DetectorXPVName"
+		clr=14
+		bclr=51
+	}
+	format="string"
+	limits {
+	}
+}
+text {
+	object {
+		x=60
+		y=775
+		width=150
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Detector Y PV"
+	align="horiz. right"
+}
+"text entry" {
+	object {
+		x=220
+		y=775
+		width=225
+		height=20
+	}
+	control {
+		chan="$(P)$(R)DetectorYPVName"
+		clr=14
+		bclr=51
+	}
+	format="string"
+	limits {
+	}
+}
+text {
+	object {
+		x=60
+		y=800
+		width=150
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Detector Z PV"
+	align="horiz. right"
+}
+"text entry" {
+	object {
+		x=220
+		y=800
+		width=225
+		height=20
+	}
+	control {
+		chan="$(P)$(R)DetectorZPVName"
 		clr=14
 		bclr=51
 	}

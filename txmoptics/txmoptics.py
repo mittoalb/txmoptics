@@ -1,12 +1,8 @@
 import pvaccess as pva
 import numpy as np
-import queue
 import time
-import h5py
 import threading
-import signal
 
-from txmoptics import util
 from txmoptics import log
 from epics import PV
 import re
@@ -658,7 +654,7 @@ class TXMOptics():
             energy = float(self.epics_pvs["Energy"].get())
             log.info("TxmOptics: change energy to %.2f",energy)
             
-            log.info('move monochromator')
+            log.info('move monochromator')            
             self.epics_pvs['DCMputEnergy'].put(energy)
             log.info('move undulator')
             self.epics_pvs['GAPputEnergy'].put(energy+0.15)
@@ -706,9 +702,8 @@ class TXMOptics():
                         #maybe  y too..                        
                 except:
                     log.error('Calibration files are wrong.')
-
             self.epics_pvs['BPMVFeedback'].put(1)
-            self.epics_pvs['BPMHFeedback'].put(1)                      
+            self.epics_pvs['BPMHFeedback'].put(1)                                  
             log.info('energy change is done')
             self.epics_pvs['EnergyBusy'].put(0)   
             self.epics_pvs['EnergySet'].put(0)      
@@ -725,7 +720,7 @@ class TXMOptics():
         self.epics_pvs['CamMinY'].put(0,wait=True)        
         
         left = self.epics_pvs['CropLeft'].get()
-        top = self.epics_pvs['CropTop'].get()
+        top = self.epics_pvs['CropBottom'].get()#flipped due to the ZP
         
         right = self.epics_pvs['CropRight'].get()        
         self.epics_pvs['CamSizeX'].put(maxsizex-left-right,wait=True)
@@ -733,11 +728,11 @@ class TXMOptics():
         right = maxsizex - left - sizex
         self.epics_pvs['CropRight'].put(right,wait=True)
 
-        bottom = self.epics_pvs['CropBottom'].get()
+        bottom = self.epics_pvs['CropTop'].get()
         self.epics_pvs['CamSizeY'].put(maxsizey-top-bottom,wait=True)
         sizey = self.epics_pvs['CamSizeYRBV'].get()
         bottom = maxsizey - top - sizey
-        self.epics_pvs['CropBottom'].put(bottom,wait=True)
+        self.epics_pvs['CropTop'].put(bottom,wait=True)
 
         self.epics_pvs['CamMinX'].put(left,wait=True)        
         left = self.epics_pvs['CamMinXRBV'].get()
@@ -745,10 +740,9 @@ class TXMOptics():
 
         self.epics_pvs['CamMinY'].put(top,wait=True)        
         top = self.epics_pvs['CamMinYRBV'].get()
-        self.epics_pvs['CropTop'].put(top,wait=True)                
-    
-
-        self.epics_pvs['CamAcquire'].put(state)  
+        self.epics_pvs['CropBottom'].put(top,wait=True)                
+        self.epics_pvs['CamAcquire'].put(1)  # need to take at least 1 frame
+        
         self.cross_select()      
         self.epics_pvs['Crop'].put(0,wait=True)  
 

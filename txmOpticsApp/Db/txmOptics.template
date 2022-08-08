@@ -340,16 +340,6 @@ record(ao, "$(P)$(R)ZonePlateOutY")
    field(PREC,  "3")
 }
 
-record(ao, "$(P)$(R)PhaseRingInX")
-{
-   field(PREC,  "3")
-}
-
-record(ao, "$(P)$(R)PhaseRingOutX")
-{
-   field(PREC,  "3")
-}
-
 record(ao, "$(P)$(R)PhaseRingInY")
 {
    field(PREC,  "3")

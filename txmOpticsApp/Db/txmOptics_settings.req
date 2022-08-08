@@ -87,8 +87,6 @@ $(P)$(R)CondenserInY
 $(P)$(R)CondenserOutY
 $(P)$(R)ZonePlateInY
 $(P)$(R)ZonePlateOutY
-$(P)$(R)PhaseRingInX
-$(P)$(R)PhaseRingOutX
 $(P)$(R)PhaseRingInY
 $(P)$(R)PhaseRingOutY
 $(P)$(R)FurnaceInY

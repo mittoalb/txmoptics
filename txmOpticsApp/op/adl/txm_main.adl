@@ -5561,7 +5561,7 @@ text {
 	}
 	display[0] {
 		label="tomoScan"
-		name="tomoScan.adl"
+		name="tomoScan_32ID_main.adl"
 		args="P=32id:, R=TomoScan:, BEAMLINE=tomoScan_32ID"
 	}
 	display[1] {
@@ -5571,7 +5571,7 @@ text {
 	}
 	display[2] {
 		label="tomoScanStep"
-		name="tomoScan.adl"
+		name="tomoScan_32ID_main.adl"
 		args=" P=32id:, R=TomoScanStep:, BEAMLINE=tomoScanStep_32ID"
 	}
 	display[3] {
@@ -5581,7 +5581,7 @@ text {
 	}
 	display[4] {
 		label="tomoScanStream"
-		name="tomoScan.adl"
+		name="tomoScan_32ID_main.adl"
 		args="P=32id:, R=TomoScanStream:, BEAMLINE=tomoScanStream_32ID"
 	}
 	display[5] {

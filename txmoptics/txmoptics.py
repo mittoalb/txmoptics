@@ -3,8 +3,6 @@ import numpy as np
 import time
 import threading
 
-import subprocess
-
 from txmoptics import log
 from epics import PV
 import re
@@ -130,8 +128,7 @@ class TXMOptics():
         for epics_pv in ('MoveCRLIn', 'MoveCRLOut', 'MovePhaseRingIn', 'MovePhaseRingOut', 'MoveDiffuserIn',
                          'MoveDiffuserOut', 'MoveBeamstopIn', 'MoveBeamstopOut', 'MovePinholeIn', 'MovePinholeOut',
                          'MoveCondenserIn', 'MoveCondenserOut', 'MoveZonePlateIn', 'MoveZonePlateOut', 'MoveFurnaceIn', 'MoveFurnaceOut',
-                         'MoveAllIn', 'MoveAllOut', 'AllStop', 'SaveAllPVs', 'LoadAllPVs', 'CrossSelect', 'EnergySet', 'Crop',
-                         'EnergyArbitrarySet', 'EnergyMoveSet'):
+                         'MoveAllIn', 'MoveAllOut', 'AllStop', 'SaveAllPVs', 'LoadAllPVs', 'CrossSelect', 'EnergySet', 'Crop'):
             self.epics_pvs[epics_pv].put(0)
             self.epics_pvs[epics_pv].add_callback(self.pv_callback)
         for epics_pv in ('ShutterBClose', 'ShutterBStatus'):
@@ -145,7 +142,7 @@ class TXMOptics():
         log.setup_custom_logger("./txmoptics.log")
 
     def read_pv_file(self, pv_file_name, macros):
-        """Reads a file containing a list of EPICS PVs to be used by txmOptics.
+        """Reads a file containing a list of EPICS PVs to be used by TXMOptics.
 
 
         Parameters
@@ -194,9 +191,7 @@ class TXMOptics():
             if dictentry.find('PVName') != -1:
                 pvname = epics_pv.value
                 key = dictentry.replace('PVName', '')
-                if (pvname != ''): 
-                    print(pvname, key)
-                    self.control_pvs[key] = PV(pvname)
+                self.control_pvs[key] = PV(pvname)
             if dictentry.find('PVPrefix') != -1:
                 pvprefix = epics_pv.value
                 key = dictentry.replace('PVPrefix', '')
@@ -311,12 +306,6 @@ class TXMOptics():
         elif (pvname.find('EnergySet') != -1) and (value == 1):
             thread = threading.Thread(target=self.energy_change, args=())
             thread.start()            
-        elif (pvname.find('EnergyArbitrarySet') != -1) and (value == 1):
-            thread = threading.Thread(target=self.energy_arbitrary_change, args=())
-            thread.start()       
-        elif (pvname.find('EnergyMoveSet') != -1) and (value == 1):
-            thread = threading.Thread(target=self.energy_move_change, args=())
-            thread.start()       
         elif (pvname.find('Crop') != -1) and (value ==1):
             thread = threading.Thread(target=self.crop_detector, args=())
             thread.start()            
@@ -718,81 +707,6 @@ class TXMOptics():
             log.info('energy change is done')
             self.epics_pvs['EnergyBusy'].put(0)   
             self.epics_pvs['EnergySet'].put(0)      
-
-    def energy_arbitrary_change(self):
-
-        if self.epics_pvs['EnergyBusy'].get() == 1:
-            return
-            
-        # self.epics_pvs['MCTStatus'].put('Changing energy')
-        self.epics_pvs['EnergyBusy'].put(1)
-
-        energy_choice_min = float(PV(self.epics_pvs["EnergyChoice"].pvname + '.ONST').get().split(' ')[1])
-        # print(energy_choice_min)
-        energy_choice_max = float(PV(self.epics_pvs["EnergyChoice"].pvname + '.TWST').get().split(' ')[1])
-        # print(self.epics_pvs["EnergyChoice"].pvname + '.NIST')
-
-        # print(energy_choice_min, energy_choice_max)
-        self.epics_pvs['EnergyBusy'].put(0)
-
-        if self.epics_pvs["EnergyCalibrationUse"].get(as_string=True) == "Pre-set":
-            # self.epics_pvs['MCTStatus'].put('Changing energy: using presets')
-
-            energy_choice_index = str(self.epics_pvs["EnergyChoice"].get())
-            energy_choice       = self.epics_pvs["EnergyChoice"].get(as_string=True)
-            energy_choice_list  = energy_choice.split(' ')
-            log.info("txmOptics: energy choice = %s",energy_choice)
-            if energy_choice_list[0] == 'Pink':
-                command = 'energy pink --force'
-            else: # Mono
-                command = 'energy set --energy ' + energy_choice_list[1] + ' --force'
-        else:
-            energy_arbitrary = self.epics_pvs['EnergyArbitrary'].get()
-            if  (energy_arbitrary >= energy_choice_min) & (energy_arbitrary < energy_choice_max):
-                command = 'energy set --energy ' + str(self.epics_pvs['EnergyArbitrary'].get()) + ' --force'
-                self.epics_pvs['EnergyInRange'].put(1)
-            else:
-                # self.epics_pvs['MCTStatus'].put('Error: energy out of range')
-                self.epics_pvs['EnergyInRange'].put(0)
-                time.sleep(2) # for testing
-                # self.epics_pvs['MCTStatus'].put('Done')
-                self.epics_pvs['EnergyBusy'].put(0)   
-                self.epics_pvs['EnergyArbitrarySet'].put(0)
-                return
-        if (self.epics_pvs["EnergyTesting"].get()):
-            command =  command + ' --testing' 
-        
-        log.error(command)
-        # subprocess.Popen(command, shell=True)        
-
-        time.sleep(5)
-        log.info('txmOptics: waiting on motion to complete')
-        # while True:
-        #     time.sleep(.3)
-        #     if PV('2bma:alldone').get() and PV('2bmb:alldone').get():
-        #         break
-        log.info('motion completed')
-
-        time.sleep(2) # for testing
-        # self.epics_pvs['MCTStatus'].put('Done')
-        self.epics_pvs['EnergyBusy'].put(0)   
-        self.epics_pvs['EnergyArbitrarySet'].put(0)   
-
-    def energy_move_change(self):
-
-        if self.epics_pvs['EnergyBusy'].get() == 1:
-            return
-            
-        # self.epics_pvs['MCTStatus'].put('Changing energy move setting update')
-        self.epics_pvs['EnergyBusy'].put(1)
-        command = 'energy status'
-        log.error(command)
-        # subprocess.Popen(command, shell=True)     
-        time.sleep(2) # for testing
-        # self.epics_pvs['MCTStatus'].put('Done')
-        self.epics_pvs['EnergyMoveSet'].put(0)   
-        self.epics_pvs['EnergyBusy'].put(0)
-
 
     def crop_detector(self):
         """crop detector sizes"""

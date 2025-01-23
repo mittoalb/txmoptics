@@ -584,8 +584,8 @@ class TXMOptics():
                 for k in pvs:
                     if k.find('.VAL')!=-1:
                         p = PV(k)
-                        #time.sleep(0.1)
-                        val = p.get(as_string=True)
+                        time.sleep(0.1)
+                        val = p.get(as_string=True,timeout=30)
                         if(val is not None and isfloat(val)):
                             print(k,val)                        
                             fid.write(k[:-4]+' '+val+'\n')
@@ -657,17 +657,21 @@ class TXMOptics():
             log.info('move monochromator')            
             self.epics_pvs['DCMputEnergy'].put(energy)
             log.info('move undulator')
-            self.epics_pvs['GAPputEnergy'].put(energy+0.15)
-            self.wait_pv(self.epics_pvs['DCMputEnergyRBV'],energy)
-            self.wait_pv(self.epics_pvs['GAPputEnergyRBV'],energy+0.15)
+            self.epics_pvs['GAPputEnergy'].put(energy+0.18)
+            time.sleep(1)# possible backlash/stabilization, more??
+            # self.wait_pv(self.epics_pvs['DCMputEnergyRBV'],energy)
+            log.info('skip wait mono')
+            # self.wait_pv(self.epics_pvs['GAPputEnergyRBV'],energy+0.18)
+            log.info('skip wait undulator')
             
             time.sleep(1)# possible backlash/stabilization, more??
             if self.epics_pvs['EnergyUseCalibration'].get(as_string=True) == 'Yes':                
-                try:
+                if 1:
                     # read pvs for 2 energies
                     pvs1, pvs2, vals1, vals2 = [],[],[],[]
                     with open(self.epics_pvs['EnergyCalibrationFileOne'].get()) as fid:
                         for pv_val in fid.readlines():
+                            print(pv_val)
                             pv, val = pv_val[:-1].split(' ')
                             pvs1.append(pv)
                             vals1.append(float(val))
@@ -700,8 +704,8 @@ class TXMOptics():
                         #     self.epics_pvs['ZonePlateX'].put(vals[k],wait=True)                                                        
                         #     log.info('new Zone plate X %3.3f', self.epics_pvs['ZonePlateX'].get())
                         #maybe  y too..                        
-                except:
-                    log.error('Calibration files are wrong.')
+                # except:
+                #     log.error('Calibration files are wrong.')
             self.epics_pvs['BPMVFeedback'].put(1)
             self.epics_pvs['BPMHFeedback'].put(1)                                  
             log.info('energy change is done')

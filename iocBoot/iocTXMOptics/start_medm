@@ -5,6 +5,7 @@ setenv EPICS_TXMO      /home/beams/USERTXM/epics/synApps/support/txmoptics/
 setenv EPICS_APP       $DSERV_DIR/screens/32idsectorApp
 setenv EPICS_APP_A     $DSERV_DIR/synApps_6_0/ioc/32ida
 setenv EPICS_APP_C_TXM $DSERV_DIR/synApps_6_0/ioc/32idcTXM
+setenv EPICS_APP_32IDEN /home/beams/USERTXM/epics/synApps/support/energy/
 
 set output = `perl $EPICS_APP_A/release.pl $EPICS_APP`
 $output
@@ -20,6 +21,7 @@ setenv EPICS_DISPLAY_PATH $EPICS_DISPLAY_PATH':'$DSERV_DIR/synApps_5_2_1/ioc/32i
 setenv EPICS_DISPLAY_PATH $EPICS_DISPLAY_PATH':'$DSERV_DIR/synApps_6_0/ioc/32idb/32idbApp/op/adl
 setenv EPICS_DISPLAY_PATH $EPICS_DISPLAY_PATH':'$DSERV_DIR/synApps_6_0/ioc/32idc01/32idc01App/op/adl
 setenv EPICS_DISPLAY_PATH $EPICS_DISPLAY_PATH':'$DSERV_DIR/synApps_6_0/ioc/32idc02/32idc02App/op/adl
+setenv EPICS_DISPLAY_PATH $EPICS_DISPLAY_PATH':'$EPICS_APP_32IDEN/energyApp/op/adl
 
 #setenv EPICS_DISPLAY_PATH $EPICS_DISPLAY_PATH':'$EPICS_APP_C_TXM/32idcTXMApp/op/adl
 setenv EPICS_DISPLAY_PATH $EPICS_DISPLAY_PATH':'$EPICS_TS/tomoScanApp/op/adl

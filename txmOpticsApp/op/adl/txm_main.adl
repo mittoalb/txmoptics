@@ -5,10 +5,10 @@ file {
 }
 display {
 	object {
-		x=0
-		y=1237
-		width=1920
-		height=1130
+		x=80
+		y=740
+		width=1630
+		height=1194
 	}
 	clr=14
 	bclr=4
@@ -20162,4 +20162,19 @@ composite {
 			}
 		}
 	}
+}
+"related display" {
+	object {
+		x=1566
+		y=1115
+		width=50
+		height=20
+	}
+	display[0] {
+		label="Energy Change"
+		name="energy_32ID.adl"
+		args="P=32id:, R=Energy:"
+	}
+	clr=14
+	bclr=51
 }

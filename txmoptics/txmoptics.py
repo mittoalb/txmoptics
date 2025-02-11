@@ -39,16 +39,6 @@ class TXMOptics():
             self.read_pv_file(pv_file, macros)
         self.show_pvs()
 
-        prefix = self.pv_prefixes['CRLRelays']
-        self.control_pvs['CRLRelaysY0'] = PV(prefix + 'oY0')
-        self.control_pvs['CRLRelaysY1'] = PV(prefix + 'oY1')
-        self.control_pvs['CRLRelaysY2'] = PV(prefix + 'oY2')
-        self.control_pvs['CRLRelaysY3'] = PV(prefix + 'oY3')
-        self.control_pvs['CRLRelaysY4'] = PV(prefix + 'oY4')
-        self.control_pvs['CRLRelaysY5'] = PV(prefix + 'oY5')
-        self.control_pvs['CRLRelaysY6'] = PV(prefix + 'oY6')
-        self.control_pvs['CRLRelaysY7'] = PV(prefix + 'oY7')
-
         prefix = self.pv_prefixes['ValvesPLC']
         self.control_pvs['VPLCHighPressureOn'] = PV(prefix + 'oC23')
         self.control_pvs['VPLCHighPressureOff'] = PV(prefix + 'oC33')
@@ -125,7 +115,7 @@ class TXMOptics():
                 
         self.epics_pvs = {**self.config_pvs, **self.control_pvs}
 
-        for epics_pv in ('MoveCRLIn', 'MoveCRLOut', 'MovePhaseRingIn', 'MovePhaseRingOut', 'MoveDiffuserIn',
+        for epics_pv in ('MovePhaseRingIn', 'MovePhaseRingOut', 'MoveDiffuserIn',
                          'MoveDiffuserOut', 'MoveBeamstopIn', 'MoveBeamstopOut', 'MovePinholeIn', 'MovePinholeOut',
                          'MoveCondenserIn', 'MoveCondenserOut', 'MoveZonePlateIn', 'MoveZonePlateOut', 'MoveFurnaceIn', 'MoveFurnaceOut',
                          'MoveAllIn', 'MoveAllOut', 'AllStop', 'SaveAllPVs', 'LoadAllPVs', 'CrossSelect', 'EnergySet', 'Crop'):
@@ -231,13 +221,7 @@ class TXMOptics():
         """
 
         log.debug('pv_callback pvName=%s, value=%s, char_value=%s', pvname, value, char_value)
-        if (pvname.find('MoveCRLIn') != -1) and (value == 1):
-            thread = threading.Thread(target=self.move_crl_in, args=())
-            thread.start()
-        elif (pvname.find('MoveCRLOut') != -1) and (value == 1):
-            thread = threading.Thread(target=self.move_crl_out, args=())
-            thread.start()
-        elif (pvname.find('MovePhaseRingIn') != -1) and (value == 1):
+        if (pvname.find('MovePhaseRingIn') != -1) and (value == 1):
             thread = threading.Thread(target=self.move_phasering_in, args=())
             thread.start()
         elif (pvname.find('MovePhaseRingOut') != -1) and (value == 1):
@@ -310,23 +294,6 @@ class TXMOptics():
             thread = threading.Thread(target=self.crop_detector, args=())
             thread.start()            
         
-
-    def move_crl_in(self):
-        """Moves the crl in.
-        """
-        for k in range(7):
-            if(self.epics_pvs['CRLRelaysY'+str(k)+'InOutUse'].value):
-                self.control_pvs['CRLRelaysY'+str(k)].put(1, wait=True, timeout=1)
-
-        self.epics_pvs['MoveCRLIn'].put('Done')
-
-    def move_crl_out(self):
-        """Moves the crl out.
-        """
-        for k in range(7):
-            if(self.epics_pvs['CRLRelaysY'+str(k)+'InOutUse'].value):
-                self.control_pvs['CRLRelaysY'+str(k)].put(0, wait=True, timeout=1)
-        self.epics_pvs['MoveCRLOut'].put('Done')
 
     def move_diffuser_in(self):
         """Moves the diffuser in.
@@ -504,8 +471,7 @@ class TXMOptics():
     def move_all_in(self):
         """Moves all in
         """
-        funcs = [self.move_crl_in,
-                 self.set_bpm_in,
+        funcs = [self.set_bpm_in,
                  self.move_phasering_in,
                  self.move_diffuser_in,
                  self.move_beamstop_in,
@@ -525,8 +491,7 @@ class TXMOptics():
     def move_all_out(self):
         """Moves all out
         """
-        funcs = [self.move_crl_out,
-                 self.set_bpm_out,
+        funcs = [self.set_bpm_out,
                  self.move_phasering_out,
                  self.move_diffuser_out,
                  self.move_beamstop_out,
@@ -567,7 +532,7 @@ class TXMOptics():
         # for k in prefixes:
         #     repl.append(k.split('='))
         # # read adl file
-        with open('/home/beams/USERTXM/epics/synApps/support/txmoptics/txmOpticsApp/op/adl/txm_main.adl','r') as fid:    
+        with open('/home/beams/USERTXM/epics/synApps/support/txmoptics_2p0/txmOpticsApp/op/adl/txm_main_updated.adl','r') as fid:    
             s = fid.read()
         # # replace in adl file
         # for k in repl:

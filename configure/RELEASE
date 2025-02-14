@@ -21,11 +21,11 @@
 
 TEMPLATE_TOP=$(EPICS_BASE)/templates/makeBaseApp/top
 
-SUPPORT=/home/beams/USERTXM/epics/synApps/support
+SUPPORT=/home/beams19/USERTXM/epics/synApps/support
 
-BUSY=$(SUPPORT)/busy-R1-7-2
-AUTOSAVE=$(SUPPORT)/autosave-R5-10
-ASYN=$(SUPPORT)/asyn-R4-37
+BUSY=$(SUPPORT)/busy-R1-7-4
+AUTOSAVE=$(SUPPORT)/autosave-R5-11
+ASYN=$(SUPPORT)/asyn-R4-45
 
 # EPICS_BASE usually appears last so other apps can override stuff:
 EPICS_BASE=/home/beams/USERTXM/epics/epics-base

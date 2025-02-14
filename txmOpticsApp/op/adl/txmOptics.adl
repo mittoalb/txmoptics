@@ -1,14 +1,14 @@
 
 file {
-	name="/home/beams/USERTXM/epics/synApps/support/txmoptics/txmOpticsApp/op/adl/txmOptics.adl"
+	name="/home/beams19/USERTXM/epics/synApps/support/txmoptics/iocBoot/iocTXMOptics/../../txmOpticsApp/op/adl/txmOptics_update.adl"
 	version=030111
 }
 display {
 	object {
-		x=291
-		y=307
+		x=311
+		y=120
 		width=800
-		height=1200
+		height=1017
 	}
 	clr=14
 	bclr=4
@@ -90,7 +90,7 @@ display {
 rectangle {
 	object {
 		x=0
-		y=619
+		y=431
 		width=800
 		height=30
 	}
@@ -101,7 +101,7 @@ rectangle {
 rectangle {
 	object {
 		x=0
-		y=475
+		y=287
 		width=800
 		height=30
 	}
@@ -112,7 +112,7 @@ rectangle {
 rectangle {
 	object {
 		x=0
-		y=879
+		y=691
 		width=800
 		height=30
 	}
@@ -134,7 +134,7 @@ rectangle {
 text {
 	object {
 		x=83
-		y=879
+		y=689
 		width=600
 		height=30
 	}
@@ -147,7 +147,7 @@ text {
 text {
 	object {
 		x=263
-		y=1039
+		y=849
 		width=160
 		height=20
 	}
@@ -160,7 +160,7 @@ text {
 text {
 	object {
 		x=253
-		y=914
+		y=724
 		width=170
 		height=20
 	}
@@ -173,7 +173,7 @@ text {
 text {
 	object {
 		x=163
-		y=939
+		y=749
 		width=260
 		height=20
 	}
@@ -186,7 +186,7 @@ text {
 text {
 	object {
 		x=163
-		y=964
+		y=774
 		width=260
 		height=20
 	}
@@ -199,7 +199,7 @@ text {
 text {
 	object {
 		x=133
-		y=989
+		y=799
 		width=290
 		height=20
 	}
@@ -212,7 +212,7 @@ text {
 text {
 	object {
 		x=263
-		y=1014
+		y=824
 		width=160
 		height=20
 	}
@@ -225,7 +225,7 @@ text {
 "text entry" {
 	object {
 		x=428
-		y=939
+		y=749
 		width=230
 		height=20
 	}
@@ -241,7 +241,7 @@ text {
 "text entry" {
 	object {
 		x=428
-		y=914
+		y=724
 		width=230
 		height=20
 	}
@@ -257,7 +257,7 @@ text {
 "text entry" {
 	object {
 		x=428
-		y=989
+		y=799
 		width=230
 		height=20
 	}
@@ -273,7 +273,7 @@ text {
 "text entry" {
 	object {
 		x=428
-		y=1014
+		y=824
 		width=230
 		height=20
 	}
@@ -289,7 +289,7 @@ text {
 "text entry" {
 	object {
 		x=428
-		y=1039
+		y=849
 		width=230
 		height=20
 	}
@@ -305,7 +305,7 @@ text {
 "text entry" {
 	object {
 		x=428
-		y=964
+		y=774
 		width=230
 		height=20
 	}
@@ -685,7 +685,7 @@ text {
 text {
 	object {
 		x=5
-		y=515
+		y=325
 		width=170
 		height=20
 	}
@@ -698,7 +698,7 @@ text {
 "text entry" {
 	object {
 		x=180
-		y=515
+		y=325
 		width=100
 		height=20
 	}
@@ -713,7 +713,7 @@ text {
 "text entry" {
 	object {
 		x=305
-		y=515
+		y=325
 		width=100
 		height=20
 	}
@@ -728,7 +728,7 @@ text {
 "choice button" {
 	object {
 		x=415
-		y=515
+		y=325
 		width=100
 		height=20
 	}
@@ -742,7 +742,7 @@ text {
 text {
 	object {
 		x=5
-		y=654
+		y=464
 		width=170
 		height=20
 	}
@@ -755,7 +755,7 @@ text {
 "text entry" {
 	object {
 		x=180
-		y=679
+		y=489
 		width=100
 		height=20
 	}
@@ -770,7 +770,7 @@ text {
 "text entry" {
 	object {
 		x=180
-		y=704
+		y=514
 		width=100
 		height=20
 	}
@@ -785,7 +785,7 @@ text {
 "choice button" {
 	object {
 		x=415
-		y=653
+		y=463
 		width=100
 		height=20
 	}
@@ -799,7 +799,7 @@ text {
 "text entry" {
 	object {
 		x=305
-		y=679
+		y=489
 		width=100
 		height=20
 	}
@@ -814,7 +814,7 @@ text {
 "text entry" {
 	object {
 		x=305
-		y=704
+		y=514
 		width=100
 		height=20
 	}
@@ -829,7 +829,7 @@ text {
 text {
 	object {
 		x=5
-		y=679
+		y=489
 		width=170
 		height=20
 	}
@@ -842,7 +842,7 @@ text {
 text {
 	object {
 		x=5
-		y=704
+		y=514
 		width=170
 		height=20
 	}
@@ -850,222 +850,6 @@ text {
 		clr=14
 	}
 	textix="Horizontal"
-	align="horiz. right"
-}
-"choice button" {
-	object {
-		x=415
-		y=275
-		width=100
-		height=20
-	}
-	control {
-		chan="$(P)$(R)CRLRelaysY0InOutUse"
-		clr=14
-		bclr=51
-	}
-	stacking="column"
-}
-"choice button" {
-	object {
-		x=415
-		y=300
-		width=100
-		height=20
-	}
-	control {
-		chan="$(P)$(R)CRLRelaysY1InOutUse"
-		clr=14
-		bclr=51
-	}
-	stacking="column"
-}
-"choice button" {
-	object {
-		x=415
-		y=325
-		width=100
-		height=20
-	}
-	control {
-		chan="$(P)$(R)CRLRelaysY2InOutUse"
-		clr=14
-		bclr=51
-	}
-	stacking="column"
-}
-"choice button" {
-	object {
-		x=415
-		y=350
-		width=100
-		height=20
-	}
-	control {
-		chan="$(P)$(R)CRLRelaysY3InOutUse"
-		clr=14
-		bclr=51
-	}
-	stacking="column"
-}
-"choice button" {
-	object {
-		x=415
-		y=375
-		width=100
-		height=20
-	}
-	control {
-		chan="$(P)$(R)CRLRelaysY4InOutUse"
-		clr=14
-		bclr=51
-	}
-	stacking="column"
-}
-"choice button" {
-	object {
-		x=415
-		y=400
-		width=100
-		height=20
-	}
-	control {
-		chan="$(P)$(R)CRLRelaysY5InOutUse"
-		clr=14
-		bclr=51
-	}
-	stacking="column"
-}
-"choice button" {
-	object {
-		x=415
-		y=425
-		width=100
-		height=20
-	}
-	control {
-		chan="$(P)$(R)CRLRelaysY6InOutUse"
-		clr=14
-		bclr=51
-	}
-	stacking="column"
-}
-"choice button" {
-	object {
-		x=415
-		y=450
-		width=100
-		height=20
-	}
-	control {
-		chan="$(P)$(R)CRLRelaysY7InOutUse"
-		clr=14
-		bclr=51
-	}
-	stacking="column"
-}
-text {
-	object {
-		x=355
-		y=300
-		width=50
-		height=20
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="CRL1"
-	align="horiz. right"
-}
-text {
-	object {
-		x=355
-		y=275
-		width=50
-		height=20
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="CRL0"
-	align="horiz. right"
-}
-text {
-	object {
-		x=355
-		y=325
-		width=50
-		height=20
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="CRL2"
-	align="horiz. right"
-}
-text {
-	object {
-		x=355
-		y=350
-		width=50
-		height=20
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="CRL3"
-	align="horiz. right"
-}
-text {
-	object {
-		x=355
-		y=375
-		width=50
-		height=20
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="CRL4"
-	align="horiz. right"
-}
-text {
-	object {
-		x=355
-		y=400
-		width=50
-		height=20
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="CRL5"
-	align="horiz. right"
-}
-text {
-	object {
-		x=355
-		y=425
-		width=50
-		height=20
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="CRL6"
-	align="horiz. right"
-}
-text {
-	object {
-		x=355
-		y=450
-		width=50
-		height=20
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="CRL7"
 	align="horiz. right"
 }
 text {
@@ -1185,7 +969,7 @@ text {
 "text entry" {
 	object {
 		x=428
-		y=1089
+		y=899
 		width=230
 		height=20
 	}
@@ -1201,7 +985,7 @@ text {
 text {
 	object {
 		x=263
-		y=1089
+		y=899
 		width=160
 		height=20
 	}
@@ -1214,7 +998,7 @@ text {
 text {
 	object {
 		x=263
-		y=1064
+		y=874
 		width=160
 		height=20
 	}
@@ -1227,7 +1011,7 @@ text {
 "text entry" {
 	object {
 		x=428
-		y=1064
+		y=874
 		width=230
 		height=20
 	}
@@ -1450,49 +1234,6 @@ text {
 	label="Out"
 	press_msg="1"
 }
-text {
-	object {
-		x=5
-		y=275
-		width=160
-		height=20
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="CRL"
-	align="horiz. right"
-}
-"message button" {
-	object {
-		x=520
-		y=275
-		width=35
-		height=20
-	}
-	control {
-		chan="$(P)$(R)MoveCRLIn"
-		clr=14
-		bclr=51
-	}
-	label="In"
-	press_msg="1"
-}
-"message button" {
-	object {
-		x=560
-		y=275
-		width=35
-		height=20
-	}
-	control {
-		chan="$(P)$(R)MoveCRLOut"
-		clr=14
-		bclr=51
-	}
-	label="Out"
-	press_msg="1"
-}
 "message button" {
 	object {
 		x=510
@@ -1526,7 +1267,7 @@ text {
 "message button" {
 	object {
 		x=626
-		y=1152
+		y=964
 		width=170
 		height=44
 	}
@@ -1541,7 +1282,7 @@ text {
 text {
 	object {
 		x=97
-		y=475
+		y=285
 		width=600
 		height=30
 	}
@@ -1554,7 +1295,7 @@ text {
 text {
 	object {
 		x=97
-		y=619
+		y=429
 		width=600
 		height=30
 	}
@@ -1567,7 +1308,7 @@ text {
 rectangle {
 	object {
 		x=0
-		y=734
+		y=546
 		width=800
 		height=30
 	}
@@ -1578,7 +1319,7 @@ rectangle {
 text {
 	object {
 		x=97
-		y=734
+		y=544
 		width=600
 		height=30
 	}
@@ -1591,7 +1332,7 @@ text {
 text {
 	object {
 		x=5
-		y=769
+		y=579
 		width=170
 		height=20
 	}
@@ -1604,7 +1345,7 @@ text {
 text {
 	object {
 		x=410
-		y=769
+		y=579
 		width=60
 		height=20
 	}
@@ -1622,7 +1363,7 @@ text {
 "text entry" {
 	object {
 		x=180
-		y=769
+		y=579
 		width=100
 		height=20
 	}
@@ -1637,7 +1378,7 @@ text {
 "message button" {
 	object {
 		x=305
-		y=769
+		y=579
 		width=100
 		height=20
 	}
@@ -1653,7 +1394,7 @@ text {
 "choice button" {
 	object {
 		x=180
-		y=794
+		y=604
 		width=100
 		height=20
 	}
@@ -1667,7 +1408,7 @@ text {
 text {
 	object {
 		x=5
-		y=794
+		y=604
 		width=170
 		height=20
 	}
@@ -1680,7 +1421,7 @@ text {
 "text entry" {
 	object {
 		x=178
-		y=819
+		y=629
 		width=220
 		height=25
 	}
@@ -1695,7 +1436,7 @@ text {
 "text entry" {
 	object {
 		x=178
-		y=849
+		y=659
 		width=220
 		height=25
 	}
@@ -1710,7 +1451,7 @@ text {
 "text entry" {
 	object {
 		x=267
-		y=1160
+		y=970
 		width=220
 		height=25
 	}
@@ -1725,7 +1466,7 @@ text {
 "message button" {
 	object {
 		x=153
-		y=1155
+		y=965
 		width=95
 		height=20
 	}
@@ -1740,7 +1481,7 @@ text {
 "message button" {
 	object {
 		x=153
-		y=1174
+		y=984
 		width=95
 		height=20
 	}
@@ -1755,7 +1496,7 @@ text {
 text {
 	object {
 		x=493
-		y=1163
+		y=973
 		width=60
 		height=20
 	}
@@ -1773,7 +1514,7 @@ text {
 rectangle {
 	object {
 		x=0
-		y=1114
+		y=926
 		width=800
 		height=30
 	}
@@ -1784,7 +1525,7 @@ rectangle {
 text {
 	object {
 		x=83
-		y=1114
+		y=924
 		width=600
 		height=30
 	}
@@ -1797,7 +1538,7 @@ text {
 "message button" {
 	object {
 		x=118
-		y=541
+		y=351
 		width=59
 		height=20
 	}
@@ -1812,7 +1553,7 @@ text {
 text {
 	object {
 		x=35
-		y=565
+		y=375
 		width=130
 		height=20
 	}
@@ -1825,7 +1566,7 @@ text {
 text {
 	object {
 		x=35
-		y=590
+		y=400
 		width=130
 		height=20
 	}
@@ -1838,7 +1579,7 @@ text {
 "text entry" {
 	object {
 		x=172
-		y=590
+		y=400
 		width=47
 		height=20
 	}
@@ -1853,7 +1594,7 @@ text {
 "text entry" {
 	object {
 		x=172
-		y=565
+		y=375
 		width=47
 		height=20
 	}
@@ -1868,7 +1609,7 @@ text {
 text {
 	object {
 		x=170
-		y=565
+		y=375
 		width=130
 		height=20
 	}
@@ -1881,7 +1622,7 @@ text {
 "text entry" {
 	object {
 		x=305
-		y=565
+		y=375
 		width=47
 		height=20
 	}
@@ -1896,7 +1637,7 @@ text {
 text {
 	object {
 		x=169
-		y=590
+		y=400
 		width=130
 		height=20
 	}
@@ -1909,7 +1650,7 @@ text {
 "text entry" {
 	object {
 		x=305
-		y=590
+		y=400
 		width=47
 		height=20
 	}

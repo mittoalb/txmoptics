@@ -1,12 +1,12 @@
 
 file {
-	name="/home/beams19/USERTXM/epics/synApps/support/txmoptics/txmOpticsApp/op/adl/txm_main.adl"
+	name="/home/beams19/USERTXM/epics/synApps/support/txmoptics/iocBoot/iocTXMOptics/../../txmOpticsApp/op/adl/txm_main.adl"
 	version=030111
 }
 display {
 	object {
-		x=80
-		y=740
+		x=696
+		y=42
 		width=1630
 		height=1194
 	}
@@ -382,7 +382,7 @@ text {
 }
 "related display" {
 	object {
-		x=445
+		x=816
 		y=480
 		width=15
 		height=15
@@ -397,18 +397,18 @@ text {
 }
 composite {
 	object {
-		x=466
+		x=865
 		y=308
-		width=117
+		width=150
 		height=183
 	}
 	"composite name"=""
 	children {
 		text {
 			object {
-				x=468
+				x=867
 				y=437
-				width=45
+				width=58
 				height=16
 			}
 			"basic attribute" {
@@ -419,9 +419,9 @@ composite {
 		}
 		text {
 			object {
-				x=467
+				x=866
 				y=436
-				width=45
+				width=58
 				height=16
 			}
 			"basic attribute" {
@@ -436,9 +436,9 @@ composite {
 		}
 		"text update" {
 			object {
-				x=467
+				x=866
 				y=308
-				width=116
+				width=149
 				height=20
 			}
 			monitor {
@@ -452,9 +452,9 @@ composite {
 		}
 		rectangle {
 			object {
-				x=473
+				x=874
 				y=364
-				width=104
+				width=133
 				height=31
 			}
 			"basic attribute" {
@@ -468,9 +468,9 @@ composite {
 		}
 		rectangle {
 			object {
-				x=473
+				x=874
 				y=364
-				width=104
+				width=133
 				height=31
 			}
 			"basic attribute" {
@@ -484,9 +484,9 @@ composite {
 		}
 		rectangle {
 			object {
-				x=473
+				x=874
 				y=364
-				width=104
+				width=133
 				height=31
 			}
 			"basic attribute" {
@@ -500,9 +500,9 @@ composite {
 		}
 		rectangle {
 			object {
-				x=467
+				x=866
 				y=395
-				width=116
+				width=149
 				height=40
 			}
 			"basic attribute" {
@@ -512,9 +512,9 @@ composite {
 		}
 		text {
 			object {
-				x=495
+				x=903
 				y=419
-				width=60
+				width=77
 				height=15
 			}
 			"basic attribute" {
@@ -530,9 +530,9 @@ composite {
 		}
 		text {
 			object {
-				x=495
+				x=903
 				y=425
-				width=60
+				width=77
 				height=10
 			}
 			"basic attribute" {
@@ -548,9 +548,9 @@ composite {
 		}
 		"message button" {
 			object {
-				x=469
+				x=869
 				y=397
-				width=25
+				width=32
 				height=36
 			}
 			control {
@@ -563,9 +563,9 @@ composite {
 		}
 		"text entry" {
 			object {
-				x=495
+				x=903
 				y=397
-				width=60
+				width=77
 				height=20
 			}
 			control {
@@ -578,9 +578,9 @@ composite {
 		}
 		"message button" {
 			object {
-				x=556
+				x=981
 				y=397
-				width=25
+				width=32
 				height=36
 			}
 			control {
@@ -593,9 +593,9 @@ composite {
 		}
 		"text entry" {
 			object {
-				x=476
+				x=878
 				y=367
-				width=98
+				width=125
 				height=25
 			}
 			control {
@@ -608,9 +608,9 @@ composite {
 		}
 		rectangle {
 			object {
-				x=467
+				x=866
 				y=343
-				width=6
+				width=8
 				height=50
 			}
 			"basic attribute" {
@@ -623,9 +623,9 @@ composite {
 		}
 		rectangle {
 			object {
-				x=577
+				x=1008
 				y=343
-				width=6
+				width=8
 				height=50
 			}
 			"basic attribute" {
@@ -638,9 +638,9 @@ composite {
 		}
 		"text update" {
 			object {
-				x=467
+				x=866
 				y=330
-				width=116
+				width=149
 				height=12
 			}
 			monitor {
@@ -654,9 +654,9 @@ composite {
 		}
 		rectangle {
 			object {
-				x=474
+				x=876
 				y=339
-				width=102
+				width=131
 				height=26
 			}
 			"basic attribute" {
@@ -671,9 +671,9 @@ composite {
 		}
 		rectangle {
 			object {
-				x=476
+				x=878
 				y=341
-				width=98
+				width=125
 				height=21
 			}
 			"basic attribute" {
@@ -688,9 +688,9 @@ composite {
 		}
 		"text update" {
 			object {
-				x=478
+				x=880
 				y=343
-				width=94
+				width=120
 				height=17
 			}
 			monitor {
@@ -704,9 +704,9 @@ composite {
 		}
 		text {
 			object {
-				x=495
+				x=903
 				y=417
-				width=60
+				width=77
 				height=10
 			}
 			"basic attribute" {
@@ -722,9 +722,9 @@ composite {
 		}
 		rectangle {
 			object {
-				x=473
+				x=874
 				y=364
-				width=104
+				width=133
 				height=31
 			}
 			"basic attribute" {
@@ -740,9 +740,9 @@ composite {
 		}
 		"choice button" {
 			object {
-				x=512
+				x=924
 				y=435
-				width=71
+				width=91
 				height=20
 			}
 			control {
@@ -754,9 +754,9 @@ composite {
 		}
 		"choice button" {
 			object {
-				x=466
+				x=865
 				y=456
-				width=115
+				width=148
 				height=35
 			}
 			control {
@@ -769,18 +769,18 @@ composite {
 }
 composite {
 	object {
-		x=586
+		x=1034
 		y=308
-		width=117
+		width=150
 		height=183
 	}
 	"composite name"=""
 	children {
 		text {
 			object {
-				x=588
+				x=1036
 				y=437
-				width=45
+				width=58
 				height=16
 			}
 			"basic attribute" {
@@ -791,9 +791,9 @@ composite {
 		}
 		text {
 			object {
-				x=587
+				x=1035
 				y=436
-				width=45
+				width=58
 				height=16
 			}
 			"basic attribute" {
@@ -808,9 +808,9 @@ composite {
 		}
 		"text update" {
 			object {
-				x=587
+				x=1035
 				y=308
-				width=116
+				width=149
 				height=20
 			}
 			monitor {
@@ -824,9 +824,9 @@ composite {
 		}
 		rectangle {
 			object {
-				x=593
+				x=1044
 				y=364
-				width=104
+				width=134
 				height=31
 			}
 			"basic attribute" {
@@ -840,9 +840,9 @@ composite {
 		}
 		rectangle {
 			object {
-				x=593
+				x=1044
 				y=364
-				width=104
+				width=134
 				height=31
 			}
 			"basic attribute" {
@@ -856,9 +856,9 @@ composite {
 		}
 		rectangle {
 			object {
-				x=593
+				x=1044
 				y=364
-				width=104
+				width=134
 				height=31
 			}
 			"basic attribute" {
@@ -872,9 +872,9 @@ composite {
 		}
 		rectangle {
 			object {
-				x=587
+				x=1035
 				y=395
-				width=116
+				width=149
 				height=40
 			}
 			"basic attribute" {
@@ -884,9 +884,9 @@ composite {
 		}
 		text {
 			object {
-				x=615
+				x=1070
 				y=419
-				width=60
+				width=77
 				height=15
 			}
 			"basic attribute" {
@@ -902,9 +902,9 @@ composite {
 		}
 		text {
 			object {
-				x=615
+				x=1070
 				y=425
-				width=60
+				width=77
 				height=10
 			}
 			"basic attribute" {
@@ -920,9 +920,9 @@ composite {
 		}
 		"message button" {
 			object {
-				x=589
+				x=1037
 				y=397
-				width=25
+				width=32
 				height=36
 			}
 			control {
@@ -935,9 +935,9 @@ composite {
 		}
 		"text entry" {
 			object {
-				x=615
+				x=1070
 				y=397
-				width=60
+				width=77
 				height=20
 			}
 			control {
@@ -950,9 +950,9 @@ composite {
 		}
 		"message button" {
 			object {
-				x=676
+				x=1150
 				y=397
-				width=25
+				width=32
 				height=36
 			}
 			control {
@@ -965,9 +965,9 @@ composite {
 		}
 		"text entry" {
 			object {
-				x=596
+				x=1047
 				y=367
-				width=98
+				width=125
 				height=25
 			}
 			control {
@@ -980,9 +980,9 @@ composite {
 		}
 		rectangle {
 			object {
-				x=587
+				x=1035
 				y=343
-				width=6
+				width=9
 				height=50
 			}
 			"basic attribute" {
@@ -995,9 +995,9 @@ composite {
 		}
 		rectangle {
 			object {
-				x=697
+				x=1175
 				y=343
-				width=6
+				width=9
 				height=50
 			}
 			"basic attribute" {
@@ -1010,9 +1010,9 @@ composite {
 		}
 		"text update" {
 			object {
-				x=587
+				x=1035
 				y=330
-				width=116
+				width=149
 				height=12
 			}
 			monitor {
@@ -1026,9 +1026,9 @@ composite {
 		}
 		rectangle {
 			object {
-				x=594
+				x=1045
 				y=339
-				width=102
+				width=131
 				height=26
 			}
 			"basic attribute" {
@@ -1043,9 +1043,9 @@ composite {
 		}
 		rectangle {
 			object {
-				x=596
+				x=1047
 				y=341
-				width=98
+				width=125
 				height=21
 			}
 			"basic attribute" {
@@ -1060,9 +1060,9 @@ composite {
 		}
 		"text update" {
 			object {
-				x=598
+				x=1049
 				y=343
-				width=94
+				width=120
 				height=17
 			}
 			monitor {
@@ -1076,9 +1076,9 @@ composite {
 		}
 		text {
 			object {
-				x=615
+				x=1070
 				y=417
-				width=60
+				width=77
 				height=10
 			}
 			"basic attribute" {
@@ -1094,9 +1094,9 @@ composite {
 		}
 		rectangle {
 			object {
-				x=593
+				x=1044
 				y=364
-				width=104
+				width=134
 				height=31
 			}
 			"basic attribute" {
@@ -1112,9 +1112,9 @@ composite {
 		}
 		"choice button" {
 			object {
-				x=632
+				x=1093
 				y=435
-				width=71
+				width=91
 				height=20
 			}
 			control {
@@ -1126,9 +1126,9 @@ composite {
 		}
 		"choice button" {
 			object {
-				x=586
+				x=1034
 				y=456
-				width=115
+				width=148
 				height=35
 			}
 			control {
@@ -1141,7 +1141,7 @@ composite {
 }
 "related display" {
 	object {
-		x=375
+		x=746
 		y=481
 		width=15
 		height=15
@@ -1156,18 +1156,18 @@ composite {
 }
 composite {
 	object {
-		x=10
+		x=14
 		y=308
-		width=117
+		width=150
 		height=183
 	}
 	"composite name"=""
 	children {
 		text {
 			object {
-				x=12
+				x=16
 				y=437
-				width=45
+				width=58
 				height=16
 			}
 			"basic attribute" {
@@ -1178,9 +1178,9 @@ composite {
 		}
 		text {
 			object {
-				x=11
+				x=15
 				y=436
-				width=45
+				width=58
 				height=16
 			}
 			"basic attribute" {
@@ -1195,9 +1195,9 @@ composite {
 		}
 		"text update" {
 			object {
-				x=11
+				x=15
 				y=308
-				width=116
+				width=149
 				height=20
 			}
 			monitor {
@@ -1211,9 +1211,9 @@ composite {
 		}
 		rectangle {
 			object {
-				x=17
+				x=23
 				y=364
-				width=104
+				width=133
 				height=31
 			}
 			"basic attribute" {
@@ -1227,9 +1227,9 @@ composite {
 		}
 		rectangle {
 			object {
-				x=17
+				x=23
 				y=364
-				width=104
+				width=133
 				height=31
 			}
 			"basic attribute" {
@@ -1243,9 +1243,9 @@ composite {
 		}
 		rectangle {
 			object {
-				x=17
+				x=23
 				y=364
-				width=104
+				width=133
 				height=31
 			}
 			"basic attribute" {
@@ -1259,9 +1259,9 @@ composite {
 		}
 		rectangle {
 			object {
-				x=11
+				x=15
 				y=395
-				width=116
+				width=149
 				height=40
 			}
 			"basic attribute" {
@@ -1271,9 +1271,9 @@ composite {
 		}
 		text {
 			object {
-				x=39
+				x=52
 				y=419
-				width=60
+				width=77
 				height=15
 			}
 			"basic attribute" {
@@ -1289,9 +1289,9 @@ composite {
 		}
 		text {
 			object {
-				x=39
+				x=52
 				y=425
-				width=60
+				width=77
 				height=10
 			}
 			"basic attribute" {
@@ -1307,9 +1307,9 @@ composite {
 		}
 		"message button" {
 			object {
-				x=13
+				x=18
 				y=397
-				width=25
+				width=32
 				height=36
 			}
 			control {
@@ -1322,9 +1322,9 @@ composite {
 		}
 		"text entry" {
 			object {
-				x=39
+				x=52
 				y=397
-				width=60
+				width=77
 				height=20
 			}
 			control {
@@ -1337,9 +1337,9 @@ composite {
 		}
 		"message button" {
 			object {
-				x=100
+				x=130
 				y=397
-				width=25
+				width=32
 				height=36
 			}
 			control {
@@ -1352,9 +1352,9 @@ composite {
 		}
 		"text entry" {
 			object {
-				x=20
+				x=27
 				y=367
-				width=98
+				width=125
 				height=25
 			}
 			control {
@@ -1367,9 +1367,9 @@ composite {
 		}
 		rectangle {
 			object {
-				x=11
+				x=15
 				y=343
-				width=6
+				width=8
 				height=50
 			}
 			"basic attribute" {
@@ -1382,9 +1382,9 @@ composite {
 		}
 		rectangle {
 			object {
-				x=121
+				x=157
 				y=343
-				width=6
+				width=8
 				height=50
 			}
 			"basic attribute" {
@@ -1397,9 +1397,9 @@ composite {
 		}
 		"text update" {
 			object {
-				x=11
+				x=15
 				y=330
-				width=116
+				width=149
 				height=12
 			}
 			monitor {
@@ -1413,9 +1413,9 @@ composite {
 		}
 		rectangle {
 			object {
-				x=18
+				x=25
 				y=339
-				width=102
+				width=131
 				height=26
 			}
 			"basic attribute" {
@@ -1430,9 +1430,9 @@ composite {
 		}
 		rectangle {
 			object {
-				x=20
+				x=27
 				y=341
-				width=98
+				width=125
 				height=21
 			}
 			"basic attribute" {
@@ -1447,9 +1447,9 @@ composite {
 		}
 		"text update" {
 			object {
-				x=22
+				x=29
 				y=343
-				width=94
+				width=120
 				height=17
 			}
 			monitor {
@@ -1463,9 +1463,9 @@ composite {
 		}
 		text {
 			object {
-				x=39
+				x=52
 				y=417
-				width=60
+				width=77
 				height=10
 			}
 			"basic attribute" {
@@ -1481,9 +1481,9 @@ composite {
 		}
 		rectangle {
 			object {
-				x=17
+				x=23
 				y=364
-				width=104
+				width=133
 				height=31
 			}
 			"basic attribute" {
@@ -1499,9 +1499,9 @@ composite {
 		}
 		"choice button" {
 			object {
-				x=56
+				x=73
 				y=435
-				width=71
+				width=91
 				height=20
 			}
 			control {
@@ -1513,9 +1513,9 @@ composite {
 		}
 		"choice button" {
 			object {
-				x=10
+				x=14
 				y=456
-				width=115
+				width=148
 				height=35
 			}
 			control {
@@ -1528,18 +1528,18 @@ composite {
 }
 composite {
 	object {
-		x=130
+		x=261
 		y=308
-		width=117
+		width=150
 		height=183
 	}
 	"composite name"=""
 	children {
 		text {
 			object {
-				x=132
+				x=263
 				y=437
-				width=45
+				width=58
 				height=16
 			}
 			"basic attribute" {
@@ -1550,9 +1550,9 @@ composite {
 		}
 		text {
 			object {
-				x=131
+				x=262
 				y=436
-				width=45
+				width=58
 				height=16
 			}
 			"basic attribute" {
@@ -1567,9 +1567,9 @@ composite {
 		}
 		"text update" {
 			object {
-				x=131
+				x=262
 				y=308
-				width=116
+				width=149
 				height=20
 			}
 			monitor {
@@ -1583,9 +1583,9 @@ composite {
 		}
 		rectangle {
 			object {
-				x=137
+				x=270
 				y=364
-				width=104
+				width=133
 				height=31
 			}
 			"basic attribute" {
@@ -1599,9 +1599,9 @@ composite {
 		}
 		rectangle {
 			object {
-				x=137
+				x=270
 				y=364
-				width=104
+				width=133
 				height=31
 			}
 			"basic attribute" {
@@ -1615,9 +1615,9 @@ composite {
 		}
 		rectangle {
 			object {
-				x=137
+				x=270
 				y=364
-				width=104
+				width=133
 				height=31
 			}
 			"basic attribute" {
@@ -1631,9 +1631,9 @@ composite {
 		}
 		rectangle {
 			object {
-				x=131
+				x=262
 				y=395
-				width=116
+				width=149
 				height=40
 			}
 			"basic attribute" {
@@ -1643,9 +1643,9 @@ composite {
 		}
 		text {
 			object {
-				x=159
+				x=299
 				y=419
-				width=60
+				width=77
 				height=15
 			}
 			"basic attribute" {
@@ -1661,9 +1661,9 @@ composite {
 		}
 		text {
 			object {
-				x=159
+				x=299
 				y=425
-				width=60
+				width=77
 				height=10
 			}
 			"basic attribute" {
@@ -1679,9 +1679,9 @@ composite {
 		}
 		"message button" {
 			object {
-				x=133
+				x=265
 				y=397
-				width=25
+				width=32
 				height=36
 			}
 			control {
@@ -1694,9 +1694,9 @@ composite {
 		}
 		"text entry" {
 			object {
-				x=159
+				x=299
 				y=397
-				width=60
+				width=77
 				height=20
 			}
 			control {
@@ -1709,9 +1709,9 @@ composite {
 		}
 		"message button" {
 			object {
-				x=220
+				x=377
 				y=397
-				width=25
+				width=32
 				height=36
 			}
 			control {
@@ -1724,9 +1724,9 @@ composite {
 		}
 		"text entry" {
 			object {
-				x=140
+				x=274
 				y=367
-				width=98
+				width=125
 				height=25
 			}
 			control {
@@ -1739,9 +1739,9 @@ composite {
 		}
 		rectangle {
 			object {
-				x=131
+				x=262
 				y=343
-				width=6
+				width=8
 				height=50
 			}
 			"basic attribute" {
@@ -1754,9 +1754,9 @@ composite {
 		}
 		rectangle {
 			object {
-				x=241
+				x=404
 				y=343
-				width=6
+				width=8
 				height=50
 			}
 			"basic attribute" {
@@ -1769,9 +1769,9 @@ composite {
 		}
 		"text update" {
 			object {
-				x=131
+				x=262
 				y=330
-				width=116
+				width=149
 				height=12
 			}
 			monitor {
@@ -1785,9 +1785,9 @@ composite {
 		}
 		rectangle {
 			object {
-				x=138
+				x=272
 				y=339
-				width=102
+				width=131
 				height=26
 			}
 			"basic attribute" {
@@ -1802,9 +1802,9 @@ composite {
 		}
 		rectangle {
 			object {
-				x=140
+				x=274
 				y=341
-				width=98
+				width=125
 				height=21
 			}
 			"basic attribute" {
@@ -1819,9 +1819,9 @@ composite {
 		}
 		"text update" {
 			object {
-				x=142
+				x=276
 				y=343
-				width=94
+				width=120
 				height=17
 			}
 			monitor {
@@ -1835,9 +1835,9 @@ composite {
 		}
 		text {
 			object {
-				x=159
+				x=299
 				y=417
-				width=60
+				width=77
 				height=10
 			}
 			"basic attribute" {
@@ -1853,9 +1853,9 @@ composite {
 		}
 		rectangle {
 			object {
-				x=137
+				x=270
 				y=364
-				width=104
+				width=133
 				height=31
 			}
 			"basic attribute" {
@@ -1871,9 +1871,9 @@ composite {
 		}
 		"choice button" {
 			object {
-				x=176
+				x=320
 				y=435
-				width=71
+				width=91
 				height=20
 			}
 			control {
@@ -1885,9 +1885,9 @@ composite {
 		}
 		"choice button" {
 			object {
-				x=130
+				x=261
 				y=456
-				width=115
+				width=148
 				height=35
 			}
 			control {
@@ -1900,18 +1900,18 @@ composite {
 }
 composite {
 	object {
-		x=250
+		x=490
 		y=308
-		width=117
+		width=150
 		height=183
 	}
 	"composite name"=""
 	children {
 		text {
 			object {
-				x=252
+				x=492
 				y=437
-				width=45
+				width=58
 				height=16
 			}
 			"basic attribute" {
@@ -1922,9 +1922,9 @@ composite {
 		}
 		text {
 			object {
-				x=251
+				x=491
 				y=436
-				width=45
+				width=58
 				height=16
 			}
 			"basic attribute" {
@@ -1933,19 +1933,19 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcTXM:ens:c1:m1.SET"
+				chan="32idbTXM:ens:c1:m1.SET"
 			}
 			textix="Calib:"
 		}
 		"text update" {
 			object {
-				x=251
+				x=491
 				y=308
-				width=116
+				width=149
 				height=20
 			}
 			monitor {
-				chan="32idcTXM:ens:c1:m1.DESC"
+				chan="32idbTXM:ens:c1:m1.DESC"
 				clr=54
 				bclr=0
 			}
@@ -1955,9 +1955,9 @@ composite {
 		}
 		rectangle {
 			object {
-				x=257
+				x=499
 				y=364
-				width=104
+				width=133
 				height=31
 			}
 			"basic attribute" {
@@ -1966,14 +1966,14 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if zero"
-				chan="32idcTXM:ens:c1:m1.DMOV"
+				chan="32idbTXM:ens:c1:m1.DMOV"
 			}
 		}
 		rectangle {
 			object {
-				x=257
+				x=499
 				y=364
-				width=104
+				width=133
 				height=31
 			}
 			"basic attribute" {
@@ -1982,14 +1982,14 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcTXM:ens:c1:m1.LVIO"
+				chan="32idbTXM:ens:c1:m1.LVIO"
 			}
 		}
 		rectangle {
 			object {
-				x=257
+				x=499
 				y=364
-				width=104
+				width=133
 				height=31
 			}
 			"basic attribute" {
@@ -1998,14 +1998,14 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcTXM:ens:c1:m1_able.VAL"
+				chan="32idbTXM:ens:c1:m1_able.VAL"
 			}
 		}
 		rectangle {
 			object {
-				x=251
+				x=491
 				y=395
-				width=116
+				width=149
 				height=40
 			}
 			"basic attribute" {
@@ -2015,9 +2015,9 @@ composite {
 		}
 		text {
 			object {
-				x=279
+				x=528
 				y=419
-				width=60
+				width=77
 				height=15
 			}
 			"basic attribute" {
@@ -2026,16 +2026,16 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if zero"
-				chan="32idcTXM:ens:c1:m1.DMOV"
+				chan="32idbTXM:ens:c1:m1.DMOV"
 			}
 			textix="Moving"
 			align="horiz. centered"
 		}
 		text {
 			object {
-				x=279
+				x=528
 				y=425
-				width=60
+				width=77
 				height=10
 			}
 			"basic attribute" {
@@ -2044,20 +2044,20 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcTXM:ens:c1:m1.SET"
+				chan="32idbTXM:ens:c1:m1.SET"
 			}
 			textix="Calibrate"
 			align="horiz. centered"
 		}
 		"message button" {
 			object {
-				x=253
+				x=494
 				y=397
-				width=25
+				width=32
 				height=36
 			}
 			control {
-				chan="32idcTXM:ens:c1:m1.TWR"
+				chan="32idbTXM:ens:c1:m1.TWR"
 				clr=14
 				bclr=51
 			}
@@ -2066,13 +2066,13 @@ composite {
 		}
 		"text entry" {
 			object {
-				x=279
+				x=528
 				y=397
-				width=60
+				width=77
 				height=20
 			}
 			control {
-				chan="32idcTXM:ens:c1:m1.TWV"
+				chan="32idbTXM:ens:c1:m1.TWV"
 				clr=14
 				bclr=51
 			}
@@ -2081,13 +2081,13 @@ composite {
 		}
 		"message button" {
 			object {
-				x=340
+				x=606
 				y=397
-				width=25
+				width=32
 				height=36
 			}
 			control {
-				chan="32idcTXM:ens:c1:m1.TWF"
+				chan="32idbTXM:ens:c1:m1.TWF"
 				clr=14
 				bclr=51
 			}
@@ -2096,13 +2096,13 @@ composite {
 		}
 		"text entry" {
 			object {
-				x=260
+				x=503
 				y=367
-				width=98
+				width=125
 				height=25
 			}
 			control {
-				chan="32idcTXM:ens:c1:m1.VAL"
+				chan="32idbTXM:ens:c1:m1.VAL"
 				clr=14
 				bclr=51
 			}
@@ -2111,9 +2111,9 @@ composite {
 		}
 		rectangle {
 			object {
-				x=251
+				x=491
 				y=343
-				width=6
+				width=8
 				height=50
 			}
 			"basic attribute" {
@@ -2121,14 +2121,14 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcTXM:ens:c1:m1.LLS"
+				chan="32idbTXM:ens:c1:m1.LLS"
 			}
 		}
 		rectangle {
 			object {
-				x=361
+				x=633
 				y=343
-				width=6
+				width=8
 				height=50
 			}
 			"basic attribute" {
@@ -2136,18 +2136,18 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcTXM:ens:c1:m1.HLS"
+				chan="32idbTXM:ens:c1:m1.HLS"
 			}
 		}
 		"text update" {
 			object {
-				x=251
+				x=491
 				y=330
-				width=116
+				width=149
 				height=12
 			}
 			monitor {
-				chan="32idcTXM:ens:c1:m1.EGU"
+				chan="32idbTXM:ens:c1:m1.EGU"
 				clr=54
 				bclr=3
 			}
@@ -2157,9 +2157,9 @@ composite {
 		}
 		rectangle {
 			object {
-				x=258
+				x=501
 				y=339
-				width=102
+				width=131
 				height=26
 			}
 			"basic attribute" {
@@ -2169,14 +2169,14 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcTXM:ens:c1:m1.SET"
+				chan="32idbTXM:ens:c1:m1.SET"
 			}
 		}
 		rectangle {
 			object {
-				x=260
+				x=503
 				y=341
-				width=98
+				width=125
 				height=21
 			}
 			"basic attribute" {
@@ -2186,18 +2186,18 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcTXM:ens:c1:m1.SET"
+				chan="32idbTXM:ens:c1:m1.SET"
 			}
 		}
 		"text update" {
 			object {
-				x=262
+				x=505
 				y=343
-				width=94
+				width=120
 				height=17
 			}
 			monitor {
-				chan="32idcTXM:ens:c1:m1.RBV"
+				chan="32idbTXM:ens:c1:m1.RBV"
 				clr=54
 				bclr=3
 			}
@@ -2207,9 +2207,9 @@ composite {
 		}
 		text {
 			object {
-				x=279
+				x=528
 				y=417
-				width=60
+				width=77
 				height=10
 			}
 			"basic attribute" {
@@ -2218,16 +2218,16 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcTXM:ens:c1:m1.LVIO"
+				chan="32idbTXM:ens:c1:m1.LVIO"
 			}
 			textix="Soft limit"
 			align="horiz. centered"
 		}
 		rectangle {
 			object {
-				x=257
+				x=499
 				y=364
-				width=104
+				width=133
 				height=31
 			}
 			"basic attribute" {
@@ -2238,18 +2238,18 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcTXM:ens:c1:m1_able.VAL"
+				chan="32idbTXM:ens:c1:m1_able.VAL"
 			}
 		}
 		"choice button" {
 			object {
-				x=296
+				x=549
 				y=435
-				width=71
+				width=91
 				height=20
 			}
 			control {
-				chan="32idcTXM:ens:c1:m1.SET"
+				chan="32idbTXM:ens:c1:m1.SET"
 				clr=14
 				bclr=51
 			}
@@ -2257,13 +2257,13 @@ composite {
 		}
 		"choice button" {
 			object {
-				x=250
+				x=490
 				y=456
-				width=115
+				width=148
 				height=35
 			}
 			control {
-				chan="32idcTXM:ens:c1:m1_able.VAL"
+				chan="32idbTXM:ens:c1:m1_able.VAL"
 				clr=14
 				bclr=51
 			}
@@ -2272,7 +2272,7 @@ composite {
 }
 text {
 	object {
-		x=377
+		x=748
 		y=303
 		width=75
 		height=25
@@ -2285,7 +2285,7 @@ text {
 }
 oval {
 	object {
-		x=434
+		x=805
 		y=356
 		width=20
 		height=20
@@ -2300,7 +2300,7 @@ oval {
 }
 "message button" {
 	object {
-		x=377
+		x=748
 		y=330
 		width=55
 		height=23
@@ -2316,7 +2316,7 @@ oval {
 }
 oval {
 	object {
-		x=434
+		x=805
 		y=356
 		width=20
 		height=20
@@ -2331,7 +2331,7 @@ oval {
 }
 "message button" {
 	object {
-		x=377
+		x=748
 		y=355
 		width=55
 		height=23
@@ -2347,7 +2347,7 @@ oval {
 }
 oval {
 	object {
-		x=434
+		x=805
 		y=456
 		width=20
 		height=20
@@ -2362,7 +2362,7 @@ oval {
 }
 oval {
 	object {
-		x=435
+		x=806
 		y=407
 		width=20
 		height=20
@@ -3565,7 +3565,7 @@ menu {
 	display[2] {
 		label="Motor"
 		name="1_motors.adl"
-		args="P=32idc02:,M1=m12"
+		args="P=32idbTXM:,M1=m12"
 	}
 	clr=0
 	bclr=17
@@ -3596,1193 +3596,6 @@ rectangle {
 		fill="outline"
 		width=5
 	}
-}
-rectangle {
-	object {
-		x=715
-		y=300
-		width=908
-		height=200
-	}
-	"basic attribute" {
-		clr=14
-		fill="outline"
-		width=5
-	}
-}
-composite {
-	object {
-		x=1024
-		y=308
-		width=117
-		height=183
-	}
-	"composite name"=""
-	children {
-		text {
-			object {
-				x=1026
-				y=437
-				width=45
-				height=16
-			}
-			"basic attribute" {
-				clr=14
-				fill="outline"
-			}
-			textix="Calib:"
-		}
-		text {
-			object {
-				x=1025
-				y=436
-				width=45
-				height=16
-			}
-			"basic attribute" {
-				clr=30
-				fill="outline"
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idb:m32.SET"
-			}
-			textix="Calib:"
-		}
-		"text update" {
-			object {
-				x=1025
-				y=308
-				width=116
-				height=20
-			}
-			monitor {
-				chan="32idb:m32.DESC"
-				clr=54
-				bclr=0
-			}
-			align="horiz. centered"
-			limits {
-			}
-		}
-		rectangle {
-			object {
-				x=1031
-				y=364
-				width=104
-				height=31
-			}
-			"basic attribute" {
-				clr=60
-				width=2
-			}
-			"dynamic attribute" {
-				vis="if zero"
-				chan="32idb:m32.DMOV"
-			}
-		}
-		rectangle {
-			object {
-				x=1031
-				y=364
-				width=104
-				height=31
-			}
-			"basic attribute" {
-				clr=30
-				width=2
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idb:m32.LVIO"
-			}
-		}
-		rectangle {
-			object {
-				x=1031
-				y=364
-				width=104
-				height=31
-			}
-			"basic attribute" {
-				clr=14
-				width=2
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idb:m32_able.VAL"
-			}
-		}
-		rectangle {
-			object {
-				x=1025
-				y=395
-				width=116
-				height=40
-			}
-			"basic attribute" {
-				clr=14
-				width=3
-			}
-		}
-		text {
-			object {
-				x=1053
-				y=419
-				width=60
-				height=15
-			}
-			"basic attribute" {
-				clr=60
-				fill="outline"
-			}
-			"dynamic attribute" {
-				vis="if zero"
-				chan="32idb:m32.DMOV"
-			}
-			textix="Moving"
-			align="horiz. centered"
-		}
-		text {
-			object {
-				x=1053
-				y=425
-				width=60
-				height=10
-			}
-			"basic attribute" {
-				clr=30
-				fill="outline"
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idb:m32.SET"
-			}
-			textix="Calibrate"
-			align="horiz. centered"
-		}
-		"message button" {
-			object {
-				x=1027
-				y=397
-				width=25
-				height=36
-			}
-			control {
-				chan="32idb:m32.TWR"
-				clr=14
-				bclr=51
-			}
-			label="<"
-			press_msg="1"
-		}
-		"text entry" {
-			object {
-				x=1053
-				y=397
-				width=60
-				height=20
-			}
-			control {
-				chan="32idb:m32.TWV"
-				clr=14
-				bclr=51
-			}
-			limits {
-			}
-		}
-		"message button" {
-			object {
-				x=1114
-				y=397
-				width=25
-				height=36
-			}
-			control {
-				chan="32idb:m32.TWF"
-				clr=14
-				bclr=51
-			}
-			label=">"
-			press_msg="1"
-		}
-		"text entry" {
-			object {
-				x=1034
-				y=367
-				width=98
-				height=25
-			}
-			control {
-				chan="32idb:m32.VAL"
-				clr=14
-				bclr=51
-			}
-			limits {
-			}
-		}
-		rectangle {
-			object {
-				x=1025
-				y=343
-				width=6
-				height=50
-			}
-			"basic attribute" {
-				clr=20
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idb:m32.LLS"
-			}
-		}
-		rectangle {
-			object {
-				x=1135
-				y=343
-				width=6
-				height=50
-			}
-			"basic attribute" {
-				clr=20
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idb:m32.HLS"
-			}
-		}
-		"text update" {
-			object {
-				x=1025
-				y=330
-				width=116
-				height=12
-			}
-			monitor {
-				chan="32idb:m32.EGU"
-				clr=54
-				bclr=3
-			}
-			align="horiz. centered"
-			limits {
-			}
-		}
-		rectangle {
-			object {
-				x=1032
-				y=339
-				width=102
-				height=26
-			}
-			"basic attribute" {
-				clr=14
-				fill="outline"
-				width=2
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idb:m32.SET"
-			}
-		}
-		rectangle {
-			object {
-				x=1034
-				y=341
-				width=98
-				height=21
-			}
-			"basic attribute" {
-				clr=30
-				fill="outline"
-				width=2
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idb:m32.SET"
-			}
-		}
-		"text update" {
-			object {
-				x=1036
-				y=343
-				width=94
-				height=17
-			}
-			monitor {
-				chan="32idb:m32.RBV"
-				clr=54
-				bclr=3
-			}
-			align="horiz. centered"
-			limits {
-			}
-		}
-		text {
-			object {
-				x=1053
-				y=417
-				width=60
-				height=10
-			}
-			"basic attribute" {
-				clr=30
-				fill="outline"
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idb:m32.LVIO"
-			}
-			textix="Soft limit"
-			align="horiz. centered"
-		}
-		rectangle {
-			object {
-				x=1031
-				y=364
-				width=104
-				height=31
-			}
-			"basic attribute" {
-				clr=20
-				style="dash"
-				fill="outline"
-				width=2
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idb:m32_able.VAL"
-			}
-		}
-		"choice button" {
-			object {
-				x=1070
-				y=435
-				width=71
-				height=20
-			}
-			control {
-				chan="32idb:m32.SET"
-				clr=14
-				bclr=51
-			}
-			stacking="column"
-		}
-		"choice button" {
-			object {
-				x=1024
-				y=456
-				width=115
-				height=35
-			}
-			control {
-				chan="32idb:m32_able.VAL"
-				clr=14
-				bclr=51
-			}
-		}
-	}
-}
-composite {
-	object {
-		x=1144
-		y=308
-		width=117
-		height=183
-	}
-	"composite name"=""
-	children {
-		text {
-			object {
-				x=1146
-				y=437
-				width=45
-				height=16
-			}
-			"basic attribute" {
-				clr=14
-				fill="outline"
-			}
-			textix="Calib:"
-		}
-		text {
-			object {
-				x=1145
-				y=436
-				width=45
-				height=16
-			}
-			"basic attribute" {
-				clr=30
-				fill="outline"
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idb:m28.SET"
-			}
-			textix="Calib:"
-		}
-		"text update" {
-			object {
-				x=1145
-				y=308
-				width=116
-				height=20
-			}
-			monitor {
-				chan="32idb:m28.DESC"
-				clr=54
-				bclr=0
-			}
-			align="horiz. centered"
-			limits {
-			}
-		}
-		rectangle {
-			object {
-				x=1151
-				y=364
-				width=104
-				height=31
-			}
-			"basic attribute" {
-				clr=60
-				width=2
-			}
-			"dynamic attribute" {
-				vis="if zero"
-				chan="32idb:m28.DMOV"
-			}
-		}
-		rectangle {
-			object {
-				x=1151
-				y=364
-				width=104
-				height=31
-			}
-			"basic attribute" {
-				clr=30
-				width=2
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idb:m28.LVIO"
-			}
-		}
-		rectangle {
-			object {
-				x=1151
-				y=364
-				width=104
-				height=31
-			}
-			"basic attribute" {
-				clr=14
-				width=2
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idb:m28_able.VAL"
-			}
-		}
-		rectangle {
-			object {
-				x=1145
-				y=395
-				width=116
-				height=40
-			}
-			"basic attribute" {
-				clr=14
-				width=3
-			}
-		}
-		text {
-			object {
-				x=1173
-				y=419
-				width=60
-				height=15
-			}
-			"basic attribute" {
-				clr=60
-				fill="outline"
-			}
-			"dynamic attribute" {
-				vis="if zero"
-				chan="32idb:m28.DMOV"
-			}
-			textix="Moving"
-			align="horiz. centered"
-		}
-		text {
-			object {
-				x=1173
-				y=425
-				width=60
-				height=10
-			}
-			"basic attribute" {
-				clr=30
-				fill="outline"
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idb:m28.SET"
-			}
-			textix="Calibrate"
-			align="horiz. centered"
-		}
-		"message button" {
-			object {
-				x=1147
-				y=397
-				width=25
-				height=36
-			}
-			control {
-				chan="32idb:m28.TWR"
-				clr=14
-				bclr=51
-			}
-			label="<"
-			press_msg="1"
-		}
-		"text entry" {
-			object {
-				x=1173
-				y=397
-				width=60
-				height=20
-			}
-			control {
-				chan="32idb:m28.TWV"
-				clr=14
-				bclr=51
-			}
-			limits {
-			}
-		}
-		"message button" {
-			object {
-				x=1234
-				y=397
-				width=25
-				height=36
-			}
-			control {
-				chan="32idb:m28.TWF"
-				clr=14
-				bclr=51
-			}
-			label=">"
-			press_msg="1"
-		}
-		"text entry" {
-			object {
-				x=1154
-				y=367
-				width=98
-				height=25
-			}
-			control {
-				chan="32idb:m28.VAL"
-				clr=14
-				bclr=51
-			}
-			limits {
-			}
-		}
-		rectangle {
-			object {
-				x=1145
-				y=343
-				width=6
-				height=50
-			}
-			"basic attribute" {
-				clr=20
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idb:m28.LLS"
-			}
-		}
-		rectangle {
-			object {
-				x=1255
-				y=343
-				width=6
-				height=50
-			}
-			"basic attribute" {
-				clr=20
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idb:m28.HLS"
-			}
-		}
-		"text update" {
-			object {
-				x=1145
-				y=330
-				width=116
-				height=12
-			}
-			monitor {
-				chan="32idb:m28.EGU"
-				clr=54
-				bclr=3
-			}
-			align="horiz. centered"
-			limits {
-			}
-		}
-		rectangle {
-			object {
-				x=1152
-				y=339
-				width=102
-				height=26
-			}
-			"basic attribute" {
-				clr=14
-				fill="outline"
-				width=2
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idb:m28.SET"
-			}
-		}
-		rectangle {
-			object {
-				x=1154
-				y=341
-				width=98
-				height=21
-			}
-			"basic attribute" {
-				clr=30
-				fill="outline"
-				width=2
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idb:m28.SET"
-			}
-		}
-		"text update" {
-			object {
-				x=1156
-				y=343
-				width=94
-				height=17
-			}
-			monitor {
-				chan="32idb:m28.RBV"
-				clr=54
-				bclr=3
-			}
-			align="horiz. centered"
-			limits {
-			}
-		}
-		text {
-			object {
-				x=1173
-				y=417
-				width=60
-				height=10
-			}
-			"basic attribute" {
-				clr=30
-				fill="outline"
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idb:m28.LVIO"
-			}
-			textix="Soft limit"
-			align="horiz. centered"
-		}
-		rectangle {
-			object {
-				x=1151
-				y=364
-				width=104
-				height=31
-			}
-			"basic attribute" {
-				clr=20
-				style="dash"
-				fill="outline"
-				width=2
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idb:m28_able.VAL"
-			}
-		}
-		"choice button" {
-			object {
-				x=1190
-				y=435
-				width=71
-				height=20
-			}
-			control {
-				chan="32idb:m28.SET"
-				clr=14
-				bclr=51
-			}
-			stacking="column"
-		}
-		"choice button" {
-			object {
-				x=1144
-				y=456
-				width=115
-				height=35
-			}
-			control {
-				chan="32idb:m28_able.VAL"
-				clr=14
-				bclr=51
-			}
-		}
-	}
-}
-composite {
-	object {
-		x=1264
-		y=308
-		width=117
-		height=183
-	}
-	"composite name"=""
-	children {
-		text {
-			object {
-				x=1266
-				y=437
-				width=45
-				height=16
-			}
-			"basic attribute" {
-				clr=14
-				fill="outline"
-			}
-			textix="Calib:"
-		}
-		text {
-			object {
-				x=1265
-				y=436
-				width=45
-				height=16
-			}
-			"basic attribute" {
-				clr=30
-				fill="outline"
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idb:m26.SET"
-			}
-			textix="Calib:"
-		}
-		"text update" {
-			object {
-				x=1265
-				y=308
-				width=116
-				height=20
-			}
-			monitor {
-				chan="32idb:m26.DESC"
-				clr=54
-				bclr=0
-			}
-			align="horiz. centered"
-			limits {
-			}
-		}
-		rectangle {
-			object {
-				x=1271
-				y=364
-				width=104
-				height=31
-			}
-			"basic attribute" {
-				clr=60
-				width=2
-			}
-			"dynamic attribute" {
-				vis="if zero"
-				chan="32idb:m26.DMOV"
-			}
-		}
-		rectangle {
-			object {
-				x=1271
-				y=364
-				width=104
-				height=31
-			}
-			"basic attribute" {
-				clr=30
-				width=2
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idb:m26.LVIO"
-			}
-		}
-		rectangle {
-			object {
-				x=1271
-				y=364
-				width=104
-				height=31
-			}
-			"basic attribute" {
-				clr=14
-				width=2
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idb:m26_able.VAL"
-			}
-		}
-		rectangle {
-			object {
-				x=1265
-				y=395
-				width=116
-				height=40
-			}
-			"basic attribute" {
-				clr=14
-				width=3
-			}
-		}
-		text {
-			object {
-				x=1293
-				y=419
-				width=60
-				height=15
-			}
-			"basic attribute" {
-				clr=60
-				fill="outline"
-			}
-			"dynamic attribute" {
-				vis="if zero"
-				chan="32idb:m26.DMOV"
-			}
-			textix="Moving"
-			align="horiz. centered"
-		}
-		text {
-			object {
-				x=1293
-				y=425
-				width=60
-				height=10
-			}
-			"basic attribute" {
-				clr=30
-				fill="outline"
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idb:m26.SET"
-			}
-			textix="Calibrate"
-			align="horiz. centered"
-		}
-		"message button" {
-			object {
-				x=1267
-				y=397
-				width=25
-				height=36
-			}
-			control {
-				chan="32idb:m26.TWR"
-				clr=14
-				bclr=51
-			}
-			label="<"
-			press_msg="1"
-		}
-		"text entry" {
-			object {
-				x=1293
-				y=397
-				width=60
-				height=20
-			}
-			control {
-				chan="32idb:m26.TWV"
-				clr=14
-				bclr=51
-			}
-			limits {
-			}
-		}
-		"message button" {
-			object {
-				x=1354
-				y=397
-				width=25
-				height=36
-			}
-			control {
-				chan="32idb:m26.TWF"
-				clr=14
-				bclr=51
-			}
-			label=">"
-			press_msg="1"
-		}
-		"text entry" {
-			object {
-				x=1274
-				y=367
-				width=98
-				height=25
-			}
-			control {
-				chan="32idb:m26.VAL"
-				clr=14
-				bclr=51
-			}
-			limits {
-			}
-		}
-		rectangle {
-			object {
-				x=1265
-				y=343
-				width=6
-				height=50
-			}
-			"basic attribute" {
-				clr=20
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idb:m26.LLS"
-			}
-		}
-		rectangle {
-			object {
-				x=1375
-				y=343
-				width=6
-				height=50
-			}
-			"basic attribute" {
-				clr=20
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idb:m26.HLS"
-			}
-		}
-		"text update" {
-			object {
-				x=1265
-				y=330
-				width=116
-				height=12
-			}
-			monitor {
-				chan="32idb:m26.EGU"
-				clr=54
-				bclr=3
-			}
-			align="horiz. centered"
-			limits {
-			}
-		}
-		rectangle {
-			object {
-				x=1272
-				y=339
-				width=102
-				height=26
-			}
-			"basic attribute" {
-				clr=14
-				fill="outline"
-				width=2
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idb:m26.SET"
-			}
-		}
-		rectangle {
-			object {
-				x=1274
-				y=341
-				width=98
-				height=21
-			}
-			"basic attribute" {
-				clr=30
-				fill="outline"
-				width=2
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idb:m26.SET"
-			}
-		}
-		"text update" {
-			object {
-				x=1276
-				y=343
-				width=94
-				height=17
-			}
-			monitor {
-				chan="32idb:m26.RBV"
-				clr=54
-				bclr=3
-			}
-			align="horiz. centered"
-			limits {
-			}
-		}
-		text {
-			object {
-				x=1293
-				y=417
-				width=60
-				height=10
-			}
-			"basic attribute" {
-				clr=30
-				fill="outline"
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idb:m26.LVIO"
-			}
-			textix="Soft limit"
-			align="horiz. centered"
-		}
-		rectangle {
-			object {
-				x=1271
-				y=364
-				width=104
-				height=31
-			}
-			"basic attribute" {
-				clr=20
-				style="dash"
-				fill="outline"
-				width=2
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idb:m26_able.VAL"
-			}
-		}
-		"choice button" {
-			object {
-				x=1310
-				y=435
-				width=71
-				height=20
-			}
-			control {
-				chan="32idb:m26.SET"
-				clr=14
-				bclr=51
-			}
-			stacking="column"
-		}
-		"choice button" {
-			object {
-				x=1264
-				y=456
-				width=115
-				height=35
-			}
-			control {
-				chan="32idb:m26_able.VAL"
-				clr=14
-				bclr=51
-			}
-		}
-	}
-}
-"related display" {
-	object {
-		x=1499
-		y=474
-		width=15
-		height=15
-	}
-	display[1] {
-		label="mcs:c3:m63) (Small)"
-		name="4_motors.adl"
-		args="P=32idb:,M1=m32,M2=m28,M3=m26,M4=M27"
-	}
-	clr=14
-	bclr=51
-}
-"message button" {
-	object {
-		x=1173
-		y=273
-		width=35
-		height=20
-	}
-	control {
-		chan="32id:TXMOptics:MoveCRLIn"
-		clr=14
-		bclr=51
-	}
-	label="In"
-	press_msg="1"
-}
-"message button" {
-	object {
-		x=1213
-		y=273
-		width=35
-		height=20
-	}
-	control {
-		chan="32id:TXMOptics:MoveCRLOut"
-		clr=14
-		bclr=51
-	}
-	label="Out"
-	press_msg="1"
-}
-text {
-	object {
-		x=1000
-		y=273
-		width=298
-		height=25
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="CRL"
-	align="horiz. centered"
 }
 "choice button" {
 	object {
@@ -4827,478 +3640,6 @@ rectangle {
 	align="horiz. centered"
 	limits {
 	}
-}
-rectangle {
-	object {
-		x=878
-		y=338
-		width=18
-		height=22
-	}
-	"basic attribute" {
-		clr=1
-	}
-}
-rectangle {
-	object {
-		x=878
-		y=315
-		width=18
-		height=22
-	}
-	"basic attribute" {
-		clr=1
-	}
-}
-"choice button" {
-	object {
-		x=904
-		y=319
-		width=65
-		height=15
-	}
-	control {
-		chan="32idPLC:B:oY0"
-		clr=14
-		bclr=51
-	}
-	stacking="column"
-}
-text {
-	object {
-		x=875
-		y=317
-		width=25
-		height=20
-	}
-	"basic attribute" {
-		clr=62
-	}
-	"dynamic attribute" {
-		vis="if zero"
-		chan="32idPLC:B:Y0.VAL"
-	}
-	textix="0"
-	align="horiz. centered"
-}
-text {
-	object {
-		x=875
-		y=317
-		width=25
-		height=20
-	}
-	"basic attribute" {
-		clr=20
-	}
-	"dynamic attribute" {
-		vis="if not zero"
-		chan="32idPLC:B:Y0.VAL"
-	}
-	textix="1"
-	align="horiz. centered"
-}
-"choice button" {
-	object {
-		x=904
-		y=342
-		width=65
-		height=15
-	}
-	control {
-		chan="32idPLC:B:oY1"
-		clr=14
-		bclr=51
-	}
-	stacking="column"
-}
-text {
-	object {
-		x=875
-		y=340
-		width=25
-		height=20
-	}
-	"basic attribute" {
-		clr=62
-	}
-	"dynamic attribute" {
-		vis="if zero"
-		chan="32idPLC:B:Y1.VAL"
-	}
-	textix="0"
-	align="horiz. centered"
-}
-text {
-	object {
-		x=875
-		y=340
-		width=25
-		height=20
-	}
-	"basic attribute" {
-		clr=20
-	}
-	"dynamic attribute" {
-		vis="if not zero"
-		chan="32idPLC:B:Y1.VAL"
-	}
-	textix="1"
-	align="horiz. centered"
-}
-rectangle {
-	object {
-		x=878
-		y=382
-		width=18
-		height=22
-	}
-	"basic attribute" {
-		clr=1
-	}
-}
-rectangle {
-	object {
-		x=878
-		y=359
-		width=18
-		height=22
-	}
-	"basic attribute" {
-		clr=1
-	}
-}
-"choice button" {
-	object {
-		x=904
-		y=363
-		width=65
-		height=15
-	}
-	control {
-		chan="32idPLC:B:oY2"
-		clr=14
-		bclr=51
-	}
-	stacking="column"
-}
-text {
-	object {
-		x=875
-		y=361
-		width=25
-		height=20
-	}
-	"basic attribute" {
-		clr=62
-	}
-	"dynamic attribute" {
-		vis="if zero"
-		chan="32idPLC:B:Y2.VAL"
-	}
-	textix="0"
-	align="horiz. centered"
-}
-text {
-	object {
-		x=875
-		y=361
-		width=25
-		height=20
-	}
-	"basic attribute" {
-		clr=20
-	}
-	"dynamic attribute" {
-		vis="if not zero"
-		chan="32idPLC:B:Y2.VAL"
-	}
-	textix="1"
-	align="horiz. centered"
-}
-"choice button" {
-	object {
-		x=904
-		y=386
-		width=65
-		height=15
-	}
-	control {
-		chan="32idPLC:B:oY3"
-		clr=14
-		bclr=51
-	}
-	stacking="column"
-}
-text {
-	object {
-		x=875
-		y=384
-		width=25
-		height=20
-	}
-	"basic attribute" {
-		clr=62
-	}
-	"dynamic attribute" {
-		vis="if zero"
-		chan="32idPLC:B:Y3.VAL"
-	}
-	textix="0"
-	align="horiz. centered"
-}
-text {
-	object {
-		x=875
-		y=384
-		width=25
-		height=20
-	}
-	"basic attribute" {
-		clr=20
-	}
-	"dynamic attribute" {
-		vis="if not zero"
-		chan="32idPLC:B:Y3.VAL"
-	}
-	textix="1"
-	align="horiz. centered"
-}
-rectangle {
-	object {
-		x=878
-		y=426
-		width=18
-		height=22
-	}
-	"basic attribute" {
-		clr=1
-	}
-}
-rectangle {
-	object {
-		x=878
-		y=403
-		width=18
-		height=22
-	}
-	"basic attribute" {
-		clr=1
-	}
-}
-"choice button" {
-	object {
-		x=904
-		y=407
-		width=65
-		height=15
-	}
-	control {
-		chan="32idPLC:B:oY4"
-		clr=14
-		bclr=51
-	}
-	stacking="column"
-}
-text {
-	object {
-		x=875
-		y=405
-		width=25
-		height=20
-	}
-	"basic attribute" {
-		clr=62
-	}
-	"dynamic attribute" {
-		vis="if zero"
-		chan="32idPLC:B:Y4.VAL"
-	}
-	textix="0"
-	align="horiz. centered"
-}
-text {
-	object {
-		x=875
-		y=405
-		width=25
-		height=20
-	}
-	"basic attribute" {
-		clr=20
-	}
-	"dynamic attribute" {
-		vis="if not zero"
-		chan="32idPLC:B:Y4.VAL"
-	}
-	textix="1"
-	align="horiz. centered"
-}
-"choice button" {
-	object {
-		x=904
-		y=430
-		width=65
-		height=15
-	}
-	control {
-		chan="32idPLC:B:oY5"
-		clr=14
-		bclr=51
-	}
-	stacking="column"
-}
-text {
-	object {
-		x=875
-		y=428
-		width=25
-		height=20
-	}
-	"basic attribute" {
-		clr=62
-	}
-	"dynamic attribute" {
-		vis="if zero"
-		chan="32idPLC:B:Y5.VAL"
-	}
-	textix="0"
-	align="horiz. centered"
-}
-text {
-	object {
-		x=875
-		y=428
-		width=25
-		height=20
-	}
-	"basic attribute" {
-		clr=20
-	}
-	"dynamic attribute" {
-		vis="if not zero"
-		chan="32idPLC:B:Y5.VAL"
-	}
-	textix="1"
-	align="horiz. centered"
-}
-rectangle {
-	object {
-		x=878
-		y=468
-		width=18
-		height=22
-	}
-	"basic attribute" {
-		clr=1
-	}
-}
-rectangle {
-	object {
-		x=878
-		y=447
-		width=18
-		height=22
-	}
-	"basic attribute" {
-		clr=1
-	}
-}
-"choice button" {
-	object {
-		x=904
-		y=451
-		width=65
-		height=15
-	}
-	control {
-		chan="32idPLC:B:oY6"
-		clr=14
-		bclr=51
-	}
-	stacking="column"
-}
-text {
-	object {
-		x=875
-		y=449
-		width=25
-		height=20
-	}
-	"basic attribute" {
-		clr=62
-	}
-	"dynamic attribute" {
-		vis="if zero"
-		chan="32idPLC:B:Y6.VAL"
-	}
-	textix="0"
-	align="horiz. centered"
-}
-text {
-	object {
-		x=875
-		y=449
-		width=25
-		height=20
-	}
-	"basic attribute" {
-		clr=20
-	}
-	"dynamic attribute" {
-		vis="if not zero"
-		chan="32idPLC:B:Y6.VAL"
-	}
-	textix="1"
-	align="horiz. centered"
-}
-"choice button" {
-	object {
-		x=904
-		y=473
-		width=65
-		height=15
-	}
-	control {
-		chan="32idPLC:B:oY7"
-		clr=14
-		bclr=51
-	}
-	stacking="column"
-}
-text {
-	object {
-		x=876
-		y=469
-		width=25
-		height=20
-	}
-	"basic attribute" {
-		clr=62
-	}
-	"dynamic attribute" {
-		vis="if zero"
-		chan="32idPLC:B:Y7.VAL"
-	}
-	textix="0"
-	align="horiz. centered"
-}
-text {
-	object {
-		x=876
-		y=469
-		width=25
-		height=20
-	}
-	"basic attribute" {
-		clr=20
-	}
-	"dynamic attribute" {
-		vis="if not zero"
-		chan="32idPLC:B:Y7.VAL"
-	}
-	textix="1"
-	align="horiz. centered"
 }
 rectangle {
 	object {
@@ -5514,7 +3855,7 @@ text {
 	}
 	"dynamic attribute" {
 		vis="if zero"
-		chan="32idc02:m12.DMOV"
+		chan="32idbTXM:m12.DMOV"
 	}
 	textix="Moving"
 	align="horiz. centered"
@@ -5532,7 +3873,7 @@ text {
 	}
 	"dynamic attribute" {
 		vis="if not zero"
-		chan="32idc02:m12.DMOV"
+		chan="32idbTXM:m12.DMOV"
 	}
 	textix="Done"
 	align="horiz. centered"
@@ -5659,7 +4000,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcEXP:nf:c0:m2.SET"
+				chan="32idbTXM:mcs2:c2:m2.SET"
 			}
 			textix="Calib:"
 		}
@@ -5671,7 +4012,7 @@ composite {
 				height=20
 			}
 			monitor {
-				chan="32idcEXP:nf:c0:m2.DESC"
+				chan="32idbTXM:mcs2:c2:m2.DESC"
 				clr=54
 				bclr=0
 			}
@@ -5692,7 +4033,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if zero"
-				chan="32idcEXP:nf:c0:m2.DMOV"
+				chan="32idbTXM:mcs2:c2:m2.DMOV"
 			}
 		}
 		rectangle {
@@ -5708,7 +4049,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcEXP:nf:c0:m2.LVIO"
+				chan="32idbTXM:mcs2:c2:m2.LVIO"
 			}
 		}
 		rectangle {
@@ -5724,7 +4065,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcEXP:nf:c0:m2_able.VAL"
+				chan="32idbTXM:mcs2:c2:m2_able.VAL"
 			}
 		}
 		rectangle {
@@ -5752,7 +4093,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if zero"
-				chan="32idcEXP:nf:c0:m2.DMOV"
+				chan="32idbTXM:mcs2:c2:m2.DMOV"
 			}
 			textix="Moving"
 			align="horiz. centered"
@@ -5770,7 +4111,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcEXP:nf:c0:m2.SET"
+				chan="32idbTXM:mcs2:c2:m2.SET"
 			}
 			textix="Calibrate"
 			align="horiz. centered"
@@ -5783,7 +4124,7 @@ composite {
 				height=36
 			}
 			control {
-				chan="32idcEXP:nf:c0:m2.TWR"
+				chan="32idbTXM:mcs2:c2:m2.TWR"
 				clr=14
 				bclr=51
 			}
@@ -5798,7 +4139,7 @@ composite {
 				height=20
 			}
 			control {
-				chan="32idcEXP:nf:c0:m2.TWV"
+				chan="32idbTXM:mcs2:c2:m2.TWV"
 				clr=14
 				bclr=51
 			}
@@ -5813,7 +4154,7 @@ composite {
 				height=36
 			}
 			control {
-				chan="32idcEXP:nf:c0:m2.TWF"
+				chan="32idbTXM:mcs2:c2:m2.TWF"
 				clr=14
 				bclr=51
 			}
@@ -5828,7 +4169,7 @@ composite {
 				height=25
 			}
 			control {
-				chan="32idcEXP:nf:c0:m2.VAL"
+				chan="32idbTXM:mcs2:c2:m2.VAL"
 				clr=14
 				bclr=51
 			}
@@ -5847,7 +4188,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcEXP:nf:c0:m2.LLS"
+				chan="32idbTXM:mcs2:c2:m2.LLS"
 			}
 		}
 		rectangle {
@@ -5862,7 +4203,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcEXP:nf:c0:m2.HLS"
+				chan="32idbTXM:mcs2:c2:m2.HLS"
 			}
 		}
 		"text update" {
@@ -5873,7 +4214,7 @@ composite {
 				height=12
 			}
 			monitor {
-				chan="32idcEXP:nf:c0:m2.EGU"
+				chan="32idbTXM:mcs2:c2:m2.EGU"
 				clr=54
 				bclr=3
 			}
@@ -5895,7 +4236,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcEXP:nf:c0:m2.SET"
+				chan="32idbTXM:mcs2:c2:m2.SET"
 			}
 		}
 		rectangle {
@@ -5912,7 +4253,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcEXP:nf:c0:m2.SET"
+				chan="32idbTXM:mcs2:c2:m2.SET"
 			}
 		}
 		"text update" {
@@ -5923,7 +4264,7 @@ composite {
 				height=17
 			}
 			monitor {
-				chan="32idcEXP:nf:c0:m2.RBV"
+				chan="32idbTXM:mcs2:c2:m2.RBV"
 				clr=54
 				bclr=3
 			}
@@ -5944,7 +4285,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcEXP:nf:c0:m2.LVIO"
+				chan="32idbTXM:mcs2:c2:m2.LVIO"
 			}
 			textix="Soft limit"
 			align="horiz. centered"
@@ -5964,7 +4305,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcEXP:nf:c0:m2_able.VAL"
+				chan="32idbTXM:mcs2:c2:m2_able.VAL"
 			}
 		}
 		"choice button" {
@@ -5975,7 +4316,7 @@ composite {
 				height=20
 			}
 			control {
-				chan="32idcEXP:nf:c0:m2.SET"
+				chan="32idbTXM:mcs2:c2:m2.SET"
 				clr=14
 				bclr=51
 			}
@@ -5989,7 +4330,7 @@ composite {
 				height=35
 			}
 			control {
-				chan="32idcEXP:nf:c0:m2_able.VAL"
+				chan="32idbTXM:mcs2:c2:m2_able.VAL"
 				clr=14
 				bclr=51
 			}
@@ -6031,7 +4372,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcEXP:nf:c0:m1.SET"
+				chan="32idbTXM:mcs2:c2:m1.SET"
 			}
 			textix="Calib:"
 		}
@@ -6043,7 +4384,7 @@ composite {
 				height=20
 			}
 			monitor {
-				chan="32idcEXP:nf:c0:m1.DESC"
+				chan="32idbTXM:mcs2:c2:m1.DESC"
 				clr=54
 				bclr=0
 			}
@@ -6064,7 +4405,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if zero"
-				chan="32idcEXP:nf:c0:m1.DMOV"
+				chan="32idbTXM:mcs2:c2:m1.DMOV"
 			}
 		}
 		rectangle {
@@ -6080,7 +4421,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcEXP:nf:c0:m1.LVIO"
+				chan="32idbTXM:mcs2:c2:m1.LVIO"
 			}
 		}
 		rectangle {
@@ -6096,7 +4437,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcEXP:nf:c0:m1_able.VAL"
+				chan="32idbTXM:mcs2:c2:m1_able.VAL"
 			}
 		}
 		rectangle {
@@ -6124,7 +4465,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if zero"
-				chan="32idcEXP:nf:c0:m1.DMOV"
+				chan="32idbTXM:mcs2:c2:m1.DMOV"
 			}
 			textix="Moving"
 			align="horiz. centered"
@@ -6142,7 +4483,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcEXP:nf:c0:m1.SET"
+				chan="32idbTXM:mcs2:c2:m1.SET"
 			}
 			textix="Calibrate"
 			align="horiz. centered"
@@ -6155,7 +4496,7 @@ composite {
 				height=36
 			}
 			control {
-				chan="32idcEXP:nf:c0:m1.TWR"
+				chan="32idbTXM:mcs2:c2:m1.TWR"
 				clr=14
 				bclr=51
 			}
@@ -6170,7 +4511,7 @@ composite {
 				height=20
 			}
 			control {
-				chan="32idcEXP:nf:c0:m1.TWV"
+				chan="32idbTXM:mcs2:c2:m1.TWV"
 				clr=14
 				bclr=51
 			}
@@ -6185,7 +4526,7 @@ composite {
 				height=36
 			}
 			control {
-				chan="32idcEXP:nf:c0:m1.TWF"
+				chan="32idbTXM:mcs2:c2:m1.TWF"
 				clr=14
 				bclr=51
 			}
@@ -6200,7 +4541,7 @@ composite {
 				height=25
 			}
 			control {
-				chan="32idcEXP:nf:c0:m1.VAL"
+				chan="32idbTXM:mcs2:c2:m1.VAL"
 				clr=14
 				bclr=51
 			}
@@ -6219,7 +4560,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcEXP:nf:c0:m1.LLS"
+				chan="32idbTXM:mcs2:c2:m1.LLS"
 			}
 		}
 		rectangle {
@@ -6234,7 +4575,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcEXP:nf:c0:m1.HLS"
+				chan="32idbTXM:mcs2:c2:m1.HLS"
 			}
 		}
 		"text update" {
@@ -6245,7 +4586,7 @@ composite {
 				height=12
 			}
 			monitor {
-				chan="32idcEXP:nf:c0:m1.EGU"
+				chan="32idbTXM:mcs2:c2:m1.EGU"
 				clr=54
 				bclr=3
 			}
@@ -6267,7 +4608,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcEXP:nf:c0:m1.SET"
+				chan="32idbTXM:mcs2:c2:m1.SET"
 			}
 		}
 		rectangle {
@@ -6284,7 +4625,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcEXP:nf:c0:m1.SET"
+				chan="32idbTXM:mcs2:c2:m1.SET"
 			}
 		}
 		"text update" {
@@ -6295,7 +4636,7 @@ composite {
 				height=17
 			}
 			monitor {
-				chan="32idcEXP:nf:c0:m1.RBV"
+				chan="32idbTXM:mcs2:c2:m1.RBV"
 				clr=54
 				bclr=3
 			}
@@ -6316,7 +4657,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcEXP:nf:c0:m1.LVIO"
+				chan="32idbTXM:mcs2:c2:m1.LVIO"
 			}
 			textix="Soft limit"
 			align="horiz. centered"
@@ -6336,7 +4677,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcEXP:nf:c0:m1_able.VAL"
+				chan="32idbTXM:mcs2:c2:m1_able.VAL"
 			}
 		}
 		"choice button" {
@@ -6347,7 +4688,7 @@ composite {
 				height=20
 			}
 			control {
-				chan="32idcEXP:nf:c0:m1.SET"
+				chan="32idbTXM:mcs2:c2:m1.SET"
 				clr=14
 				bclr=51
 			}
@@ -6361,7 +4702,7 @@ composite {
 				height=35
 			}
 			control {
-				chan="32idcEXP:nf:c0:m1_able.VAL"
+				chan="32idbTXM:mcs2:c2:m1_able.VAL"
 				clr=14
 				bclr=51
 			}
@@ -6394,7 +4735,7 @@ text {
 	}
 	"dynamic attribute" {
 		vis="if not zero"
-		chan="32idcUC8:m1.SET"
+		chan="32idbTXM:mcs2:c2:m3.SET"
 	}
 	textix="Calib:"
 }
@@ -6406,7 +4747,7 @@ text {
 		height=20
 	}
 	monitor {
-		chan="32idcUC8:m1.DESC"
+		chan="32idbTXM:mcs2:c2:m3.DESC"
 		clr=54
 		bclr=0
 	}
@@ -6427,7 +4768,7 @@ rectangle {
 	}
 	"dynamic attribute" {
 		vis="if zero"
-		chan="32idcUC8:m1.DMOV"
+		chan="32idbTXM:mcs2:c2:m3.DMOV"
 	}
 }
 rectangle {
@@ -6443,7 +4784,7 @@ rectangle {
 	}
 	"dynamic attribute" {
 		vis="if not zero"
-		chan="32idcUC8:m1.LVIO"
+		chan="32idbTXM:mcs2:c2:m3.LVIO"
 	}
 }
 rectangle {
@@ -6459,7 +4800,7 @@ rectangle {
 	}
 	"dynamic attribute" {
 		vis="if not zero"
-		chan="32idcUC8:m1_able.VAL"
+		chan="32idbTXM:mcs2:c2:m3_able.VAL"
 	}
 }
 rectangle {
@@ -6487,7 +4828,7 @@ text {
 	}
 	"dynamic attribute" {
 		vis="if zero"
-		chan="32idcUC8:m1.DMOV"
+		chan="32idbTXM:mcs2:c2:m3.DMOV"
 	}
 	textix="Moving"
 	align="horiz. centered"
@@ -6505,7 +4846,7 @@ text {
 	}
 	"dynamic attribute" {
 		vis="if not zero"
-		chan="32idcUC8:m1.SET"
+		chan="32idbTXM:mcs2:c2:m3.SET"
 	}
 	textix="Calibrate"
 	align="horiz. centered"
@@ -6518,7 +4859,7 @@ text {
 		height=36
 	}
 	control {
-		chan="32idcUC8:m1.TWR"
+		chan="32idbTXM:mcs2:c2:m3.TWR"
 		clr=14
 		bclr=51
 	}
@@ -6533,7 +4874,7 @@ text {
 		height=20
 	}
 	control {
-		chan="32idcUC8:m1.TWV"
+		chan="32idbTXM:mcs2:c2:m3.TWV"
 		clr=14
 		bclr=51
 	}
@@ -6548,7 +4889,7 @@ text {
 		height=36
 	}
 	control {
-		chan="32idcUC8:m1.TWF"
+		chan="32idbTXM:mcs2:c2:m3.TWF"
 		clr=14
 		bclr=51
 	}
@@ -6563,7 +4904,7 @@ text {
 		height=25
 	}
 	control {
-		chan="32idcUC8:m1.VAL"
+		chan="32idbTXM:mcs2:c2:m3.VAL"
 		clr=14
 		bclr=51
 	}
@@ -6582,7 +4923,7 @@ rectangle {
 	}
 	"dynamic attribute" {
 		vis="if not zero"
-		chan="32idcUC8:m1.LLS"
+		chan="32idbTXM:mcs2:c2:m3.LLS"
 	}
 }
 rectangle {
@@ -6597,7 +4938,7 @@ rectangle {
 	}
 	"dynamic attribute" {
 		vis="if not zero"
-		chan="32idcUC8:m1.HLS"
+		chan="32idbTXM:mcs2:c2:m3.HLS"
 	}
 }
 "text update" {
@@ -6608,7 +4949,7 @@ rectangle {
 		height=12
 	}
 	monitor {
-		chan="32idcUC8:m1.EGU"
+		chan="32idbTXM:mcs2:c2:m3.EGU"
 		clr=54
 		bclr=3
 	}
@@ -6630,7 +4971,7 @@ rectangle {
 	}
 	"dynamic attribute" {
 		vis="if not zero"
-		chan="32idcUC8:m1.SET"
+		chan="32idbTXM:mcs2:c2:m3.SET"
 	}
 }
 rectangle {
@@ -6647,7 +4988,7 @@ rectangle {
 	}
 	"dynamic attribute" {
 		vis="if not zero"
-		chan="32idcUC8:m1.SET"
+		chan="32idbTXM:mcs2:c2:m3.SET"
 	}
 }
 "text update" {
@@ -6658,7 +4999,7 @@ rectangle {
 		height=17
 	}
 	monitor {
-		chan="32idcUC8:m1.RBV"
+		chan="32idbTXM:mcs2:c2:m3.RBV"
 		clr=54
 		bclr=3
 	}
@@ -6679,7 +5020,7 @@ text {
 	}
 	"dynamic attribute" {
 		vis="if not zero"
-		chan="32idcUC8:m1.LVIO"
+		chan="32idbTXM:mcs2:c2:m3.LVIO"
 	}
 	textix="Soft limit"
 	align="horiz. centered"
@@ -6699,7 +5040,7 @@ rectangle {
 	}
 	"dynamic attribute" {
 		vis="if not zero"
-		chan="32idcUC8:m1_able.VAL"
+		chan="32idbTXM:mcs2:c2:m3_able.VAL"
 	}
 }
 "choice button" {
@@ -6710,7 +5051,7 @@ rectangle {
 		height=20
 	}
 	control {
-		chan="32idcUC8:m1.SET"
+		chan="32idbTXM:mcs2:c2:m3.SET"
 		clr=14
 		bclr=51
 	}
@@ -6724,7 +5065,7 @@ rectangle {
 		height=35
 	}
 	control {
-		chan="32idcUC8:m1_able.VAL"
+		chan="32idbTXM:mcs2:c2:m3_able.VAL"
 		clr=14
 		bclr=51
 	}
@@ -6890,8 +5231,8 @@ text {
 }
 "message button" {
 	object {
-		x=1395
-		y=1145
+		x=1450
+		y=1095
 		width=170
 		height=44
 	}
@@ -6951,7 +5292,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m6.SET"
+				chan="32idbTXM:mcs2:c1:m6.SET"
 			}
 			textix="Calib:"
 		}
@@ -6963,7 +5304,7 @@ composite {
 				height=20
 			}
 			monitor {
-				chan="32idcMCS2:c1:m6.DESC"
+				chan="32idbTXM:mcs2:c1:m6.DESC"
 				clr=54
 				bclr=0
 			}
@@ -6984,7 +5325,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if zero"
-				chan="32idcMCS2:c1:m6.DMOV"
+				chan="32idbTXM:mcs2:c1:m6.DMOV"
 			}
 		}
 		rectangle {
@@ -7000,7 +5341,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m6.LVIO"
+				chan="32idbTXM:mcs2:c1:m6.LVIO"
 			}
 		}
 		rectangle {
@@ -7016,7 +5357,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m6_able.VAL"
+				chan="32idbTXM:mcs2:c1:m6_able.VAL"
 			}
 		}
 		rectangle {
@@ -7044,7 +5385,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if zero"
-				chan="32idcMCS2:c1:m6.DMOV"
+				chan="32idbTXM:mcs2:c1:m6.DMOV"
 			}
 			textix="Moving"
 			align="horiz. centered"
@@ -7062,7 +5403,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m6.SET"
+				chan="32idbTXM:mcs2:c1:m6.SET"
 			}
 			textix="Calibrate"
 			align="horiz. centered"
@@ -7075,7 +5416,7 @@ composite {
 				height=36
 			}
 			control {
-				chan="32idcMCS2:c1:m6.TWR"
+				chan="32idbTXM:mcs2:c1:m6.TWR"
 				clr=14
 				bclr=51
 			}
@@ -7090,7 +5431,7 @@ composite {
 				height=20
 			}
 			control {
-				chan="32idcMCS2:c1:m6.TWV"
+				chan="32idbTXM:mcs2:c1:m6.TWV"
 				clr=14
 				bclr=51
 			}
@@ -7105,7 +5446,7 @@ composite {
 				height=36
 			}
 			control {
-				chan="32idcMCS2:c1:m6.TWF"
+				chan="32idbTXM:mcs2:c1:m6.TWF"
 				clr=14
 				bclr=51
 			}
@@ -7120,7 +5461,7 @@ composite {
 				height=25
 			}
 			control {
-				chan="32idcMCS2:c1:m6.VAL"
+				chan="32idbTXM:mcs2:c1:m6.VAL"
 				clr=14
 				bclr=51
 			}
@@ -7139,7 +5480,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m6.LLS"
+				chan="32idbTXM:mcs2:c1:m6.LLS"
 			}
 		}
 		rectangle {
@@ -7154,7 +5495,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m6.HLS"
+				chan="32idbTXM:mcs2:c1:m6.HLS"
 			}
 		}
 		"text update" {
@@ -7165,7 +5506,7 @@ composite {
 				height=12
 			}
 			monitor {
-				chan="32idcMCS2:c1:m6.EGU"
+				chan="32idbTXM:mcs2:c1:m6.EGU"
 				clr=54
 				bclr=3
 			}
@@ -7187,7 +5528,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m6.SET"
+				chan="32idbTXM:mcs2:c1:m6.SET"
 			}
 		}
 		rectangle {
@@ -7204,7 +5545,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m6.SET"
+				chan="32idbTXM:mcs2:c1:m6.SET"
 			}
 		}
 		"text update" {
@@ -7215,7 +5556,7 @@ composite {
 				height=17
 			}
 			monitor {
-				chan="32idcMCS2:c1:m6.RBV"
+				chan="32idbTXM:mcs2:c1:m6.RBV"
 				clr=54
 				bclr=3
 			}
@@ -7236,7 +5577,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m6.LVIO"
+				chan="32idbTXM:mcs2:c1:m6.LVIO"
 			}
 			textix="Soft limit"
 			align="horiz. centered"
@@ -7256,7 +5597,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m6_able.VAL"
+				chan="32idbTXM:mcs2:c1:m6_able.VAL"
 			}
 		}
 		"choice button" {
@@ -7267,7 +5608,7 @@ composite {
 				height=20
 			}
 			control {
-				chan="32idcMCS2:c1:m6.SET"
+				chan="32idbTXM:mcs2:c1:m6.SET"
 				clr=14
 				bclr=51
 			}
@@ -7281,7 +5622,7 @@ composite {
 				height=35
 			}
 			control {
-				chan="32idcMCS2:c1:m6_able.VAL"
+				chan="32idbTXM:mcs2:c1:m6_able.VAL"
 				clr=14
 				bclr=51
 			}
@@ -7323,7 +5664,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m3.SET"
+				chan="32idbTXM:mcs2:c1:m3.SET"
 			}
 			textix="Calib:"
 		}
@@ -7335,7 +5676,7 @@ composite {
 				height=20
 			}
 			monitor {
-				chan="32idcMCS2:c1:m3.DESC"
+				chan="32idbTXM:mcs2:c1:m3.DESC"
 				clr=54
 				bclr=0
 			}
@@ -7356,7 +5697,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if zero"
-				chan="32idcMCS2:c1:m3.DMOV"
+				chan="32idbTXM:mcs2:c1:m3.DMOV"
 			}
 		}
 		rectangle {
@@ -7372,7 +5713,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m3.LVIO"
+				chan="32idbTXM:mcs2:c1:m3.LVIO"
 			}
 		}
 		rectangle {
@@ -7388,7 +5729,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m3_able.VAL"
+				chan="32idbTXM:mcs2:c1:m3_able.VAL"
 			}
 		}
 		rectangle {
@@ -7416,7 +5757,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if zero"
-				chan="32idcMCS2:c1:m3.DMOV"
+				chan="32idbTXM:mcs2:c1:m3.DMOV"
 			}
 			textix="Moving"
 			align="horiz. centered"
@@ -7434,7 +5775,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m3.SET"
+				chan="32idbTXM:mcs2:c1:m3.SET"
 			}
 			textix="Calibrate"
 			align="horiz. centered"
@@ -7447,7 +5788,7 @@ composite {
 				height=36
 			}
 			control {
-				chan="32idcMCS2:c1:m3.TWR"
+				chan="32idbTXM:mcs2:c1:m3.TWR"
 				clr=14
 				bclr=51
 			}
@@ -7462,7 +5803,7 @@ composite {
 				height=20
 			}
 			control {
-				chan="32idcMCS2:c1:m3.TWV"
+				chan="32idbTXM:mcs2:c1:m3.TWV"
 				clr=14
 				bclr=51
 			}
@@ -7477,7 +5818,7 @@ composite {
 				height=36
 			}
 			control {
-				chan="32idcMCS2:c1:m3.TWF"
+				chan="32idbTXM:mcs2:c1:m3.TWF"
 				clr=14
 				bclr=51
 			}
@@ -7492,7 +5833,7 @@ composite {
 				height=25
 			}
 			control {
-				chan="32idcMCS2:c1:m3.VAL"
+				chan="32idbTXM:mcs2:c1:m3.VAL"
 				clr=14
 				bclr=51
 			}
@@ -7511,7 +5852,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m3.LLS"
+				chan="32idbTXM:mcs2:c1:m3.LLS"
 			}
 		}
 		rectangle {
@@ -7526,7 +5867,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m3.HLS"
+				chan="32idbTXM:mcs2:c1:m3.HLS"
 			}
 		}
 		"text update" {
@@ -7537,7 +5878,7 @@ composite {
 				height=12
 			}
 			monitor {
-				chan="32idcMCS2:c1:m3.EGU"
+				chan="32idbTXM:mcs2:c1:m3.EGU"
 				clr=54
 				bclr=3
 			}
@@ -7559,7 +5900,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m3.SET"
+				chan="32idbTXM:mcs2:c1:m3.SET"
 			}
 		}
 		rectangle {
@@ -7576,7 +5917,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m3.SET"
+				chan="32idbTXM:mcs2:c1:m3.SET"
 			}
 		}
 		"text update" {
@@ -7587,7 +5928,7 @@ composite {
 				height=17
 			}
 			monitor {
-				chan="32idcMCS2:c1:m3.RBV"
+				chan="32idbTXM:mcs2:c1:m3.RBV"
 				clr=54
 				bclr=3
 			}
@@ -7608,7 +5949,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m3.LVIO"
+				chan="32idbTXM:mcs2:c1:m3.LVIO"
 			}
 			textix="Soft limit"
 			align="horiz. centered"
@@ -7628,7 +5969,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m3_able.VAL"
+				chan="32idbTXM:mcs2:c1:m3_able.VAL"
 			}
 		}
 		"choice button" {
@@ -7639,7 +5980,7 @@ composite {
 				height=20
 			}
 			control {
-				chan="32idcMCS2:c1:m3.SET"
+				chan="32idbTXM:mcs2:c1:m3.SET"
 				clr=14
 				bclr=51
 			}
@@ -7653,7 +5994,7 @@ composite {
 				height=35
 			}
 			control {
-				chan="32idcMCS2:c1:m3_able.VAL"
+				chan="32idbTXM:mcs2:c1:m3_able.VAL"
 				clr=14
 				bclr=51
 			}
@@ -7725,7 +6066,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idc01:m34.SET"
+				chan="32idbTXM:mcs2:c1:m5.SET"
 			}
 			textix="Calib:"
 		}
@@ -7737,7 +6078,7 @@ composite {
 				height=20
 			}
 			monitor {
-				chan="32idc01:m34.DESC"
+				chan="32idbTXM:mcs2:c1:m5.DESC"
 				clr=54
 				bclr=0
 			}
@@ -7758,7 +6099,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if zero"
-				chan="32idc01:m34.DMOV"
+				chan="32idbTXM:mcs2:c1:m5.DMOV"
 			}
 		}
 		rectangle {
@@ -7774,7 +6115,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idc01:m34.LVIO"
+				chan="32idbTXM:mcs2:c1:m5.LVIO"
 			}
 		}
 		rectangle {
@@ -7790,7 +6131,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idc01:m34_able.VAL"
+				chan="32idbTXM:mcs2:c1:m5_able.VAL"
 			}
 		}
 		rectangle {
@@ -7818,7 +6159,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if zero"
-				chan="32idc01:m34.DMOV"
+				chan="32idbTXM:mcs2:c1:m5.DMOV"
 			}
 			textix="Moving"
 			align="horiz. centered"
@@ -7836,7 +6177,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idc01:m34.SET"
+				chan="32idbTXM:mcs2:c1:m5.SET"
 			}
 			textix="Calibrate"
 			align="horiz. centered"
@@ -7849,7 +6190,7 @@ composite {
 				height=36
 			}
 			control {
-				chan="32idc01:m34.TWR"
+				chan="32idbTXM:mcs2:c1:m5.TWR"
 				clr=14
 				bclr=51
 			}
@@ -7864,7 +6205,7 @@ composite {
 				height=20
 			}
 			control {
-				chan="32idc01:m34.TWV"
+				chan="32idbTXM:mcs2:c1:m5.TWV"
 				clr=14
 				bclr=51
 			}
@@ -7879,7 +6220,7 @@ composite {
 				height=36
 			}
 			control {
-				chan="32idc01:m34.TWF"
+				chan="32idbTXM:mcs2:c1:m5.TWF"
 				clr=14
 				bclr=51
 			}
@@ -7894,7 +6235,7 @@ composite {
 				height=25
 			}
 			control {
-				chan="32idc01:m34.VAL"
+				chan="32idbTXM:mcs2:c1:m5.VAL"
 				clr=14
 				bclr=51
 			}
@@ -7913,7 +6254,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idc01:m34.LLS"
+				chan="32idbTXM:mcs2:c1:m5.LLS"
 			}
 		}
 		rectangle {
@@ -7928,7 +6269,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idc01:m34.HLS"
+				chan="32idbTXM:mcs2:c1:m5.HLS"
 			}
 		}
 		"text update" {
@@ -7939,7 +6280,7 @@ composite {
 				height=12
 			}
 			monitor {
-				chan="32idc01:m34.EGU"
+				chan="32idbTXM:mcs2:c1:m5.EGU"
 				clr=54
 				bclr=3
 			}
@@ -7961,7 +6302,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idc01:m34.SET"
+				chan="32idbTXM:mcs2:c1:m5.SET"
 			}
 		}
 		rectangle {
@@ -7978,7 +6319,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idc01:m34.SET"
+				chan="32idbTXM:mcs2:c1:m5.SET"
 			}
 		}
 		"text update" {
@@ -7989,7 +6330,7 @@ composite {
 				height=17
 			}
 			monitor {
-				chan="32idc01:m34.RBV"
+				chan="32idbTXM:mcs2:c1:m5.RBV"
 				clr=54
 				bclr=3
 			}
@@ -8010,7 +6351,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idc01:m34.LVIO"
+				chan="32idbTXM:mcs2:c1:m5.LVIO"
 			}
 			textix="Soft limit"
 			align="horiz. centered"
@@ -8030,7 +6371,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idc01:m34_able.VAL"
+				chan="32idbTXM:mcs2:c1:m5_able.VAL"
 			}
 		}
 		"choice button" {
@@ -8041,7 +6382,7 @@ composite {
 				height=20
 			}
 			control {
-				chan="32idc01:m34.SET"
+				chan="32idbTXM:mcs2:c1:m5.SET"
 				clr=14
 				bclr=51
 			}
@@ -8055,7 +6396,7 @@ composite {
 				height=35
 			}
 			control {
-				chan="32idc01:m34_able.VAL"
+				chan="32idbTXM:mcs2:c1:m5_able.VAL"
 				clr=14
 				bclr=51
 			}
@@ -8097,7 +6438,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idc01:m35.SET"
+				chan="32idbTXM:mcs2:c1:m4.SET"
 			}
 			textix="Calib:"
 		}
@@ -8109,7 +6450,7 @@ composite {
 				height=20
 			}
 			monitor {
-				chan="32idc01:m35.DESC"
+				chan="32idbTXM:mcs2:c1:m4.DESC"
 				clr=54
 				bclr=0
 			}
@@ -8130,7 +6471,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if zero"
-				chan="32idc01:m35.DMOV"
+				chan="32idbTXM:mcs2:c1:m4.DMOV"
 			}
 		}
 		rectangle {
@@ -8146,7 +6487,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idc01:m35.LVIO"
+				chan="32idbTXM:mcs2:c1:m4.LVIO"
 			}
 		}
 		rectangle {
@@ -8162,7 +6503,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idc01:m35_able.VAL"
+				chan="32idbTXM:mcs2:c1:m4_able.VAL"
 			}
 		}
 		rectangle {
@@ -8190,7 +6531,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if zero"
-				chan="32idc01:m35.DMOV"
+				chan="32idbTXM:mcs2:c1:m4.DMOV"
 			}
 			textix="Moving"
 			align="horiz. centered"
@@ -8208,7 +6549,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idc01:m35.SET"
+				chan="32idbTXM:mcs2:c1:m4.SET"
 			}
 			textix="Calibrate"
 			align="horiz. centered"
@@ -8221,7 +6562,7 @@ composite {
 				height=36
 			}
 			control {
-				chan="32idc01:m35.TWR"
+				chan="32idbTXM:mcs2:c1:m4.TWR"
 				clr=14
 				bclr=51
 			}
@@ -8236,7 +6577,7 @@ composite {
 				height=20
 			}
 			control {
-				chan="32idc01:m35.TWV"
+				chan="32idbTXM:mcs2:c1:m4.TWV"
 				clr=14
 				bclr=51
 			}
@@ -8251,7 +6592,7 @@ composite {
 				height=36
 			}
 			control {
-				chan="32idc01:m35.TWF"
+				chan="32idbTXM:mcs2:c1:m4.TWF"
 				clr=14
 				bclr=51
 			}
@@ -8266,7 +6607,7 @@ composite {
 				height=25
 			}
 			control {
-				chan="32idc01:m35.VAL"
+				chan="32idbTXM:mcs2:c1:m4.VAL"
 				clr=14
 				bclr=51
 			}
@@ -8285,7 +6626,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idc01:m35.LLS"
+				chan="32idbTXM:mcs2:c1:m4.LLS"
 			}
 		}
 		rectangle {
@@ -8300,7 +6641,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idc01:m35.HLS"
+				chan="32idbTXM:mcs2:c1:m4.HLS"
 			}
 		}
 		"text update" {
@@ -8311,7 +6652,7 @@ composite {
 				height=12
 			}
 			monitor {
-				chan="32idc01:m35.EGU"
+				chan="32idbTXM:mcs2:c1:m4.EGU"
 				clr=54
 				bclr=3
 			}
@@ -8333,7 +6674,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idc01:m35.SET"
+				chan="32idbTXM:mcs2:c1:m4.SET"
 			}
 		}
 		rectangle {
@@ -8350,7 +6691,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idc01:m35.SET"
+				chan="32idbTXM:mcs2:c1:m4.SET"
 			}
 		}
 		"text update" {
@@ -8361,7 +6702,7 @@ composite {
 				height=17
 			}
 			monitor {
-				chan="32idc01:m35.RBV"
+				chan="32idbTXM:mcs2:c1:m4.RBV"
 				clr=54
 				bclr=3
 			}
@@ -8382,7 +6723,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idc01:m35.LVIO"
+				chan="32idbTXM:mcs2:c1:m4.LVIO"
 			}
 			textix="Soft limit"
 			align="horiz. centered"
@@ -8402,7 +6743,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idc01:m35_able.VAL"
+				chan="32idbTXM:mcs2:c1:m4_able.VAL"
 			}
 		}
 		"choice button" {
@@ -8413,7 +6754,7 @@ composite {
 				height=20
 			}
 			control {
-				chan="32idc01:m35.SET"
+				chan="32idbTXM:mcs2:c1:m4.SET"
 				clr=14
 				bclr=51
 			}
@@ -8427,7 +6768,7 @@ composite {
 				height=35
 			}
 			control {
-				chan="32idc01:m35_able.VAL"
+				chan="32idbTXM:mcs2:c1:m4_able.VAL"
 				clr=14
 				bclr=51
 			}
@@ -10217,7 +8558,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m1.SET"
+				chan="32idbTXM:mcs2:c1:m1.SET"
 			}
 			textix="Calib:"
 		}
@@ -10229,7 +8570,7 @@ composite {
 				height=20
 			}
 			monitor {
-				chan="32idcMCS2:c1:m1.DESC"
+				chan="32idbTXM:mcs2:c1:m1.DESC"
 				clr=54
 				bclr=0
 			}
@@ -10250,7 +8591,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if zero"
-				chan="32idcMCS2:c1:m1.DMOV"
+				chan="32idbTXM:mcs2:c1:m1.DMOV"
 			}
 		}
 		rectangle {
@@ -10266,7 +8607,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m1.LVIO"
+				chan="32idbTXM:mcs2:c1:m1.LVIO"
 			}
 		}
 		rectangle {
@@ -10282,7 +8623,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m1_able.VAL"
+				chan="32idbTXM:mcs2:c1:m1_able.VAL"
 			}
 		}
 		rectangle {
@@ -10310,7 +8651,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if zero"
-				chan="32idcMCS2:c1:m1.DMOV"
+				chan="32idbTXM:mcs2:c1:m1.DMOV"
 			}
 			textix="Moving"
 			align="horiz. centered"
@@ -10328,7 +8669,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m1.SET"
+				chan="32idbTXM:mcs2:c1:m1.SET"
 			}
 			textix="Calibrate"
 			align="horiz. centered"
@@ -10341,7 +8682,7 @@ composite {
 				height=36
 			}
 			control {
-				chan="32idcMCS2:c1:m1.TWR"
+				chan="32idbTXM:mcs2:c1:m1.TWR"
 				clr=14
 				bclr=51
 			}
@@ -10356,7 +8697,7 @@ composite {
 				height=20
 			}
 			control {
-				chan="32idcMCS2:c1:m1.TWV"
+				chan="32idbTXM:mcs2:c1:m1.TWV"
 				clr=14
 				bclr=51
 			}
@@ -10371,7 +8712,7 @@ composite {
 				height=36
 			}
 			control {
-				chan="32idcMCS2:c1:m1.TWF"
+				chan="32idbTXM:mcs2:c1:m1.TWF"
 				clr=14
 				bclr=51
 			}
@@ -10386,7 +8727,7 @@ composite {
 				height=25
 			}
 			control {
-				chan="32idcMCS2:c1:m1.VAL"
+				chan="32idbTXM:mcs2:c1:m1.VAL"
 				clr=14
 				bclr=51
 			}
@@ -10405,7 +8746,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m1.LLS"
+				chan="32idbTXM:mcs2:c1:m1.LLS"
 			}
 		}
 		rectangle {
@@ -10420,7 +8761,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m1.HLS"
+				chan="32idbTXM:mcs2:c1:m1.HLS"
 			}
 		}
 		"text update" {
@@ -10431,7 +8772,7 @@ composite {
 				height=12
 			}
 			monitor {
-				chan="32idcMCS2:c1:m1.EGU"
+				chan="32idbTXM:mcs2:c1:m1.EGU"
 				clr=54
 				bclr=3
 			}
@@ -10453,7 +8794,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m1.SET"
+				chan="32idbTXM:mcs2:c1:m1.SET"
 			}
 		}
 		rectangle {
@@ -10470,7 +8811,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m1.SET"
+				chan="32idbTXM:mcs2:c1:m1.SET"
 			}
 		}
 		"text update" {
@@ -10481,7 +8822,7 @@ composite {
 				height=17
 			}
 			monitor {
-				chan="32idcMCS2:c1:m1.RBV"
+				chan="32idbTXM:mcs2:c1:m1.RBV"
 				clr=54
 				bclr=3
 			}
@@ -10502,7 +8843,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m1.LVIO"
+				chan="32idbTXM:mcs2:c1:m1.LVIO"
 			}
 			textix="Soft limit"
 			align="horiz. centered"
@@ -10522,7 +8863,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m1_able.VAL"
+				chan="32idbTXM:mcs2:c1:m1_able.VAL"
 			}
 		}
 		"choice button" {
@@ -10533,7 +8874,7 @@ composite {
 				height=20
 			}
 			control {
-				chan="32idcMCS2:c1:m1.SET"
+				chan="32idbTXM:mcs2:c1:m1.SET"
 				clr=14
 				bclr=51
 			}
@@ -10547,7 +8888,7 @@ composite {
 				height=35
 			}
 			control {
-				chan="32idcMCS2:c1:m1_able.VAL"
+				chan="32idbTXM:mcs2:c1:m1_able.VAL"
 				clr=14
 				bclr=51
 			}
@@ -10617,7 +8958,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m4.SET"
+				chan="32idbTXM:mcs2:c1:m4.SET"
 			}
 			textix="Calib:"
 		}
@@ -10629,7 +8970,7 @@ composite {
 				height=20
 			}
 			monitor {
-				chan="32idcMCS2:c1:m4.DESC"
+				chan="32idbTXM:mcs2:c1:m4.DESC"
 				clr=54
 				bclr=0
 			}
@@ -10650,7 +8991,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if zero"
-				chan="32idcMCS2:c1:m4.DMOV"
+				chan="32idbTXM:mcs2:c1:m4.DMOV"
 			}
 		}
 		rectangle {
@@ -10666,7 +9007,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m4.LVIO"
+				chan="32idbTXM:mcs2:c1:m4.LVIO"
 			}
 		}
 		rectangle {
@@ -10682,7 +9023,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m4_able.VAL"
+				chan="32idbTXM:mcs2:c1:m4_able.VAL"
 			}
 		}
 		rectangle {
@@ -10710,7 +9051,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if zero"
-				chan="32idcMCS2:c1:m4.DMOV"
+				chan="32idbTXM:mcs2:c1:m4.DMOV"
 			}
 			textix="Moving"
 			align="horiz. centered"
@@ -10728,7 +9069,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m4.SET"
+				chan="32idbTXM:mcs2:c1:m4.SET"
 			}
 			textix="Calibrate"
 			align="horiz. centered"
@@ -10741,7 +9082,7 @@ composite {
 				height=36
 			}
 			control {
-				chan="32idcMCS2:c1:m4.TWR"
+				chan="32idbTXM:mcs2:c1:m4.TWR"
 				clr=14
 				bclr=51
 			}
@@ -10756,7 +9097,7 @@ composite {
 				height=20
 			}
 			control {
-				chan="32idcMCS2:c1:m4.TWV"
+				chan="32idbTXM:mcs2:c1:m4.TWV"
 				clr=14
 				bclr=51
 			}
@@ -10771,7 +9112,7 @@ composite {
 				height=36
 			}
 			control {
-				chan="32idcMCS2:c1:m4.TWF"
+				chan="32idbTXM:mcs2:c1:m4.TWF"
 				clr=14
 				bclr=51
 			}
@@ -10786,7 +9127,7 @@ composite {
 				height=25
 			}
 			control {
-				chan="32idcMCS2:c1:m4.VAL"
+				chan="32idbTXM:mcs2:c1:m4.VAL"
 				clr=14
 				bclr=51
 			}
@@ -10805,7 +9146,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m4.LLS"
+				chan="32idbTXM:mcs2:c1:m4.LLS"
 			}
 		}
 		rectangle {
@@ -10820,7 +9161,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m4.HLS"
+				chan="32idbTXM:mcs2:c1:m4.HLS"
 			}
 		}
 		"text update" {
@@ -10831,7 +9172,7 @@ composite {
 				height=12
 			}
 			monitor {
-				chan="32idcMCS2:c1:m4.EGU"
+				chan="32idbTXM:mcs2:c1:m4.EGU"
 				clr=54
 				bclr=3
 			}
@@ -10853,7 +9194,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m4.SET"
+				chan="32idbTXM:mcs2:c1:m4.SET"
 			}
 		}
 		rectangle {
@@ -10870,7 +9211,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m4.SET"
+				chan="32idbTXM:mcs2:c1:m4.SET"
 			}
 		}
 		"text update" {
@@ -10881,7 +9222,7 @@ composite {
 				height=17
 			}
 			monitor {
-				chan="32idcMCS2:c1:m4.RBV"
+				chan="32idbTXM:mcs2:c1:m4.RBV"
 				clr=54
 				bclr=3
 			}
@@ -10902,7 +9243,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m4.LVIO"
+				chan="32idbTXM:mcs2:c1:m4.LVIO"
 			}
 			textix="Soft limit"
 			align="horiz. centered"
@@ -10922,7 +9263,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m4_able.VAL"
+				chan="32idbTXM:mcs2:c1:m4_able.VAL"
 			}
 		}
 		"choice button" {
@@ -10933,7 +9274,7 @@ composite {
 				height=20
 			}
 			control {
-				chan="32idcMCS2:c1:m4.SET"
+				chan="32idbTXM:mcs2:c1:m4.SET"
 				clr=14
 				bclr=51
 			}
@@ -10947,7 +9288,7 @@ composite {
 				height=35
 			}
 			control {
-				chan="32idcMCS2:c1:m4_able.VAL"
+				chan="32idbTXM:mcs2:c1:m4_able.VAL"
 				clr=14
 				bclr=51
 			}
@@ -10989,7 +9330,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m2.SET"
+				chan="32idbTXM:mcs2:c1:m2.SET"
 			}
 			textix="Calib:"
 		}
@@ -11001,7 +9342,7 @@ composite {
 				height=20
 			}
 			monitor {
-				chan="32idcMCS2:c1:m2.DESC"
+				chan="32idbTXM:mcs2:c1:m2.DESC"
 				clr=54
 				bclr=0
 			}
@@ -11022,7 +9363,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if zero"
-				chan="32idcMCS2:c1:m2.DMOV"
+				chan="32idbTXM:mcs2:c1:m2.DMOV"
 			}
 		}
 		rectangle {
@@ -11038,7 +9379,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m2.LVIO"
+				chan="32idbTXM:mcs2:c1:m2.LVIO"
 			}
 		}
 		rectangle {
@@ -11054,7 +9395,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m2_able.VAL"
+				chan="32idbTXM:mcs2:c1:m2_able.VAL"
 			}
 		}
 		rectangle {
@@ -11082,7 +9423,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if zero"
-				chan="32idcMCS2:c1:m2.DMOV"
+				chan="32idbTXM:mcs2:c1:m2.DMOV"
 			}
 			textix="Moving"
 			align="horiz. centered"
@@ -11100,7 +9441,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m2.SET"
+				chan="32idbTXM:mcs2:c1:m2.SET"
 			}
 			textix="Calibrate"
 			align="horiz. centered"
@@ -11113,7 +9454,7 @@ composite {
 				height=36
 			}
 			control {
-				chan="32idcMCS2:c1:m2.TWR"
+				chan="32idbTXM:mcs2:c1:m2.TWR"
 				clr=14
 				bclr=51
 			}
@@ -11128,7 +9469,7 @@ composite {
 				height=20
 			}
 			control {
-				chan="32idcMCS2:c1:m2.TWV"
+				chan="32idbTXM:mcs2:c1:m2.TWV"
 				clr=14
 				bclr=51
 			}
@@ -11143,7 +9484,7 @@ composite {
 				height=36
 			}
 			control {
-				chan="32idcMCS2:c1:m2.TWF"
+				chan="32idbTXM:mcs2:c1:m2.TWF"
 				clr=14
 				bclr=51
 			}
@@ -11158,7 +9499,7 @@ composite {
 				height=25
 			}
 			control {
-				chan="32idcMCS2:c1:m2.VAL"
+				chan="32idbTXM:mcs2:c1:m2.VAL"
 				clr=14
 				bclr=51
 			}
@@ -11177,7 +9518,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m2.LLS"
+				chan="32idbTXM:mcs2:c1:m2.LLS"
 			}
 		}
 		rectangle {
@@ -11192,7 +9533,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m2.HLS"
+				chan="32idbTXM:mcs2:c1:m2.HLS"
 			}
 		}
 		"text update" {
@@ -11203,7 +9544,7 @@ composite {
 				height=12
 			}
 			monitor {
-				chan="32idcMCS2:c1:m2.EGU"
+				chan="32idbTXM:mcs2:c1:m2.EGU"
 				clr=54
 				bclr=3
 			}
@@ -11225,7 +9566,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m2.SET"
+				chan="32idbTXM:mcs2:c1:m2.SET"
 			}
 		}
 		rectangle {
@@ -11242,7 +9583,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m2.SET"
+				chan="32idbTXM:mcs2:c1:m2.SET"
 			}
 		}
 		"text update" {
@@ -11253,7 +9594,7 @@ composite {
 				height=17
 			}
 			monitor {
-				chan="32idcMCS2:c1:m2.RBV"
+				chan="32idbTXM:mcs2:c1:m2.RBV"
 				clr=54
 				bclr=3
 			}
@@ -11274,7 +9615,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m2.LVIO"
+				chan="32idbTXM:mcs2:c1:m2.LVIO"
 			}
 			textix="Soft limit"
 			align="horiz. centered"
@@ -11294,7 +9635,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m2_able.VAL"
+				chan="32idbTXM:mcs2:c1:m2_able.VAL"
 			}
 		}
 		"choice button" {
@@ -11305,7 +9646,7 @@ composite {
 				height=20
 			}
 			control {
-				chan="32idcMCS2:c1:m2.SET"
+				chan="32idbTXM:mcs2:c1:m2.SET"
 				clr=14
 				bclr=51
 			}
@@ -11319,7 +9660,7 @@ composite {
 				height=35
 			}
 			control {
-				chan="32idcMCS2:c1:m2_able.VAL"
+				chan="32idbTXM:mcs2:c1:m2_able.VAL"
 				clr=14
 				bclr=51
 			}
@@ -12096,7 +10437,7 @@ text {
 }
 text {
 	object {
-		x=960
+		x=1067
 		y=958
 		width=120
 		height=25
@@ -12109,7 +10450,7 @@ text {
 }
 text {
 	object {
-		x=784
+		x=893
 		y=993
 		width=120
 		height=20
@@ -12122,7 +10463,7 @@ text {
 }
 text {
 	object {
-		x=943
+		x=1052
 		y=993
 		width=120
 		height=20
@@ -12135,7 +10476,7 @@ text {
 }
 text {
 	object {
-		x=1102
+		x=1211
 		y=993
 		width=120
 		height=20
@@ -12148,7 +10489,7 @@ text {
 }
 text {
 	object {
-		x=760
+		x=869
 		y=1026
 		width=80
 		height=18
@@ -12161,7 +10502,7 @@ text {
 }
 text {
 	object {
-		x=760
+		x=869
 		y=1056
 		width=80
 		height=18
@@ -12174,7 +10515,7 @@ text {
 }
 text {
 	object {
-		x=760
+		x=869
 		y=1086
 		width=80
 		height=18
@@ -12187,13 +10528,13 @@ text {
 }
 "choice button" {
 	object {
-		x=1136
+		x=1245
 		y=1114
 		width=100
 		height=22
 	}
 	control {
-		chan="32idcMC:shaker:run"
+		chan="32idbShaker:shaker:run"
 		clr=14
 		bclr=61
 	}
@@ -12201,7 +10542,7 @@ text {
 }
 text {
 	object {
-		x=786
+		x=895
 		y=1118
 		width=120
 		height=18
@@ -12214,20 +10555,20 @@ text {
 }
 menu {
 	object {
-		x=921
+		x=1030
 		y=1115
 		width=170
 		height=23
 	}
 	control {
-		chan="32idcMC:shakerMenu"
+		chan="32idbShaker:shakerMenu"
 		clr=14
 		bclr=51
 	}
 }
 "related display" {
 	object {
-		x=1273
+		x=1353
 		y=1156
 		width=20
 		height=20
@@ -12242,7 +10583,7 @@ menu {
 }
 text {
 	object {
-		x=1179
+		x=1259
 		y=1156
 		width=140
 		height=20
@@ -12254,7 +10595,7 @@ text {
 }
 composite {
 	object {
-		x=750
+		x=862
 		y=983
 		width=498
 		height=160
@@ -12263,7 +10604,7 @@ composite {
 	children {
 		rectangle {
 			object {
-				x=750
+				x=862
 				y=983
 				width=498
 				height=160
@@ -12620,7 +10961,7 @@ text {
 }
 text {
 	object {
-		x=438
+		x=809
 		y=332
 		width=15
 		height=20
@@ -12633,7 +10974,7 @@ text {
 }
 composite {
 	object {
-		x=377
+		x=748
 		y=430
 		width=77
 		height=48
@@ -12642,7 +10983,7 @@ composite {
 	children {
 		"message button" {
 			object {
-				x=377
+				x=748
 				y=430
 				width=55
 				height=23
@@ -12658,7 +10999,7 @@ composite {
 		}
 		text {
 			object {
-				x=438
+				x=809
 				y=433
 				width=15
 				height=20
@@ -12671,7 +11012,7 @@ composite {
 		}
 		"message button" {
 			object {
-				x=377
+				x=748
 				y=455
 				width=55
 				height=23
@@ -12687,7 +11028,7 @@ composite {
 		}
 		oval {
 			object {
-				x=434
+				x=805
 				y=456
 				width=20
 				height=20
@@ -12704,7 +11045,7 @@ composite {
 }
 "message button" {
 	object {
-		x=377
+		x=748
 		y=380
 		width=55
 		height=23
@@ -12720,7 +11061,7 @@ composite {
 }
 text {
 	object {
-		x=438
+		x=809
 		y=383
 		width=15
 		height=20
@@ -12733,7 +11074,7 @@ text {
 }
 "message button" {
 	object {
-		x=377
+		x=748
 		y=405
 		width=55
 		height=23
@@ -12749,7 +11090,7 @@ text {
 }
 oval {
 	object {
-		x=435
+		x=806
 		y=407
 		width=20
 		height=20
@@ -12890,7 +11231,7 @@ text {
 }
 "text entry" {
 	object {
-		x=894
+		x=974
 		y=1152
 		width=220
 		height=25
@@ -12905,7 +11246,7 @@ text {
 }
 composite {
 	object {
-		x=780
+		x=860
 		y=1147
 		width=95
 		height=39
@@ -12914,7 +11255,7 @@ composite {
 	children {
 		"message button" {
 			object {
-				x=780
+				x=860
 				y=1147
 				width=95
 				height=20
@@ -12929,7 +11270,7 @@ composite {
 		}
 		"message button" {
 			object {
-				x=780
+				x=860
 				y=1166
 				width=95
 				height=20
@@ -12946,7 +11287,7 @@ composite {
 }
 rectangle {
 	object {
-		x=750
+		x=830
 		y=1146
 		width=550
 		height=40
@@ -12958,7 +11299,7 @@ rectangle {
 }
 text {
 	object {
-		x=1120
+		x=1200
 		y=1155
 		width=60
 		height=20
@@ -13095,1141 +11436,6 @@ rectangle {
 	clr=14
 	bclr=51
 }
-composite {
-	object {
-		x=1230
-		y=80
-		width=117
-		height=183
-	}
-	"composite name"=""
-	children {
-		text {
-			object {
-				x=1232
-				y=209
-				width=45
-				height=16
-			}
-			"basic attribute" {
-				clr=14
-				fill="outline"
-			}
-			textix="Calib:"
-		}
-		text {
-			object {
-				x=1231
-				y=208
-				width=45
-				height=16
-			}
-			"basic attribute" {
-				clr=30
-				fill="outline"
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idcEXP:nf:c1:m3.SET"
-			}
-			textix="Calib:"
-		}
-		"text update" {
-			object {
-				x=1231
-				y=80
-				width=116
-				height=20
-			}
-			monitor {
-				chan="32idcEXP:nf:c1:m3.DESC"
-				clr=54
-				bclr=0
-			}
-			align="horiz. centered"
-			limits {
-			}
-		}
-		rectangle {
-			object {
-				x=1237
-				y=136
-				width=104
-				height=31
-			}
-			"basic attribute" {
-				clr=60
-				width=2
-			}
-			"dynamic attribute" {
-				vis="if zero"
-				chan="32idcEXP:nf:c1:m3.DMOV"
-			}
-		}
-		rectangle {
-			object {
-				x=1237
-				y=136
-				width=104
-				height=31
-			}
-			"basic attribute" {
-				clr=30
-				width=2
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idcEXP:nf:c1:m3.LVIO"
-			}
-		}
-		rectangle {
-			object {
-				x=1237
-				y=136
-				width=104
-				height=31
-			}
-			"basic attribute" {
-				clr=14
-				width=2
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idcEXP:nf:c1:m3_able.VAL"
-			}
-		}
-		rectangle {
-			object {
-				x=1231
-				y=167
-				width=116
-				height=40
-			}
-			"basic attribute" {
-				clr=14
-				width=3
-			}
-		}
-		text {
-			object {
-				x=1259
-				y=191
-				width=60
-				height=15
-			}
-			"basic attribute" {
-				clr=60
-				fill="outline"
-			}
-			"dynamic attribute" {
-				vis="if zero"
-				chan="32idcEXP:nf:c1:m3.DMOV"
-			}
-			textix="Moving"
-			align="horiz. centered"
-		}
-		text {
-			object {
-				x=1259
-				y=197
-				width=60
-				height=10
-			}
-			"basic attribute" {
-				clr=30
-				fill="outline"
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idcEXP:nf:c1:m3.SET"
-			}
-			textix="Calibrate"
-			align="horiz. centered"
-		}
-		"message button" {
-			object {
-				x=1233
-				y=169
-				width=25
-				height=36
-			}
-			control {
-				chan="32idcEXP:nf:c1:m3.TWR"
-				clr=14
-				bclr=51
-			}
-			label="<"
-			press_msg="1"
-		}
-		"text entry" {
-			object {
-				x=1259
-				y=169
-				width=60
-				height=20
-			}
-			control {
-				chan="32idcEXP:nf:c1:m3.TWV"
-				clr=14
-				bclr=51
-			}
-			limits {
-			}
-		}
-		"message button" {
-			object {
-				x=1320
-				y=169
-				width=25
-				height=36
-			}
-			control {
-				chan="32idcEXP:nf:c1:m3.TWF"
-				clr=14
-				bclr=51
-			}
-			label=">"
-			press_msg="1"
-		}
-		"text entry" {
-			object {
-				x=1240
-				y=139
-				width=98
-				height=25
-			}
-			control {
-				chan="32idcEXP:nf:c1:m3.VAL"
-				clr=14
-				bclr=51
-			}
-			limits {
-			}
-		}
-		rectangle {
-			object {
-				x=1231
-				y=115
-				width=6
-				height=50
-			}
-			"basic attribute" {
-				clr=20
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idcEXP:nf:c1:m3.LLS"
-			}
-		}
-		rectangle {
-			object {
-				x=1341
-				y=115
-				width=6
-				height=50
-			}
-			"basic attribute" {
-				clr=20
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idcEXP:nf:c1:m3.HLS"
-			}
-		}
-		"text update" {
-			object {
-				x=1231
-				y=102
-				width=116
-				height=12
-			}
-			monitor {
-				chan="32idcEXP:nf:c1:m3.EGU"
-				clr=54
-				bclr=3
-			}
-			align="horiz. centered"
-			limits {
-			}
-		}
-		rectangle {
-			object {
-				x=1238
-				y=111
-				width=102
-				height=26
-			}
-			"basic attribute" {
-				clr=14
-				fill="outline"
-				width=2
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idcEXP:nf:c1:m3.SET"
-			}
-		}
-		rectangle {
-			object {
-				x=1240
-				y=113
-				width=98
-				height=21
-			}
-			"basic attribute" {
-				clr=30
-				fill="outline"
-				width=2
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idcEXP:nf:c1:m3.SET"
-			}
-		}
-		"text update" {
-			object {
-				x=1242
-				y=115
-				width=94
-				height=17
-			}
-			monitor {
-				chan="32idcEXP:nf:c1:m3.RBV"
-				clr=54
-				bclr=3
-			}
-			align="horiz. centered"
-			limits {
-			}
-		}
-		text {
-			object {
-				x=1259
-				y=189
-				width=60
-				height=10
-			}
-			"basic attribute" {
-				clr=30
-				fill="outline"
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idcEXP:nf:c1:m3.LVIO"
-			}
-			textix="Soft limit"
-			align="horiz. centered"
-		}
-		rectangle {
-			object {
-				x=1237
-				y=136
-				width=104
-				height=31
-			}
-			"basic attribute" {
-				clr=20
-				style="dash"
-				fill="outline"
-				width=2
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idcEXP:nf:c1:m3_able.VAL"
-			}
-		}
-		"choice button" {
-			object {
-				x=1276
-				y=207
-				width=71
-				height=20
-			}
-			control {
-				chan="32idcEXP:nf:c1:m3.SET"
-				clr=14
-				bclr=51
-			}
-			stacking="column"
-		}
-		"choice button" {
-			object {
-				x=1230
-				y=228
-				width=115
-				height=35
-			}
-			control {
-				chan="32idcEXP:nf:c1:m3_able.VAL"
-				clr=14
-				bclr=51
-			}
-		}
-	}
-}
-composite {
-	object {
-		x=1350
-		y=80
-		width=117
-		height=183
-	}
-	"composite name"=""
-	children {
-		text {
-			object {
-				x=1352
-				y=209
-				width=45
-				height=16
-			}
-			"basic attribute" {
-				clr=14
-				fill="outline"
-			}
-			textix="Calib:"
-		}
-		text {
-			object {
-				x=1351
-				y=208
-				width=45
-				height=16
-			}
-			"basic attribute" {
-				clr=30
-				fill="outline"
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idcEXP:nf:c1:m2.SET"
-			}
-			textix="Calib:"
-		}
-		"text update" {
-			object {
-				x=1351
-				y=80
-				width=116
-				height=20
-			}
-			monitor {
-				chan="32idcEXP:nf:c1:m2.DESC"
-				clr=54
-				bclr=0
-			}
-			align="horiz. centered"
-			limits {
-			}
-		}
-		rectangle {
-			object {
-				x=1357
-				y=136
-				width=104
-				height=31
-			}
-			"basic attribute" {
-				clr=60
-				width=2
-			}
-			"dynamic attribute" {
-				vis="if zero"
-				chan="32idcEXP:nf:c1:m2.DMOV"
-			}
-		}
-		rectangle {
-			object {
-				x=1357
-				y=136
-				width=104
-				height=31
-			}
-			"basic attribute" {
-				clr=30
-				width=2
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idcEXP:nf:c1:m2.LVIO"
-			}
-		}
-		rectangle {
-			object {
-				x=1357
-				y=136
-				width=104
-				height=31
-			}
-			"basic attribute" {
-				clr=14
-				width=2
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idcEXP:nf:c1:m2_able.VAL"
-			}
-		}
-		rectangle {
-			object {
-				x=1351
-				y=167
-				width=116
-				height=40
-			}
-			"basic attribute" {
-				clr=14
-				width=3
-			}
-		}
-		text {
-			object {
-				x=1379
-				y=191
-				width=60
-				height=15
-			}
-			"basic attribute" {
-				clr=60
-				fill="outline"
-			}
-			"dynamic attribute" {
-				vis="if zero"
-				chan="32idcEXP:nf:c1:m2.DMOV"
-			}
-			textix="Moving"
-			align="horiz. centered"
-		}
-		text {
-			object {
-				x=1379
-				y=197
-				width=60
-				height=10
-			}
-			"basic attribute" {
-				clr=30
-				fill="outline"
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idcEXP:nf:c1:m2.SET"
-			}
-			textix="Calibrate"
-			align="horiz. centered"
-		}
-		"message button" {
-			object {
-				x=1353
-				y=169
-				width=25
-				height=36
-			}
-			control {
-				chan="32idcEXP:nf:c1:m2.TWR"
-				clr=14
-				bclr=51
-			}
-			label="<"
-			press_msg="1"
-		}
-		"text entry" {
-			object {
-				x=1379
-				y=169
-				width=60
-				height=20
-			}
-			control {
-				chan="32idcEXP:nf:c1:m2.TWV"
-				clr=14
-				bclr=51
-			}
-			limits {
-			}
-		}
-		"message button" {
-			object {
-				x=1440
-				y=169
-				width=25
-				height=36
-			}
-			control {
-				chan="32idcEXP:nf:c1:m2.TWF"
-				clr=14
-				bclr=51
-			}
-			label=">"
-			press_msg="1"
-		}
-		"text entry" {
-			object {
-				x=1360
-				y=139
-				width=98
-				height=25
-			}
-			control {
-				chan="32idcEXP:nf:c1:m2.VAL"
-				clr=14
-				bclr=51
-			}
-			limits {
-			}
-		}
-		rectangle {
-			object {
-				x=1351
-				y=115
-				width=6
-				height=50
-			}
-			"basic attribute" {
-				clr=20
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idcEXP:nf:c1:m2.LLS"
-			}
-		}
-		rectangle {
-			object {
-				x=1461
-				y=115
-				width=6
-				height=50
-			}
-			"basic attribute" {
-				clr=20
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idcEXP:nf:c1:m2.HLS"
-			}
-		}
-		"text update" {
-			object {
-				x=1351
-				y=102
-				width=116
-				height=12
-			}
-			monitor {
-				chan="32idcEXP:nf:c1:m2.EGU"
-				clr=54
-				bclr=3
-			}
-			align="horiz. centered"
-			limits {
-			}
-		}
-		rectangle {
-			object {
-				x=1358
-				y=111
-				width=102
-				height=26
-			}
-			"basic attribute" {
-				clr=14
-				fill="outline"
-				width=2
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idcEXP:nf:c1:m2.SET"
-			}
-		}
-		rectangle {
-			object {
-				x=1360
-				y=113
-				width=98
-				height=21
-			}
-			"basic attribute" {
-				clr=30
-				fill="outline"
-				width=2
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idcEXP:nf:c1:m2.SET"
-			}
-		}
-		"text update" {
-			object {
-				x=1362
-				y=115
-				width=94
-				height=17
-			}
-			monitor {
-				chan="32idcEXP:nf:c1:m2.RBV"
-				clr=54
-				bclr=3
-			}
-			align="horiz. centered"
-			limits {
-			}
-		}
-		text {
-			object {
-				x=1379
-				y=189
-				width=60
-				height=10
-			}
-			"basic attribute" {
-				clr=30
-				fill="outline"
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idcEXP:nf:c1:m2.LVIO"
-			}
-			textix="Soft limit"
-			align="horiz. centered"
-		}
-		rectangle {
-			object {
-				x=1357
-				y=136
-				width=104
-				height=31
-			}
-			"basic attribute" {
-				clr=20
-				style="dash"
-				fill="outline"
-				width=2
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idcEXP:nf:c1:m2_able.VAL"
-			}
-		}
-		"choice button" {
-			object {
-				x=1396
-				y=207
-				width=71
-				height=20
-			}
-			control {
-				chan="32idcEXP:nf:c1:m2.SET"
-				clr=14
-				bclr=51
-			}
-			stacking="column"
-		}
-		"choice button" {
-			object {
-				x=1350
-				y=228
-				width=115
-				height=35
-			}
-			control {
-				chan="32idcEXP:nf:c1:m2_able.VAL"
-				clr=14
-				bclr=51
-			}
-		}
-	}
-}
-text {
-	object {
-		x=1487
-		y=209
-		width=45
-		height=16
-	}
-	"basic attribute" {
-		clr=14
-		fill="outline"
-	}
-	textix="Calib:"
-}
-text {
-	object {
-		x=1486
-		y=208
-		width=45
-		height=16
-	}
-	"basic attribute" {
-		clr=30
-		fill="outline"
-	}
-	"dynamic attribute" {
-		vis="if not zero"
-		chan="32idcUC8:m2.SET"
-	}
-	textix="Calib:"
-}
-"text update" {
-	object {
-		x=1486
-		y=80
-		width=116
-		height=20
-	}
-	monitor {
-		chan="32idcUC8:m2.DESC"
-		clr=54
-		bclr=0
-	}
-	align="horiz. centered"
-	limits {
-	}
-}
-rectangle {
-	object {
-		x=1492
-		y=136
-		width=104
-		height=31
-	}
-	"basic attribute" {
-		clr=60
-		width=2
-	}
-	"dynamic attribute" {
-		vis="if zero"
-		chan="32idcUC8:m2.DMOV"
-	}
-}
-rectangle {
-	object {
-		x=1492
-		y=136
-		width=104
-		height=31
-	}
-	"basic attribute" {
-		clr=30
-		width=2
-	}
-	"dynamic attribute" {
-		vis="if not zero"
-		chan="32idcUC8:m2.LVIO"
-	}
-}
-rectangle {
-	object {
-		x=1492
-		y=136
-		width=104
-		height=31
-	}
-	"basic attribute" {
-		clr=14
-		width=2
-	}
-	"dynamic attribute" {
-		vis="if not zero"
-		chan="32idcUC8:m2_able.VAL"
-	}
-}
-rectangle {
-	object {
-		x=1486
-		y=167
-		width=116
-		height=40
-	}
-	"basic attribute" {
-		clr=14
-		width=3
-	}
-}
-text {
-	object {
-		x=1514
-		y=191
-		width=60
-		height=15
-	}
-	"basic attribute" {
-		clr=60
-		fill="outline"
-	}
-	"dynamic attribute" {
-		vis="if zero"
-		chan="32idcUC8:m2.DMOV"
-	}
-	textix="Moving"
-	align="horiz. centered"
-}
-text {
-	object {
-		x=1514
-		y=197
-		width=60
-		height=10
-	}
-	"basic attribute" {
-		clr=30
-		fill="outline"
-	}
-	"dynamic attribute" {
-		vis="if not zero"
-		chan="32idcUC8:m2.SET"
-	}
-	textix="Calibrate"
-	align="horiz. centered"
-}
-"message button" {
-	object {
-		x=1488
-		y=169
-		width=25
-		height=36
-	}
-	control {
-		chan="32idcUC8:m2.TWR"
-		clr=14
-		bclr=51
-	}
-	label="<"
-	press_msg="1"
-}
-"text entry" {
-	object {
-		x=1514
-		y=169
-		width=60
-		height=20
-	}
-	control {
-		chan="32idcUC8:m2.TWV"
-		clr=14
-		bclr=51
-	}
-	limits {
-	}
-}
-"message button" {
-	object {
-		x=1575
-		y=169
-		width=25
-		height=36
-	}
-	control {
-		chan="32idcUC8:m2.TWF"
-		clr=14
-		bclr=51
-	}
-	label=">"
-	press_msg="1"
-}
-"text entry" {
-	object {
-		x=1495
-		y=139
-		width=98
-		height=25
-	}
-	control {
-		chan="32idcUC8:m2.VAL"
-		clr=14
-		bclr=51
-	}
-	limits {
-	}
-}
-rectangle {
-	object {
-		x=1486
-		y=115
-		width=6
-		height=50
-	}
-	"basic attribute" {
-		clr=20
-	}
-	"dynamic attribute" {
-		vis="if not zero"
-		chan="32idcUC8:m2.LLS"
-	}
-}
-rectangle {
-	object {
-		x=1596
-		y=115
-		width=6
-		height=50
-	}
-	"basic attribute" {
-		clr=20
-	}
-	"dynamic attribute" {
-		vis="if not zero"
-		chan="32idcUC8:m2.HLS"
-	}
-}
-"text update" {
-	object {
-		x=1486
-		y=102
-		width=116
-		height=12
-	}
-	monitor {
-		chan="32idcUC8:m2.EGU"
-		clr=54
-		bclr=3
-	}
-	align="horiz. centered"
-	limits {
-	}
-}
-rectangle {
-	object {
-		x=1493
-		y=111
-		width=102
-		height=26
-	}
-	"basic attribute" {
-		clr=14
-		fill="outline"
-		width=2
-	}
-	"dynamic attribute" {
-		vis="if not zero"
-		chan="32idcUC8:m2.SET"
-	}
-}
-rectangle {
-	object {
-		x=1495
-		y=113
-		width=98
-		height=21
-	}
-	"basic attribute" {
-		clr=30
-		fill="outline"
-		width=2
-	}
-	"dynamic attribute" {
-		vis="if not zero"
-		chan="32idcUC8:m2.SET"
-	}
-}
-"text update" {
-	object {
-		x=1497
-		y=115
-		width=94
-		height=17
-	}
-	monitor {
-		chan="32idcUC8:m2.RBV"
-		clr=54
-		bclr=3
-	}
-	align="horiz. centered"
-	limits {
-	}
-}
-text {
-	object {
-		x=1514
-		y=189
-		width=60
-		height=10
-	}
-	"basic attribute" {
-		clr=30
-		fill="outline"
-	}
-	"dynamic attribute" {
-		vis="if not zero"
-		chan="32idcUC8:m2.LVIO"
-	}
-	textix="Soft limit"
-	align="horiz. centered"
-}
-rectangle {
-	object {
-		x=1492
-		y=136
-		width=104
-		height=31
-	}
-	"basic attribute" {
-		clr=20
-		style="dash"
-		fill="outline"
-		width=2
-	}
-	"dynamic attribute" {
-		vis="if not zero"
-		chan="32idcUC8:m2_able.VAL"
-	}
-}
-"choice button" {
-	object {
-		x=1531
-		y=207
-		width=71
-		height=20
-	}
-	control {
-		chan="32idcUC8:m2.SET"
-		clr=14
-		bclr=51
-	}
-	stacking="column"
-}
-"choice button" {
-	object {
-		x=1485
-		y=228
-		width=115
-		height=35
-	}
-	control {
-		chan="32idcUC8:m2_able.VAL"
-		clr=14
-		bclr=51
-	}
-}
-"related display" {
-	object {
-		x=1600
-		y=247
-		width=15
-		height=15
-	}
-	display[1] {
-		label="Focus 5x (Small)"
-		name="1_motors.adl"
-		args="P=32idcUC8:,M1=m2"
-	}
-	clr=14
-	bclr=51
-}
-"related display" {
-	object {
-		x=1465
-		y=247
-		width=15
-		height=15
-	}
-	display[1] {
-		label="nf:c1:m23) (Small)"
-		name="2_motors.adl"
-		args="P=32idcEXP:,M1=nf:c1:m3,M2=nf:c1:m2"
-	}
-	clr=14
-	bclr=51
-}
 "related display" {
 	object {
 		x=250
@@ -14240,7 +11446,7 @@ rectangle {
 	display[1] {
 		label="mcs:c3:m63) (Small)"
 		name="1_motors.adl"
-		args="P=32idc02:,M1=m21"
+		args="P=32idbTXM:,M1=m21"
 	}
 	clr=14
 	bclr=51
@@ -14268,9 +11474,9 @@ rectangle {
 		height=15
 	}
 	display[1] {
-		label="32idc02:m63) (Small)"
+		label="32idbTXM:m63) (Small)"
 		name="3_motors.adl"
-		args="P=32idc02:,M1=m35,M2=m33,M3=m34"
+		args="P=32idbTXM:,M1=m35,M2=m33,M3=m34"
 	}
 	clr=14
 	bclr=51
@@ -14334,7 +11540,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idcTXM:mcs:c2:m1.SET"
+						chan="32idbTXM:mcs:c1:m1.SET"
 					}
 					textix="Calib:"
 				}
@@ -14346,7 +11552,7 @@ composite {
 						height=20
 					}
 					monitor {
-						chan="32idcTXM:mcs:c2:m1.DESC"
+						chan="32idbTXM:mcs:c1:m1.DESC"
 						clr=54
 						bclr=0
 					}
@@ -14367,7 +11573,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if zero"
-						chan="32idcTXM:mcs:c2:m1.DMOV"
+						chan="32idbTXM:mcs:c1:m1.DMOV"
 					}
 				}
 				rectangle {
@@ -14383,7 +11589,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idcTXM:mcs:c2:m1.LVIO"
+						chan="32idbTXM:mcs:c1:m1.LVIO"
 					}
 				}
 				rectangle {
@@ -14399,7 +11605,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idcTXM:mcs:c2:m1_able.VAL"
+						chan="32idbTXM:mcs:c1:m1_able.VAL"
 					}
 				}
 				rectangle {
@@ -14427,7 +11633,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if zero"
-						chan="32idcTXM:mcs:c2:m1.DMOV"
+						chan="32idbTXM:mcs:c1:m1.DMOV"
 					}
 					textix="Moving"
 					align="horiz. centered"
@@ -14445,7 +11651,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idcTXM:mcs:c2:m1.SET"
+						chan="32idbTXM:mcs:c1:m1.SET"
 					}
 					textix="Calibrate"
 					align="horiz. centered"
@@ -14458,7 +11664,7 @@ composite {
 						height=36
 					}
 					control {
-						chan="32idcTXM:mcs:c2:m1.TWR"
+						chan="32idbTXM:mcs:c1:m1.TWR"
 						clr=14
 						bclr=51
 					}
@@ -14473,7 +11679,7 @@ composite {
 						height=20
 					}
 					control {
-						chan="32idcTXM:mcs:c2:m1.TWV"
+						chan="32idbTXM:mcs:c1:m1.TWV"
 						clr=14
 						bclr=51
 					}
@@ -14488,7 +11694,7 @@ composite {
 						height=36
 					}
 					control {
-						chan="32idcTXM:mcs:c2:m1.TWF"
+						chan="32idbTXM:mcs:c1:m1.TWF"
 						clr=14
 						bclr=51
 					}
@@ -14503,7 +11709,7 @@ composite {
 						height=25
 					}
 					control {
-						chan="32idcTXM:mcs:c2:m1.VAL"
+						chan="32idbTXM:mcs:c1:m1.VAL"
 						clr=14
 						bclr=51
 					}
@@ -14522,7 +11728,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idcTXM:mcs:c2:m1.LLS"
+						chan="32idbTXM:mcs:c1:m1.LLS"
 					}
 				}
 				rectangle {
@@ -14537,7 +11743,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idcTXM:mcs:c2:m1.HLS"
+						chan="32idbTXM:mcs:c1:m1.HLS"
 					}
 				}
 				"text update" {
@@ -14548,7 +11754,7 @@ composite {
 						height=12
 					}
 					monitor {
-						chan="32idcTXM:mcs:c2:m1.EGU"
+						chan="32idbTXM:mcs:c1:m1.EGU"
 						clr=54
 						bclr=3
 					}
@@ -14570,7 +11776,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idcTXM:mcs:c2:m1.SET"
+						chan="32idbTXM:mcs:c1:m1.SET"
 					}
 				}
 				rectangle {
@@ -14587,7 +11793,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idcTXM:mcs:c2:m1.SET"
+						chan="32idbTXM:mcs:c1:m1.SET"
 					}
 				}
 				"text update" {
@@ -14598,7 +11804,7 @@ composite {
 						height=17
 					}
 					monitor {
-						chan="32idcTXM:mcs:c2:m1.RBV"
+						chan="32idbTXM:mcs:c1:m1.RBV"
 						clr=54
 						bclr=3
 					}
@@ -14619,7 +11825,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idcTXM:mcs:c2:m1.LVIO"
+						chan="32idbTXM:mcs:c1:m1.LVIO"
 					}
 					textix="Soft limit"
 					align="horiz. centered"
@@ -14639,7 +11845,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idcTXM:mcs:c2:m1_able.VAL"
+						chan="32idbTXM:mcs:c1:m1_able.VAL"
 					}
 				}
 				"choice button" {
@@ -14650,7 +11856,7 @@ composite {
 						height=20
 					}
 					control {
-						chan="32idcTXM:mcs:c2:m1.SET"
+						chan="32idbTXM:mcs:c1:m1.SET"
 						clr=14
 						bclr=51
 					}
@@ -14664,7 +11870,7 @@ composite {
 						height=35
 					}
 					control {
-						chan="32idcTXM:mcs:c2:m1_able.VAL"
+						chan="32idbTXM:mcs:c1:m1_able.VAL"
 						clr=14
 						bclr=51
 					}
@@ -14706,7 +11912,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idcTXM:mcs:c2:m2.SET"
+						chan="32idbTXM:mcs:c1:m2.SET"
 					}
 					textix="Calib:"
 				}
@@ -14718,7 +11924,7 @@ composite {
 						height=20
 					}
 					monitor {
-						chan="32idcTXM:mcs:c2:m2.DESC"
+						chan="32idbTXM:mcs:c1:m2.DESC"
 						clr=54
 						bclr=0
 					}
@@ -14739,7 +11945,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if zero"
-						chan="32idcTXM:mcs:c2:m2.DMOV"
+						chan="32idbTXM:mcs:c1:m2.DMOV"
 					}
 				}
 				rectangle {
@@ -14755,7 +11961,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idcTXM:mcs:c2:m2.LVIO"
+						chan="32idbTXM:mcs:c1:m2.LVIO"
 					}
 				}
 				rectangle {
@@ -14771,7 +11977,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idcTXM:mcs:c2:m2_able.VAL"
+						chan="32idbTXM:mcs:c1:m2_able.VAL"
 					}
 				}
 				rectangle {
@@ -14799,7 +12005,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if zero"
-						chan="32idcTXM:mcs:c2:m2.DMOV"
+						chan="32idbTXM:mcs:c1:m2.DMOV"
 					}
 					textix="Moving"
 					align="horiz. centered"
@@ -14817,7 +12023,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idcTXM:mcs:c2:m2.SET"
+						chan="32idbTXM:mcs:c1:m2.SET"
 					}
 					textix="Calibrate"
 					align="horiz. centered"
@@ -14830,7 +12036,7 @@ composite {
 						height=36
 					}
 					control {
-						chan="32idcTXM:mcs:c2:m2.TWR"
+						chan="32idbTXM:mcs:c1:m2.TWR"
 						clr=14
 						bclr=51
 					}
@@ -14845,7 +12051,7 @@ composite {
 						height=20
 					}
 					control {
-						chan="32idcTXM:mcs:c2:m2.TWV"
+						chan="32idbTXM:mcs:c1:m2.TWV"
 						clr=14
 						bclr=51
 					}
@@ -14860,7 +12066,7 @@ composite {
 						height=36
 					}
 					control {
-						chan="32idcTXM:mcs:c2:m2.TWF"
+						chan="32idbTXM:mcs:c1:m2.TWF"
 						clr=14
 						bclr=51
 					}
@@ -14875,7 +12081,7 @@ composite {
 						height=25
 					}
 					control {
-						chan="32idcTXM:mcs:c2:m2.VAL"
+						chan="32idbTXM:mcs:c1:m2.VAL"
 						clr=14
 						bclr=51
 					}
@@ -14894,7 +12100,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idcTXM:mcs:c2:m2.LLS"
+						chan="32idbTXM:mcs:c1:m2.LLS"
 					}
 				}
 				rectangle {
@@ -14909,7 +12115,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idcTXM:mcs:c2:m2.HLS"
+						chan="32idbTXM:mcs:c1:m2.HLS"
 					}
 				}
 				"text update" {
@@ -14920,7 +12126,7 @@ composite {
 						height=12
 					}
 					monitor {
-						chan="32idcTXM:mcs:c2:m2.EGU"
+						chan="32idbTXM:mcs:c1:m2.EGU"
 						clr=54
 						bclr=3
 					}
@@ -14942,7 +12148,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idcTXM:mcs:c2:m2.SET"
+						chan="32idbTXM:mcs:c1:m2.SET"
 					}
 				}
 				rectangle {
@@ -14959,7 +12165,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idcTXM:mcs:c2:m2.SET"
+						chan="32idbTXM:mcs:c1:m2.SET"
 					}
 				}
 				"text update" {
@@ -14970,7 +12176,7 @@ composite {
 						height=17
 					}
 					monitor {
-						chan="32idcTXM:mcs:c2:m2.RBV"
+						chan="32idbTXM:mcs:c1:m2.RBV"
 						clr=54
 						bclr=3
 					}
@@ -14991,7 +12197,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idcTXM:mcs:c2:m2.LVIO"
+						chan="32idbTXM:mcs:c1:m2.LVIO"
 					}
 					textix="Soft limit"
 					align="horiz. centered"
@@ -15011,7 +12217,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idcTXM:mcs:c2:m2_able.VAL"
+						chan="32idbTXM:mcs:c1:m2_able.VAL"
 					}
 				}
 				"choice button" {
@@ -15022,7 +12228,7 @@ composite {
 						height=20
 					}
 					control {
-						chan="32idcTXM:mcs:c2:m2.SET"
+						chan="32idbTXM:mcs:c1:m2.SET"
 						clr=14
 						bclr=51
 					}
@@ -15036,7 +12242,7 @@ composite {
 						height=35
 					}
 					control {
-						chan="32idcTXM:mcs:c2:m2_able.VAL"
+						chan="32idbTXM:mcs:c1:m2_able.VAL"
 						clr=14
 						bclr=51
 					}
@@ -15078,7 +12284,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idcTXM:mcs:c2:m3.SET"
+						chan="32idbTXM:mcs:c1:m3.SET"
 					}
 					textix="Calib:"
 				}
@@ -15090,7 +12296,7 @@ composite {
 						height=20
 					}
 					monitor {
-						chan="32idcTXM:mcs:c2:m3.DESC"
+						chan="32idbTXM:mcs:c1:m3.DESC"
 						clr=54
 						bclr=0
 					}
@@ -15111,7 +12317,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if zero"
-						chan="32idcTXM:mcs:c2:m3.DMOV"
+						chan="32idbTXM:mcs:c1:m3.DMOV"
 					}
 				}
 				rectangle {
@@ -15127,7 +12333,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idcTXM:mcs:c2:m3.LVIO"
+						chan="32idbTXM:mcs:c1:m3.LVIO"
 					}
 				}
 				rectangle {
@@ -15143,7 +12349,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idcTXM:mcs:c2:m3_able.VAL"
+						chan="32idbTXM:mcs:c1:m3_able.VAL"
 					}
 				}
 				rectangle {
@@ -15171,7 +12377,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if zero"
-						chan="32idcTXM:mcs:c2:m3.DMOV"
+						chan="32idbTXM:mcs:c1:m3.DMOV"
 					}
 					textix="Moving"
 					align="horiz. centered"
@@ -15189,7 +12395,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idcTXM:mcs:c2:m3.SET"
+						chan="32idbTXM:mcs:c1:m3.SET"
 					}
 					textix="Calibrate"
 					align="horiz. centered"
@@ -15202,7 +12408,7 @@ composite {
 						height=36
 					}
 					control {
-						chan="32idcTXM:mcs:c2:m3.TWR"
+						chan="32idbTXM:mcs:c1:m3.TWR"
 						clr=14
 						bclr=51
 					}
@@ -15217,7 +12423,7 @@ composite {
 						height=20
 					}
 					control {
-						chan="32idcTXM:mcs:c2:m3.TWV"
+						chan="32idbTXM:mcs:c1:m3.TWV"
 						clr=14
 						bclr=51
 					}
@@ -15232,7 +12438,7 @@ composite {
 						height=36
 					}
 					control {
-						chan="32idcTXM:mcs:c2:m3.TWF"
+						chan="32idbTXM:mcs:c1:m3.TWF"
 						clr=14
 						bclr=51
 					}
@@ -15247,7 +12453,7 @@ composite {
 						height=25
 					}
 					control {
-						chan="32idcTXM:mcs:c2:m3.VAL"
+						chan="32idbTXM:mcs:c1:m3.VAL"
 						clr=14
 						bclr=51
 					}
@@ -15266,7 +12472,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idcTXM:mcs:c2:m3.LLS"
+						chan="32idbTXM:mcs:c1:m3.LLS"
 					}
 				}
 				rectangle {
@@ -15281,7 +12487,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idcTXM:mcs:c2:m3.HLS"
+						chan="32idbTXM:mcs:c1:m3.HLS"
 					}
 				}
 				"text update" {
@@ -15292,7 +12498,7 @@ composite {
 						height=12
 					}
 					monitor {
-						chan="32idcTXM:mcs:c2:m3.EGU"
+						chan="32idbTXM:mcs:c1:m3.EGU"
 						clr=54
 						bclr=3
 					}
@@ -15314,7 +12520,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idcTXM:mcs:c2:m3.SET"
+						chan="32idbTXM:mcs:c1:m3.SET"
 					}
 				}
 				rectangle {
@@ -15331,7 +12537,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idcTXM:mcs:c2:m3.SET"
+						chan="32idbTXM:mcs:c1:m3.SET"
 					}
 				}
 				"text update" {
@@ -15342,7 +12548,7 @@ composite {
 						height=17
 					}
 					monitor {
-						chan="32idcTXM:mcs:c2:m3.RBV"
+						chan="32idbTXM:mcs:c1:m3.RBV"
 						clr=54
 						bclr=3
 					}
@@ -15363,7 +12569,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idcTXM:mcs:c2:m3.LVIO"
+						chan="32idbTXM:mcs:c1:m3.LVIO"
 					}
 					textix="Soft limit"
 					align="horiz. centered"
@@ -15383,7 +12589,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idcTXM:mcs:c2:m3_able.VAL"
+						chan="32idbTXM:mcs:c1:m3_able.VAL"
 					}
 				}
 				"choice button" {
@@ -15394,7 +12600,7 @@ composite {
 						height=20
 					}
 					control {
-						chan="32idcTXM:mcs:c2:m3.SET"
+						chan="32idbTXM:mcs:c1:m3.SET"
 						clr=14
 						bclr=51
 					}
@@ -15408,7 +12614,7 @@ composite {
 						height=35
 					}
 					control {
-						chan="32idcTXM:mcs:c2:m3_able.VAL"
+						chan="32idbTXM:mcs:c1:m3_able.VAL"
 						clr=14
 						bclr=51
 					}
@@ -15461,7 +12667,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idc02:m35.SET"
+						chan="32idbTXM:m35.SET"
 					}
 					textix="Calib:"
 				}
@@ -15473,7 +12679,7 @@ composite {
 						height=20
 					}
 					monitor {
-						chan="32idc02:m35.DESC"
+						chan="32idbTXM:m35.DESC"
 						clr=54
 						bclr=0
 					}
@@ -15494,7 +12700,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if zero"
-						chan="32idc02:m35.DMOV"
+						chan="32idbTXM:m35.DMOV"
 					}
 				}
 				rectangle {
@@ -15510,7 +12716,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idc02:m35.LVIO"
+						chan="32idbTXM:m35.LVIO"
 					}
 				}
 				rectangle {
@@ -15526,7 +12732,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idc02:m35_able.VAL"
+						chan="32idbTXM:m35_able.VAL"
 					}
 				}
 				rectangle {
@@ -15554,7 +12760,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if zero"
-						chan="32idc02:m35.DMOV"
+						chan="32idbTXM:m35.DMOV"
 					}
 					textix="Moving"
 					align="horiz. centered"
@@ -15572,7 +12778,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idc02:m35.SET"
+						chan="32idbTXM:m35.SET"
 					}
 					textix="Calibrate"
 					align="horiz. centered"
@@ -15585,7 +12791,7 @@ composite {
 						height=36
 					}
 					control {
-						chan="32idc02:m35.TWR"
+						chan="32idbTXM:m35.TWR"
 						clr=14
 						bclr=51
 					}
@@ -15600,7 +12806,7 @@ composite {
 						height=20
 					}
 					control {
-						chan="32idc02:m35.TWV"
+						chan="32idbTXM:m35.TWV"
 						clr=14
 						bclr=51
 					}
@@ -15615,7 +12821,7 @@ composite {
 						height=36
 					}
 					control {
-						chan="32idc02:m35.TWF"
+						chan="32idbTXM:m35.TWF"
 						clr=14
 						bclr=51
 					}
@@ -15630,7 +12836,7 @@ composite {
 						height=25
 					}
 					control {
-						chan="32idc02:m35.VAL"
+						chan="32idbTXM:m35.VAL"
 						clr=14
 						bclr=51
 					}
@@ -15649,7 +12855,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idc02:m35.LLS"
+						chan="32idbTXM:m35.LLS"
 					}
 				}
 				rectangle {
@@ -15664,7 +12870,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idc02:m35.HLS"
+						chan="32idbTXM:m35.HLS"
 					}
 				}
 				"text update" {
@@ -15675,7 +12881,7 @@ composite {
 						height=12
 					}
 					monitor {
-						chan="32idc02:m35.EGU"
+						chan="32idbTXM:m35.EGU"
 						clr=54
 						bclr=3
 					}
@@ -15697,7 +12903,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idc02:m35.SET"
+						chan="32idbTXM:m35.SET"
 					}
 				}
 				rectangle {
@@ -15714,7 +12920,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idc02:m35.SET"
+						chan="32idbTXM:m35.SET"
 					}
 				}
 				"text update" {
@@ -15725,7 +12931,7 @@ composite {
 						height=17
 					}
 					monitor {
-						chan="32idc02:m35.RBV"
+						chan="32idbTXM:m35.RBV"
 						clr=54
 						bclr=3
 					}
@@ -15746,7 +12952,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idc02:m35.LVIO"
+						chan="32idbTXM:m35.LVIO"
 					}
 					textix="Soft limit"
 					align="horiz. centered"
@@ -15766,7 +12972,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idc02:m35_able.VAL"
+						chan="32idbTXM:m35_able.VAL"
 					}
 				}
 				"choice button" {
@@ -15777,7 +12983,7 @@ composite {
 						height=20
 					}
 					control {
-						chan="32idc02:m35.SET"
+						chan="32idbTXM:m35.SET"
 						clr=14
 						bclr=51
 					}
@@ -15791,7 +12997,7 @@ composite {
 						height=35
 					}
 					control {
-						chan="32idc02:m35_able.VAL"
+						chan="32idbTXM:m35_able.VAL"
 						clr=14
 						bclr=51
 					}
@@ -15833,7 +13039,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idc02:m33.SET"
+						chan="32idbTXM:m33.SET"
 					}
 					textix="Calib:"
 				}
@@ -15845,7 +13051,7 @@ composite {
 						height=20
 					}
 					monitor {
-						chan="32idc02:m33.DESC"
+						chan="32idbTXM:m33.DESC"
 						clr=54
 						bclr=0
 					}
@@ -15866,7 +13072,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if zero"
-						chan="32idc02:m33.DMOV"
+						chan="32idbTXM:m33.DMOV"
 					}
 				}
 				rectangle {
@@ -15882,7 +13088,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idc02:m33.LVIO"
+						chan="32idbTXM:m33.LVIO"
 					}
 				}
 				rectangle {
@@ -15898,7 +13104,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idc02:m33_able.VAL"
+						chan="32idbTXM:m33_able.VAL"
 					}
 				}
 				rectangle {
@@ -15926,7 +13132,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if zero"
-						chan="32idc02:m33.DMOV"
+						chan="32idbTXM:m33.DMOV"
 					}
 					textix="Moving"
 					align="horiz. centered"
@@ -15944,7 +13150,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idc02:m33.SET"
+						chan="32idbTXM:m33.SET"
 					}
 					textix="Calibrate"
 					align="horiz. centered"
@@ -15957,7 +13163,7 @@ composite {
 						height=36
 					}
 					control {
-						chan="32idc02:m33.TWR"
+						chan="32idbTXM:m33.TWR"
 						clr=14
 						bclr=51
 					}
@@ -15972,7 +13178,7 @@ composite {
 						height=20
 					}
 					control {
-						chan="32idc02:m33.TWV"
+						chan="32idbTXM:m33.TWV"
 						clr=14
 						bclr=51
 					}
@@ -15987,7 +13193,7 @@ composite {
 						height=36
 					}
 					control {
-						chan="32idc02:m33.TWF"
+						chan="32idbTXM:m33.TWF"
 						clr=14
 						bclr=51
 					}
@@ -16002,7 +13208,7 @@ composite {
 						height=25
 					}
 					control {
-						chan="32idc02:m33.VAL"
+						chan="32idbTXM:m33.VAL"
 						clr=14
 						bclr=51
 					}
@@ -16021,7 +13227,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idc02:m33.LLS"
+						chan="32idbTXM:m33.LLS"
 					}
 				}
 				rectangle {
@@ -16036,7 +13242,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idc02:m33.HLS"
+						chan="32idbTXM:m33.HLS"
 					}
 				}
 				"text update" {
@@ -16047,7 +13253,7 @@ composite {
 						height=12
 					}
 					monitor {
-						chan="32idc02:m33.EGU"
+						chan="32idbTXM:m33.EGU"
 						clr=54
 						bclr=3
 					}
@@ -16069,7 +13275,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idc02:m33.SET"
+						chan="32idbTXM:m33.SET"
 					}
 				}
 				rectangle {
@@ -16086,7 +13292,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idc02:m33.SET"
+						chan="32idbTXM:m33.SET"
 					}
 				}
 				"text update" {
@@ -16097,7 +13303,7 @@ composite {
 						height=17
 					}
 					monitor {
-						chan="32idc02:m33.RBV"
+						chan="32idbTXM:m33.RBV"
 						clr=54
 						bclr=3
 					}
@@ -16118,7 +13324,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idc02:m33.LVIO"
+						chan="32idbTXM:m33.LVIO"
 					}
 					textix="Soft limit"
 					align="horiz. centered"
@@ -16138,7 +13344,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idc02:m33_able.VAL"
+						chan="32idbTXM:m33_able.VAL"
 					}
 				}
 				"choice button" {
@@ -16149,7 +13355,7 @@ composite {
 						height=20
 					}
 					control {
-						chan="32idc02:m33.SET"
+						chan="32idbTXM:m33.SET"
 						clr=14
 						bclr=51
 					}
@@ -16163,7 +13369,7 @@ composite {
 						height=35
 					}
 					control {
-						chan="32idc02:m33_able.VAL"
+						chan="32idbTXM:m33_able.VAL"
 						clr=14
 						bclr=51
 					}
@@ -16205,7 +13411,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idc02:m34.SET"
+						chan="32idbTXM:m34.SET"
 					}
 					textix="Calib:"
 				}
@@ -16217,7 +13423,7 @@ composite {
 						height=20
 					}
 					monitor {
-						chan="32idc02:m34.DESC"
+						chan="32idbTXM:m34.DESC"
 						clr=54
 						bclr=0
 					}
@@ -16238,7 +13444,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if zero"
-						chan="32idc02:m34.DMOV"
+						chan="32idbTXM:m34.DMOV"
 					}
 				}
 				rectangle {
@@ -16254,7 +13460,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idc02:m34.LVIO"
+						chan="32idbTXM:m34.LVIO"
 					}
 				}
 				rectangle {
@@ -16270,7 +13476,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idc02:m34_able.VAL"
+						chan="32idbTXM:m34_able.VAL"
 					}
 				}
 				rectangle {
@@ -16298,7 +13504,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if zero"
-						chan="32idc02:m34.DMOV"
+						chan="32idbTXM:m34.DMOV"
 					}
 					textix="Moving"
 					align="horiz. centered"
@@ -16316,7 +13522,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idc02:m34.SET"
+						chan="32idbTXM:m34.SET"
 					}
 					textix="Calibrate"
 					align="horiz. centered"
@@ -16329,7 +13535,7 @@ composite {
 						height=36
 					}
 					control {
-						chan="32idc02:m34.TWR"
+						chan="32idbTXM:m34.TWR"
 						clr=14
 						bclr=51
 					}
@@ -16344,7 +13550,7 @@ composite {
 						height=20
 					}
 					control {
-						chan="32idc02:m34.TWV"
+						chan="32idbTXM:m34.TWV"
 						clr=14
 						bclr=51
 					}
@@ -16359,7 +13565,7 @@ composite {
 						height=36
 					}
 					control {
-						chan="32idc02:m34.TWF"
+						chan="32idbTXM:m34.TWF"
 						clr=14
 						bclr=51
 					}
@@ -16374,7 +13580,7 @@ composite {
 						height=25
 					}
 					control {
-						chan="32idc02:m34.VAL"
+						chan="32idbTXM:m34.VAL"
 						clr=14
 						bclr=51
 					}
@@ -16393,7 +13599,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idc02:m34.LLS"
+						chan="32idbTXM:m34.LLS"
 					}
 				}
 				rectangle {
@@ -16408,7 +13614,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idc02:m34.HLS"
+						chan="32idbTXM:m34.HLS"
 					}
 				}
 				"text update" {
@@ -16419,7 +13625,7 @@ composite {
 						height=12
 					}
 					monitor {
-						chan="32idc02:m34.EGU"
+						chan="32idbTXM:m34.EGU"
 						clr=54
 						bclr=3
 					}
@@ -16441,7 +13647,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idc02:m34.SET"
+						chan="32idbTXM:m34.SET"
 					}
 				}
 				rectangle {
@@ -16458,7 +13664,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idc02:m34.SET"
+						chan="32idbTXM:m34.SET"
 					}
 				}
 				"text update" {
@@ -16469,7 +13675,7 @@ composite {
 						height=17
 					}
 					monitor {
-						chan="32idc02:m34.RBV"
+						chan="32idbTXM:m34.RBV"
 						clr=54
 						bclr=3
 					}
@@ -16490,7 +13696,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idc02:m34.LVIO"
+						chan="32idbTXM:m34.LVIO"
 					}
 					textix="Soft limit"
 					align="horiz. centered"
@@ -16510,7 +13716,7 @@ composite {
 					}
 					"dynamic attribute" {
 						vis="if not zero"
-						chan="32idc02:m34_able.VAL"
+						chan="32idbTXM:m34_able.VAL"
 					}
 				}
 				"choice button" {
@@ -16521,7 +13727,7 @@ composite {
 						height=20
 					}
 					control {
-						chan="32idc02:m34.SET"
+						chan="32idbTXM:m34.SET"
 						clr=14
 						bclr=51
 					}
@@ -16535,7 +13741,7 @@ composite {
 						height=35
 					}
 					control {
-						chan="32idc02:m34_able.VAL"
+						chan="32idbTXM:m34_able.VAL"
 						clr=14
 						bclr=51
 					}
@@ -16589,24 +13795,7 @@ rectangle {
 }
 polyline {
 	object {
-		x=370
-		y=301
-		width=5
-		height=199
-	}
-	"basic attribute" {
-		clr=14
-		fill="outline"
-		width=5
-	}
-	points {
-		(372,303)
-		(372,497)
-	}
-}
-polyline {
-	object {
-		x=461
+		x=845
 		y=300
 		width=5
 		height=199
@@ -16617,8 +13806,8 @@ polyline {
 		width=5
 	}
 	points {
-		(463,302)
-		(463,496)
+		(847,302)
+		(847,496)
 	}
 }
 polyline {
@@ -16690,7 +13879,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idc02:m21.SET"
+				chan="32idbTXM:m21.SET"
 			}
 			textix="Calib:"
 		}
@@ -16702,7 +13891,7 @@ composite {
 				height=20
 			}
 			monitor {
-				chan="32idc02:m21.DESC"
+				chan="32idbTXM:m21.DESC"
 				clr=54
 				bclr=0
 			}
@@ -16723,7 +13912,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if zero"
-				chan="32idc02:m21.DMOV"
+				chan="32idbTXM:m21.DMOV"
 			}
 		}
 		rectangle {
@@ -16739,7 +13928,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idc02:m21.LVIO"
+				chan="32idbTXM:m21.LVIO"
 			}
 		}
 		rectangle {
@@ -16755,7 +13944,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idc02:m21_able.VAL"
+				chan="32idbTXM:m21_able.VAL"
 			}
 		}
 		rectangle {
@@ -16783,7 +13972,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if zero"
-				chan="32idc02:m21.DMOV"
+				chan="32idbTXM:m21.DMOV"
 			}
 			textix="Moving"
 			align="horiz. centered"
@@ -16801,7 +13990,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idc02:m21.SET"
+				chan="32idbTXM:m21.SET"
 			}
 			textix="Calibrate"
 			align="horiz. centered"
@@ -16814,7 +14003,7 @@ composite {
 				height=36
 			}
 			control {
-				chan="32idc02:m21.TWR"
+				chan="32idbTXM:m21.TWR"
 				clr=14
 				bclr=51
 			}
@@ -16829,7 +14018,7 @@ composite {
 				height=20
 			}
 			control {
-				chan="32idc02:m21.TWV"
+				chan="32idbTXM:m21.TWV"
 				clr=14
 				bclr=51
 			}
@@ -16844,7 +14033,7 @@ composite {
 				height=36
 			}
 			control {
-				chan="32idc02:m21.TWF"
+				chan="32idbTXM:m21.TWF"
 				clr=14
 				bclr=51
 			}
@@ -16859,7 +14048,7 @@ composite {
 				height=25
 			}
 			control {
-				chan="32idc02:m21.VAL"
+				chan="32idbTXM:m21.VAL"
 				clr=14
 				bclr=51
 			}
@@ -16878,7 +14067,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idc02:m21.LLS"
+				chan="32idbTXM:m21.LLS"
 			}
 		}
 		rectangle {
@@ -16893,7 +14082,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idc02:m21.HLS"
+				chan="32idbTXM:m21.HLS"
 			}
 		}
 		"text update" {
@@ -16904,7 +14093,7 @@ composite {
 				height=12
 			}
 			monitor {
-				chan="32idc02:m21.EGU"
+				chan="32idbTXM:m21.EGU"
 				clr=54
 				bclr=3
 			}
@@ -16926,7 +14115,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idc02:m21.SET"
+				chan="32idbTXM:m21.SET"
 			}
 		}
 		rectangle {
@@ -16943,7 +14132,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idc02:m21.SET"
+				chan="32idbTXM:m21.SET"
 			}
 		}
 		"text update" {
@@ -16954,7 +14143,7 @@ composite {
 				height=17
 			}
 			monitor {
-				chan="32idc02:m21.RBV"
+				chan="32idbTXM:m21.RBV"
 				clr=54
 				bclr=3
 			}
@@ -16975,7 +14164,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idc02:m21.LVIO"
+				chan="32idbTXM:m21.LVIO"
 			}
 			textix="Soft limit"
 			align="horiz. centered"
@@ -16995,7 +14184,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idc02:m21_able.VAL"
+				chan="32idbTXM:m21_able.VAL"
 			}
 		}
 		"choice button" {
@@ -17006,7 +14195,7 @@ composite {
 				height=20
 			}
 			control {
-				chan="32idc02:m21.SET"
+				chan="32idbTXM:m21.SET"
 				clr=14
 				bclr=51
 			}
@@ -17020,7 +14209,7 @@ composite {
 				height=35
 			}
 			control {
-				chan="32idc02:m21_able.VAL"
+				chan="32idbTXM:m21_able.VAL"
 				clr=14
 				bclr=51
 			}
@@ -17799,190 +14988,6 @@ composite {
 		}
 	}
 }
-rectangle {
-	object {
-		x=773
-		y=315
-		width=100
-		height=22
-	}
-	"basic attribute" {
-		clr=1
-	}
-}
-text {
-	object {
-		x=786
-		y=316
-		width=75
-		height=20
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="0 - 1D X"
-}
-rectangle {
-	object {
-		x=773
-		y=338
-		width=100
-		height=22
-	}
-	"basic attribute" {
-		clr=1
-	}
-}
-text {
-	object {
-		x=786
-		y=339
-		width=75
-		height=20
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="1 - 1D X"
-}
-rectangle {
-	object {
-		x=773
-		y=359
-		width=100
-		height=22
-	}
-	"basic attribute" {
-		clr=1
-	}
-}
-text {
-	object {
-		x=786
-		y=360
-		width=75
-		height=20
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="2 - 1D Y"
-}
-rectangle {
-	object {
-		x=773
-		y=382
-		width=100
-		height=22
-	}
-	"basic attribute" {
-		clr=1
-	}
-}
-text {
-	object {
-		x=786
-		y=383
-		width=75
-		height=20
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="3 - 1D Y"
-}
-rectangle {
-	object {
-		x=773
-		y=447
-		width=100
-		height=22
-	}
-	"basic attribute" {
-		clr=1
-	}
-}
-rectangle {
-	object {
-		x=773
-		y=468
-		width=100
-		height=22
-	}
-	"basic attribute" {
-		clr=1
-	}
-}
-rectangle {
-	object {
-		x=773
-		y=403
-		width=100
-		height=22
-	}
-	"basic attribute" {
-		clr=1
-	}
-}
-rectangle {
-	object {
-		x=773
-		y=426
-		width=100
-		height=22
-	}
-	"basic attribute" {
-		clr=1
-	}
-}
-text {
-	object {
-		x=786
-		y=404
-		width=75
-		height=20
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="4 - 2D"
-}
-text {
-	object {
-		x=786
-		y=427
-		width=75
-		height=20
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="5 - 2D"
-}
-text {
-	object {
-		x=786
-		y=469
-		width=75
-		height=20
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="7 - Fltr"
-}
-text {
-	object {
-		x=786
-		y=448
-		width=75
-		height=20
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="6 - Fltr"
-}
 text {
 	object {
 		x=39
@@ -18034,7 +15039,7 @@ text {
 "text entry" {
 	object {
 		x=1421
-		y=1020
+		y=353
 		width=80
 		height=25
 	}
@@ -18049,7 +15054,7 @@ text {
 text {
 	object {
 		x=1332
-		y=996
+		y=329
 		width=120
 		height=20
 	}
@@ -18062,7 +15067,7 @@ text {
 "message button" {
 	object {
 		x=1510
-		y=1020
+		y=353
 		width=40
 		height=23
 	}
@@ -18078,7 +15083,7 @@ text {
 "text update" {
 	object {
 		x=1333
-		y=1023
+		y=356
 		width=80
 		height=20
 	}
@@ -18093,7 +15098,7 @@ text {
 text {
 	object {
 		x=1473
-		y=995
+		y=328
 		width=60
 		height=20
 	}
@@ -18110,7 +15115,7 @@ text {
 }
 composite {
 	object {
-		x=850
+		x=959
 		y=1024
 		width=65
 		height=85
@@ -18119,13 +15124,13 @@ composite {
 	children {
 		"text entry" {
 			object {
-				x=850
+				x=959
 				y=1024
 				width=65
 				height=25
 			}
 			control {
-				chan="32idcMC:shaker:frequency.VAL"
+				chan="32idbShaker:shaker:frequency.VAL"
 				clr=14
 				bclr=51
 			}
@@ -18134,13 +15139,13 @@ composite {
 		}
 		"text entry" {
 			object {
-				x=850
+				x=959
 				y=1054
 				width=65
 				height=25
 			}
 			control {
-				chan="32idcMC:shaker:timePerPoint.VAL"
+				chan="32idbShaker:shaker:timePerPoint.VAL"
 				clr=14
 				bclr=51
 			}
@@ -18149,13 +15154,13 @@ composite {
 		}
 		"text entry" {
 			object {
-				x=850
+				x=959
 				y=1084
 				width=65
 				height=25
 			}
 			control {
-				chan="32idcMC:shaker:numPoints.VAL"
+				chan="32idbShaker:shaker:numPoints.VAL"
 				clr=14
 				bclr=51
 			}
@@ -18166,7 +15171,7 @@ composite {
 }
 composite {
 	object {
-		x=924
+		x=1033
 		y=1026
 		width=80
 		height=78
@@ -18175,7 +15180,7 @@ composite {
 	children {
 		text {
 			object {
-				x=924
+				x=1033
 				y=1026
 				width=80
 				height=18
@@ -18188,7 +15193,7 @@ composite {
 		}
 		text {
 			object {
-				x=924
+				x=1033
 				y=1056
 				width=80
 				height=18
@@ -18201,7 +15206,7 @@ composite {
 		}
 		text {
 			object {
-				x=924
+				x=1033
 				y=1086
 				width=80
 				height=18
@@ -18216,7 +15221,7 @@ composite {
 }
 text {
 	object {
-		x=1087
+		x=1196
 		y=1026
 		width=80
 		height=18
@@ -18229,7 +15234,7 @@ text {
 }
 text {
 	object {
-		x=1087
+		x=1196
 		y=1056
 		width=80
 		height=18
@@ -18242,7 +15247,7 @@ text {
 }
 text {
 	object {
-		x=1087
+		x=1196
 		y=1086
 		width=80
 		height=18
@@ -18255,7 +15260,7 @@ text {
 }
 composite {
 	object {
-		x=1014
+		x=1123
 		y=1024
 		width=65
 		height=85
@@ -18264,13 +15269,13 @@ composite {
 	children {
 		"text entry" {
 			object {
-				x=1014
+				x=1123
 				y=1024
 				width=65
 				height=25
 			}
 			control {
-				chan="32idcMC:shaker:A:ampMult.VAL"
+				chan="32idbShaker:shaker:A:ampMult.VAL"
 				clr=14
 				bclr=51
 			}
@@ -18279,13 +15284,13 @@ composite {
 		}
 		"text entry" {
 			object {
-				x=1014
+				x=1123
 				y=1054
 				width=65
 				height=25
 			}
 			control {
-				chan="32idcMC:shaker:A:ampOffset.VAL"
+				chan="32idbShaker:shaker:A:ampOffset.VAL"
 				clr=14
 				bclr=51
 			}
@@ -18294,13 +15299,13 @@ composite {
 		}
 		"text entry" {
 			object {
-				x=1014
+				x=1123
 				y=1084
 				width=65
 				height=25
 			}
 			control {
-				chan="32idcMC:shaker:A:phaseShift.VAL"
+				chan="32idbShaker:shaker:A:phaseShift.VAL"
 				clr=14
 				bclr=51
 			}
@@ -18311,7 +15316,7 @@ composite {
 }
 composite {
 	object {
-		x=1175
+		x=1284
 		y=1024
 		width=65
 		height=85
@@ -18320,13 +15325,13 @@ composite {
 	children {
 		"text entry" {
 			object {
-				x=1175
+				x=1284
 				y=1024
 				width=65
 				height=25
 			}
 			control {
-				chan="32idcMC:shaker:B:ampMult"
+				chan="32idbShaker:shaker:B:ampMult"
 				clr=14
 				bclr=51
 			}
@@ -18335,13 +15340,13 @@ composite {
 		}
 		"text entry" {
 			object {
-				x=1175
+				x=1284
 				y=1054
 				width=65
 				height=25
 			}
 			control {
-				chan="32idcMC:shaker:B:ampOffset.VAL"
+				chan="32idbShaker:shaker:B:ampOffset.VAL"
 				clr=14
 				bclr=51
 			}
@@ -18350,13 +15355,13 @@ composite {
 		}
 		"text entry" {
 			object {
-				x=1175
+				x=1284
 				y=1084
 				width=65
 				height=25
 			}
 			control {
-				chan="32idcMC:shaker:B:freqMult.VAL"
+				chan="32idbShaker:shaker:B:freqMult.VAL"
 				clr=14
 				bclr=51
 			}
@@ -18368,7 +15373,7 @@ composite {
 text {
 	object {
 		x=1371
-		y=960
+		y=293
 		width=120
 		height=25
 	}
@@ -18381,7 +15386,7 @@ text {
 composite {
 	object {
 		x=1249
-		y=983
+		y=316
 		width=375
 		height=160
 	}
@@ -18390,7 +15395,7 @@ composite {
 		rectangle {
 			object {
 				x=1249
-				y=983
+				y=316
 				width=375
 				height=160
 			}
@@ -18405,7 +15410,7 @@ composite {
 "text entry" {
 	object {
 		x=1332
-		y=1082
+		y=415
 		width=220
 		height=25
 	}
@@ -18420,7 +15425,7 @@ composite {
 "text entry" {
 	object {
 		x=1332
-		y=1111
+		y=444
 		width=220
 		height=25
 	}
@@ -18435,7 +15440,7 @@ composite {
 "choice button" {
 	object {
 		x=1460
-		y=1051
+		y=384
 		width=90
 		height=25
 	}
@@ -18449,7 +15454,7 @@ composite {
 text {
 	object {
 		x=1335
-		y=1059
+		y=392
 		width=120
 		height=16
 	}
@@ -18469,7 +15474,7 @@ text {
 	display[1] {
 		label="Focus 5x (Small)"
 		name="1_motors.adl"
-		args="P=32idc02:,M1=m11"
+		args="P=32idbTXM:,M1=m11"
 	}
 	clr=14
 	bclr=51
@@ -19097,7 +16102,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idc02:m11.SET"
+				chan="32idbTXM:nf:m1.SET"
 			}
 			textix="Calib:"
 		}
@@ -19109,7 +16114,7 @@ composite {
 				height=20
 			}
 			monitor {
-				chan="32idc02:m11.DESC"
+				chan="32idbTXM:nf:m1.DESC"
 				clr=54
 				bclr=0
 			}
@@ -19130,7 +16135,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if zero"
-				chan="32idc02:m11.DMOV"
+				chan="32idbTXM:nf:m1.DMOV"
 			}
 		}
 		rectangle {
@@ -19146,7 +16151,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idc02:m11.LVIO"
+				chan="32idbTXM:nf:m1.LVIO"
 			}
 		}
 		rectangle {
@@ -19162,7 +16167,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idc02:m11_able.VAL"
+				chan="32idbTXM:nf:m1_able.VAL"
 			}
 		}
 		rectangle {
@@ -19190,7 +16195,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if zero"
-				chan="32idc02:m11.DMOV"
+				chan="32idbTXM:nf:m1.DMOV"
 			}
 			textix="Moving"
 			align="horiz. centered"
@@ -19208,7 +16213,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idc02:m11.SET"
+				chan="32idbTXM:nf:m1.SET"
 			}
 			textix="Calibrate"
 			align="horiz. centered"
@@ -19221,7 +16226,7 @@ composite {
 				height=36
 			}
 			control {
-				chan="32idc02:m11.TWR"
+				chan="32idbTXM:nf:m1.TWR"
 				clr=14
 				bclr=51
 			}
@@ -19236,7 +16241,7 @@ composite {
 				height=20
 			}
 			control {
-				chan="32idc02:m11.TWV"
+				chan="32idbTXM:nf:m1.TWV"
 				clr=14
 				bclr=51
 			}
@@ -19251,7 +16256,7 @@ composite {
 				height=36
 			}
 			control {
-				chan="32idc02:m11.TWF"
+				chan="32idbTXM:nf:m1.TWF"
 				clr=14
 				bclr=51
 			}
@@ -19266,7 +16271,7 @@ composite {
 				height=25
 			}
 			control {
-				chan="32idc02:m11.VAL"
+				chan="32idbTXM:nf:m1.VAL"
 				clr=14
 				bclr=51
 			}
@@ -19285,7 +16290,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idc02:m11.LLS"
+				chan="32idbTXM:nf:m1.LLS"
 			}
 		}
 		rectangle {
@@ -19300,7 +16305,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idc02:m11.HLS"
+				chan="32idbTXM:nf:m1.HLS"
 			}
 		}
 		"text update" {
@@ -19311,7 +16316,7 @@ composite {
 				height=12
 			}
 			monitor {
-				chan="32idc02:m11.EGU"
+				chan="32idbTXM:nf:m1.EGU"
 				clr=54
 				bclr=3
 			}
@@ -19333,7 +16338,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idc02:m11.SET"
+				chan="32idbTXM:nf:m1.SET"
 			}
 		}
 		rectangle {
@@ -19350,7 +16355,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idc02:m11.SET"
+				chan="32idbTXM:nf:m1.SET"
 			}
 		}
 		"text update" {
@@ -19361,7 +16366,7 @@ composite {
 				height=17
 			}
 			monitor {
-				chan="32idc02:m11.RBV"
+				chan="32idbTXM:nf:m1.RBV"
 				clr=54
 				bclr=3
 			}
@@ -19382,7 +16387,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idc02:m11.LVIO"
+				chan="32idbTXM:nf:m1.LVIO"
 			}
 			textix="Soft limit"
 			align="horiz. centered"
@@ -19402,7 +16407,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idc02:m11_able.VAL"
+				chan="32idbTXM:nf:m1_able.VAL"
 			}
 		}
 		"choice button" {
@@ -19413,7 +16418,7 @@ composite {
 				height=20
 			}
 			control {
-				chan="32idc02:m11.SET"
+				chan="32idbTXM:nf:m1.SET"
 				clr=14
 				bclr=51
 			}
@@ -19427,364 +16432,7 @@ composite {
 				height=35
 			}
 			control {
-				chan="32idc02:m11_able.VAL"
-				clr=14
-				bclr=51
-			}
-		}
-	}
-}
-composite {
-	object {
-		x=1384
-		y=308
-		width=117
-		height=183
-	}
-	"composite name"=""
-	children {
-		text {
-			object {
-				x=1386
-				y=437
-				width=45
-				height=16
-			}
-			"basic attribute" {
-				clr=14
-				fill="outline"
-			}
-			textix="Calib:"
-		}
-		text {
-			object {
-				x=1385
-				y=436
-				width=45
-				height=16
-			}
-			"basic attribute" {
-				clr=30
-				fill="outline"
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idb:m27.SET"
-			}
-			textix="Calib:"
-		}
-		"text update" {
-			object {
-				x=1385
-				y=308
-				width=116
-				height=20
-			}
-			monitor {
-				chan="32idb:m27.DESC"
-				clr=54
-				bclr=0
-			}
-			align="horiz. centered"
-			limits {
-			}
-		}
-		rectangle {
-			object {
-				x=1391
-				y=364
-				width=104
-				height=31
-			}
-			"basic attribute" {
-				clr=60
-				width=2
-			}
-			"dynamic attribute" {
-				vis="if zero"
-				chan="32idb:m27.DMOV"
-			}
-		}
-		rectangle {
-			object {
-				x=1391
-				y=364
-				width=104
-				height=31
-			}
-			"basic attribute" {
-				clr=30
-				width=2
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idb:m27.LVIO"
-			}
-		}
-		rectangle {
-			object {
-				x=1391
-				y=364
-				width=104
-				height=31
-			}
-			"basic attribute" {
-				clr=14
-				width=2
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idb:m27_able.VAL"
-			}
-		}
-		rectangle {
-			object {
-				x=1385
-				y=395
-				width=116
-				height=40
-			}
-			"basic attribute" {
-				clr=14
-				width=3
-			}
-		}
-		text {
-			object {
-				x=1413
-				y=419
-				width=60
-				height=15
-			}
-			"basic attribute" {
-				clr=60
-				fill="outline"
-			}
-			"dynamic attribute" {
-				vis="if zero"
-				chan="32idb:m27.DMOV"
-			}
-			textix="Moving"
-			align="horiz. centered"
-		}
-		text {
-			object {
-				x=1413
-				y=425
-				width=60
-				height=10
-			}
-			"basic attribute" {
-				clr=30
-				fill="outline"
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idb:m27.SET"
-			}
-			textix="Calibrate"
-			align="horiz. centered"
-		}
-		"message button" {
-			object {
-				x=1387
-				y=397
-				width=25
-				height=36
-			}
-			control {
-				chan="32idb:m27.TWR"
-				clr=14
-				bclr=51
-			}
-			label="<"
-			press_msg="1"
-		}
-		"text entry" {
-			object {
-				x=1413
-				y=397
-				width=60
-				height=20
-			}
-			control {
-				chan="32idb:m27.TWV"
-				clr=14
-				bclr=51
-			}
-			limits {
-			}
-		}
-		"message button" {
-			object {
-				x=1474
-				y=397
-				width=25
-				height=36
-			}
-			control {
-				chan="32idb:m27.TWF"
-				clr=14
-				bclr=51
-			}
-			label=">"
-			press_msg="1"
-		}
-		"text entry" {
-			object {
-				x=1396
-				y=367
-				width=98
-				height=25
-			}
-			control {
-				chan="32idb:m27.VAL"
-				clr=14
-				bclr=51
-			}
-			limits {
-			}
-		}
-		rectangle {
-			object {
-				x=1385
-				y=343
-				width=6
-				height=50
-			}
-			"basic attribute" {
-				clr=20
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idb:m27.LLS"
-			}
-		}
-		"text update" {
-			object {
-				x=1385
-				y=330
-				width=116
-				height=12
-			}
-			monitor {
-				chan="32idb:m27.EGU"
-				clr=54
-				bclr=3
-			}
-			align="horiz. centered"
-			limits {
-			}
-		}
-		rectangle {
-			object {
-				x=1392
-				y=339
-				width=102
-				height=26
-			}
-			"basic attribute" {
-				clr=14
-				fill="outline"
-				width=2
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idb:m27.SET"
-			}
-		}
-		rectangle {
-			object {
-				x=1394
-				y=341
-				width=98
-				height=21
-			}
-			"basic attribute" {
-				clr=30
-				fill="outline"
-				width=2
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idb:m27.SET"
-			}
-		}
-		"text update" {
-			object {
-				x=1396
-				y=343
-				width=94
-				height=17
-			}
-			monitor {
-				chan="32idb:m27.RBV"
-				clr=54
-				bclr=3
-			}
-			align="horiz. centered"
-			limits {
-			}
-		}
-		text {
-			object {
-				x=1413
-				y=417
-				width=60
-				height=10
-			}
-			"basic attribute" {
-				clr=30
-				fill="outline"
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idb:m27.LVIO"
-			}
-			textix="Soft limit"
-			align="horiz. centered"
-		}
-		rectangle {
-			object {
-				x=1391
-				y=364
-				width=104
-				height=31
-			}
-			"basic attribute" {
-				clr=20
-				style="dash"
-				fill="outline"
-				width=2
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="32idb:m27_able.VAL"
-			}
-		}
-		"choice button" {
-			object {
-				x=1430
-				y=435
-				width=71
-				height=20
-			}
-			control {
-				chan="32idb:m27.SET"
-				clr=14
-				bclr=51
-			}
-			stacking="column"
-		}
-		"choice button" {
-			object {
-				x=1384
-				y=456
-				width=115
-				height=35
-			}
-			control {
-				chan="32idb:m27_able.VAL"
+				chan="32idbTXM:nf:m1_able.VAL"
 				clr=14
 				bclr=51
 			}
@@ -19826,7 +16474,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m5.SET"
+				chan="32idbTXM:mcs2:c1:m5.SET"
 			}
 			textix="Calib:"
 		}
@@ -19838,7 +16486,7 @@ composite {
 				height=20
 			}
 			monitor {
-				chan="32idcMCS2:c1:m5.DESC"
+				chan="32idbTXM:mcs2:c1:m5.DESC"
 				clr=54
 				bclr=0
 			}
@@ -19859,7 +16507,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if zero"
-				chan="32idcMCS2:c1:m5.DMOV"
+				chan="32idbTXM:mcs2:c1:m5.DMOV"
 			}
 		}
 		rectangle {
@@ -19875,7 +16523,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m5.LVIO"
+				chan="32idbTXM:mcs2:c1:m5.LVIO"
 			}
 		}
 		rectangle {
@@ -19891,7 +16539,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m5_able.VAL"
+				chan="32idbTXM:mcs2:c1:m5_able.VAL"
 			}
 		}
 		rectangle {
@@ -19919,7 +16567,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if zero"
-				chan="32idcMCS2:c1:m5.DMOV"
+				chan="32idbTXM:mcs2:c1:m5.DMOV"
 			}
 			textix="Moving"
 			align="horiz. centered"
@@ -19937,7 +16585,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m5.SET"
+				chan="32idbTXM:mcs2:c1:m5.SET"
 			}
 			textix="Calibrate"
 			align="horiz. centered"
@@ -19950,7 +16598,7 @@ composite {
 				height=36
 			}
 			control {
-				chan="32idcMCS2:c1:m5.TWR"
+				chan="32idbTXM:mcs2:c1:m5.TWR"
 				clr=14
 				bclr=51
 			}
@@ -19965,7 +16613,7 @@ composite {
 				height=20
 			}
 			control {
-				chan="32idcMCS2:c1:m5.TWV"
+				chan="32idbTXM:mcs2:c1:m5.TWV"
 				clr=14
 				bclr=51
 			}
@@ -19980,7 +16628,7 @@ composite {
 				height=36
 			}
 			control {
-				chan="32idcMCS2:c1:m5.TWF"
+				chan="32idbTXM:mcs2:c1:m5.TWF"
 				clr=14
 				bclr=51
 			}
@@ -19995,7 +16643,7 @@ composite {
 				height=25
 			}
 			control {
-				chan="32idcMCS2:c1:m5.VAL"
+				chan="32idbTXM:mcs2:c1:m5.VAL"
 				clr=14
 				bclr=51
 			}
@@ -20014,7 +16662,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m5.LLS"
+				chan="32idbTXM:mcs2:c1:m5.LLS"
 			}
 		}
 		rectangle {
@@ -20029,7 +16677,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m5.HLS"
+				chan="32idbTXM:mcs2:c1:m5.HLS"
 			}
 		}
 		"text update" {
@@ -20040,7 +16688,7 @@ composite {
 				height=12
 			}
 			monitor {
-				chan="32idcMCS2:c1:m5.EGU"
+				chan="32idbTXM:mcs2:c1:m5.EGU"
 				clr=54
 				bclr=3
 			}
@@ -20062,7 +16710,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m5.SET"
+				chan="32idbTXM:mcs2:c1:m5.SET"
 			}
 		}
 		rectangle {
@@ -20079,7 +16727,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m5.SET"
+				chan="32idbTXM:mcs2:c1:m5.SET"
 			}
 		}
 		"text update" {
@@ -20090,7 +16738,7 @@ composite {
 				height=17
 			}
 			monitor {
-				chan="32idcMCS2:c1:m5.RBV"
+				chan="32idbTXM:mcs2:c1:m5.RBV"
 				clr=54
 				bclr=3
 			}
@@ -20111,7 +16759,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m5.LVIO"
+				chan="32idbTXM:mcs2:c1:m5.LVIO"
 			}
 			textix="Soft limit"
 			align="horiz. centered"
@@ -20131,7 +16779,7 @@ composite {
 			}
 			"dynamic attribute" {
 				vis="if not zero"
-				chan="32idcMCS2:c1:m5_able.VAL"
+				chan="32idbTXM:mcs2:c1:m5_able.VAL"
 			}
 		}
 		"choice button" {
@@ -20142,7 +16790,7 @@ composite {
 				height=20
 			}
 			control {
-				chan="32idcMCS2:c1:m5.SET"
+				chan="32idbTXM:mcs2:c1:m5.SET"
 				clr=14
 				bclr=51
 			}
@@ -20156,7 +16804,7 @@ composite {
 				height=35
 			}
 			control {
-				chan="32idcMCS2:c1:m5_able.VAL"
+				chan="32idbTXM:mcs2:c1:m5_able.VAL"
 				clr=14
 				bclr=51
 			}
@@ -20166,7 +16814,7 @@ composite {
 "related display" {
 	object {
 		x=1566
-		y=1115
+		y=448
 		width=50
 		height=20
 	}
@@ -20177,4 +16825,32 @@ composite {
 	}
 	clr=14
 	bclr=51
+}
+rectangle {
+	object {
+		x=716
+		y=300
+		width=482
+		height=200
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+		width=5
+	}
+}
+"shell command" {
+	object {
+		x=870
+		y=1114
+		width=35
+		height=20
+	}
+	command[0] {
+		label="Shaker"
+		name="/net/s32dserv/xorApps/epics/synApps_6_3/ioc/32idbShaker/start_MEDM_32idbShaker"
+	}
+	clr=0
+	bclr=17
+	label="-More"
 }

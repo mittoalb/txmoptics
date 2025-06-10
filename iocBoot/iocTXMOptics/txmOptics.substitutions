@@ -10,21 +10,24 @@ DETECTOR_X, DETECTOR_Y, DETECTOR_Z,
 ZONEPLATE_X, ZONEPLATE_Y, ZONEPLATE_Z, PHASERING_X, PHASERING_Y, 
 FURNACE_X, FURNACE_Y, FURNACE_Z, 
 IOC0, IOC1, IOC2, IOC3, IOC4, IOC5, 
-FILE_ALL_PVS, OVERLAY, SHUTTER_B_CLOSE, SHUTTER_B_STATUS, 
+OVERLAY, SHUTTER_B_CLOSE, SHUTTER_B_STATUS, 
 KOHZUMODE, USENERGY, USENERGYRBV, BRAGG, BRAGGRBV, BRAGGMOVE,
-EN_FILE1, EN_FILE2,
+TOP_X, TOP_Z, ROTARY,
+FILE_ALL_PVS, EN_FILE1, EN_FILE2
 }
-{32id:, TXMOptics:, 32idcSP1:, ACIS:ShutterPermit, 1, 32idbTXM:uniblitz:control, 0,
+{
+32id:, TXMOptics:, 32idbSP1:, ACIS:ShutterPermit, 1, 32idbTXM:uniblitz:control, 0,
 32idbTXM:uniblitz:control, 1, 32idbTXM:uniblitz:status, 
 32idbBPM:, 32idbShaker:, x,  
-x,  32idbTXM:mcs2:c1:m6, 32idbTXM:mcs2:c1:m3, 32idbTXM:mcs2:c1:m4, 32idbTXM:mcs2:c1:m5, 
-x, 32idbTXM:mcs2:c1:m2, x,  32idbTXM:mcs2:c1:m1, x, 
+32idbTXM:mcs2:c1:m9, 32idbTXM:mcs2:c1:m6, 32idbTXM:mcs2:c1:m3, 32idbTXM:mcs2:c1:m4, 32idbTXM:mcs2:c1:m5, 
+32idbTXM:mcs2:c1:m10, 32idbTXM:mcs2:c1:m2, 32idbSoft:m6, 32idbTXM:mcs2:c1:m1, x, 
 x, x, x,
 32idbTXM:mcs:c1:m1, 32idbTXM:mcs:c1:m2, 32idcTXM:mcs:c1:m3, x, x, 
 x, x, x, 
-32idbTXM:, 32idPLC:, 32idb:, x, x, 
-energy1.txt, 32idcSP1:Over1:, 32idb:rshtrB:Close.PROC, PB:32ID:STA_B_SBS_CLSD_PL, 
+32idbTXM:, 32idPLC:, 32idb:, x, x, x,
+32idcSP1:Over1:, 32idb:rshtrB:Close.PROC, PB:32ID:STA_B_SBS_CLSD_PL, 
 32ida:KohzuModeBO, 32id:ID32us_energy, ID32us:Energy, 32ida:BraggEAO, 32ida:BraggERdbkAO, 32ida:KohzuPutBO,
-energies1.txt, energies2.txt,
+x, x, x,
+energy1.txt, energies1.txt, energies2.txt
 }
 }

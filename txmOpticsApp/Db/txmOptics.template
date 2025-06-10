@@ -16,13 +16,9 @@ record(stringout, "$(P)$(R)OverlayPluginPVPrefix")
 }
 
 ##################################################
-# CRL Relays, Valves PLC, Shaker and BPM PV Prefix
+# Valves PLC, Shaker and BPM PV Prefix
 ##################################################
 
-record(stringout, "$(P)$(R)CRLRelaysPVPrefix")
-{
-   field(VAL,  "$(CRL_RELAYS)")
-}
 
 record(stringout, "$(P)$(R)ValvesPLCPVPrefix")
 {
@@ -42,26 +38,6 @@ record(stringout, "$(P)$(R)BPMPVPrefix")
 ###################
 # TXM Optics motors
 ###################
-
-record(stringout, "$(P)$(R)CRLXPVName")
-{
-   field(VAL,  "$(CRL_X)")
-}
-
-record(stringout, "$(P)$(R)CRLYPVName")
-{
-   field(VAL,  "$(CRL_Y)")
-}
-
-record(stringout, "$(P)$(R)CRLPitchPVName")
-{
-   field(VAL,  "$(CRL_PITCH)")
-}
-
-record(stringout, "$(P)$(R)CRLYawPVName")
-{
-   field(VAL,  "$(CRL_YAW)")
-}
 
 record(stringout, "$(P)$(R)DiffuserXPVName")
 {
@@ -184,17 +160,6 @@ record(busy, "$(P)$(R)MoveAllOut")
    field(ONAM, "Move")
 }
 
-record(busy, "$(P)$(R)MoveCRLIn")
-{
-   field(ZNAM, "Done")
-   field(ONAM, "Move")
-}
-
-record(busy, "$(P)$(R)MoveCRLOut")
-{
-   field(ZNAM, "Done")
-   field(ONAM, "Move")
-}
 
 record(busy, "$(P)$(R)MoveDiffuserIn")
 {
@@ -373,54 +338,6 @@ record(ao, "$(P)$(R)ExposureTimeOut")
 ###################
 # Optics In/Out Use
 ###################
-record(bo, "$(P)$(R)CRLRelaysY0InOutUse")
-{
-   field(ZNAM, "No")
-   field(ONAM, "Yes")
-}
-
-record(bo, "$(P)$(R)CRLRelaysY1InOutUse")
-{
-   field(ZNAM, "No")
-   field(ONAM, "Yes")
-}
-
-record(bo, "$(P)$(R)CRLRelaysY2InOutUse")
-{
-   field(ZNAM, "No")
-   field(ONAM, "Yes")
-}
-
-record(bo, "$(P)$(R)CRLRelaysY3InOutUse")
-{
-   field(ZNAM, "No")
-   field(ONAM, "Yes")
-}
-
-record(bo, "$(P)$(R)CRLRelaysY4InOutUse")
-{
-   field(ZNAM, "No")
-   field(ONAM, "Yes")
-}
-
-record(bo, "$(P)$(R)CRLRelaysY5InOutUse")
-{
-   field(ZNAM, "No")
-   field(ONAM, "Yes")
-}
-
-record(bo, "$(P)$(R)CRLRelaysY6InOutUse")
-{
-   field(ZNAM, "No")
-   field(ONAM, "Yes")
-}
-
-record(bo, "$(P)$(R)CRLRelaysY7InOutUse")
-{
-   field(ZNAM, "No")
-   field(ONAM, "Yes")
-}
-
 record(bo, "$(P)$(R)DiffuserInOutUse")
 {
    field(ZNAM, "No")

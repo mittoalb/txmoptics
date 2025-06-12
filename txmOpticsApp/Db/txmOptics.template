@@ -209,13 +209,13 @@ record(busy, "$(P)$(R)MoveCondenserOut")
    field(ONAM, "Move")
 }
 
-record(busy, "$(P)$(R)MoveZonePlateInY")
+record(busy, "$(P)$(R)MoveZonePlateIn")
 {
    field(ZNAM, "Done")
    field(ONAM, "Move")
 }
 
-record(busy, "$(P)$(R)MoveZonePlateOutY")
+record(busy, "$(P)$(R)MoveZonePlateOut")
 {
    field(ZNAM, "Done")
    field(ONAM, "Move")

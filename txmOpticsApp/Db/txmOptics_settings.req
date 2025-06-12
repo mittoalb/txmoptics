@@ -80,6 +80,12 @@ $(P)$(R)CondenserInY
 $(P)$(R)CondenserOutY
 $(P)$(R)ZonePlateInY
 $(P)$(R)ZonePlateOutY
+$(P)$(R)PinholeInX
+$(P)$(R)PinholeOutX
+$(P)$(R)CondenserInX
+$(P)$(R)CondenserOutX
+$(P)$(R)ZonePlateInX
+$(P)$(R)ZonePlateOutX
 $(P)$(R)PhaseRingInY
 $(P)$(R)PhaseRingOutY
 $(P)$(R)FurnaceInY

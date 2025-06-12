@@ -177,3 +177,4 @@ auto_positions.sav*
 # custom
 *.txt
 logs.*
+.iocsh_history

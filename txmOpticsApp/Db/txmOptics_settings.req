@@ -15,9 +15,8 @@ $(P)$(R)CameraPVPrefix
 $(P)$(R)OverlayPluginPVPrefix
 
 ##################################################
-# CRL Relays, Valves PLC, Shaker and BPM PV Prefix
+# Valves PLC, Shaker and BPM PV Prefix
 ##################################################
-$(P)$(R)CRLRelaysPVPrefix
 $(P)$(R)ValvesPLCPVPrefix
 $(P)$(R)ShakerPVPrefix
 $(P)$(R)BPMPVPrefix
@@ -25,10 +24,6 @@ $(P)$(R)BPMPVPrefix
 ###################
 # TXM Optics motors
 ###################
-$(P)$(R)CRLXPVName
-$(P)$(R)CRLYPVName
-$(P)$(R)CRLPitchPVName
-$(P)$(R)CRLYawPVName
 $(P)$(R)DiffuserXPVName
 $(P)$(R)BeamstopXPVName
 $(P)$(R)BeamstopYPVName
@@ -54,8 +49,6 @@ $(P)$(R)FurnaceZPVName
 ###################################
 # Optics control via Channel Access
 ###################################
-#controlPV $(P)$(R)MoveCRLIn
-#controlPV $(P)$(R)MoveCRLOut
 #controlPV $(P)$(R)MoveDiffuserIn
 #controlPV $(P)$(R)MoveDiffuserOut
 #controlPV $(P)$(R)MoveBeamstopIn
@@ -98,14 +91,6 @@ $(P)$(R)ExposureTimeOut
 ###################
 # Optics In/Out Use
 ###################
-$(P)$(R)CRLRelaysY0InOutUse
-$(P)$(R)CRLRelaysY1InOutUse
-$(P)$(R)CRLRelaysY2InOutUse
-$(P)$(R)CRLRelaysY3InOutUse
-$(P)$(R)CRLRelaysY4InOutUse
-$(P)$(R)CRLRelaysY5InOutUse
-$(P)$(R)CRLRelaysY6InOutUse
-$(P)$(R)CRLRelaysY7InOutUse
 $(P)$(R)DiffuserInOutUse
 $(P)$(R)BeamstopInOutUse
 $(P)$(R)PinholeInOutUse

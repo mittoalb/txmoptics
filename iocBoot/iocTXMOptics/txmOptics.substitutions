@@ -18,10 +18,10 @@ FILE_ALL_PVS, EN_FILE1, EN_FILE2
 {
 32id:, TXMOptics:, 32idbSP1:, ACIS:ShutterPermit, 1, 32idbTXM:uniblitz:control, 0,
 32idbTXM:uniblitz:control, 1, 32idbTXM:uniblitz:status, 
-32idbBPM:, 32idbShaker:, x,  
+32idbBPM:, 32idbShaker:, 32idbSoft:PLC1,  
 32idbTXM:mcs2:c1:m9, 32idbTXM:mcs2:c1:m6, 32idbTXM:mcs2:c1:m3, 32idbTXM:mcs2:c1:m4, 32idbTXM:mcs2:c1:m5, 
 32idbTXM:mcs2:c1:m10, 32idbTXM:mcs2:c1:m2, 32idbSoft:m6, 32idbTXM:mcs2:c1:m1, x, 
-x, x, x,
+32idbSoft:m3, 32idbSoft:m4, 32idbSoft:m1,
 32idbTXM:mcs:c1:m1, 32idbTXM:mcs:c1:m2, 32idcTXM:mcs:c1:m3, x, x, 
 x, x, x, 
 32idbTXM:, 32idPLC:, 32idb:, x, x, x,

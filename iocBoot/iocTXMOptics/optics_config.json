@@ -1,0 +1,99 @@
+{
+  "zone_plates": {
+    "60nm ZP": {
+      "drn": 60,
+      "diameter": 180,
+      "smallest_feature": 30,
+      "efficiency": 20,
+      "thickness": 500
+    },
+    "50nm ZP": {
+      "drn": 50,
+      "diameter": 180,
+      "smallest_feature": 25,
+      "efficiency": 25,
+      "thickness": 500
+    },
+    "40nm ZP": {
+      "drn": 40,
+      "diameter": 180,
+      "smallest_feature": 20,
+      "efficiency": 30,
+      "thickness": 500
+    },
+    "30nm ZP": {
+      "drn": 30,
+      "diameter": 300,
+      "smallest_feature": 30,
+      "efficiency": 35,
+      "thickness": 500
+    },
+    "16nm ZP": {
+      "drn": 16,
+      "diameter": 150,
+      "smallest_feature": 16,
+      "efficiency": 35,
+      "thickness": 500
+    }
+  },
+  "condensers": {
+    "Sigray": {
+      "source_dist": 70,
+      "inner_dia": 450,
+      "outer_dia": 750,
+      "length": 80,
+      "focal_length": 43.2,
+      "na_tip": 5.208,
+      "position_offset": 100
+    },
+    "Sigray2": {
+      "source_dist": 35,
+      "inner_dia": 475,
+      "outer_dia": 749,
+      "length": 145,
+      "focal_length": 96.9,
+      "na_tip": 2.451,
+      "position_offset": 150
+    }
+  },
+  "cameras": {
+    "ORX-10G-310S9M": {
+      "pixel_size": 3.45,
+      "pixels_v": 6464,
+      "pixels_h": 4852,
+      "scintillator": "GGG:Ce",
+      "efficiency": 15
+    },
+    "Generic Camera": {
+      "pixel_size": 5.0,
+      "pixels_v": 1024,
+      "pixels_h": 1024,
+      "scintillator": "CsI:Tl",
+      "efficiency": 10
+    }
+  },
+  "optical_magnifications": {
+    "2x Objective": {
+      "magnification": 2.0,
+      "na": 0.055,
+      "working_distance": 31.0
+    },
+    "5x Objective": {
+      "magnification": 5.0,
+      "na": 0.13,
+      "working_distance": 17.0
+    },
+    "9x Objective": {
+      "magnification": 9.0,
+      "na": 0.28,
+      "working_distance": 34.0
+    }
+  },
+  "user_parameters": {
+    "camera_distance": 3500.0,
+    "binning": 2,
+    "exposure_time": 0.001,
+    "sample_detector_distance": 3500.0,
+    "beam_current": 200.0
+  }
+}

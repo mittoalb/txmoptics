@@ -522,9 +522,9 @@ record(stringout, "$(P)$(R)GAPputEnergyPVName")
    field(VAL,  "$(USENERGY)")
 }
 
-record(stringout, "$(P)$(R)GAPputEnergyRBVPVName")
+record(stringout, "$(P)$(R)GAPputEnergyStartPVName")
 {
-   field(VAL,  "$(USENERGYRBV)")
+   field(VAL,  "$(USENERGYSTART)")
 }
 
 record(stringout, "$(P)$(R)DCMputEnergyPVName")

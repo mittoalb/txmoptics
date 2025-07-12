@@ -150,7 +150,7 @@ $(P)$(R)EnergyCalibrationFileOne
 $(P)$(R)EnergyCalibrationFileTwo
 $(P)$(R)DCMmvtPVName
 $(P)$(R)GAPputEnergyPVName
-$(P)$(R)GAPputEnergyRBVPVName
+$(P)$(R)GAPputEnergyStartPVName
 $(P)$(R)DCMputEnergyPVName
 $(P)$(R)DCMputEnergyRBVPVName
 $(P)$(R)DCMmoveEnergyPVName

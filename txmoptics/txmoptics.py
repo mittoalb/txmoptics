@@ -124,6 +124,7 @@ class TXMOptics():
         for epics_pv in ('MovePhaseRingIn', 'MovePhaseRingOut', 'MoveDiffuserIn',
                          'MoveDiffuserOut', 'MoveBeamstopIn', 'MoveBeamstopOut', 'MovePinholeIn', 'MovePinholeOut',
                          'MoveCondenserIn', 'MoveCondenserOut', 'MoveZonePlateIn', 'MoveZonePlateOut', 'MoveFurnaceIn', 'MoveFurnaceOut',
+                         'MoveSampleIn','MoveSampleOut',
                          'MoveAllIn', 'MoveAllOut', 'AllStop', 'SaveAllPVs', 'LoadAllPVs', 'CrossSelect', 'EnergySet', 'Crop'):
             if epics_pv in self.epics_pvs:
                 self.epics_pvs[epics_pv].put(0)
@@ -310,6 +311,12 @@ class TXMOptics():
         elif (pvname.find('MoveZonePlateOut') != -1) and (value == 1):
             thread = threading.Thread(target=self.move_zoneplate_out, args=())
             thread.start()
+        elif (pvname.find('MoveSampleIn') != -1) and (value == 1):
+            thread = threading.Thread(target=self.move_sample_in, args=())
+            thread.start()
+        elif (pvname.find('MoveSampleOut') != -1) and (value == 1):
+            thread = threading.Thread(target=self.move_sample_out, args=())
+            thread.start()            
         elif (pvname.find('MoveFurnaceIn') != -1) and (value == 1):
             thread = threading.Thread(target=self.move_furnace_in, args=())
             thread.start()
@@ -509,6 +516,35 @@ class TXMOptics():
         if 'MovePhaseRingOut' in self.epics_pvs:
             self.epics_pvs['MovePhaseRingOut'].put('Done')
 
+    def move_sample_in(self):
+        """Moves the sample in.
+        """
+        if('SampleInOutUse' in self.epics_pvs and self.epics_pvs['SampleInOutUse'].value):
+            if 'SampleInX' in self.epics_pvs and 'SampleX' in self.epics_pvs:
+                position = self.epics_pvs['SampleInX'].value
+                self.epics_pvs['SampleX'].put(position, wait=True)
+            if 'SampleInZ' in self.epics_pvs and 'SampleZ' in self.epics_pvs:
+                position = self.epics_pvs['SampleInZ'].value
+                self.epics_pvs['SampleZ'].put(position, wait=True)
+            
+        if 'MoveSampleIn' in self.epics_pvs:
+            self.epics_pvs['MoveSampleIn'].put('Done')
+            
+    def move_sample_out(self):
+        """Moves the sample out.
+        """
+        if('SampleInOutUse' in self.epics_pvs and self.epics_pvs['SampleInOutUse'].value):
+            if 'SampleOutX' in self.epics_pvs and 'SampleX' in self.epics_pvs:
+                position = self.epics_pvs['SampleOutX'].value
+                self.epics_pvs['SampleX'].put(position, wait=True)
+            if 'SampleOutZ' in self.epics_pvs and 'SampleZ' in self.epics_pvs:
+                position = self.epics_pvs['SampleOutZ'].value
+                self.epics_pvs['SampleZ'].put(position, wait=True)
+            
+        if 'MoveSampleOut' in self.epics_pvs:
+            self.epics_pvs['MoveSampleOut'].put('Done')            
+
+
     def move_furnace_in(self):
         """Moves the furnace in.
         """
@@ -662,7 +698,7 @@ class TXMOptics():
         
         # read adl file
         try:
-            with open('/home/beams/USERTXM/epics/synApps/support/txmoptics/txmOpticsApp/op/adl/txm_main.adl','r') as fid:    
+            with open('/home/beams/USERTXM/epics/synApps/support/txmoptics/txmOpticsApp/op/adl/txm_main_071225.adl','r') as fid:    
                 s = fid.read()
         except FileNotFoundError:
             print("ADL file not found, skipping PV extraction")

@@ -1,0 +1,2197 @@
+
+file {
+	name="/home/beams19/USERTXM/epics/synApps/support/txmoptics/txmOpticsApp/op/adl/txmOptics_extended_071225.adl"
+	version=030111
+}
+display {
+	object {
+		x=1304
+		y=128
+		width=1052
+		height=1105
+	}
+	clr=14
+	bclr=4
+	cmap=""
+	gridSpacing=5
+	gridOn=0
+	snapToGrid=0
+}
+"color map" {
+	ncolors=65
+	colors {
+		ffffff,
+		ececec,
+		dadada,
+		c8c8c8,
+		bbbbbb,
+		aeaeae,
+		9e9e9e,
+		919191,
+		858585,
+		787878,
+		696969,
+		5a5a5a,
+		464646,
+		2d2d2d,
+		000000,
+		00d800,
+		1ebb00,
+		339900,
+		2d7f00,
+		216c00,
+		fd0000,
+		de1309,
+		be190b,
+		a01207,
+		820400,
+		5893ff,
+		597ee1,
+		4b6ec7,
+		3a5eab,
+		27548d,
+		fbf34a,
+		f9da3c,
+		eeb62b,
+		e19015,
+		cd6100,
+		ffb0ff,
+		d67fe2,
+		ae4ebc,
+		8b1a96,
+		610a75,
+		a4aaff,
+		8793e2,
+		6a73c1,
+		4d52a4,
+		343386,
+		c7bb6d,
+		b79d5c,
+		a47e3c,
+		7d5627,
+		58340f,
+		99ffff,
+		73dfff,
+		4ea5f9,
+		2a63e4,
+		0a00b8,
+		ebf1b5,
+		d4db9d,
+		bbc187,
+		a6a462,
+		8b8239,
+		73ff6b,
+		52da3b,
+		3cb420,
+		289315,
+		1a7309,
+	}
+}
+rectangle {
+	object {
+		x=0
+		y=518
+		width=1050
+		height=30
+	}
+	"basic attribute" {
+		clr=2
+	}
+}
+rectangle {
+	object {
+		x=0
+		y=374
+		width=1050
+		height=30
+	}
+	"basic attribute" {
+		clr=2
+	}
+}
+rectangle {
+	object {
+		x=0
+		y=778
+		width=1050
+		height=30
+	}
+	"basic attribute" {
+		clr=2
+	}
+}
+rectangle {
+	object {
+		x=0
+		y=30
+		width=1050
+		height=30
+	}
+	"basic attribute" {
+		clr=2
+	}
+}
+text {
+	object {
+		x=215
+		y=776
+		width=600
+		height=30
+	}
+	"basic attribute" {
+		clr=54
+	}
+	textix="$(P)$(R)   Optics"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=263
+		y=936
+		width=160
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Tube length (mm)"
+	align="horiz. right"
+}
+text {
+	object {
+		x=253
+		y=811
+		width=170
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Scintillator type"
+	align="horiz. right"
+}
+text {
+	object {
+		x=163
+		y=836
+		width=260
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Scint. thickness (microns)"
+	align="horiz. right"
+}
+text {
+	object {
+		x=163
+		y=861
+		width=260
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Image pixel size (nm)"
+	align="horiz. right"
+}
+text {
+	object {
+		x=133
+		y=886
+		width=290
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Detector pixel size (microns)"
+	align="horiz. right"
+}
+text {
+	object {
+		x=263
+		y=911
+		width=160
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Camera objective"
+	align="horiz. right"
+}
+"text entry" {
+	object {
+		x=428
+		y=836
+		width=230
+		height=20
+	}
+	control {
+		chan="$(P)$(R)ScintillatorThickness"
+		clr=14
+		bclr=51
+	}
+	format="string"
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=428
+		y=811
+		width=230
+		height=20
+	}
+	control {
+		chan="$(P)$(R)ScintillatorType"
+		clr=14
+		bclr=51
+	}
+	format="string"
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=428
+		y=886
+		width=230
+		height=20
+	}
+	control {
+		chan="$(P)$(R)DetectorPixelSize"
+		clr=14
+		bclr=51
+	}
+	format="string"
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=428
+		y=911
+		width=230
+		height=20
+	}
+	control {
+		chan="$(P)$(R)CameraObjective"
+		clr=14
+		bclr=51
+	}
+	format="string"
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=428
+		y=936
+		width=230
+		height=20
+	}
+	control {
+		chan="$(P)$(R)CameraTubeLength"
+		clr=14
+		bclr=51
+	}
+	format="string"
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=428
+		y=861
+		width=230
+		height=20
+	}
+	control {
+		chan="$(P)$(R)ImagePixelSize"
+		clr=14
+		bclr=51
+	}
+	format="string"
+	limits {
+	}
+}
+"related display" {
+	object {
+		x=154
+		y=2
+		width=50
+		height=20
+	}
+	display[0] {
+		label="Epics PV Names"
+		name="txmOpticsEPICS_PVs.adl"
+		args="P=$(P), R=$(R)"
+	}
+	clr=14
+	bclr=51
+}
+text {
+	object {
+		x=9
+		y=4
+		width=140
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Epics PV names"
+}
+text {
+	object {
+		x=213
+		y=31
+		width=600
+		height=30
+	}
+	"basic attribute" {
+		clr=54
+	}
+	textix="$(P)$(R) In/Out"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=7
+		y=99
+		width=160
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Beamstop Y"
+	align="horiz. right"
+}
+text {
+	object {
+		x=7
+		y=124
+		width=160
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Pinhole Y"
+	align="horiz. right"
+}
+text {
+	object {
+		x=7
+		y=149
+		width=160
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Condenser Y"
+	align="horiz. right"
+}
+text {
+	object {
+		x=8
+		y=174
+		width=160
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Zone plate Y"
+	align="horiz. right"
+}
+text {
+	object {
+		x=164
+		y=70
+		width=130
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="In position"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=292
+		y=70
+		width=130
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Out position"
+	align="horiz. centered"
+}
+"text entry" {
+	object {
+		x=180
+		y=149
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)CondenserInY"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=305
+		y=149
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)CondenserOutY"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=180
+		y=124
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)PinholeInY"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=305
+		y=124
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)PinholeOutY"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=180
+		y=99
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)BeamstopInY"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=305
+		y=99
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)BeamstopOutY"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=180
+		y=174
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)ZonePlateInY"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=305
+		y=174
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)ZonePlateOutY"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+"choice button" {
+	object {
+		x=862
+		y=250
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)DiffuserInOutUse"
+		clr=14
+		bclr=51
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=862
+		y=99
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)BeamstopInOutUse"
+		clr=14
+		bclr=51
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=862
+		y=124
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)PinholeInOutUse"
+		clr=14
+		bclr=51
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=862
+		y=149
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)CondenserInOutUse"
+		clr=14
+		bclr=51
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=862
+		y=174
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)ZonePlateInOutUse"
+		clr=14
+		bclr=51
+	}
+	stacking="column"
+}
+text {
+	object {
+		x=932
+		y=72
+		width=60
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Use"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=5
+		y=412
+		width=170
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Exposure time (s)"
+	align="horiz. right"
+}
+"text entry" {
+	object {
+		x=180
+		y=412
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)ExposureTimeIn"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=305
+		y=412
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)ExposureTimeOut"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+"choice button" {
+	object {
+		x=415
+		y=412
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)ExposureTimeInOutUse"
+		clr=14
+		bclr=51
+	}
+	stacking="column"
+}
+text {
+	object {
+		x=5
+		y=551
+		width=170
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="BPM readback"
+	align="horiz. right"
+}
+"text entry" {
+	object {
+		x=180
+		y=576
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)BPMVSetPointIn"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=180
+		y=601
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)BPMHSetPointIn"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+"choice button" {
+	object {
+		x=415
+		y=550
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)BPMSetPointInOutUse"
+		clr=14
+		bclr=51
+	}
+	stacking="column"
+}
+"text entry" {
+	object {
+		x=305
+		y=576
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)BPMVSetPointOut"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=305
+		y=601
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)BPMHSetPointOut"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+text {
+	object {
+		x=5
+		y=576
+		width=170
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Vertical"
+	align="horiz. right"
+}
+text {
+	object {
+		x=5
+		y=601
+		width=170
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Horizontal"
+	align="horiz. right"
+}
+text {
+	object {
+		x=7
+		y=199
+		width=160
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Phase ring Y"
+	align="horiz. right"
+}
+"text entry" {
+	object {
+		x=180
+		y=199
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)PhaseRingInY"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=305
+		y=199
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)PhaseRingOutY"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+"choice button" {
+	object {
+		x=862
+		y=199
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)PhaseRingInOutUse"
+		clr=14
+		bclr=51
+	}
+	stacking="column"
+}
+text {
+	object {
+		x=7
+		y=224
+		width=160
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Furnace Y"
+	align="horiz. right"
+}
+"text entry" {
+	object {
+		x=180
+		y=224
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)FurnaceInY"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=305
+		y=224
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)FurnaceOutY"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+"choice button" {
+	object {
+		x=862
+		y=224
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)FurnaceInOutUse"
+		clr=14
+		bclr=51
+	}
+	stacking="column"
+}
+"text entry" {
+	object {
+		x=428
+		y=986
+		width=230
+		height=20
+	}
+	control {
+		chan="$(P)$(R)ZPOutermostZoneWidth"
+		clr=14
+		bclr=51
+	}
+	format="string"
+	limits {
+	}
+}
+text {
+	object {
+		x=263
+		y=986
+		width=160
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="ZP outermost zone width (nm)"
+	align="horiz. right"
+}
+text {
+	object {
+		x=263
+		y=961
+		width=160
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="ZP description"
+	align="horiz. right"
+}
+"text entry" {
+	object {
+		x=428
+		y=961
+		width=230
+		height=20
+	}
+	control {
+		chan="$(P)$(R)ZPDescription"
+		clr=14
+		bclr=51
+	}
+	format="string"
+	limits {
+	}
+}
+"message button" {
+	object {
+		x=967
+		y=250
+		width=35
+		height=20
+	}
+	control {
+		chan="$(P)$(R)MoveDiffuserIn"
+		clr=14
+		bclr=51
+	}
+	label="In"
+	press_msg="1"
+}
+"message button" {
+	object {
+		x=1007
+		y=250
+		width=35
+		height=20
+	}
+	control {
+		chan="$(P)$(R)MoveDiffuserOut"
+		clr=14
+		bclr=51
+	}
+	label="Out"
+	press_msg="1"
+}
+"message button" {
+	object {
+		x=967
+		y=99
+		width=35
+		height=20
+	}
+	control {
+		chan="$(P)$(R)MoveBeamstopIn"
+		clr=14
+		bclr=51
+	}
+	label="In"
+	press_msg="1"
+}
+"message button" {
+	object {
+		x=1007
+		y=99
+		width=35
+		height=20
+	}
+	control {
+		chan="$(P)$(R)MoveBeamstopOut"
+		clr=14
+		bclr=51
+	}
+	label="Out"
+	press_msg="1"
+}
+"message button" {
+	object {
+		x=967
+		y=124
+		width=35
+		height=20
+	}
+	control {
+		chan="$(P)$(R)MovePinholeIn"
+		clr=14
+		bclr=51
+	}
+	label="In"
+	press_msg="1"
+}
+"message button" {
+	object {
+		x=1007
+		y=124
+		width=35
+		height=20
+	}
+	control {
+		chan="$(P)$(R)MovePinholeOut"
+		clr=14
+		bclr=51
+	}
+	label="Out"
+	press_msg="1"
+}
+"message button" {
+	object {
+		x=967
+		y=149
+		width=35
+		height=20
+	}
+	control {
+		chan="$(P)$(R)MoveCondenserIn"
+		clr=14
+		bclr=51
+	}
+	label="In"
+	press_msg="1"
+}
+"message button" {
+	object {
+		x=1007
+		y=149
+		width=35
+		height=20
+	}
+	control {
+		chan="$(P)$(R)MoveCondenserOut"
+		clr=14
+		bclr=51
+	}
+	label="Out"
+	press_msg="1"
+}
+"message button" {
+	object {
+		x=967
+		y=174
+		width=35
+		height=20
+	}
+	control {
+		chan="$(P)$(R)MoveZonePlateIn"
+		clr=14
+		bclr=51
+	}
+	label="In"
+	press_msg="1"
+}
+"message button" {
+	object {
+		x=1007
+		y=174
+		width=35
+		height=20
+	}
+	control {
+		chan="$(P)$(R)MoveZonePlateOut"
+		clr=14
+		bclr=51
+	}
+	label="Out"
+	press_msg="1"
+}
+"message button" {
+	object {
+		x=967
+		y=199
+		width=35
+		height=20
+	}
+	control {
+		chan="$(P)$(R)MovePhaseRingIn"
+		clr=14
+		bclr=51
+	}
+	label="In"
+	press_msg="1"
+}
+"message button" {
+	object {
+		x=1007
+		y=199
+		width=35
+		height=20
+	}
+	control {
+		chan="$(P)$(R)MovePhaseRingOut"
+		clr=14
+		bclr=51
+	}
+	label="Out"
+	press_msg="1"
+}
+"message button" {
+	object {
+		x=967
+		y=224
+		width=35
+		height=20
+	}
+	control {
+		chan="$(P)$(R)MoveFurnaceIn"
+		clr=14
+		bclr=51
+	}
+	label="In"
+	press_msg="1"
+}
+"message button" {
+	object {
+		x=1007
+		y=224
+		width=35
+		height=20
+	}
+	control {
+		chan="$(P)$(R)MoveFurnaceOut"
+		clr=14
+		bclr=51
+	}
+	label="Out"
+	press_msg="1"
+}
+"message button" {
+	object {
+		x=778
+		y=30
+		width=130
+		height=27
+	}
+	control {
+		chan="$(P)$(R)MoveAllIn"
+		clr=14
+		bclr=51
+	}
+	label="Move All In"
+	press_msg="1"
+}
+"message button" {
+	object {
+		x=911
+		y=30
+		width=130
+		height=27
+	}
+	control {
+		chan="$(P)$(R)MoveAllOut"
+		clr=14
+		bclr=51
+	}
+	label="Move All Out"
+	press_msg="1"
+}
+"message button" {
+	object {
+		x=869
+		y=1051
+		width=170
+		height=44
+	}
+	control {
+		chan="$(P)$(R)AllStop"
+		clr=0
+		bclr=21
+	}
+	label="All Stop"
+	press_msg="1"
+}
+text {
+	object {
+		x=225
+		y=372
+		width=600
+		height=30
+	}
+	"basic attribute" {
+		clr=54
+	}
+	textix="$(P)$(R)  Detector"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=221
+		y=516
+		width=600
+		height=30
+	}
+	"basic attribute" {
+		clr=54
+	}
+	textix="$(P)$(R)  BPM"
+	align="horiz. centered"
+}
+rectangle {
+	object {
+		x=0
+		y=633
+		width=1050
+		height=30
+	}
+	"basic attribute" {
+		clr=2
+	}
+}
+text {
+	object {
+		x=223
+		y=631
+		width=600
+		height=30
+	}
+	"basic attribute" {
+		clr=54
+	}
+	textix="$(P)$(R)  Energy"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=5
+		y=666
+		width=170
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Energy (keV)"
+	align="horiz. right"
+}
+text {
+	object {
+		x=410
+		y=666
+		width=60
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+		fill="outline"
+	}
+	"dynamic attribute" {
+		vis="if not zero"
+		chan="$(P)$(R)EnergyBusy"
+	}
+	textix="Busy"
+	align="horiz. centered"
+}
+"text entry" {
+	object {
+		x=180
+		y=666
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)Energy"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+"message button" {
+	object {
+		x=305
+		y=666
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)EnergySet"
+		clr=14
+		bclr=15
+	}
+	label="Set"
+	press_msg="1"
+	release_msg="0"
+}
+"choice button" {
+	object {
+		x=180
+		y=691
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)EnergyUseCalibration"
+		clr=14
+		bclr=51
+	}
+	stacking="column"
+}
+text {
+	object {
+		x=5
+		y=691
+		width=170
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Use calibration"
+	align="horiz. right"
+}
+"text entry" {
+	object {
+		x=178
+		y=716
+		width=220
+		height=25
+	}
+	control {
+		chan="$(P)$(R)EnergyCalibrationFileOne"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=178
+		y=746
+		width=220
+		height=25
+	}
+	control {
+		chan="$(P)$(R)EnergyCalibrationFileTwo"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=267
+		y=1057
+		width=220
+		height=25
+	}
+	control {
+		chan="$(P)$(R)FileAllPVs"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+"message button" {
+	object {
+		x=153
+		y=1052
+		width=95
+		height=20
+	}
+	control {
+		chan="$(P)$(R)SaveAllPVs"
+		clr=14
+		bclr=16
+	}
+	label="Save All PVs"
+	press_msg="1"
+}
+"message button" {
+	object {
+		x=153
+		y=1071
+		width=95
+		height=20
+	}
+	control {
+		chan="$(P)$(R)LoadAllPVs"
+		clr=14
+		bclr=20
+	}
+	label="Load All PVs"
+	press_msg="1"
+}
+text {
+	object {
+		x=493
+		y=1060
+		width=60
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+		fill="outline"
+	}
+	"dynamic attribute" {
+		vis="if not zero"
+		chan="$(P)$(R)SaveAllPVs"
+	}
+	textix="Busy"
+	align="horiz. centered"
+}
+rectangle {
+	object {
+		x=0
+		y=1013
+		width=1050
+		height=30
+	}
+	"basic attribute" {
+		clr=2
+	}
+}
+text {
+	object {
+		x=201
+		y=1011
+		width=600
+		height=30
+	}
+	"basic attribute" {
+		clr=54
+	}
+	textix="$(P)$(R)   Save"
+	align="horiz. centered"
+}
+"message button" {
+	object {
+		x=118
+		y=438
+		width=59
+		height=20
+	}
+	control {
+		chan="$(P)$(R)Crop"
+		clr=14
+		bclr=51
+	}
+	label="Crop"
+	press_msg="1"
+}
+text {
+	object {
+		x=35
+		y=462
+		width=130
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Left"
+	align="horiz. right"
+}
+text {
+	object {
+		x=35
+		y=487
+		width=130
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Top"
+	align="horiz. right"
+}
+"text entry" {
+	object {
+		x=172
+		y=487
+		width=47
+		height=20
+	}
+	control {
+		chan="$(P)$(R)CropTop.VAL"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=172
+		y=462
+		width=47
+		height=20
+	}
+	control {
+		chan="$(P)$(R)CropLeft.VAL"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+text {
+	object {
+		x=170
+		y=462
+		width=130
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Right"
+	align="horiz. right"
+}
+"text entry" {
+	object {
+		x=305
+		y=462
+		width=47
+		height=20
+	}
+	control {
+		chan="$(P)$(R)CropRight.VAL"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+text {
+	object {
+		x=169
+		y=487
+		width=130
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Bottom"
+	align="horiz. right"
+}
+"text entry" {
+	object {
+		x=305
+		y=487
+		width=47
+		height=20
+	}
+	control {
+		chan="$(P)$(R)CropBottom.VAL"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+text {
+	object {
+		x=442
+		y=99
+		width=160
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Beamstop X"
+	align="horiz. right"
+}
+text {
+	object {
+		x=442
+		y=124
+		width=160
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Pinhole X"
+	align="horiz. right"
+}
+text {
+	object {
+		x=442
+		y=149
+		width=160
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Condenser X"
+	align="horiz. right"
+}
+text {
+	object {
+		x=443
+		y=174
+		width=160
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Zone plate X"
+	align="horiz. right"
+}
+text {
+	object {
+		x=442
+		y=250
+		width=160
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Diffuser X"
+	align="horiz. right"
+}
+text {
+	object {
+		x=442
+		y=199
+		width=160
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Phase ring X"
+	align="horiz. right"
+}
+text {
+	object {
+		x=442
+		y=224
+		width=160
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Furnace X"
+	align="horiz. right"
+}
+"text entry" {
+	object {
+		x=624
+		y=250
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)DiffuserInX"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=749
+		y=250
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)DiffuserOutX"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=624
+		y=149
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)CondenserInX"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=749
+		y=149
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)CondenserOutX"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=624
+		y=124
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)PinholeInX"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=749
+		y=124
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)PinholeOutX"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=624
+		y=99
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)BeamstopInX"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=749
+		y=99
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)BeamstopOutX"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=624
+		y=174
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)ZonePlateInX"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=749
+		y=174
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)ZonePlateOutX"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=624
+		y=199
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)PhaseRingInX"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=749
+		y=199
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)PhaseRingOutX"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=624
+		y=224
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)FurnaceInX"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=749
+		y=224
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)FurnaceOutX"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=546
+		y=274
+		width=2
+		height=2
+	}
+	monitor {
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+text {
+	object {
+		x=738
+		y=71
+		width=130
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Out position"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=610
+		y=71
+		width=130
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="In position"
+	align="horiz. centered"
+}
+rectangle {
+	object {
+		x=0
+		y=289
+		width=1050
+		height=30
+	}
+	"basic attribute" {
+		clr=2
+	}
+}
+text {
+	object {
+		x=225
+		y=289
+		width=600
+		height=30
+	}
+	"basic attribute" {
+		clr=54
+	}
+	textix="$(P)$(R)  Sample"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=157
+		y=323
+		width=130
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="In position"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=285
+		y=323
+		width=130
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Out position"
+	align="horiz. centered"
+}
+"text entry" {
+	object {
+		x=173
+		y=349
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)SampleInX"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=298
+		y=349
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)SampleOutX"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+"choice button" {
+	object {
+		x=855
+		y=349
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)SampleInOutUse"
+		clr=14
+		bclr=51
+	}
+	stacking="column"
+}
+text {
+	object {
+		x=925
+		y=323
+		width=60
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Use"
+	align="horiz. centered"
+}
+"message button" {
+	object {
+		x=960
+		y=349
+		width=35
+		height=20
+	}
+	control {
+		chan="$(P)$(R)MoveSampleIn"
+		clr=14
+		bclr=51
+	}
+	label="In"
+	press_msg="1"
+}
+"message button" {
+	object {
+		x=1000
+		y=349
+		width=35
+		height=20
+	}
+	control {
+		chan="$(P)$(R)MoveSampleOut"
+		clr=14
+		bclr=51
+	}
+	label="Out"
+	press_msg="1"
+}
+text {
+	object {
+		x=435
+		y=349
+		width=160
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Sample Z"
+	align="horiz. right"
+}
+"text entry" {
+	object {
+		x=617
+		y=349
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)SampleInZ"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=742
+		y=349
+		width=100
+		height=20
+	}
+	control {
+		chan="$(P)$(R)SampleOutZ"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=539
+		y=348
+		width=2
+		height=2
+	}
+	monitor {
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+text {
+	object {
+		x=731
+		y=324
+		width=130
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Out position"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=603
+		y=324
+		width=130
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="In position"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=0
+		y=349
+		width=160
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Sample X"
+	align="horiz. right"
+}

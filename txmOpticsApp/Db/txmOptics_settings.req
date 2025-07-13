@@ -42,6 +42,8 @@ $(P)$(R)ZonePlateYPVName
 $(P)$(R)ZonePlateZPVName
 $(P)$(R)PhaseRingXPVName
 $(P)$(R)PhaseRingYPVName
+$(P)$(R)SampleXPVName
+$(P)$(R)SampleZPVName
 $(P)$(R)FurnaceXPVName
 $(P)$(R)FurnaceYPVName
 $(P)$(R)FurnaceZPVName
@@ -61,6 +63,8 @@ $(P)$(R)FurnaceZPVName
 #controlPV $(P)$(R)MoveZonePlateOut
 #controlPV $(P)$(R)MovePhaseRingIn
 #controlPV $(P)$(R)MovePhaseRingOut
+#controlPV $(P)$(R)MoveSampleIn
+#controlPV $(P)$(R)MoveSampleOut
 #controlPV $(P)$(R)MoveFurnaceIn
 #controlPV $(P)$(R)MoveFurnaceOut
 #controlPV $(P)$(R)MoveAllIn
@@ -88,6 +92,10 @@ $(P)$(R)ZonePlateInX
 $(P)$(R)ZonePlateOutX
 $(P)$(R)PhaseRingInY
 $(P)$(R)PhaseRingOutY
+$(P)$(R)SampleInX
+$(P)$(R)SampleOutX
+$(P)$(R)SampleInZ
+$(P)$(R)SampleOutZ
 $(P)$(R)FurnaceInY
 $(P)$(R)FurnaceOutY
 
@@ -103,6 +111,7 @@ $(P)$(R)PinholeInOutUse
 $(P)$(R)CondenserInOutUse
 $(P)$(R)ZonePlateInOutUse
 $(P)$(R)PhaseRingInOutUse
+$(P)$(R)SampleInOutUse
 $(P)$(R)FurnaceInOutUse
 $(P)$(R)ExposureTimeInOutUse
 

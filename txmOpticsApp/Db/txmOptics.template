@@ -129,6 +129,16 @@ record(stringout, "$(P)$(R)PhaseRingYPVName")
    field(VAL,  "$(PHASERING_Y)")
 }
 
+record(stringout, "$(P)$(R)SampleXPVName")
+{
+   field(VAL,  "$(SAMPLE_X)")
+}
+
+record(stringout, "$(P)$(R)SampleZPVName")
+{
+   field(VAL,  "$(SAMPLE_Z)")
+}
+
 record(stringout, "$(P)$(R)FurnaceXPVName")
 {
    field(VAL,  "$(FURNACE_X)")
@@ -239,6 +249,18 @@ record(busy, "$(P)$(R)MovePhaseRingIn")
 }
 
 record(busy, "$(P)$(R)MovePhaseRingOut")
+{
+   field(ZNAM, "Done")
+   field(ONAM, "Move")
+}
+
+record(busy, "$(P)$(R)MoveSampleIn")
+{
+   field(ZNAM, "Done")
+   field(ONAM, "Move")
+}
+
+record(busy, "$(P)$(R)MoveSampleOut")
 {
    field(ZNAM, "Done")
    field(ONAM, "Move")
@@ -366,6 +388,25 @@ record(ao, "$(P)$(R)FurnaceOutY")
    field(PREC,  "3")
 }
 
+record(ao, "$(P)$(R)SampleInX")
+{
+   field(PREC,  "3")
+}
+
+record(ao, "$(P)$(R)SampleOutX")
+{
+   field(PREC,  "3")
+}
+
+record(ao, "$(P)$(R)SampleInZ")
+{
+   field(PREC,  "3")
+}
+
+record(ao, "$(P)$(R)SampleOutZ")
+{
+   field(PREC,  "3")
+}
 record(ao, "$(P)$(R)ExposureTimeIn")
 {
    field(PREC,  "3")
@@ -410,6 +451,12 @@ record(bo, "$(P)$(R)ZonePlateInOutUse")
 }
 
 record(bo, "$(P)$(R)PhaseRingInOutUse")
+{
+   field(ZNAM, "No")
+   field(ONAM, "Yes")
+}
+
+record(bo, "$(P)$(R)SampleInOutUse")
 {
    field(ZNAM, "No")
    field(ONAM, "Yes")

@@ -13,6 +13,7 @@ IOC0, IOC1, IOC2, IOC3, IOC4, IOC5,
 OVERLAY, SHUTTER_B_CLOSE, SHUTTER_B_STATUS, 
 KOHZUMODE, USENERGY, USENERGYSTART, BRAGG, BRAGGRBV, BRAGGMOVE,
 TOP_X, TOP_Z, ROTARY,
+SAMPLE_X, SAMPLE_Z,
 FILE_ALL_PVS, EN_FILE1, EN_FILE2
 }
 {
@@ -27,7 +28,8 @@ x, x, x,
 32idbTXM:, 32idPLC:, 32idb:, x, x, x,
 32idbSP1:Over1:, 32idb:rshtrB:Close.PROC, PB:32ID:STA_B_SBS_CLSD_PL, 
 32ida:KohzuModeBO, S32ID:USID:EnergySetC, S32ID:USID:StartC, 32ida:BraggEAO, 32ida:BraggERdbkAO, 32ida:KohzuPutBO,
-x, x, x,
+32idbTXM:mcs:c2:m7, 32idbTXM:mcs:c2:m8, 32idbTXM:ens:c1:m1,
+32idbTXM:mcs:c2:m7, 32idbTXM:mcs:c2:m8,
 energy1.txt, energies1.txt, energies2.txt
 }
 }

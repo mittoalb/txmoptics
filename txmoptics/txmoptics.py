@@ -124,6 +124,7 @@ class TXMOptics():
         for epics_pv in ('MovePhaseRingIn', 'MovePhaseRingOut', 'MoveDiffuserIn',
                          'MoveDiffuserOut', 'MoveBeamstopIn', 'MoveBeamstopOut', 'MovePinholeIn', 'MovePinholeOut',
                          'MoveCondenserIn', 'MoveCondenserOut', 'MoveZonePlateIn', 'MoveZonePlateOut', 'MoveFurnaceIn', 'MoveFurnaceOut',
+                         'MoveSampleIn','MoveSampleOut',
                          'MoveAllIn', 'MoveAllOut', 'AllStop', 'SaveAllPVs', 'LoadAllPVs', 'CrossSelect', 'EnergySet', 'Crop'):
             if epics_pv in self.epics_pvs:
                 self.epics_pvs[epics_pv].put(0)
@@ -310,6 +311,12 @@ class TXMOptics():
         elif (pvname.find('MoveZonePlateOut') != -1) and (value == 1):
             thread = threading.Thread(target=self.move_zoneplate_out, args=())
             thread.start()
+        elif (pvname.find('MoveSampleIn') != -1) and (value == 1):
+            thread = threading.Thread(target=self.move_sample_in, args=())
+            thread.start()
+        elif (pvname.find('MoveSampleOut') != -1) and (value == 1):
+            thread = threading.Thread(target=self.move_sample_out, args=())
+            thread.start()            
         elif (pvname.find('MoveFurnaceIn') != -1) and (value == 1):
             thread = threading.Thread(target=self.move_furnace_in, args=())
             thread.start()
@@ -509,6 +516,35 @@ class TXMOptics():
         if 'MovePhaseRingOut' in self.epics_pvs:
             self.epics_pvs['MovePhaseRingOut'].put('Done')
 
+    def move_sample_in(self):
+        """Moves the sample in.
+        """
+        if('SampleInOutUse' in self.epics_pvs and self.epics_pvs['SampleInOutUse'].value):
+            if 'SampleInX' in self.epics_pvs and 'SampleX' in self.epics_pvs:
+                position = self.epics_pvs['SampleInX'].value
+                self.epics_pvs['SampleX'].put(position, wait=True)
+            if 'SampleInZ' in self.epics_pvs and 'SampleZ' in self.epics_pvs:
+                position = self.epics_pvs['SampleInZ'].value
+                self.epics_pvs['SampleZ'].put(position, wait=True)
+            
+        if 'MoveSampleIn' in self.epics_pvs:
+            self.epics_pvs['MoveSampleIn'].put('Done')
+            
+    def move_sample_out(self):
+        """Moves the sample out.
+        """
+        if('SampleInOutUse' in self.epics_pvs and self.epics_pvs['SampleInOutUse'].value):
+            if 'SampleOutX' in self.epics_pvs and 'SampleX' in self.epics_pvs:
+                position = self.epics_pvs['SampleOutX'].value
+                self.epics_pvs['SampleX'].put(position, wait=True)
+            if 'SampleOutZ' in self.epics_pvs and 'SampleZ' in self.epics_pvs:
+                position = self.epics_pvs['SampleOutZ'].value
+                self.epics_pvs['SampleZ'].put(position, wait=True)
+            
+        if 'MoveSampleOut' in self.epics_pvs:
+            self.epics_pvs['MoveSampleOut'].put('Done')            
+
+
     def move_furnace_in(self):
         """Moves the furnace in.
         """
@@ -662,7 +698,7 @@ class TXMOptics():
         
         # read adl file
         try:
-            with open('/home/beams/USERTXM/epics/synApps/support/txmoptics/txmOpticsApp/op/adl/txm_main.adl','r') as fid:    
+            with open('/home/beams/USERTXM/epics/synApps/support/txmoptics/txmOpticsApp/op/adl/txm_main_071225.adl','r') as fid:    
                 s = fid.read()
         except FileNotFoundError:
             print("ADL file not found, skipping PV extraction")
@@ -674,6 +710,7 @@ class TXMOptics():
         pvs = []
         pvs = re.findall(r"chan=\"(.*?)\"", s)
         
+        print(pvs)
         # save values to a txt file 
         try:
             with open(file_name,'w') as fid:
@@ -681,8 +718,15 @@ class TXMOptics():
                     energy = self.control_pvs['EnergyMonochromator'].get()
                     fid.write('energy '+ str(energy) +'\n')                
                 for k in pvs:
-                    if k.find('.VAL')!=-1:
+                    if (k.find('.VAL')!=-1 and 
+                        k.find('32idcTXM:mcs:c0')==-1 and 
+                        k.find('32idcSoft:nf:c0')==-1 and 
+                        k.find('32idaSoft:m10')==-1 and 
+                        k.find('32idcSOFT:nf:c0:m3')==-1 and 
+                        k.find('32idaSoft:m9')==-1 and 
+                        k.find('32idcTXM:mxv:c1:')==-1): ## temporarily avoid pvs
                         try:
+                            print(k)
                             p = PV(k)
                             time.sleep(0.1)
                             val = p.get(as_string=True,timeout=30)
@@ -769,13 +813,14 @@ class TXMOptics():
                 self.control_pvs['BPMHFeedback'].put(1)  
 
     def energy_change(self):
+        
         if ('EnergyBusy' not in self.epics_pvs or self.epics_pvs['EnergyBusy'].get() == 0):
             if 'EnergyBusy' in self.epics_pvs:
                 self.epics_pvs['EnergyBusy'].put(1)
-            if 'BPMVFeedback' in self.control_pvs:
-                self.control_pvs['BPMVFeedback'].put(0)
-            if 'BPMHFeedback' in self.control_pvs:
-                self.control_pvs['BPMHFeedback'].put(0)      
+            # if 'BPMVFeedback' in self.control_pvs:
+            #     self.control_pvs['BPMVFeedback'].put(0)
+            # if 'BPMHFeedback' in self.control_pvs:
+            #     self.control_pvs['BPMHFeedback'].put(0)      
             
             if 'Energy' in self.epics_pvs:
                 energy = float(self.epics_pvs["Energy"].get())
@@ -789,12 +834,19 @@ class TXMOptics():
                 self.epics_pvs['DCMputEnergy'].put(energy)
             log.info('move undulator')
             if 'GAPputEnergy' in self.epics_pvs:
-                self.epics_pvs['GAPputEnergy'].put(energy+0.18)
-            time.sleep(1)# possible backlash/stabilization, more??
+                print(self.epics_pvs['GAPputEnergy'])
+                self.epics_pvs['GAPputEnergy'].put(energy+0.03)
+                print('GAPputEnergy done')
+                time.sleep(0.2)
+                self.epics_pvs['GAPputEnergyStart'].put(1)
+                print('GAPputEnergyStart done')
+            time.sleep(0.2)# possible backlash/stabilization, more??
             log.info('skip wait mono')
             log.info('skip wait undulator')
+            print(self.epics_pvs['EnergyCalibrationFileOne'].get())
+            print(self.epics_pvs['EnergyCalibrationFileTwo'].get())
             
-            time.sleep(1)# possible backlash/stabilization, more??
+            # time.sleep(1)# possible backlash/stabilization, more??
             if ('EnergyUseCalibration' in self.epics_pvs and 
                 self.epics_pvs['EnergyUseCalibration'].get(as_string=True) == 'Yes'):                
                 try:
@@ -839,10 +891,10 @@ class TXMOptics():
                 except Exception as e:
                     log.error('Calibration files error: %s', str(e))
                     
-            if 'BPMVFeedback' in self.control_pvs:
-                self.control_pvs['BPMVFeedback'].put(1)
-            if 'BPMHFeedback' in self.control_pvs:
-                self.control_pvs['BPMHFeedback'].put(1)                                  
+            # if 'BPMVFeedback' in self.control_pvs:
+            #     self.control_pvs['BPMVFeedback'].put(1)
+            # if 'BPMHFeedback' in self.control_pvs:
+            #     self.control_pvs['BPMHFeedback'].put(1)                                  
             log.info('energy change is done')
             if 'EnergyBusy' in self.epics_pvs:
                 self.epics_pvs['EnergyBusy'].put(0)   

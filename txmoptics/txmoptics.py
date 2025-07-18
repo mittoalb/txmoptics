@@ -349,7 +349,7 @@ class TXMOptics():
             thread.start()            
         elif (pvname.find('EnergySet') != -1) and (value == 1):
             thread = threading.Thread(target=self.energy_change, args=())
-            thread.start()            
+            thread.start()                     
         elif (pvname.find('Crop') != -1) and (value ==1):
             thread = threading.Thread(target=self.crop_detector, args=())
             thread.start()            
@@ -698,7 +698,7 @@ class TXMOptics():
         
         # read adl file
         try:
-            with open('/home/beams/USERTXM/epics/synApps/support/txmoptics/txmOpticsApp/op/adl/txm_main_071225.adl','r') as fid:    
+            with open('/home/beams/USERTXM/epics/synApps/support/txmoptics/txmOpticsApp/op/adl/txm_main.adl','r') as fid:    
                 s = fid.read()
         except FileNotFoundError:
             print("ADL file not found, skipping PV extraction")
@@ -822,8 +822,9 @@ class TXMOptics():
             # if 'BPMHFeedback' in self.control_pvs:
             #     self.control_pvs['BPMHFeedback'].put(0)      
             
-            if 'Energy' in self.epics_pvs:
+            if 'Energy' and 'EnergyDetune' in self.epics_pvs:
                 energy = float(self.epics_pvs["Energy"].get())
+                energyDetune = float(self.epics_pvs["EnergyDetune"].get())
                 log.info("TxmOptics: change energy to %.2f",energy)
             else:
                 log.error("Energy PV not found")
@@ -835,7 +836,7 @@ class TXMOptics():
             log.info('move undulator')
             if 'GAPputEnergy' in self.epics_pvs:
                 print(self.epics_pvs['GAPputEnergy'])
-                self.epics_pvs['GAPputEnergy'].put(energy+0.03)
+                self.epics_pvs['GAPputEnergy'].put(energy+energyDetune/1000)
                 print('GAPputEnergy done')
                 time.sleep(0.2)
                 self.epics_pvs['GAPputEnergyStart'].put(1)

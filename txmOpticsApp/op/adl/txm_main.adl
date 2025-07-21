@@ -5,8 +5,8 @@ file {
 }
 display {
 	object {
-		x=220
-		y=159
+		x=210
+		y=151
 		width=1631
 		height=1195
 	}
@@ -15931,9 +15931,8 @@ composite {
 		height=30
 	}
 	display[1] {
-		label="32idbSoft:m9) (Small)"
-		name="2_motors.adl"
-		args="P=32idbSoft:,M1=m9,M2=m10"
+		label="XANES"
+		name="xanes.adl"
 	}
 	clr=14
 	bclr=51

@@ -5,9 +5,9 @@ file {
 }
 display {
 	object {
-		x=1592
-		y=603
-		width=450
+		x=1909
+		y=407
+		width=452
 		height=189
 	}
 	clr=14
@@ -217,7 +217,7 @@ text {
 	}
 	command[0] {
 		label="OpticsCalculator"
-		name="python3 /home/beams/USERTXM/epics/synApps/support/txmoptics/txmoptics/optics_calc.py"
+		name="/home/beams/USERTXM/epics/synApps/support/txmoptics/txmoptics/xanes.sh"
 	}
 	clr=0
 	bclr=49

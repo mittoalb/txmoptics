@@ -19,6 +19,10 @@ npts = int(float(caget("32id:TXMOptics:XanesPoints")))
 params1 = caget("32id:TXMOptics:EnergyCalibrationFileOne")
 params2 = caget("32id:TXMOptics:EnergyCalibrationFileTwo")
 
+
+params1 = "/home/beams/USERTXM/epics/synApps/support/txmoptics/iocBoot/iocTXMOptics/" + params1
+params2 = "/home/beams/USERTXM/epics/synApps/support/txmoptics/iocBoot/iocTXMOptics/" + params2
+
 # Save energy array
 outfile = os.path.expanduser("~/energies.npy")
 energies = np.linspace(emin, emax, npts)
@@ -27,12 +31,11 @@ np.save(outfile, energies)
 print(f"[INFO] Saved {npts} points from {emin} to {emax} keV in {outfile}")
 print(f"[INFO] Using calibration files:\n  - {params1}\n  - {params2}")
 
-# Optional: Run tomoscan command (uncomment to enable)
-# subprocess.run([
-#     "tomoscan", "energy",
-#     "--tomoscan-prefix", "32id:TomoScanStep:",
-#     "--file-params1", params1,
-#     "--file-params2", params2,
-#     "--file-energies", outfile
-# ])
+subprocess.run([
+     "tomoscan", "energy",
+     "--tomoscan-prefix", "32id:TomoScan:",
+     "--file-params1", params1,
+     "--file-params2", params2,
+     "--file-energies", outfile
+])
 

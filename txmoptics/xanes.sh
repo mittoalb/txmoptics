@@ -3,7 +3,7 @@
 # Run a tomoscan energy scan
 TAB_NAME="tomoScan XANES"
 REMOTE_USER="usertxm"
-REMOTE_HOST="txm4"
+REMOTE_HOST="gauss"
 CONDA_ENV="tomoscan"
 WORK_DIR="/home/beams/USERTXM/epics/synApps/support/tomoscan/iocBoot/iocTomoScan_32ID/"
 CONDA_PATH="/home/beams/USERTXM/conda/anaconda"
@@ -27,7 +27,7 @@ fi
 xhost +SI:localuser:$USER > /dev/null 2>&1
 
 
-gnome-terminal --tab --title="$TAB_NAME" -- bash -c "
+dbus-launch gnome-terminal --tab --title="$TAB_NAME" -- bash -c "
     ssh -t ${REMOTE_USER}@${REMOTE_HOST} '
         bash -l -c \"cd ${WORK_DIR} && hostname && \
         source ${CONDA_PATH}/etc/profile.d/conda.sh && \

@@ -825,6 +825,11 @@ class TXMOptics():
             if 'Energy' and 'EnergyDetune' in self.epics_pvs:
                 energy = float(self.epics_pvs["Energy"].get())
                 energyDetune = float(self.epics_pvs["EnergyDetune"].get())
+                if energy < 6.0 or energy > 12.0: #Safeguard limits
+                    log.error("TxmOptics: Energy %.2f keV is outside valid range (6-12 keV). Operation cancelled.", energy)
+                    if 'EnergyBusy' in self.epics_pvs:
+                        self.epics_pvs['EnergyBusy'].put(0)
+                    return                
                 log.info("TxmOptics: change energy to %.2f",energy)
             else:
                 log.error("Energy PV not found")
@@ -889,6 +894,17 @@ class TXMOptics():
                                 log.info('old Zone plate Z %3.3f', self.epics_pvs['ZonePlateZ'].get())
                                 self.epics_pvs['ZonePlateZ'].put(vals[k],wait=True)                                                        
                                 log.info('new Zone plate Z %3.3f', self.epics_pvs['ZonePlateZ'].get())
+                            if ('ZonePlateX' in self.epics_pvs and 
+                                pvs1[k]==self.epics_pvs['ZonePlateX'].pvname):                            
+                                log.info('old Zone plate X %3.3f', self.epics_pvs['ZonePlateX'].get())
+                                self.epics_pvs['ZonePlateX'].put(vals[k],wait=True)                                                        
+                                log.info('new Zone plate X %3.3f', self.epics_pvs['ZonePlateX'].get())
+                            if ('ZonePlateY' in self.epics_pvs and 
+                                pvs1[k]==self.epics_pvs['ZonePlateY'].pvname):                            
+                                log.info('old Zone plate Y %3.3f', self.epics_pvs['ZonePlateY'].get())
+                                self.epics_pvs['ZonePlateY'].put(vals[k],wait=True)                                                        
+                                log.info('new Zone plate Y %3.3f', self.epics_pvs['ZonePlateY'].get())        
+                                
                 except Exception as e:
                     log.error('Calibration files error: %s', str(e))
                     

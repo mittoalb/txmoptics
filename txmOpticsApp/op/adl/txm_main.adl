@@ -5,8 +5,8 @@ file {
 }
 display {
 	object {
-		x=210
-		y=151
+		x=200
+		y=143
 		width=1631
 		height=1195
 	}
@@ -13165,7 +13165,7 @@ composite {
 }
 text {
 	object {
-		x=1434
+		x=1401
 		y=273
 		width=120
 		height=25
@@ -13173,7 +13173,7 @@ text {
 	"basic attribute" {
 		clr=14
 	}
-	textix="Energy"
+	textix="Energy - Range [6,12] keV"
 	align="horiz. centered"
 }
 composite {

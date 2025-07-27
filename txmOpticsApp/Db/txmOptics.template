@@ -601,6 +601,38 @@ record(ao, "$(P)$(R)Energy")
    field(HOPR, "14")
    field(LOPR, "6")
 }
+record(ao, "$(P)$(R)EnergyDetune")
+{
+   field(PREC,  "4")
+   field(VAL,  "8")
+   field(HOPR, "14")
+   field(LOPR, "6")
+}
+
+record(ao, "$(P)$(R)XanesStart")
+{
+   field(PREC,  "4")
+   field(VAL,  "8")
+   field(HOPR, "14")
+   field(LOPR, "6")
+}
+
+record(ao, "$(P)$(R)XanesEnd")
+{
+   field(PREC,  "4")
+   field(VAL,  "8")
+   field(HOPR, "14")
+   field(LOPR, "6")
+}
+
+record(ao, "$(P)$(R)XanesPoints")
+{
+   field(PREC,  "4")
+   field(VAL,  "8")
+   field(HOPR, "14")
+   field(LOPR, "6")
+}
+
 record(busy, "$(P)$(R)EnergyBusy")
 {
    field(ZNAM, "Done")

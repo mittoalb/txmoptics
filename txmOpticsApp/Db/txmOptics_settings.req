@@ -153,6 +153,7 @@ $(P)$(R)CrossSelect
 ###############
 $(P)$(R)EnergySet
 $(P)$(R)Energy
+$(P)$(R)EnergyDetune
 $(P)$(R)EnergyBusy
 $(P)$(R)EnergyUseCalibration
 $(P)$(R)EnergyCalibrationFileOne
@@ -198,3 +199,10 @@ $(P)$(R)CropRight
 $(P)$(R)CropTop
 $(P)$(R)CropBottom
 $(P)$(R)Crop
+
+####################
+# Xanes Scans
+####################
+$(P)$(R)XanesStart
+$(P)$(R)XanesEnd
+$(P)$(R)XanesPoints

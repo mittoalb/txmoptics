@@ -349,7 +349,7 @@ class TXMOptics():
             thread.start()            
         elif (pvname.find('EnergySet') != -1) and (value == 1):
             thread = threading.Thread(target=self.energy_change, args=())
-            thread.start()            
+            thread.start()                     
         elif (pvname.find('Crop') != -1) and (value ==1):
             thread = threading.Thread(target=self.crop_detector, args=())
             thread.start()            
@@ -698,7 +698,7 @@ class TXMOptics():
         
         # read adl file
         try:
-            with open('/home/beams/USERTXM/epics/synApps/support/txmoptics/txmOpticsApp/op/adl/txm_main_071225.adl','r') as fid:    
+            with open('/home/beams/USERTXM/epics/synApps/support/txmoptics/txmOpticsApp/op/adl/txm_main.adl','r') as fid:    
                 s = fid.read()
         except FileNotFoundError:
             print("ADL file not found, skipping PV extraction")
@@ -822,8 +822,14 @@ class TXMOptics():
             # if 'BPMHFeedback' in self.control_pvs:
             #     self.control_pvs['BPMHFeedback'].put(0)      
             
-            if 'Energy' in self.epics_pvs:
+            if 'Energy' and 'EnergyDetune' in self.epics_pvs:
                 energy = float(self.epics_pvs["Energy"].get())
+                energyDetune = float(self.epics_pvs["EnergyDetune"].get())
+                if energy < 6.0 or energy > 12.0: #Safeguard limits
+                    log.error("TxmOptics: Energy %.2f keV is outside valid range (6-12 keV). Operation cancelled.", energy)
+                    if 'EnergyBusy' in self.epics_pvs:
+                        self.epics_pvs['EnergyBusy'].put(0)
+                    return                
                 log.info("TxmOptics: change energy to %.2f",energy)
             else:
                 log.error("Energy PV not found")
@@ -835,7 +841,7 @@ class TXMOptics():
             log.info('move undulator')
             if 'GAPputEnergy' in self.epics_pvs:
                 print(self.epics_pvs['GAPputEnergy'])
-                self.epics_pvs['GAPputEnergy'].put(energy+0.03)
+                self.epics_pvs['GAPputEnergy'].put(energy+energyDetune/1000)
                 print('GAPputEnergy done')
                 time.sleep(0.2)
                 self.epics_pvs['GAPputEnergyStart'].put(1)
@@ -888,6 +894,17 @@ class TXMOptics():
                                 log.info('old Zone plate Z %3.3f', self.epics_pvs['ZonePlateZ'].get())
                                 self.epics_pvs['ZonePlateZ'].put(vals[k],wait=True)                                                        
                                 log.info('new Zone plate Z %3.3f', self.epics_pvs['ZonePlateZ'].get())
+                            if ('ZonePlateX' in self.epics_pvs and 
+                                pvs1[k]==self.epics_pvs['ZonePlateX'].pvname):                            
+                                log.info('old Zone plate X %3.3f', self.epics_pvs['ZonePlateX'].get())
+                                self.epics_pvs['ZonePlateX'].put(vals[k],wait=True)                                                        
+                                log.info('new Zone plate X %3.3f', self.epics_pvs['ZonePlateX'].get())
+                            if ('ZonePlateY' in self.epics_pvs and 
+                                pvs1[k]==self.epics_pvs['ZonePlateY'].pvname):                            
+                                log.info('old Zone plate Y %3.3f', self.epics_pvs['ZonePlateY'].get())
+                                self.epics_pvs['ZonePlateY'].put(vals[k],wait=True)                                                        
+                                log.info('new Zone plate Y %3.3f', self.epics_pvs['ZonePlateY'].get())        
+                                
                 except Exception as e:
                     log.error('Calibration files error: %s', str(e))
                     

@@ -39,3 +39,10 @@ subprocess.run([
      "--file-energies", outfile
 ])
 
+#Stop shaker and switch off the feedback
+subprocess.run([
+     "caput 32idbSoft:epidH:on off",
+     "caput 32idbSoft:epidV:on off",
+     "caput 32idbShaker:shaker:run Stop"
+])
+

@@ -23,13 +23,13 @@ FILE_ALL_PVS, EN_FILE1, EN_FILE2
 32idbTXM:mcs2:c1:m9, 32idbTXM:mcs2:c1:m6, 32idbTXM:mcs2:c1:m3, 32idbTXM:mcs2:c1:m4, 32idbTXM:mcs2:c1:m5, 
 32idbTXM:mcs2:c1:m10, 32idbTXM:mcs2:c1:m2, 32idbSoft:m6, 32idbTXM:mcs2:c1:m1, x, 
 32idbSoft:m3, 32idbSoft:m4, 32idbSoft:m1,
-32idbTXM:mcs:c1:m1, 32idbTXM:mcs:c1:m2, 32idbTXM:mcs:c1:m3, x, x, 
+32idbTXM:mcs2:c1:m13, 32idbTXM:mcs2:c1:m14, 32idbTXM:mcs2:c1:m15, x, x, 
 x, x, x, 
 32idbTXM:, 32idPLC:, 32idb:, x, x, x,
 32idbSP1:Over1:, 32idb:rshtrB:Close.PROC, PB:32ID:STA_B_SBS_CLSD_PL, 
 32ida:KohzuModeBO, S32ID:USID:EnergySetC, S32ID:USID:StartC, 32ida:BraggEAO, 32ida:BraggERdbkAO, 32ida:KohzuPutBO,
-32idbTXM:mcs:c2:m7, 32idbTXM:mcs:c2:m8, 32idbTXM:ens:c1:m1,
-32idbTXM:mcs:c2:m7, 32idbTXM:mcs:c2:m8,
+32idbTXM:mcs:c2:m1, 32idbTXM:mcs:c2:m2, 32idbTXM:ens:c1:m1,
+32idbTXM:mcs:c2:m1, 32idbTXM:mcs:c2:m2,
 energy1.txt, energies1.txt, energies2.txt
 }
 }

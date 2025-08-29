@@ -5,8 +5,8 @@ file {
 }
 display {
 	object {
-		x=562
-		y=496
+		x=228
+		y=147
 		width=1631
 		height=1195
 	}
@@ -15756,14 +15756,14 @@ composite {
 }
 "shell command" {
 	object {
-		x=1454
+		x=1453
 		y=1049
-		width=120
+		width=170
 		height=27
 	}
 	command[0] {
 		label="OpticsCalculator"
-		name="python3 /home/beams/USERTXM/epics/synApps/support/txmoptics/txmoptics/optics_calc.py"
+		name="python3 /home/beams/USERTXM/epics/synApps/support/txmoptics/txmoptics/optics_calc.py &"
 	}
 	clr=0
 	bclr=49
@@ -15952,21 +15952,6 @@ composite {
 		}
 	}
 }
-"related display" {
-	object {
-		x=1570
-		y=911
-		width=30
-		height=30
-	}
-	display[1] {
-		label="32idbSoft:m9) (Small)"
-		name="2_motors.adl"
-		args="P=32idbSoft:,M1=m9,M2=m10"
-	}
-	clr=14
-	bclr=51
-}
 text {
 	object {
 		x=1354
@@ -15994,4 +15979,19 @@ text {
 	}
 	limits {
 	}
+}
+"shell command" {
+	object {
+		x=1563
+		y=912
+		width=40
+		height=27
+	}
+	command[0] {
+		label="OpticsCalculator"
+		name="/home/beams/USERTXM/epics/synApps/support/txmoptics/txmoptics/./mosaic_align.sh &"
+	}
+	clr=0
+	bclr=49
+	label="-Mos"
 }

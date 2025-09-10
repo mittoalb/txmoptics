@@ -8,6 +8,7 @@ import time
 import threading
 import json
 import os
+import subprocess
 
 class CameraStitchGUI:
     def __init__(self, root):
@@ -146,10 +147,18 @@ class CameraStitchGUI:
         # Create styled buttons
         style = ttk.Style()
         style.configure('Green.TButton', foreground='white', background='green')
+        style.configure('Orange.TButton', foreground='white', background='orange')
         style.configure('Red.TButton', foreground='white', background='red')
         
+        # First row of buttons
+        self.preview_btn = ttk.Button(frame4, text="Start Preview", 
+                                     command=self.start_preview, 
+                                     style='Orange.TButton')
+        self.preview_btn.pack(side="left", padx=(0,10))
+        
+        # Second row - new Start Acquisition button
         self.acquire_btn = ttk.Button(frame4, text="Start Acquisition", 
-                                     command=self.start_acquisition, 
+                                     command=self.start_mosaic_script, 
                                      style='Green.TButton')
         self.acquire_btn.pack(side="left", padx=(0,10))
         
@@ -258,8 +267,8 @@ class CameraStitchGUI:
             messagebox.showerror("Error", f"Failed to acquire test image: {str(e)}")
             self.status_var.set("Error")
     
-    def start_acquisition(self):
-        """Start grid acquisition in separate thread"""
+    def start_preview(self):
+        """Start grid preview in separate thread"""
         if self.acquiring:
             return
             
@@ -280,13 +289,78 @@ class CameraStitchGUI:
         
         # Reset stop flag and update button states
         self.stop_requested = False
-        self.acquire_btn.config(state="disabled")
+        self.preview_btn.config(state="disabled")
         self.stop_btn.config(state="normal")
         
-        # Start acquisition thread
+        # Start preview thread
         thread = threading.Thread(target=self.acquire_grid)
         thread.daemon = True
         thread.start()
+    
+    def start_mosaic_script(self):
+        """Run the mosaic.sh bash script with parameters"""
+        try:
+            self.status_var.set("Running mosaic.sh script...")
+            self.root.update()
+            
+            # Get parameters from GUI
+            h_steps = self.h_steps_var.get()
+            v_steps = self.v_steps_var.get()
+            h_step_size = self.h_step_size_var.get()
+            v_step_size = self.v_step_size_var.get()
+            
+            # Get tomoscan prefix from detector PV (extract prefix part)
+            detector_pv = self.detector_var.get()
+            # Extract prefix (e.g., "32idbSP1:Pva1:Image" -> "32id:TomoScan:")
+            tomoscan_prefix = "32id:TomoScan:"  # You may want to make this configurable
+            
+            # Validate parameters
+            try:
+                h_steps = int(h_steps)
+                v_steps = int(v_steps)
+                h_step_size = float(h_step_size)
+                v_step_size = float(v_step_size)
+                
+                if h_steps < 1 or v_steps < 1:
+                    raise ValueError("Steps must be >= 1")
+            except ValueError as e:
+                messagebox.showerror("Parameter Error", f"Invalid parameters: {str(e)}")
+                self.status_var.set("Error: Invalid parameters")
+                return
+            
+            # Get the directory where this Python script is located
+            script_dir = os.path.dirname(os.path.abspath(__file__))
+            mosaic_path = os.path.join(script_dir, 'mosaic.sh')
+            
+            # Check if the script exists
+            if not os.path.exists(mosaic_path):
+                raise FileNotFoundError(f"mosaic.sh not found at: {mosaic_path}")
+            
+            # Prepare command with parameters
+            cmd = ['bash', mosaic_path, str(h_steps), str(v_steps), 
+                   str(h_step_size), str(v_step_size), tomoscan_prefix]
+            
+            # Run the bash script with parameters
+            result = subprocess.run(cmd, 
+                                  capture_output=True, 
+                                  text=True, 
+                                  cwd=script_dir)
+            
+            if result.returncode == 0:
+                self.status_var.set("Mosaic script completed successfully")
+                if result.stdout:
+                    messagebox.showinfo("Script Output", f"Script completed:\n{result.stdout}")
+            else:
+                self.status_var.set("Mosaic script failed")
+                error_msg = result.stderr if result.stderr else "Unknown error"
+                messagebox.showerror("Script Error", f"Script failed with error:\n{error_msg}")
+                
+        except FileNotFoundError as e:
+            messagebox.showerror("Script Error", f"mosaic.sh script not found:\n{str(e)}")
+            self.status_var.set("Error: mosaic.sh not found")
+        except Exception as e:
+            messagebox.showerror("Script Error", f"Failed to run mosaic.sh:\n{str(e)}")
+            self.status_var.set("Error running script")
     
     def stop_acquisition(self):
         """Request to stop the current acquisition"""
@@ -298,7 +372,7 @@ class CameraStitchGUI:
         """Acquire grid images"""
         try:
             self.acquiring = True
-            self.acquire_btn.config(state="disabled")
+            self.preview_btn.config(state="disabled")
             
             # Get parameters
             h_steps = int(self.h_steps_var.get())
@@ -507,7 +581,7 @@ class CameraStitchGUI:
         finally:
             self.acquiring = False
             self.stop_requested = False
-            self.acquire_btn.config(state="normal")
+            self.preview_btn.config(state="normal")
             self.stop_btn.config(state="disabled")
             self.progress['value'] = 0
     

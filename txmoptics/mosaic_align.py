@@ -13,7 +13,7 @@ import subprocess
 class CameraStitchGUI:
     def __init__(self, root):
         self.root = root
-        self.root.title("Camera Grid Stitching")
+        self.root.title("Mosaic Scan Planner")
         self.root.geometry("500x450")
         self.config_file = "camera_stitch_config.json"
         
@@ -415,9 +415,9 @@ class CameraStitchGUI:
             plt.ion()  # Turn on interactive mode
             fig, ax = plt.subplots(figsize=(15, 12))
             if acq_mode == "360":
-                ax.set_title(f'Double Field of View {actual_h_steps}x{actual_v_steps} (White borders)')
+                ax.set_title(f'Double Field of View {actual_h_steps}x{actual_v_steps}')
             else:
-                ax.set_title(f'Stitched Grid {actual_h_steps}x{actual_v_steps} (White borders)')
+                ax.set_title(f'Stitched Grid {actual_h_steps}x{actual_v_steps}')
             
             im = ax.imshow(stitched_rgb)
             plt.show(block=False)

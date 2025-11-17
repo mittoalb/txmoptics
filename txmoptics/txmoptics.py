@@ -477,7 +477,9 @@ class TXMOptics():
     def move_zoneplate_out(self):
         """Moves the zone plate out.
         """
+        print('in move zp out')
         if('ZonePlateInOutUse' in self.epics_pvs and self.epics_pvs['ZonePlateInOutUse'].value):
+            print('try to move zp out')
             if 'ZonePlateOutY' in self.epics_pvs and 'ZonePlateY' in self.epics_pvs:
                 position = self.epics_pvs['ZonePlateOutY'].value
                 self.epics_pvs['ZonePlateY'].put(position, wait=True)

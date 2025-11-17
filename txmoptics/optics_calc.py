@@ -368,7 +368,8 @@ class ModernOpticsCalculator:
             ("Focal Length", "zp_focal", "mm", "value"),
             ("Numerical Aperture", "zp_na", "mrad", "value"),
             ("Number of Zones", "zp_zones", "", "value"),
-            ("Motor Position", "zp_position", "mm", "motor")
+            ("Motor Position", "zp_position", "mm", "motor"),
+            ("Depth Of Field", "dof", "μm", "value")
         ])
         
         # Camera Results  
@@ -545,6 +546,10 @@ class ModernOpticsCalculator:
             num_zones = (1000 * diameter) / (4 * drn)
             zp_position = focal_length
             
+            #Depth of field
+            dof = (4 * drn ** 2) / (wavelength ) / 1000
+
+            
             # Camera calculations with user parameters and optical magnification
             pixel_size = camera_config["pixel_size"]
             pixels_v = camera_config["pixels_v"]
@@ -575,6 +580,7 @@ class ModernOpticsCalculator:
             self.zp_na_var.set(f"{na:.2f}")
             self.zp_zones_var.set(f"{num_zones:.0f}")
             self.zp_position_var.set(f"{zp_position:.2f}")
+            self.dof_var.set(f"{dof:.2f}") 
             
             self.cam_pixel_var.set(f"{pixel_size}")
             self.cam_pixels_var.set(f"{pixels_v}×{pixels_h}")
@@ -718,6 +724,7 @@ Zone Plate Results:
 - Focal Length: {self.zp_focal_var.get()} mm
 - Numerical Aperture: {self.zp_na_var.get()} mrad
 - Number of Zones: {self.zp_zones_var.get()}
+- Depth of Field: {self.dof_var.get()}
 - Motor Position: {self.zp_position_var.get()} mm
 
 Camera & Imaging Results:

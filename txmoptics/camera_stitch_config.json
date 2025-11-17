@@ -1,0 +1,14 @@
+{
+  "detector_pv": "32idbSP1:Pva1:Image",
+  "size_x_pv": "32idbSP1:cam1:ArraySizeX_RBV",
+  "size_y_pv": "32idbSP1:cam1:SizeY_RBV",
+  "x_motor_pv": "32idbSP1:m1",
+  "y_motor_pv": "32idbSP1:m2",
+  "rotation_pv": "32idbSP1:m3",
+  "pixel_size": 1.0,
+  "acq_mode": "180",
+  "h_steps": 3,
+  "v_steps": 3,
+  "h_step_size": 0.2,
+  "v_step_size": 0.2
+}

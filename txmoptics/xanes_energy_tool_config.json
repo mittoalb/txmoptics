@@ -1,0 +1,18 @@
+{
+  "pv_xanes_start": "32id:TXMOptics:XanesStart",
+  "pv_xanes_end": "32id:TXMOptics:XanesEnd",
+  "pv_xanes_points": "32id:TXMOptics:XanesPoints",
+  "pv_calib_1": "32id:TXMOptics:EnergyCalibrationFileOne",
+  "pv_calib_2": "32id:TXMOptics:EnergyCalibrationFileTwo",
+  "calib_prefix": "/home/beams/USERTXM/epics/synApps/support/txmoptics/iocBoot/iocTXMOptics/",
+  "tomo_prefix": "32id:TomoScan:",
+  "energies_out": "/home/beams/USERTXM/energies.npy",
+  "pva_image_ch": "32idbSP1:Pva1:Image",
+  "pv_sizex": "32idbSP1:cam1:ArraySizeX_RBV",
+  "pv_sizey": "32idbSP1:cam1:SizeY_RBV",
+  "pv_energy_set": "",
+  "settle_s": 0.3,
+  "frames_per_energy": 1,
+  "save_each_image": false,
+  "save_dir": "/home/beams/USERTXM/xanes_images"
+}

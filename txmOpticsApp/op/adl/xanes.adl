@@ -1,12 +1,12 @@
 
 file {
-	name="/home/beams19/USERTXM/epics/synApps/support/txmoptics/txmOpticsApp/op/adl/xanes.adl"
+	name="/home/beams19/USERTXM/epics/synApps/support/txmoptics/txmoptics/../txmOpticsApp/op/adl/xanes.adl"
 	version=030111
 }
 display {
 	object {
-		x=1909
-		y=407
+		x=1899
+		y=399
 		width=452
 		height=189
 	}
@@ -188,7 +188,7 @@ text {
 		height=25
 	}
 	control {
-		chan="32id:TXMOptics:XanesPoints"
+		chan="32id:TXMOptics:XanesStep"
 		clr=14
 		bclr=51
 	}
@@ -205,7 +205,7 @@ text {
 	"basic attribute" {
 		clr=14
 	}
-	textix="Number of points"
+	textix="Energy Step (eV)"
 	align="horiz. right"
 }
 "shell command" {

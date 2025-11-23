@@ -13,7 +13,7 @@ def caget(pv):
 # Read energy scan parameters
 emin = float(caget("32id:TXMOptics:XanesStart"))
 emax = float(caget("32id:TXMOptics:XanesEnd"))
-npts = int(float(caget("32id:TXMOptics:XanesPoints")))
+steps = int(float(caget("32id:TXMOptics:XanesStep")))
 
 # Read calibration file paths
 params1 = caget("32id:TXMOptics:EnergyCalibrationFileOne")
@@ -25,9 +25,11 @@ params2 = "/home/beams/USERTXM/epics/synApps/support/txmoptics/iocBoot/iocTXMOpt
 
 # Save energy array
 outfile = os.path.expanduser("~/energies.npy")
+
+npts = int((emax*1000 - emin*1000)/steps)+1
 energies = np.linspace(emin, emax, npts)
 np.save(outfile, energies)
-
+print(f"[INFO] calculated energies:", energies)
 print(f"[INFO] Saved {npts} points from {emin} to {emax} keV in {outfile}")
 print(f"[INFO] Using calibration files:\n  - {params1}\n  - {params2}")
 

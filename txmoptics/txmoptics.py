@@ -66,6 +66,7 @@ class TXMOptics():
             self.control_pvs['ShakerBAmpMuliplyer'] = PV(prefix + 'B:ampMult')
             self.control_pvs['ShakerBAmpOffset'] = PV(prefix + 'B:ampOffset')
             self.control_pvs['ShakerBFreqMult'] = PV(prefix + 'B:freqMult')
+            self.control_pvs['SHAKERSTATUS'] = PV('32idbShaker:shaker:run')
 
         if 'BPM' in self.pv_prefixes:
             prefix = self.pv_prefixes['BPM']
@@ -89,6 +90,9 @@ class TXMOptics():
             self.control_pvs['BPMVI'] = PV(prefix + 'fb3.I')
             self.control_pvs['BPMVLowLimit'] = PV(prefix + 'fb3.DRVL')
             self.control_pvs['BPMVHighLimit'] = PV(prefix + 'fb3.DRVH')
+            self.control_pvs['BPMVHighLimit'] = PV(prefix + 'fb3.DRVH')
+            self.control_pvs['BPMFeedbackV'] = PV('32idbSoft:epidV:on')
+            self.control_pvs['BPMFeedbackH'] = PV('32idbSoft:epidH:on')
 
         if 'Camera' in self.pv_prefixes:
             prefix = self.pv_prefixes['Camera']
@@ -341,12 +345,14 @@ class TXMOptics():
         elif (pvname.find('CrossSelect') != -1) and ((value == 0) or (value == 1)):
             thread = threading.Thread(target=self.cross_select, args=())
             thread.start()
-        elif (pvname.find('B:Close') != -1) and (value == 1):
-            thread = threading.Thread(target=self.shutter_b_close, args=())
-            thread.start()            
-        elif (pvname.find('STA_B') != -1) and (value == 0):
-            thread = threading.Thread(target=self.shutter_b_status, args=())
-            thread.start()            
+        #elif (pvname.find('STA_A_FES_CLSD_PL') != -1) and (value == 0):#check FE fist, after B shutter
+        #    print('Front end OPEN')
+        elif (pvname.find('STA_B_SBS_CLSD_PL') != -1) and (value == 0):
+                thread = threading.Thread(target=self.shutter_b_open, args=())
+                thread.start()
+        elif (pvname.find('STA_B_SBS_CLSD_PL') != -1) and (value == 1):
+                thread = threading.Thread(target=self.shutter_b_status, args=())
+                thread.start()                                
         elif (pvname.find('EnergySet') != -1) and (value == 1):
             thread = threading.Thread(target=self.energy_change, args=())
             thread.start()                     
@@ -684,65 +690,56 @@ class TXMOptics():
         if 'AllStop' in self.epics_pvs:
             self.epics_pvs['AllStop'].put(0,wait=True)
     
+    
     def save_all_pvs(self):
-        """Save all PVs from txm_main.adl screen to a file
-        """
-        if('LoadAllPVs' in self.epics_pvs and self.epics_pvs['LoadAllPVs'].get()==1):
+        """Save all PVs to a file"""
+        SAVE_PVS = [
+            '32idbSoft:m1',
+            '32idbTXM:mcs2:c1:m13',
+            '32idbTXM:mcs2:c1:m14',
+            '32idbTXM:mcs2:c1:m15',
+            '32idbSoft:epidH',
+            '32idbSoft:epidV',
+            '32idbShaker:shaker:frequency',
+            '32idbShaker:shaker:timePerPoint',
+            '32idbShaker:shaker:A:ampMult',
+            'S32ID:USID:EnergyM',
+        ]
+        
+        if 'LoadAllPVs' in self.epics_pvs and self.epics_pvs['LoadAllPVs'].get() == 1:
             if 'SaveAllPVs' in self.epics_pvs:
-                self.epics_pvs['SaveAllPVs'].put(0,wait=True)       
+                self.epics_pvs['SaveAllPVs'].put(0, wait=True)       
             return
         
         if 'FileAllPVs' not in self.epics_pvs:
             print("FileAllPVs PV not found")
             return
-            
+        
         file_name = self.epics_pvs['FileAllPVs'].get()
         
-        # read adl file
         try:
-            with open('/home/beams/USERTXM/epics/synApps/support/txmoptics/txmOpticsApp/op/adl/txm_main.adl','r') as fid:    
-                s = fid.read()
-        except FileNotFoundError:
-            print("ADL file not found, skipping PV extraction")
-            if 'SaveAllPVs' in self.epics_pvs:
-                self.epics_pvs['SaveAllPVs'].put(0,wait=True)
-            return
-            
-        # take pvs
-        pvs = []
-        pvs = re.findall(r"chan=\"(.*?)\"", s)
-        
-        print(pvs)
-        # save values to a txt file 
-        try:
-            with open(file_name,'w') as fid:
+            with open(file_name, 'w') as fid:
                 if 'EnergyMonochromator' in self.control_pvs:
                     energy = self.control_pvs['EnergyMonochromator'].get()
-                    fid.write('energy '+ str(energy) +'\n')                
-                for k in pvs:
-                    if (k.find('.VAL')!=-1 and 
-                        k.find('32idcTXM:mcs:c0')==-1 and 
-                        k.find('32idcSoft:nf:c0')==-1 and 
-                        k.find('32idaSoft:m10')==-1 and 
-                        k.find('32idcSOFT:nf:c0:m3')==-1 and 
-                        k.find('32idaSoft:m9')==-1 and 
-                        k.find('32idcTXM:mxv:c1:')==-1): ## temporarily avoid pvs
-                        try:
-                            print(k)
-                            p = PV(k)
-                            time.sleep(0.1)
-                            val = p.get(as_string=True,timeout=30)
-                            if(val is not None and isfloat(val)):
-                                print(k,val)                        
-                                fid.write(k[:-4]+' '+val+'\n')
-                        except:
-                            pass
+                    fid.write(f'energy {energy}\n')
+                
+                for pv_name in SAVE_PVS:
+                    try:
+                        p = PV(pv_name + '.VAL')
+                        time.sleep(0.1)
+                        val = p.get(as_string=True, timeout=30)
+                        if val is not None and isfloat(val):
+                            print(f'{pv_name} {val}')
+                            fid.write(f'{pv_name} {val}\n')
+                    except:
+                        pass
         except:
             log.error('File %s cannot be created', file_name)
         
         if 'SaveAllPVs' in self.epics_pvs:
-            self.epics_pvs['SaveAllPVs'].put(0,wait=True)        
-    
+            self.epics_pvs['SaveAllPVs'].put(0, wait=True)
+
+
     def load_all_pvs(self):
         """Load all PVs to txm_main.adl screen to a file
         """
@@ -798,22 +795,26 @@ class TXMOptics():
                 self.control_pvs['OP2Use'].put(0)
                 log.info('Cross is disabled')
 
-    def shutter_b_close(self):        
-        if ('ShutterCallback' in self.epics_pvs and self.epics_pvs['ShutterCallback'].get() == 0):
-            log.info('Stop BPM')
-            if 'BPMVFeedback' in self.control_pvs:
-                self.control_pvs['BPMVFeedback'].put(0)
-            if 'BPMHFeedback' in self.control_pvs:
-                self.control_pvs['BPMHFeedback'].put(0)  
-        
-    def shutter_b_status(self):
+    def shutter_b_open(self):        
         if ('ShutterCallback' in self.epics_pvs and self.epics_pvs['ShutterCallback'].get() == 0):
             log.info('Start BPM')
-            if 'BPMVFeedback' in self.control_pvs:
-                self.control_pvs['BPMVFeedback'].put(1)
-            if 'BPMHFeedback' in self.control_pvs:
-                self.control_pvs['BPMHFeedback'].put(1)  
-
+            if 'BPMFeedbackV' in self.control_pvs:
+                self.control_pvs['BPMFeedbackV'].put(1)
+            if 'BPMFeedbackH' in self.control_pvs:
+                self.control_pvs['BPMFeedbackH'].put(1)    
+            if 'SHAKERSTATUS' in self.control_pvs:#Switch on the SHAKER
+                self.control_pvs['SHAKERSTATUS'].put('Run')                    
+  
+    def shutter_b_status(self):
+        if ('ShutterCallback' in self.epics_pvs and self.epics_pvs['ShutterCallback'].get() == 0):
+            log.info('Stop BPM')
+            if 'BPMFeedbackV' in self.control_pvs:
+                self.control_pvs['BPMFeedbackV'].put(0)
+            if 'BPMFeedbackH' in self.control_pvs:
+                self.control_pvs['BPMFeedbackH'].put(0)
+            if 'SHAKERSTATUS' in self.control_pvs:#Switch off the SHAKER
+                self.control_pvs['SHAKERSTATUS'].put('Stop')    
+                               
     def energy_change(self):
         
         if ('EnergyBusy' not in self.epics_pvs or self.epics_pvs['EnergyBusy'].get() == 0):

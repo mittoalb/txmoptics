@@ -1,12 +1,12 @@
 
 file {
-	name="/home/beams19/USERTXM/epics/synApps/support/txmoptics/txmOpticsApp/op/adl/txm_main_Nov25.adl"
+	name="/home/beams19/USERTXM/epics/synApps/support/txmoptics/iocBoot/iocTXMOptics/../../txmOpticsApp/op/adl/txm_main.adl"
 	version=030111
 }
 display {
 	object {
-		x=954
-		y=75
+		x=944
+		y=67
 		width=1626
 		height=1435
 	}
@@ -9993,7 +9993,7 @@ rectangle {
 		x=37
 		y=272
 		width=120
-		height=27
+		height=30
 	}
 	command[0] {
 		label="IOCs"
@@ -15256,4 +15256,85 @@ rectangle {
 		fill="outline"
 		width=5
 	}
+}
+"related display" {
+	object {
+		x=37
+		y=304
+		width=120
+		height=30
+	}
+	display[0] {
+		label="softGlueZynqMenu"
+		name="softGlueZynqMenu.adl"
+		args="P=32idMZ1:,H=SG:"
+	}
+	display[1] {
+		label="SoftGlue Circuits"
+		name="configMenu.adl"
+		args="P=32idMZ1:,CONFIG=SG"
+	}
+	display[2] {
+		label="MCS"
+		name="MCS.adl"
+		args="P=32idMZ1:,Q=MCS"
+	}
+	display[4] {
+		label="DMA test"
+		name="MCS.adl"
+		args="P=32idMZ1:,Q=DMA"
+	}
+	display[5] {
+		label="pixelTrigger"
+		name="pixelTrigger.adl"
+		args="P=32idMZ1:,Q=1"
+	}
+	display[6] {
+		label="MCS"
+		name="MCS.adl"
+		args="P=32idMZ1:,Q=1"
+	}
+	display[7] {
+		label="asynSoftGlue"
+		name="asynRecord.adl"
+		args="P=32idMZ1:,R=asynSoftGlue"
+	}
+	display[8] {
+		label="asynSoftGlueReg"
+		name="asynRecord.adl"
+		args="P=32idMZ1:,R=asynSoftGlueReg"
+	}
+	display[9] {
+		label="pixelTriggerImage 1"
+		name="pixelTrigger2D.adl"
+		args="P=32idMZ1:,letter=I"
+	}
+	display[10] {
+		label="pixelTriggerImage 2"
+		name="pixelTrigger2D.adl"
+		args="P=32idMZ1:,letter=J"
+	}
+	display[11] {
+		label="readSoftGlueCounter"
+		name="readSoftGlueCounter.adl"
+		args="P=32idMZ1:,Q=SG_RdCntr:"
+	}
+	display[12] {
+		label="pixelTriggerDma"
+		name="pixelTriggerDma.adl"
+		args="P=32idMZ1:,Q=1"
+	}
+	display[13] {
+		label="pixelTriggerDmaImage 1"
+		name="pixelTriggerDma2D.adl"
+		args="P=32idMZ1:,letter=I"
+	}
+	display[14] {
+		label="histScalerDma"
+		name="histScalerDma.adl"
+		args="P=32idMZ1:,Q=1"
+	}
+	clr=0
+	bclr=17
+	label="-  SoftGlue"
 }

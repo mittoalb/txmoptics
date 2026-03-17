@@ -82,5 +82,11 @@ setenv EPICS_DISPLAY_PATH $EPICS_DISPLAY_PATH':'/home/beams/USR32IDC/areaDetecto
 # add Photron (w/ ADCore-2-4) adls
 setenv EPICS_DISPLAY_PATH $EPICS_DISPLAY_PATH':'/home/beams/USR32IDC/areaDetector/Photron
 
+# add SoftGlue screens
+setenv EPICS_DISPLAY_PATH $EPICS_DISPLAY_PATH':'/net/s2dserv/xorApps/epics/synApps_SG/support/softGlueZynq-ILF/softGlueApp/op/adl
+
+
+
+
 medm -attach -x -dg +50+50 -local ../../txmOpticsApp/op/adl/txm_main.adl &
 

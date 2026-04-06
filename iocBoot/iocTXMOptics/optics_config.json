@@ -54,6 +54,15 @@
       "focal_length": 96.9,
       "na_tip": 2.451,
       "position_offset": 150
+    },
+    "Zeiss": {
+      "source_dist": 35000.0,
+      "inner_dia": 850.0,
+      "outer_dia": 1000.0,
+      "length": 74.0,
+      "focal_length": 287.0,
+      "na_tip": 1.48,
+      "position_offset": 100.0
     }
   },
   "cameras": {
@@ -94,6 +103,7 @@
     "binning": 2,
     "exposure_time": 0.001,
     "sample_detector_distance": 3500.0,
-    "beam_current": 200.0
+    "beam_current": 200.0,
+    "source_distance": 35000.0
   }
 }

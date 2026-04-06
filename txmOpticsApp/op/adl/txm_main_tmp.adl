@@ -5,8 +5,8 @@ file {
 }
 display {
 	object {
-		x=202
-		y=180
+		x=242
+		y=212
 		width=2387
 		height=1219
 	}
@@ -336,6 +336,36 @@ text {
 		clr=54
 	}
 	textix="32ID Shutter Control"
+}
+"message button" {
+	object {
+		x=1171
+		y=472
+		width=130
+		height=27
+	}
+	control {
+		chan="32id:TXMOptics:MoveAllIn"
+		clr=14
+		bclr=51
+	}
+	label="Nano-CT"
+	press_msg="1"
+}
+"message button" {
+	object {
+		x=1171
+		y=502
+		width=130
+		height=27
+	}
+	control {
+		chan="32id:TXMOptics:MoveAllOut"
+		clr=14
+		bclr=51
+	}
+	label="Micro-CT"
+	press_msg="1"
 }
 text {
 	object {
@@ -2175,9 +2205,114 @@ composite {
 		}
 	}
 }
+text {
+	object {
+		x=73
+		y=352
+		width=75
+		height=25
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Valves"
+	align="horiz. centered"
+}
+oval {
+	object {
+		x=130
+		y=408
+		width=20
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="if not zero"
+		chan="32idbSoft:PLC1:C3"
+	}
+}
+"message button" {
+	object {
+		x=73
+		y=382
+		width=55
+		height=23
+	}
+	control {
+		chan="32idbSoft:PLC1:oC23"
+		clr=14
+		bclr=15
+	}
+	label="On"
+	press_msg="1"
+	release_msg="0"
+}
+oval {
+	object {
+		x=130
+		y=408
+		width=20
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="if zero"
+		chan="32idbSoft:PLC1:C3"
+	}
+}
+"message button" {
+	object {
+		x=73
+		y=407
+		width=55
+		height=23
+	}
+	control {
+		chan="32idbSoft:PLC1:oC33"
+		clr=14
+		bclr=20
+	}
+	label="Off"
+	press_msg="1"
+	release_msg="0"
+}
+oval {
+	object {
+		x=130
+		y=508
+		width=20
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="if not zero"
+		chan="32idbSoft:PLC1:C1"
+	}
+}
+oval {
+	object {
+		x=131
+		y=459
+		width=20
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="if not zero"
+		chan="32idbSoft:PLC1:C2"
+	}
+}
 composite {
 	object {
-		x=11
+		x=221
 		y=349
 		width=117
 		height=183
@@ -2186,7 +2321,7 @@ composite {
 	children {
 		text {
 			object {
-				x=13
+				x=223
 				y=478
 				width=45
 				height=16
@@ -2199,7 +2334,7 @@ composite {
 		}
 		text {
 			object {
-				x=12
+				x=222
 				y=477
 				width=45
 				height=16
@@ -2216,7 +2351,7 @@ composite {
 		}
 		"text update" {
 			object {
-				x=12
+				x=222
 				y=349
 				width=116
 				height=20
@@ -2232,7 +2367,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=18
+				x=228
 				y=405
 				width=104
 				height=31
@@ -2248,7 +2383,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=18
+				x=228
 				y=405
 				width=104
 				height=31
@@ -2264,7 +2399,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=18
+				x=228
 				y=405
 				width=104
 				height=31
@@ -2280,7 +2415,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=12
+				x=222
 				y=436
 				width=116
 				height=40
@@ -2292,7 +2427,7 @@ composite {
 		}
 		text {
 			object {
-				x=40
+				x=250
 				y=460
 				width=60
 				height=15
@@ -2310,7 +2445,7 @@ composite {
 		}
 		text {
 			object {
-				x=40
+				x=250
 				y=466
 				width=60
 				height=10
@@ -2328,7 +2463,7 @@ composite {
 		}
 		"message button" {
 			object {
-				x=14
+				x=224
 				y=438
 				width=25
 				height=36
@@ -2343,7 +2478,7 @@ composite {
 		}
 		"text entry" {
 			object {
-				x=40
+				x=250
 				y=438
 				width=60
 				height=20
@@ -2358,7 +2493,7 @@ composite {
 		}
 		"message button" {
 			object {
-				x=101
+				x=311
 				y=438
 				width=25
 				height=36
@@ -2373,7 +2508,7 @@ composite {
 		}
 		"text entry" {
 			object {
-				x=21
+				x=231
 				y=408
 				width=98
 				height=25
@@ -2388,7 +2523,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=12
+				x=222
 				y=384
 				width=6
 				height=50
@@ -2403,7 +2538,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=122
+				x=332
 				y=384
 				width=6
 				height=50
@@ -2418,7 +2553,7 @@ composite {
 		}
 		"text update" {
 			object {
-				x=12
+				x=222
 				y=371
 				width=116
 				height=12
@@ -2434,7 +2569,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=19
+				x=229
 				y=380
 				width=102
 				height=26
@@ -2451,7 +2586,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=21
+				x=231
 				y=382
 				width=98
 				height=21
@@ -2468,7 +2603,7 @@ composite {
 		}
 		"text update" {
 			object {
-				x=23
+				x=233
 				y=384
 				width=94
 				height=17
@@ -2484,7 +2619,7 @@ composite {
 		}
 		text {
 			object {
-				x=40
+				x=250
 				y=458
 				width=60
 				height=10
@@ -2502,7 +2637,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=18
+				x=228
 				y=405
 				width=104
 				height=31
@@ -2520,7 +2655,7 @@ composite {
 		}
 		"choice button" {
 			object {
-				x=57
+				x=267
 				y=476
 				width=71
 				height=20
@@ -2534,7 +2669,7 @@ composite {
 		}
 		"choice button" {
 			object {
-				x=11
+				x=221
 				y=497
 				width=115
 				height=35
@@ -2549,7 +2684,7 @@ composite {
 }
 composite {
 	object {
-		x=131
+		x=341
 		y=349
 		width=117
 		height=183
@@ -2558,7 +2693,7 @@ composite {
 	children {
 		text {
 			object {
-				x=133
+				x=343
 				y=478
 				width=45
 				height=16
@@ -2571,7 +2706,7 @@ composite {
 		}
 		text {
 			object {
-				x=132
+				x=342
 				y=477
 				width=45
 				height=16
@@ -2588,7 +2723,7 @@ composite {
 		}
 		"text update" {
 			object {
-				x=132
+				x=342
 				y=349
 				width=116
 				height=20
@@ -2604,7 +2739,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=138
+				x=348
 				y=405
 				width=104
 				height=31
@@ -2620,7 +2755,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=138
+				x=348
 				y=405
 				width=104
 				height=31
@@ -2636,7 +2771,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=138
+				x=348
 				y=405
 				width=104
 				height=31
@@ -2652,7 +2787,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=132
+				x=342
 				y=436
 				width=116
 				height=40
@@ -2664,7 +2799,7 @@ composite {
 		}
 		text {
 			object {
-				x=160
+				x=370
 				y=460
 				width=60
 				height=15
@@ -2682,7 +2817,7 @@ composite {
 		}
 		text {
 			object {
-				x=160
+				x=370
 				y=466
 				width=60
 				height=10
@@ -2700,7 +2835,7 @@ composite {
 		}
 		"message button" {
 			object {
-				x=134
+				x=344
 				y=438
 				width=25
 				height=36
@@ -2715,7 +2850,7 @@ composite {
 		}
 		"text entry" {
 			object {
-				x=160
+				x=370
 				y=438
 				width=60
 				height=20
@@ -2730,7 +2865,7 @@ composite {
 		}
 		"message button" {
 			object {
-				x=221
+				x=431
 				y=438
 				width=25
 				height=36
@@ -2745,7 +2880,7 @@ composite {
 		}
 		"text entry" {
 			object {
-				x=141
+				x=351
 				y=408
 				width=98
 				height=25
@@ -2760,7 +2895,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=132
+				x=342
 				y=384
 				width=6
 				height=50
@@ -2775,7 +2910,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=242
+				x=452
 				y=384
 				width=6
 				height=50
@@ -2790,7 +2925,7 @@ composite {
 		}
 		"text update" {
 			object {
-				x=132
+				x=342
 				y=371
 				width=116
 				height=12
@@ -2806,7 +2941,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=139
+				x=349
 				y=380
 				width=102
 				height=26
@@ -2823,7 +2958,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=141
+				x=351
 				y=382
 				width=98
 				height=21
@@ -2840,7 +2975,7 @@ composite {
 		}
 		"text update" {
 			object {
-				x=143
+				x=353
 				y=384
 				width=94
 				height=17
@@ -2856,7 +2991,7 @@ composite {
 		}
 		text {
 			object {
-				x=160
+				x=370
 				y=458
 				width=60
 				height=10
@@ -2874,7 +3009,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=138
+				x=348
 				y=405
 				width=104
 				height=31
@@ -2892,7 +3027,7 @@ composite {
 		}
 		"choice button" {
 			object {
-				x=177
+				x=387
 				y=476
 				width=71
 				height=20
@@ -2906,7 +3041,7 @@ composite {
 		}
 		"choice button" {
 			object {
-				x=131
+				x=341
 				y=497
 				width=115
 				height=35
@@ -2921,7 +3056,7 @@ composite {
 }
 composite {
 	object {
-		x=251
+		x=461
 		y=349
 		width=117
 		height=183
@@ -2930,7 +3065,7 @@ composite {
 	children {
 		text {
 			object {
-				x=253
+				x=463
 				y=478
 				width=45
 				height=16
@@ -2943,7 +3078,7 @@ composite {
 		}
 		text {
 			object {
-				x=252
+				x=462
 				y=477
 				width=45
 				height=16
@@ -2960,7 +3095,7 @@ composite {
 		}
 		"text update" {
 			object {
-				x=252
+				x=462
 				y=349
 				width=116
 				height=20
@@ -2976,7 +3111,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=258
+				x=468
 				y=405
 				width=104
 				height=31
@@ -2992,7 +3127,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=258
+				x=468
 				y=405
 				width=104
 				height=31
@@ -3008,7 +3143,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=258
+				x=468
 				y=405
 				width=104
 				height=31
@@ -3024,7 +3159,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=252
+				x=462
 				y=436
 				width=116
 				height=40
@@ -3036,7 +3171,7 @@ composite {
 		}
 		text {
 			object {
-				x=280
+				x=490
 				y=460
 				width=60
 				height=15
@@ -3054,7 +3189,7 @@ composite {
 		}
 		text {
 			object {
-				x=280
+				x=490
 				y=466
 				width=60
 				height=10
@@ -3072,7 +3207,7 @@ composite {
 		}
 		"message button" {
 			object {
-				x=254
+				x=464
 				y=438
 				width=25
 				height=36
@@ -3087,7 +3222,7 @@ composite {
 		}
 		"text entry" {
 			object {
-				x=280
+				x=490
 				y=438
 				width=60
 				height=20
@@ -3102,7 +3237,7 @@ composite {
 		}
 		"message button" {
 			object {
-				x=341
+				x=551
 				y=438
 				width=25
 				height=36
@@ -3117,7 +3252,7 @@ composite {
 		}
 		"text entry" {
 			object {
-				x=261
+				x=471
 				y=408
 				width=98
 				height=25
@@ -3132,7 +3267,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=252
+				x=462
 				y=384
 				width=6
 				height=50
@@ -3147,7 +3282,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=362
+				x=572
 				y=384
 				width=6
 				height=50
@@ -3162,7 +3297,7 @@ composite {
 		}
 		"text update" {
 			object {
-				x=252
+				x=462
 				y=371
 				width=116
 				height=12
@@ -3178,7 +3313,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=259
+				x=469
 				y=380
 				width=102
 				height=26
@@ -3195,7 +3330,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=261
+				x=471
 				y=382
 				width=98
 				height=21
@@ -3212,7 +3347,7 @@ composite {
 		}
 		"text update" {
 			object {
-				x=263
+				x=473
 				y=384
 				width=94
 				height=17
@@ -3228,7 +3363,7 @@ composite {
 		}
 		text {
 			object {
-				x=280
+				x=490
 				y=458
 				width=60
 				height=10
@@ -3246,7 +3381,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=258
+				x=468
 				y=405
 				width=104
 				height=31
@@ -3264,7 +3399,7 @@ composite {
 		}
 		"choice button" {
 			object {
-				x=297
+				x=507
 				y=476
 				width=71
 				height=20
@@ -3278,7 +3413,7 @@ composite {
 		}
 		"choice button" {
 			object {
-				x=251
+				x=461
 				y=497
 				width=115
 				height=35
@@ -3293,7 +3428,7 @@ composite {
 }
 "related display" {
 	object {
-		x=367
+		x=577
 		y=516
 		width=15
 		height=15
@@ -3308,7 +3443,7 @@ composite {
 }
 "shell command" {
 	object {
-		x=11
+		x=221
 		y=280
 		width=70
 		height=25
@@ -3323,9 +3458,9 @@ composite {
 }
 rectangle {
 	object {
-		x=1
+		x=211
 		y=271
-		width=950
+		width=1100
 		height=268
 	}
 	"basic attribute" {
@@ -3380,7 +3515,7 @@ rectangle {
 }
 "shell command" {
 	object {
-		x=85
+		x=295
 		y=280
 		width=80
 		height=25
@@ -3395,7 +3530,7 @@ rectangle {
 }
 menu {
 	object {
-		x=486
+		x=802
 		y=241
 		width=80
 		height=20
@@ -3408,7 +3543,7 @@ menu {
 }
 "text entry" {
 	object {
-		x=570
+		x=886
 		y=241
 		width=30
 		height=20
@@ -3423,7 +3558,7 @@ menu {
 }
 "text update" {
 	object {
-		x=605
+		x=921
 		y=241
 		width=30
 		height=20
@@ -3438,7 +3573,7 @@ menu {
 }
 "message button" {
 	object {
-		x=690
+		x=1006
 		y=241
 		width=40
 		height=20
@@ -3453,7 +3588,7 @@ menu {
 }
 "text update" {
 	object {
-		x=736
+		x=1052
 		y=241
 		width=62
 		height=20
@@ -3469,7 +3604,7 @@ menu {
 }
 menu {
 	object {
-		x=861
+		x=1177
 		y=241
 		width=80
 		height=20
@@ -3482,7 +3617,7 @@ menu {
 }
 text {
 	object {
-		x=547
+		x=863
 		y=215
 		width=260
 		height=20
@@ -3495,7 +3630,7 @@ text {
 }
 "message button" {
 	object {
-		x=644
+		x=960
 		y=241
 		width=40
 		height=20
@@ -3508,9 +3643,106 @@ text {
 	label="Reset"
 	press_msg="1"
 }
+"shell command" {
+	object {
+		x=8
+		y=151
+		width=25
+		height=25
+	}
+	command[0] {
+		label="32-ID Beamline"
+		name="/home/beams/USERTXM/start_caQtDM_32id"
+	}
+	clr=0
+	bclr=53
+	label="-"
+}
+"related display" {
+	object {
+		x=8
+		y=249
+		width=25
+		height=25
+	}
+	display[0] {
+		label="tomoScan"
+		name="tomoScan_32ID_main.adl"
+		args="P=32id:, R=TomoScan:, BEAMLINE=tomoScan_32ID"
+	}
+	display[1] {
+		label="tomoScan 32-ID"
+		name="tomoScan_32ID.adl"
+		args="P=32id:, R=TomoScan:, BEAMLINE=tomoScan_32ID"
+	}
+	display[2] {
+		label="tomoScanStep"
+		name="tomoScan_32ID_main.adl"
+		args=" P=32id:, R=TomoScanStep:, BEAMLINE=tomoScanStep_32ID"
+	}
+	display[3] {
+		label="tomoScanStep 32-ID"
+		name="tomoScanStep_32ID.adl"
+		args="P=32id:, R=TomoScanStep:, BEAMLINE=tomoScanStep_32ID"
+	}
+	display[4] {
+		label="tomoScanFPGA"
+		name="tomoScanFPGA_32ID_main.adl"
+		args="P=32id:, R=TomoScanFPGA:, BEAMLINE=tomoScanFPGA_32ID"
+	}
+	display[5] {
+		label="tomoScanFPGA 32-ID"
+		name="tomoScanFPGA_32ID.adl"
+		args="P=32id:, R=TomoScanFPGA:, BEAMLINE=tomoScanFPGA_32ID"
+	}
+	display[6] {
+		label="tomoScanStream"
+		name="tomoScan_32ID_main.adl"
+		args="P=32id:, R=TomoScanStream:, BEAMLINE=tomoScanStream_32ID"
+	}
+	display[7] {
+		label="tomoScanStream 32-ID"
+		name="tomoScan_32ID.adl"
+		args="P=32id:, R=TomoScanStream:, BEAMLINE=tomoScanStream_32ID"
+	}
+	clr=0
+	bclr=53
+	label="- 6"
+}
+"shell command" {
+	object {
+		x=8
+		y=201
+		width=25
+		height=25
+	}
+	command[0] {
+		label="TXM optics"
+		name="firefox 10.54.102.97 &"
+	}
+	command[1] {
+		label="Robot"
+		name="firefox 10.54.102.88 &"
+	}
+	command[2] {
+		label="Control room"
+		name="firefox 10.54.102.90 &"
+	}
+	command[3] {
+		label="Flag"
+		name="firefox 10.54.102.81 &"
+	}
+	command[4] {
+		label="Hutch C"
+		name="firefox 10.54.102.91 &"
+	}
+	clr=0
+	bclr=53
+	label="- 5"
+}
 composite {
 	object {
-		x=549
+		x=759
 		y=349
 		width=117
 		height=183
@@ -3519,7 +3751,7 @@ composite {
 	children {
 		text {
 			object {
-				x=551
+				x=761
 				y=478
 				width=45
 				height=16
@@ -3532,7 +3764,7 @@ composite {
 		}
 		text {
 			object {
-				x=550
+				x=760
 				y=477
 				width=45
 				height=16
@@ -3549,7 +3781,7 @@ composite {
 		}
 		"text update" {
 			object {
-				x=550
+				x=760
 				y=349
 				width=116
 				height=20
@@ -3565,7 +3797,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=556
+				x=766
 				y=405
 				width=104
 				height=31
@@ -3581,7 +3813,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=556
+				x=766
 				y=405
 				width=104
 				height=31
@@ -3597,7 +3829,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=556
+				x=766
 				y=405
 				width=104
 				height=31
@@ -3613,7 +3845,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=550
+				x=760
 				y=436
 				width=116
 				height=40
@@ -3625,7 +3857,7 @@ composite {
 		}
 		text {
 			object {
-				x=578
+				x=788
 				y=460
 				width=60
 				height=15
@@ -3643,7 +3875,7 @@ composite {
 		}
 		text {
 			object {
-				x=578
+				x=788
 				y=466
 				width=60
 				height=10
@@ -3661,7 +3893,7 @@ composite {
 		}
 		"message button" {
 			object {
-				x=552
+				x=762
 				y=438
 				width=25
 				height=36
@@ -3676,7 +3908,7 @@ composite {
 		}
 		"text entry" {
 			object {
-				x=578
+				x=788
 				y=438
 				width=60
 				height=20
@@ -3691,7 +3923,7 @@ composite {
 		}
 		"message button" {
 			object {
-				x=639
+				x=849
 				y=438
 				width=25
 				height=36
@@ -3706,7 +3938,7 @@ composite {
 		}
 		"text entry" {
 			object {
-				x=559
+				x=769
 				y=408
 				width=98
 				height=25
@@ -3721,7 +3953,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=550
+				x=760
 				y=384
 				width=6
 				height=50
@@ -3736,7 +3968,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=660
+				x=870
 				y=384
 				width=6
 				height=50
@@ -3751,7 +3983,7 @@ composite {
 		}
 		"text update" {
 			object {
-				x=550
+				x=760
 				y=371
 				width=116
 				height=12
@@ -3767,7 +3999,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=557
+				x=767
 				y=380
 				width=102
 				height=26
@@ -3784,7 +4016,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=559
+				x=769
 				y=382
 				width=98
 				height=21
@@ -3801,7 +4033,7 @@ composite {
 		}
 		"text update" {
 			object {
-				x=561
+				x=771
 				y=384
 				width=94
 				height=17
@@ -3817,7 +4049,7 @@ composite {
 		}
 		text {
 			object {
-				x=578
+				x=788
 				y=458
 				width=60
 				height=10
@@ -3835,7 +4067,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=556
+				x=766
 				y=405
 				width=104
 				height=31
@@ -3853,7 +4085,7 @@ composite {
 		}
 		"choice button" {
 			object {
-				x=595
+				x=805
 				y=476
 				width=71
 				height=20
@@ -3867,7 +4099,7 @@ composite {
 		}
 		"choice button" {
 			object {
-				x=549
+				x=759
 				y=497
 				width=115
 				height=35
@@ -3882,7 +4114,7 @@ composite {
 }
 composite {
 	object {
-		x=673
+		x=883
 		y=349
 		width=117
 		height=183
@@ -3891,7 +4123,7 @@ composite {
 	children {
 		text {
 			object {
-				x=675
+				x=885
 				y=478
 				width=45
 				height=16
@@ -3904,7 +4136,7 @@ composite {
 		}
 		text {
 			object {
-				x=674
+				x=884
 				y=477
 				width=45
 				height=16
@@ -3921,7 +4153,7 @@ composite {
 		}
 		"text update" {
 			object {
-				x=674
+				x=884
 				y=349
 				width=116
 				height=20
@@ -3937,7 +4169,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=680
+				x=890
 				y=405
 				width=104
 				height=31
@@ -3953,7 +4185,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=680
+				x=890
 				y=405
 				width=104
 				height=31
@@ -3969,7 +4201,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=680
+				x=890
 				y=405
 				width=104
 				height=31
@@ -3985,7 +4217,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=674
+				x=884
 				y=436
 				width=116
 				height=40
@@ -3997,7 +4229,7 @@ composite {
 		}
 		text {
 			object {
-				x=702
+				x=912
 				y=460
 				width=60
 				height=15
@@ -4015,7 +4247,7 @@ composite {
 		}
 		text {
 			object {
-				x=702
+				x=912
 				y=466
 				width=60
 				height=10
@@ -4033,7 +4265,7 @@ composite {
 		}
 		"message button" {
 			object {
-				x=676
+				x=886
 				y=438
 				width=25
 				height=36
@@ -4048,7 +4280,7 @@ composite {
 		}
 		"text entry" {
 			object {
-				x=702
+				x=912
 				y=438
 				width=60
 				height=20
@@ -4063,7 +4295,7 @@ composite {
 		}
 		"message button" {
 			object {
-				x=763
+				x=973
 				y=438
 				width=25
 				height=36
@@ -4078,7 +4310,7 @@ composite {
 		}
 		"text entry" {
 			object {
-				x=683
+				x=893
 				y=408
 				width=98
 				height=25
@@ -4093,7 +4325,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=674
+				x=884
 				y=384
 				width=6
 				height=50
@@ -4108,7 +4340,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=784
+				x=994
 				y=384
 				width=6
 				height=50
@@ -4123,7 +4355,7 @@ composite {
 		}
 		"text update" {
 			object {
-				x=674
+				x=884
 				y=371
 				width=116
 				height=12
@@ -4139,7 +4371,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=681
+				x=891
 				y=380
 				width=102
 				height=26
@@ -4156,7 +4388,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=683
+				x=893
 				y=382
 				width=98
 				height=21
@@ -4173,7 +4405,7 @@ composite {
 		}
 		"text update" {
 			object {
-				x=685
+				x=895
 				y=384
 				width=94
 				height=17
@@ -4189,7 +4421,7 @@ composite {
 		}
 		text {
 			object {
-				x=702
+				x=912
 				y=458
 				width=60
 				height=10
@@ -4207,7 +4439,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=680
+				x=890
 				y=405
 				width=104
 				height=31
@@ -4225,7 +4457,7 @@ composite {
 		}
 		"choice button" {
 			object {
-				x=719
+				x=929
 				y=476
 				width=71
 				height=20
@@ -4239,7 +4471,7 @@ composite {
 		}
 		"choice button" {
 			object {
-				x=673
+				x=883
 				y=497
 				width=115
 				height=35
@@ -4254,7 +4486,7 @@ composite {
 }
 text {
 	object {
-		x=798
+		x=1008
 		y=478
 		width=45
 		height=16
@@ -4267,7 +4499,7 @@ text {
 }
 text {
 	object {
-		x=797
+		x=1007
 		y=477
 		width=45
 		height=16
@@ -4284,7 +4516,7 @@ text {
 }
 "text update" {
 	object {
-		x=797
+		x=1007
 		y=349
 		width=116
 		height=20
@@ -4300,7 +4532,7 @@ text {
 }
 rectangle {
 	object {
-		x=803
+		x=1013
 		y=405
 		width=104
 		height=31
@@ -4316,7 +4548,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=803
+		x=1013
 		y=405
 		width=104
 		height=31
@@ -4332,7 +4564,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=803
+		x=1013
 		y=405
 		width=104
 		height=31
@@ -4348,7 +4580,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=797
+		x=1007
 		y=436
 		width=116
 		height=40
@@ -4360,7 +4592,7 @@ rectangle {
 }
 text {
 	object {
-		x=825
+		x=1035
 		y=460
 		width=60
 		height=15
@@ -4378,7 +4610,7 @@ text {
 }
 text {
 	object {
-		x=825
+		x=1035
 		y=466
 		width=60
 		height=10
@@ -4396,7 +4628,7 @@ text {
 }
 "message button" {
 	object {
-		x=799
+		x=1009
 		y=438
 		width=25
 		height=36
@@ -4411,7 +4643,7 @@ text {
 }
 "text entry" {
 	object {
-		x=825
+		x=1035
 		y=438
 		width=60
 		height=20
@@ -4426,7 +4658,7 @@ text {
 }
 "message button" {
 	object {
-		x=886
+		x=1096
 		y=438
 		width=25
 		height=36
@@ -4441,7 +4673,7 @@ text {
 }
 "text entry" {
 	object {
-		x=806
+		x=1016
 		y=408
 		width=98
 		height=25
@@ -4456,7 +4688,7 @@ text {
 }
 rectangle {
 	object {
-		x=797
+		x=1007
 		y=384
 		width=6
 		height=50
@@ -4471,7 +4703,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=907
+		x=1117
 		y=384
 		width=6
 		height=50
@@ -4486,7 +4718,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=797
+		x=1007
 		y=371
 		width=116
 		height=12
@@ -4502,7 +4734,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=804
+		x=1014
 		y=380
 		width=102
 		height=26
@@ -4519,7 +4751,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=806
+		x=1016
 		y=382
 		width=98
 		height=21
@@ -4536,7 +4768,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=808
+		x=1018
 		y=384
 		width=94
 		height=17
@@ -4552,7 +4784,7 @@ rectangle {
 }
 text {
 	object {
-		x=825
+		x=1035
 		y=458
 		width=60
 		height=10
@@ -4570,7 +4802,7 @@ text {
 }
 rectangle {
 	object {
-		x=803
+		x=1013
 		y=405
 		width=104
 		height=31
@@ -4588,7 +4820,7 @@ rectangle {
 }
 "choice button" {
 	object {
-		x=842
+		x=1052
 		y=476
 		width=71
 		height=20
@@ -4602,7 +4834,7 @@ rectangle {
 }
 "choice button" {
 	object {
-		x=796
+		x=1006
 		y=497
 		width=115
 		height=35
@@ -4615,7 +4847,7 @@ rectangle {
 }
 "related display" {
 	object {
-		x=911
+		x=1121
 		y=516
 		width=15
 		height=15
@@ -4630,7 +4862,7 @@ rectangle {
 }
 text {
 	object {
-		x=129
+		x=339
 		y=304
 		width=40
 		height=20
@@ -4648,7 +4880,7 @@ text {
 }
 text {
 	object {
-		x=105
+		x=315
 		y=303
 		width=100
 		height=20
@@ -4666,7 +4898,7 @@ text {
 }
 "message button" {
 	object {
-		x=23
+		x=233
 		y=324
 		width=80
 		height=22
@@ -4681,7 +4913,7 @@ text {
 }
 "message button" {
 	object {
-		x=117
+		x=327
 		y=325
 		width=80
 		height=20
@@ -4696,7 +4928,7 @@ text {
 }
 text {
 	object {
-		x=28
+		x=238
 		y=303
 		width=70
 		height=20
@@ -4709,7 +4941,7 @@ text {
 }
 text {
 	object {
-		x=236
+		x=446
 		y=280
 		width=130
 		height=20
@@ -4722,7 +4954,7 @@ text {
 }
 "text entry" {
 	object {
-		x=371
+		x=581
 		y=280
 		width=60
 		height=20
@@ -4737,7 +4969,7 @@ text {
 }
 "text update" {
 	object {
-		x=436
+		x=646
 		y=280
 		width=80
 		height=20
@@ -4749,6 +4981,28 @@ text {
 	}
 	limits {
 	}
+}
+"related display" {
+	object {
+		x=8
+		y=176
+		width=25
+		height=25
+	}
+	display[0] {
+		label="DCM Motors"
+		name="dcm_motors9.adl"
+		args="P=32ida:, P1=32idb:, M1=m1, M2=m2, M3=m3, M4=m4, M5=m5, M6=m6, M7=m7, M8=m8, M9=m5"
+	}
+	display[3] {
+		args="  "
+	}
+	display[4] {
+		args=" "
+	}
+	clr=0
+	bclr=53
+	label="-"
 }
 text {
 	object {
@@ -8829,6 +9083,150 @@ text {
 	textix="Condenser"
 	align="horiz. centered"
 }
+text {
+	object {
+		x=134
+		y=384
+		width=15
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="A"
+	align="horiz. centered"
+}
+composite {
+	object {
+		x=73
+		y=482
+		width=77
+		height=48
+	}
+	"composite name"=""
+	children {
+		"message button" {
+			object {
+				x=73
+				y=482
+				width=55
+				height=23
+			}
+			control {
+				chan="32idbSoft:PLC1:oC21"
+				clr=14
+				bclr=15
+			}
+			label="On"
+			press_msg="1"
+			release_msg="0"
+		}
+		text {
+			object {
+				x=134
+				y=485
+				width=15
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="Y"
+			align="horiz. centered"
+		}
+		"message button" {
+			object {
+				x=73
+				y=507
+				width=55
+				height=23
+			}
+			control {
+				chan="32idbSoft:PLC1:oC31"
+				clr=14
+				bclr=20
+			}
+			label="Off"
+			press_msg="1"
+			release_msg="0"
+		}
+		oval {
+			object {
+				x=130
+				y=508
+				width=20
+				height=20
+			}
+			"basic attribute" {
+				clr=20
+			}
+			"dynamic attribute" {
+				vis="if zero"
+				chan="32idbSoft:PLC1:C1"
+			}
+		}
+	}
+}
+"message button" {
+	object {
+		x=73
+		y=432
+		width=55
+		height=23
+	}
+	control {
+		chan="32idbSoft:PLC1:oC22"
+		clr=14
+		bclr=15
+	}
+	label="On"
+	press_msg="1"
+	release_msg="0"
+}
+text {
+	object {
+		x=134
+		y=435
+		width=15
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="X"
+	align="horiz. centered"
+}
+"message button" {
+	object {
+		x=73
+		y=457
+		width=55
+		height=23
+	}
+	control {
+		chan="32idbSoft:PLC1:oC32"
+		clr=14
+		bclr=20
+	}
+	label="Off"
+	press_msg="1"
+	release_msg="0"
+}
+oval {
+	object {
+		x=131
+		y=459
+		width=20
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="if zero"
+		chan="32idbSoft:PLC1:C2"
+	}
+}
 menu {
 	object {
 		x=223
@@ -8844,7 +9242,7 @@ menu {
 }
 text {
 	object {
-		x=345
+		x=555
 		y=324
 		width=65
 		height=20
@@ -8857,7 +9255,7 @@ text {
 }
 "choice button" {
 	object {
-		x=412
+		x=622
 		y=324
 		width=90
 		height=20
@@ -8871,7 +9269,7 @@ text {
 }
 text {
 	object {
-		x=410
+		x=726
 		y=240
 		width=70
 		height=20
@@ -8884,7 +9282,7 @@ text {
 }
 text {
 	object {
-		x=784
+		x=1100
 		y=241
 		width=70
 		height=20
@@ -8897,7 +9295,7 @@ text {
 }
 rectangle {
 	object {
-		x=432
+		x=748
 		y=210
 		width=518
 		height=67
@@ -8907,6 +9305,21 @@ rectangle {
 		fill="outline"
 		width=5
 	}
+}
+"shell command" {
+	object {
+		x=37
+		y=272
+		width=120
+		height=30
+	}
+	command[0] {
+		label="IOCs"
+		name="medm -x /home/beams/USERTXM/scripts/iocs_start.adl &"
+	}
+	clr=0
+	bclr=49
+	label="-IOCs"
 }
 "related display" {
 	object {
@@ -10110,9 +10523,57 @@ polyline {
 		(263,971)
 	}
 }
+text {
+	object {
+		x=39
+		y=151
+		width=113
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="32-ID Main"
+}
+text {
+	object {
+		x=40
+		y=180
+		width=113
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="DCM"
+}
+text {
+	object {
+		x=41
+		y=205
+		width=113
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Web cameras"
+}
+text {
+	object {
+		x=40
+		y=253
+		width=113
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="TomoScan"
+}
 "text update" {
 	object {
-		x=721
+		x=931
 		y=280
 		width=50
 		height=20
@@ -10127,7 +10588,7 @@ polyline {
 }
 "text update" {
 	object {
-		x=671
+		x=881
 		y=280
 		width=50
 		height=20
@@ -10142,7 +10603,7 @@ polyline {
 }
 text {
 	object {
-		x=623
+		x=833
 		y=280
 		width=40
 		height=16
@@ -10155,7 +10616,7 @@ text {
 }
 text {
 	object {
-		x=449
+		x=659
 		y=304
 		width=130
 		height=16
@@ -10168,7 +10629,7 @@ text {
 }
 "text entry" {
 	object {
-		x=587
+		x=797
 		y=305
 		width=47
 		height=20
@@ -10183,7 +10644,7 @@ text {
 }
 text {
 	object {
-		x=450
+		x=660
 		y=327
 		width=130
 		height=16
@@ -10196,7 +10657,7 @@ text {
 }
 "text entry" {
 	object {
-		x=587
+		x=797
 		y=327
 		width=47
 		height=20
@@ -10211,7 +10672,7 @@ text {
 }
 text {
 	object {
-		x=585
+		x=795
 		y=304
 		width=130
 		height=16
@@ -10224,7 +10685,7 @@ text {
 }
 text {
 	object {
-		x=584
+		x=794
 		y=327
 		width=130
 		height=16
@@ -10237,7 +10698,7 @@ text {
 }
 "text entry" {
 	object {
-		x=720
+		x=930
 		y=303
 		width=47
 		height=20
@@ -10252,7 +10713,7 @@ text {
 }
 "text entry" {
 	object {
-		x=720
+		x=930
 		y=326
 		width=47
 		height=20
@@ -10267,7 +10728,7 @@ text {
 }
 "message button" {
 	object {
-		x=533
+		x=743
 		y=280
 		width=59
 		height=20
@@ -10667,6 +11128,37 @@ composite {
 	clr=14
 	bclr=51
 }
+"shell command" {
+	object {
+		x=8
+		y=224
+		width=25
+		height=25
+	}
+	command[0] {
+		label="PDU 32idc"
+		name="firefox 10.54.102.105 &"
+	}
+	command[1] {
+		label="PDU 32idb"
+		name="firefox 10.54.102.106 &"
+	}
+	clr=0
+	bclr=53
+	label="- 2"
+}
+text {
+	object {
+		x=41
+		y=228
+		width=113
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Web switches"
+}
 composite {
 	object {
 		x=542
@@ -11054,7 +11546,7 @@ rectangle {
 }
 composite {
 	object {
-		x=395
+		x=605
 		y=349
 		width=117
 		height=183
@@ -11063,7 +11555,7 @@ composite {
 	children {
 		text {
 			object {
-				x=397
+				x=607
 				y=478
 				width=45
 				height=16
@@ -11076,7 +11568,7 @@ composite {
 		}
 		text {
 			object {
-				x=396
+				x=606
 				y=477
 				width=45
 				height=16
@@ -11093,7 +11585,7 @@ composite {
 		}
 		"text update" {
 			object {
-				x=396
+				x=606
 				y=349
 				width=116
 				height=20
@@ -11109,7 +11601,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=402
+				x=612
 				y=405
 				width=104
 				height=31
@@ -11125,7 +11617,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=402
+				x=612
 				y=405
 				width=104
 				height=31
@@ -11141,7 +11633,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=402
+				x=612
 				y=405
 				width=104
 				height=31
@@ -11157,7 +11649,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=396
+				x=606
 				y=436
 				width=116
 				height=40
@@ -11169,7 +11661,7 @@ composite {
 		}
 		text {
 			object {
-				x=424
+				x=634
 				y=460
 				width=60
 				height=15
@@ -11187,7 +11679,7 @@ composite {
 		}
 		text {
 			object {
-				x=424
+				x=634
 				y=466
 				width=60
 				height=10
@@ -11205,7 +11697,7 @@ composite {
 		}
 		"message button" {
 			object {
-				x=398
+				x=608
 				y=438
 				width=25
 				height=36
@@ -11220,7 +11712,7 @@ composite {
 		}
 		"text entry" {
 			object {
-				x=424
+				x=634
 				y=438
 				width=60
 				height=20
@@ -11235,7 +11727,7 @@ composite {
 		}
 		"message button" {
 			object {
-				x=485
+				x=695
 				y=438
 				width=25
 				height=36
@@ -11250,7 +11742,7 @@ composite {
 		}
 		"text entry" {
 			object {
-				x=405
+				x=615
 				y=408
 				width=98
 				height=25
@@ -11265,7 +11757,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=396
+				x=606
 				y=384
 				width=6
 				height=50
@@ -11280,7 +11772,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=506
+				x=716
 				y=384
 				width=6
 				height=50
@@ -11295,7 +11787,7 @@ composite {
 		}
 		"text update" {
 			object {
-				x=396
+				x=606
 				y=371
 				width=116
 				height=12
@@ -11311,7 +11803,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=403
+				x=613
 				y=380
 				width=102
 				height=26
@@ -11328,7 +11820,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=405
+				x=615
 				y=382
 				width=98
 				height=21
@@ -11345,7 +11837,7 @@ composite {
 		}
 		"text update" {
 			object {
-				x=407
+				x=617
 				y=384
 				width=94
 				height=17
@@ -11361,7 +11853,7 @@ composite {
 		}
 		text {
 			object {
-				x=424
+				x=634
 				y=458
 				width=60
 				height=10
@@ -11379,7 +11871,7 @@ composite {
 		}
 		rectangle {
 			object {
-				x=402
+				x=612
 				y=405
 				width=104
 				height=31
@@ -11397,7 +11889,7 @@ composite {
 		}
 		"choice button" {
 			object {
-				x=441
+				x=651
 				y=476
 				width=71
 				height=20
@@ -11411,7 +11903,7 @@ composite {
 		}
 		"choice button" {
 			object {
-				x=395
+				x=605
 				y=497
 				width=115
 				height=35
@@ -11426,7 +11918,7 @@ composite {
 }
 "related display" {
 	object {
-		x=511
+		x=721
 		y=515
 		width=15
 		height=15
@@ -11484,9 +11976,33 @@ composite {
 	clr=14
 	bclr=51
 }
+composite {
+	object {
+		x=1160
+		y=428
+		width=150
+		height=110
+	}
+	"composite name"=""
+	children {
+		rectangle {
+			object {
+				x=1160
+				y=428
+				width=150
+				height=110
+			}
+			"basic attribute" {
+				clr=14
+				fill="outline"
+				width=5
+			}
+		}
+	}
+}
 "shell command" {
 	object {
-		x=170
+		x=380
 		y=280
 		width=80
 		height=25
@@ -11512,6 +12028,19 @@ rectangle {
 		width=5
 	}
 }
+text {
+	object {
+		x=1174
+		y=441
+		width=120
+		height=25
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Optics"
+	align="horiz. centered"
+}
 "related display" {
 	object {
 		x=248
@@ -11536,6 +12065,100 @@ image {
 	}
 	type="gif"
 	"image name"="txm2.gif"
+}
+rectangle {
+	object {
+		x=0
+		y=339
+		width=200
+		height=200
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+		width=5
+	}
+}
+"related display" {
+	object {
+		x=37
+		y=304
+		width=120
+		height=30
+	}
+	display[0] {
+		label="softGlueZynqMenu"
+		name="softGlueZynqMenu.adl"
+		args="P=32idMZ1:,H=SG:"
+	}
+	display[1] {
+		label="SoftGlue Circuits"
+		name="configMenu.adl"
+		args="P=32idMZ1:,CONFIG=SG"
+	}
+	display[2] {
+		label="MCS"
+		name="MCS.adl"
+		args="P=32idMZ1:,Q=MCS"
+	}
+	display[4] {
+		label="DMA test"
+		name="MCS.adl"
+		args="P=32idMZ1:,Q=DMA"
+	}
+	display[5] {
+		label="pixelTrigger"
+		name="pixelTrigger.adl"
+		args="P=32idMZ1:,Q=1"
+	}
+	display[6] {
+		label="MCS"
+		name="MCS.adl"
+		args="P=32idMZ1:,Q=1"
+	}
+	display[7] {
+		label="asynSoftGlue"
+		name="asynRecord.adl"
+		args="P=32idMZ1:,R=asynSoftGlue"
+	}
+	display[8] {
+		label="asynSoftGlueReg"
+		name="asynRecord.adl"
+		args="P=32idMZ1:,R=asynSoftGlueReg"
+	}
+	display[9] {
+		label="pixelTriggerImage 1"
+		name="pixelTrigger2D.adl"
+		args="P=32idMZ1:,letter=I"
+	}
+	display[10] {
+		label="pixelTriggerImage 2"
+		name="pixelTrigger2D.adl"
+		args="P=32idMZ1:,letter=J"
+	}
+	display[11] {
+		label="readSoftGlueCounter"
+		name="readSoftGlueCounter.adl"
+		args="P=32idMZ1:,Q=SG_RdCntr:"
+	}
+	display[12] {
+		label="pixelTriggerDma"
+		name="pixelTriggerDma.adl"
+		args="P=32idMZ1:,Q=1"
+	}
+	display[13] {
+		label="pixelTriggerDmaImage 1"
+		name="pixelTriggerDma2D.adl"
+		args="P=32idMZ1:,letter=I"
+	}
+	display[14] {
+		label="histScalerDma"
+		name="histScalerDma.adl"
+		args="P=32idMZ1:,Q=1"
+	}
+	clr=0
+	bclr=17
+	label="-  SoftGlue"
 }
 "text update" {
 	object {
@@ -14661,6 +15284,248 @@ composite {
 	clr=14
 	bclr=51
 }
+"text entry" {
+	object {
+		x=1214
+		y=771
+		width=125
+		height=25
+	}
+	control {
+		chan="32id:TXMOptics:Energy"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+text {
+	object {
+		x=1174
+		y=747
+		width=120
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Energy Mono (keV)"
+	align="horiz. right"
+}
+"message button" {
+	object {
+		x=1355
+		y=771
+		width=40
+		height=23
+	}
+	control {
+		chan="32id:TXMOptics:EnergySet"
+		clr=14
+		bclr=15
+	}
+	label="Set"
+	press_msg="1"
+	release_msg="0"
+}
+"text update" {
+	object {
+		x=1125
+		y=774
+		width=80
+		height=20
+	}
+	monitor {
+		chan="32ida:BraggERdbkAO"
+		clr=14
+		bclr=60
+	}
+	limits {
+	}
+}
+text {
+	object {
+		x=1297
+		y=746
+		width=60
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+		fill="outline"
+	}
+	"dynamic attribute" {
+		vis="if not zero"
+		chan="32id:TXMOptics:EnergyBusy"
+	}
+	textix="Busy"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=1207
+		y=707
+		width=120
+		height=25
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Energy - Range [6,12] keV"
+	align="horiz. centered"
+}
+composite {
+	object {
+		x=1111
+		y=734
+		width=310
+		height=240
+	}
+	"composite name"=""
+	children {
+		rectangle {
+			object {
+				x=1111
+				y=734
+				width=310
+				height=240
+			}
+			"basic attribute" {
+				clr=14
+				fill="outline"
+				width=5
+			}
+		}
+	}
+}
+"text entry" {
+	object {
+		x=1122
+		y=909
+		width=220
+		height=25
+	}
+	control {
+		chan="32id:TXMOptics:EnergyCalibrationFileOne"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1122
+		y=938
+		width=220
+		height=25
+	}
+	control {
+		chan="32id:TXMOptics:EnergyCalibrationFileTwo"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+"choice button" {
+	object {
+		x=1250
+		y=878
+		width=90
+		height=25
+	}
+	control {
+		chan="32id:TXMOptics:EnergyUseCalibration"
+		clr=14
+		bclr=51
+	}
+	stacking="column"
+}
+text {
+	object {
+		x=1125
+		y=886
+		width=120
+		height=16
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Use calibration"
+	align="horiz. right"
+}
+"related display" {
+	object {
+		x=1356
+		y=942
+		width=50
+		height=20
+	}
+	display[0] {
+		label="Energy Change"
+		name="energy_32ID.adl"
+		args="P=32id:, R=Energy:"
+	}
+	clr=14
+	bclr=51
+}
+text {
+	object {
+		x=1133
+		y=809
+		width=120
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Detuning (eV)"
+	align="horiz. right"
+}
+"text entry" {
+	object {
+		x=1259
+		y=804
+		width=80
+		height=25
+	}
+	control {
+		chan="32id:TXMOptics:EnergyDetune"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+text {
+	object {
+		x=1153
+		y=842
+		width=120
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Energy ID (keV)"
+	align="horiz. right"
+}
+"text update" {
+	object {
+		x=1285
+		y=840
+		width=80
+		height=20
+	}
+	monitor {
+		chan="S32ID:USID:EnergyM.VAL"
+		clr=14
+		bclr=60
+	}
+	limits {
+	}
+}
 text {
 	object {
 		x=1759
@@ -14758,7 +15623,7 @@ text {
 }
 "message button" {
 	object {
-		x=2170
+		x=2168
 		y=763
 		width=200
 		height=100
@@ -14770,6 +15635,21 @@ text {
 	}
 	label="All Stop"
 	press_msg="1"
+}
+"shell command" {
+	object {
+		x=1153
+		y=280
+		width=150
+		height=40
+	}
+	command[0] {
+		label="PyStream"
+		name="/home/beams/USERTXM/scripts/start_pystream.sh"
+	}
+	clr=14
+	bclr=32
+	label="-PyStream"
 }
 rectangle {
 	object {
@@ -14924,785 +15804,4 @@ text {
 	}
 	textix="FLOW"
 	align="horiz. centered"
-}
-"shell command" {
-	object {
-		x=1
-		y=218
-		width=120
-		height=30
-	}
-	command[0] {
-		label="IOCs"
-		name="medm -x /home/beams/USERTXM/scripts/iocs_start.adl &"
-	}
-	clr=0
-	bclr=49
-	label="-IOCs"
-}
-"related display" {
-	object {
-		x=133
-		y=220
-		width=120
-		height=30
-	}
-	display[0] {
-		label="softGlueZynqMenu"
-		name="softGlueZynqMenu.adl"
-		args="P=32idMZ1:,H=SG:"
-	}
-	display[1] {
-		label="SoftGlue Circuits"
-		name="configMenu.adl"
-		args="P=32idMZ1:,CONFIG=SG"
-	}
-	display[2] {
-		label="MCS"
-		name="MCS.adl"
-		args="P=32idMZ1:,Q=MCS"
-	}
-	display[4] {
-		label="DMA test"
-		name="MCS.adl"
-		args="P=32idMZ1:,Q=DMA"
-	}
-	display[5] {
-		label="pixelTrigger"
-		name="pixelTrigger.adl"
-		args="P=32idMZ1:,Q=1"
-	}
-	display[6] {
-		label="MCS"
-		name="MCS.adl"
-		args="P=32idMZ1:,Q=1"
-	}
-	display[7] {
-		label="asynSoftGlue"
-		name="asynRecord.adl"
-		args="P=32idMZ1:,R=asynSoftGlue"
-	}
-	display[8] {
-		label="asynSoftGlueReg"
-		name="asynRecord.adl"
-		args="P=32idMZ1:,R=asynSoftGlueReg"
-	}
-	display[9] {
-		label="pixelTriggerImage 1"
-		name="pixelTrigger2D.adl"
-		args="P=32idMZ1:,letter=I"
-	}
-	display[10] {
-		label="pixelTriggerImage 2"
-		name="pixelTrigger2D.adl"
-		args="P=32idMZ1:,letter=J"
-	}
-	display[11] {
-		label="readSoftGlueCounter"
-		name="readSoftGlueCounter.adl"
-		args="P=32idMZ1:,Q=SG_RdCntr:"
-	}
-	display[12] {
-		label="pixelTriggerDma"
-		name="pixelTriggerDma.adl"
-		args="P=32idMZ1:,Q=1"
-	}
-	display[13] {
-		label="pixelTriggerDmaImage 1"
-		name="pixelTriggerDma2D.adl"
-		args="P=32idMZ1:,letter=I"
-	}
-	display[14] {
-		label="histScalerDma"
-		name="histScalerDma.adl"
-		args="P=32idMZ1:,Q=1"
-	}
-	clr=0
-	bclr=17
-	label="-  SoftGlue"
-}
-"shell command" {
-	object {
-		x=2169
-		y=398
-		width=200
-		height=40
-	}
-	command[0] {
-		label="32-ID Beamline"
-		name="/home/beams/USERTXM/start_caQtDM_32id"
-	}
-	clr=0
-	bclr=48
-	label="-32ID Main"
-}
-"related display" {
-	object {
-		x=2170
-		y=481
-		width=200
-		height=40
-	}
-	display[0] {
-		label="tomoScan"
-		name="tomoScan_32ID_main.adl"
-		args="P=32id:, R=TomoScan:, BEAMLINE=tomoScan_32ID"
-	}
-	display[1] {
-		label="tomoScan 32-ID"
-		name="tomoScan_32ID.adl"
-		args="P=32id:, R=TomoScan:, BEAMLINE=tomoScan_32ID"
-	}
-	display[2] {
-		label="tomoScanStep"
-		name="tomoScan_32ID_main.adl"
-		args=" P=32id:, R=TomoScanStep:, BEAMLINE=tomoScanStep_32ID"
-	}
-	display[3] {
-		label="tomoScanStep 32-ID"
-		name="tomoScanStep_32ID.adl"
-		args="P=32id:, R=TomoScanStep:, BEAMLINE=tomoScanStep_32ID"
-	}
-	display[4] {
-		label="tomoScanFPGA"
-		name="tomoScanFPGA_32ID_main.adl"
-		args="P=32id:, R=TomoScanFPGA:, BEAMLINE=tomoScanFPGA_32ID"
-	}
-	display[5] {
-		label="tomoScanFPGA 32-ID"
-		name="tomoScanFPGA_32ID.adl"
-		args="P=32id:, R=TomoScanFPGA:, BEAMLINE=tomoScanFPGA_32ID"
-	}
-	display[6] {
-		label="tomoScanStream"
-		name="tomoScan_32ID_main.adl"
-		args="P=32id:, R=TomoScanStream:, BEAMLINE=tomoScanStream_32ID"
-	}
-	display[7] {
-		label="tomoScanStream 32-ID"
-		name="tomoScan_32ID.adl"
-		args="P=32id:, R=TomoScanStream:, BEAMLINE=tomoScanStream_32ID"
-	}
-	clr=14
-	bclr=33
-	label="-        Tomoscan"
-}
-"shell command" {
-	object {
-		x=2170
-		y=523
-		width=200
-		height=30
-	}
-	command[0] {
-		label="TXM optics"
-		name="firefox 10.54.102.97 &"
-	}
-	command[1] {
-		label="Robot"
-		name="firefox 10.54.102.88 &"
-	}
-	command[2] {
-		label="Control room"
-		name="firefox 10.54.102.90 &"
-	}
-	command[3] {
-		label="Flag"
-		name="firefox 10.54.102.81 &"
-	}
-	command[4] {
-		label="Hutch C"
-		name="firefox 10.54.102.91 &"
-	}
-	clr=0
-	bclr=28
-	label="-    Web Cameras"
-}
-"related display" {
-	object {
-		x=2169
-		y=440
-		width=200
-		height=40
-	}
-	display[0] {
-		label="DCM Motors"
-		name="dcm_motors9.adl"
-		args="P=32ida:, P1=32idb:, M1=m1, M2=m2, M3=m3, M4=m4, M5=m5, M6=m6, M7=m7, M8=m8, M9=m5"
-	}
-	display[3] {
-		args="  "
-	}
-	display[4] {
-		args=" "
-	}
-	clr=0
-	bclr=48
-	label="-Monochromator"
-}
-"shell command" {
-	object {
-		x=2170
-		y=555
-		width=200
-		height=30
-	}
-	command[0] {
-		label="PDU 32idc"
-		name="firefox 10.54.102.105 &"
-	}
-	command[1] {
-		label="PDU 32idb"
-		name="firefox 10.54.102.106 &"
-	}
-	clr=0
-	bclr=28
-	label="-    Web Switches"
-}
-"text entry" {
-	object {
-		x=1203
-		y=302
-		width=125
-		height=25
-	}
-	control {
-		chan="32id:TXMOptics:Energy"
-		clr=14
-		bclr=51
-	}
-	limits {
-	}
-}
-text {
-	object {
-		x=1163
-		y=278
-		width=120
-		height=20
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="Energy Mono (keV)"
-	align="horiz. right"
-}
-"message button" {
-	object {
-		x=1344
-		y=302
-		width=40
-		height=23
-	}
-	control {
-		chan="32id:TXMOptics:EnergySet"
-		clr=14
-		bclr=15
-	}
-	label="Set"
-	press_msg="1"
-	release_msg="0"
-}
-"text update" {
-	object {
-		x=1114
-		y=305
-		width=80
-		height=20
-	}
-	monitor {
-		chan="32ida:BraggERdbkAO"
-		clr=14
-		bclr=60
-	}
-	limits {
-	}
-}
-text {
-	object {
-		x=1286
-		y=277
-		width=60
-		height=20
-	}
-	"basic attribute" {
-		clr=20
-		fill="outline"
-	}
-	"dynamic attribute" {
-		vis="if not zero"
-		chan="32id:TXMOptics:EnergyBusy"
-	}
-	textix="Busy"
-	align="horiz. centered"
-}
-text {
-	object {
-		x=1196
-		y=238
-		width=120
-		height=25
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="Energy - Range [6,12] keV"
-	align="horiz. centered"
-}
-composite {
-	object {
-		x=1100
-		y=265
-		width=310
-		height=240
-	}
-	"composite name"=""
-	children {
-		rectangle {
-			object {
-				x=1100
-				y=265
-				width=310
-				height=240
-			}
-			"basic attribute" {
-				clr=14
-				fill="outline"
-				width=5
-			}
-		}
-	}
-}
-"text entry" {
-	object {
-		x=1111
-		y=440
-		width=220
-		height=25
-	}
-	control {
-		chan="32id:TXMOptics:EnergyCalibrationFileOne"
-		clr=14
-		bclr=51
-	}
-	limits {
-	}
-}
-"text entry" {
-	object {
-		x=1111
-		y=469
-		width=220
-		height=25
-	}
-	control {
-		chan="32id:TXMOptics:EnergyCalibrationFileTwo"
-		clr=14
-		bclr=51
-	}
-	limits {
-	}
-}
-"choice button" {
-	object {
-		x=1239
-		y=409
-		width=90
-		height=25
-	}
-	control {
-		chan="32id:TXMOptics:EnergyUseCalibration"
-		clr=14
-		bclr=51
-	}
-	stacking="column"
-}
-text {
-	object {
-		x=1114
-		y=417
-		width=120
-		height=16
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="Use calibration"
-	align="horiz. right"
-}
-"related display" {
-	object {
-		x=1345
-		y=473
-		width=50
-		height=20
-	}
-	display[0] {
-		label="Energy Change"
-		name="energy_32ID.adl"
-		args="P=32id:, R=Energy:"
-	}
-	clr=14
-	bclr=51
-}
-text {
-	object {
-		x=1122
-		y=340
-		width=120
-		height=20
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="Detuning (eV)"
-	align="horiz. right"
-}
-"text entry" {
-	object {
-		x=1248
-		y=335
-		width=80
-		height=25
-	}
-	control {
-		chan="32id:TXMOptics:EnergyDetune"
-		clr=14
-		bclr=51
-	}
-	limits {
-	}
-}
-text {
-	object {
-		x=1142
-		y=373
-		width=120
-		height=20
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="Energy ID (keV)"
-	align="horiz. right"
-}
-"text update" {
-	object {
-		x=1274
-		y=371
-		width=80
-		height=20
-	}
-	monitor {
-		chan="S32ID:USID:EnergyM.VAL"
-		clr=14
-		bclr=60
-	}
-	limits {
-	}
-}
-"message button" {
-	object {
-		x=1206
-		y=748
-		width=200
-		height=60
-	}
-	control {
-		chan="32id:TXMOptics:MoveAllIn"
-		clr=14
-		bclr=33
-	}
-	label="Nano"
-	press_msg="1"
-}
-"message button" {
-	object {
-		x=1206
-		y=813
-		width=200
-		height=60
-	}
-	control {
-		chan="32id:TXMOptics:MoveAllOut"
-		clr=14
-		bclr=33
-	}
-	label="Micro"
-	press_msg="1"
-}
-"shell command" {
-	object {
-		x=1209
-		y=510
-		width=200
-		height=60
-	}
-	command[0] {
-		label="PyStream"
-		name="/home/beams/USERTXM/scripts/start_pystream.sh"
-	}
-	clr=14
-	bclr=32
-	label="-PyStream"
-}
-rectangle {
-	object {
-		x=1515
-		y=571
-		width=105
-		height=201
-	}
-	"basic attribute" {
-		clr=7
-	}
-}
-text {
-	object {
-		x=1527
-		y=579
-		width=75
-		height=25
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="Valves"
-	align="horiz. centered"
-}
-oval {
-	object {
-		x=1581
-		y=642
-		width=20
-		height=20
-	}
-	"basic attribute" {
-		clr=15
-	}
-	"dynamic attribute" {
-		vis="if not zero"
-		chan="32idbSoft:PLC1:C3"
-	}
-}
-"message button" {
-	object {
-		x=1524
-		y=616
-		width=55
-		height=23
-	}
-	control {
-		chan="32idbSoft:PLC1:oC23"
-		clr=14
-		bclr=15
-	}
-	label="On"
-	press_msg="1"
-	release_msg="0"
-}
-oval {
-	object {
-		x=1581
-		y=642
-		width=20
-		height=20
-	}
-	"basic attribute" {
-		clr=20
-	}
-	"dynamic attribute" {
-		vis="if zero"
-		chan="32idbSoft:PLC1:C3"
-	}
-}
-"message button" {
-	object {
-		x=1524
-		y=641
-		width=55
-		height=23
-	}
-	control {
-		chan="32idbSoft:PLC1:oC33"
-		clr=14
-		bclr=20
-	}
-	label="Off"
-	press_msg="1"
-	release_msg="0"
-}
-oval {
-	object {
-		x=1581
-		y=742
-		width=20
-		height=20
-	}
-	"basic attribute" {
-		clr=15
-	}
-	"dynamic attribute" {
-		vis="if not zero"
-		chan="32idbSoft:PLC1:C1"
-	}
-}
-oval {
-	object {
-		x=1582
-		y=693
-		width=20
-		height=20
-	}
-	"basic attribute" {
-		clr=15
-	}
-	"dynamic attribute" {
-		vis="if not zero"
-		chan="32idbSoft:PLC1:C2"
-	}
-}
-text {
-	object {
-		x=1585
-		y=618
-		width=15
-		height=20
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="A"
-	align="horiz. centered"
-}
-composite {
-	object {
-		x=1524
-		y=716
-		width=77
-		height=48
-	}
-	"composite name"=""
-	children {
-		"message button" {
-			object {
-				x=1524
-				y=716
-				width=55
-				height=23
-			}
-			control {
-				chan="32idbSoft:PLC1:oC21"
-				clr=14
-				bclr=15
-			}
-			label="On"
-			press_msg="1"
-			release_msg="0"
-		}
-		text {
-			object {
-				x=1585
-				y=719
-				width=15
-				height=20
-			}
-			"basic attribute" {
-				clr=14
-			}
-			textix="Y"
-			align="horiz. centered"
-		}
-		"message button" {
-			object {
-				x=1524
-				y=741
-				width=55
-				height=23
-			}
-			control {
-				chan="32idbSoft:PLC1:oC31"
-				clr=14
-				bclr=20
-			}
-			label="Off"
-			press_msg="1"
-			release_msg="0"
-		}
-		oval {
-			object {
-				x=1581
-				y=742
-				width=20
-				height=20
-			}
-			"basic attribute" {
-				clr=20
-			}
-			"dynamic attribute" {
-				vis="if zero"
-				chan="32idbSoft:PLC1:C1"
-			}
-		}
-	}
-}
-"message button" {
-	object {
-		x=1524
-		y=666
-		width=55
-		height=23
-	}
-	control {
-		chan="32idbSoft:PLC1:oC22"
-		clr=14
-		bclr=15
-	}
-	label="On"
-	press_msg="1"
-	release_msg="0"
-}
-text {
-	object {
-		x=1585
-		y=669
-		width=15
-		height=20
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="X"
-	align="horiz. centered"
-}
-"message button" {
-	object {
-		x=1524
-		y=691
-		width=55
-		height=23
-	}
-	control {
-		chan="32idbSoft:PLC1:oC32"
-		clr=14
-		bclr=20
-	}
-	label="Off"
-	press_msg="1"
-	release_msg="0"
-}
-oval {
-	object {
-		x=1582
-		y=693
-		width=20
-		height=20
-	}
-	"basic attribute" {
-		clr=20
-	}
-	"dynamic attribute" {
-		vis="if zero"
-		chan="32idbSoft:PLC1:C2"
-	}
 }

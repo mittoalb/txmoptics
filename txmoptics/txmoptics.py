@@ -828,7 +828,7 @@ class TXMOptics():
             if 'Energy' and 'EnergyDetune' in self.epics_pvs:
                 energy = float(self.epics_pvs["Energy"].get())
                 energyDetune = float(self.epics_pvs["EnergyDetune"].get())
-                if energy < 6.0 or energy > 12.0: #Safeguard limits
+                if energy < 6.0 or energy > 15.0: #Safeguard limits
                     log.error("TxmOptics: Energy %.2f keV is outside valid range (6-12 keV). Operation cancelled.", energy)
                     if 'EnergyBusy' in self.epics_pvs:
                         self.epics_pvs['EnergyBusy'].put(0)
